@@ -2,19 +2,42 @@
 ***  
   
 * **OTA/**  
+010a2e6 trltexx: update changelog url  
 a540093 trltexx_1  
   
+* **bionic/**  
+98ea086 bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns  
+  
+* **build/**  
+bfe7425 build: Use compatibility DTB directory path for custom DTB tool builds  
+  
+* **changelogs/**  
+9c50f04 r5:14-04-2016  
+cabe59e first commit  
+  
+* **external/toybox/**  
+d5de717 toybox: find: Fix segfault when using -iname/-ipath with -exec  
+  
 * **frameworks/base/**  
+b15a83b Themes: Restore original value if getValue fails  
+db5d61a Check for deprecated third party keyguard perm  
 ad404c7 livedisplay: Moving LiveDisplay to CMSDK  
 8f889a1 Update icon  
 6df4479 Add check whether wallpaper's size has changed  
 5a32776 Fw_base - remove seconds from clock [1/2]  
 83dc6d8 Fw_base - Breathing missedcall/voicemail [1/4]  
   
+* **packages/apps/Bluetooth/**  
+f64343e hdp: do not return a null value when hdp interface unavailable  
+  
 * **packages/apps/CarrierConfig/**  
 426a0d0 Telefonica MMS Max sending limit files Added  
   
+* **packages/apps/Dialer/**  
+f222cf9 InCallMetrics: null check our content resolver query  
+  
 * **packages/apps/InCallUI/**  
+13e6ec9 InCallUI: add LookupProvider and VoLTE to landscape layout  
 4395ee7 Missed rebase: add coordinator layout  
   
 * **packages/apps/ROMControl/**  
@@ -28,6 +51,12 @@ b563e30 ROMControl: Fix derp after remove navbar
 45a4613 Fix build  
 1e86d66 livedisplay: Update Settings for new LiveDisplay API  
   
+* **packages/apps/SetupWizard/**  
+c8c765c Update the theme apply label string  
+  
+* **packages/apps/Trebuchet/**  
+5e5f825 Trebuchet: Don't crash when AppWidgetService is unavailable  
+  
 * **packages/services/Telecomm/**  
 4498f36 services/Telecomm - Breathing missedcall/voicemail [3/4]  
   
@@ -35,12 +64,24 @@ b563e30 ROMControl: Fix derp after remove navbar
 044b472 services/Telephony - Breathing missedcall/voicemail [2/4]  
   
 * **platform_manifest/**  
+ad7d095 Manifests: add changelogs repo  
 aa1085c Manifest - track our own services/Telecomm  
   
+* **prebuilts/cmsdk/**  
+f8f3aaf Remove public default constructor from CMWeatherManager.RequestStatus [2/2]  
+  
 * **vendor/cmsdk/**  
+6c50c80 Remove public default constructor from CMWeatherManager.RequestStatus [1/2]  
+d414f9f ExtViews: Pass input events to underlying Window  
+8a0d388 Weather API: Delegate the responsability of rejecting back to back requests [1/2]  
+cab3a61 Use temperature unit from CMSettings on weather update requests  
+3baebec Add WEATHER_TEMPERATURE_UNIT to CMSettings [1/2]  
+5008aa0 cmsdk: correct naming of THIRD_PARTY_KEYGUARD perm  
+00c63cd Weather API: Return ID rather than RequestInfo [1/2]  
 f9ca7f9 cmsdk: Refactoring LiveDisplay  
   
 * **vendor/emotion/**  
+ad522af vendor: Generate changelog for Github  
 2eba115 cm: Moving LiveDisplay to CMSDK  
   
 ###     04-13-2016  
@@ -76,6 +117,9 @@ df9286e cmhw: Add support for GPU-based color calibration
 * **packages/apps/ContactsCommon/**  
 d4b8508 Remove duplicate ambientsdk reference  
   
+* **packages/apps/Dialer/**  
+9e8a087 Dialer: Customize features for regional package  
+  
 * **packages/apps/EmotionOTA/**  
 a9ef688 Emotionfy  
 42c21a9 EmotionOTA  
@@ -100,9 +144,6 @@ d29cf54 Revert "added enabledNotifyWapMMSC flag to mms_config.xml"
   
 * **platform_manifest/**  
 3c07afa Manifest: Add EmotionOTA [3/3]  
-  
-* **prebuilts/cmsdk/**  
-923f923 prebuilts/cmsdk: Bump for aar artifact.  
   
 * **system/extras/**  
 7a66a32 f2fs_utils: Update for f2fs-tools 1.6.1  
@@ -150,10 +191,6 @@ e6f53a2 [SQUASHED]Introduce DU Fling, Pulse ,Navbar into Emotion
   
 * **hardware/samsung/**  
 6d6daf9 libril: Use a board flag for video call field  
-  
-* **packages/apps/AudioFX/**  
-985c5b0 AudioFX: Fix FC when opening the app  
-853e7fb Merge "Rename package back to AudioFX" into cm-13.0  
   
 * **packages/apps/ContactsCommon/**  
 7ff2d1e Add 'ims-common' & 'info_lookup' build dependency  
@@ -257,6 +294,10 @@ b2fae1f Lockscreen target fixes
 f99e08e Revert "TouchBoost: Fix GCC5 Compile"  
 5046086 defconfig: change kernel name  
 acd8391 defconfig: add SPR variant  
+  
+* **packages/apps/AudioFX/**  
+985c5b0 AudioFX: Fix FC when opening the app  
+853e7fb Merge "Rename package back to AudioFX" into cm-13.0  
   
 * **packages/apps/InCallUI/**  
 64599fd Port VoLTE support from InCallUINext to InCallUI  
