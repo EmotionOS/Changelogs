@@ -1,499 +1,299 @@
-###     06-01-2016  
+###     06-24-2016  
+***  
+  
+  
+###     06-23-2016  
+***  
+  
+  
+###     06-22-2016  
+***  
+  
+  
+###     06-21-2016  
 ***  
   
   
 * **build/**  
-649764a Revert "generate Changelog if build is Official"  
-  
-* **external/DUtils/**  
-852fc2c DUtils: Add app picker as an action (1/2)  
-  
-* **external/stagefright-plugins/**  
-b8f2c70 stagefright-plugins: check if input queue is empty  
-  
-* **frameworks/base/**  
-1f88d92 Don't lookup application keyguard notification visibility unnecessarily  
-d345783 Frameworks: Add per app controls for LP keyguard notifications (1/2)  
-2188850 fw: reintroduce PRIVATE_FLAG_PREVENT_POWER_KEY  
-0af7719 services: Kick off to CMSystemServer for external service init.  
-67f1f8e am: clear state for every protected app invocation.  
-f857543 Core: Fix OOB  
-a94e380 FWB: App picker navbar button  
-  
-* **hardware/qcom/audio-caf/msm8996/**  
-96eed4e Merge tag 'LA.HB.1.3.2-08400-8x96.0' into HEAD  
-  
-* **hardware/qcom/display-caf/msm8996/**  
-9045cc6 Merge tag 'LA.HB.1.3.2-08400-8x96.0' into HEAD  
-  
-* **hardware/qcom/media-caf/msm8996/**  
-664d27c Merge tag 'LA.HB.1.3.2-08400-8x96.0' into HEAD  
-  
-* **hardware/samsung/**  
-9dad4fe exynos: multimedia: implement proper EOS signalling for encoder  
-  
-* **packages/apps/DUI/**  
-c694094 DUI: Add app picker as an action (2/2)  
-  
-* **packages/apps/InCallUI/**  
-724942e Remove ring around activated glowpad targets.  
-  
-* **packages/apps/ROMControl/**  
-2318112 fix translations  
-6025448 import translation  
-  
-* **packages/apps/Settings/**  
-d959606 Settings: Add per app controls for LP keyguard notifications (2/2)  
-  
-* **vendor/cmsdk/**  
-20b81c8 cmsdk: Create CMSystemServer to handle our platform init.  
-  
-* **vendor/emotion/**  
-1f0724f update COOPVOCE apn  
-1d69e40 build-emotion.sh: add compile apk option  
-  
-###     05-31-2016  
-***  
-  
-* **OTA/**  
-c74ff56 Emotion-trltespr-MM.r11.Official-20160530-195409  
-  
-* **build/**  
-42502a8 generate Changelog if build is Official  
-  
-* **changelogs/**  
-95f2021 r11: 20160531  
+c58a16a Conditionally skip dex-preopting specific prebuilts.  
   
 * **device/qcom/sepolicy/**  
-6db5e5d netmgrd: Allow netmgrd to set xlat property  
-8fa85a1 sepolicy: Add zram, swap disks creation permission  
-637fdf5 sepolicy: add selinux polices for gamed  
-40f58ac sepolicy : Add new properties for ubwc support  
+cbbed7f msm8937: Fix labeling of the cache and FRP partitions  
   
 * **device/samsung/trlte-common/**  
-d597c53 trlte-common: Bluetooth profile testing  
-13cb8ae trlte-common: update bluetooth package  
-25bb237 trlte: add bluetooth packages  
+f241016 Revert "camera: update"  
+c5f1495 Revert "trlte-common: Fix camera"  
+7a9e910 Revert "trlte-common: Hello Gello!!!"  
+bc2d60a trlte: remove snap  
   
-* **device/samsung/trltespr/**  
-47ea88c trltespr: gps proprietary update  
+* **device/samsung/trltexx/**  
+8c75026 trlte: fix BT issue  
   
-* **frameworks/native/**  
-6500d42 Add dalvik heap/hwui overrides for xxxhdpi phone with 4096MB RAM  
+* **frameworks/base/**  
+a979a64 Automatic translation import  
+9f7452d SystemUI: detect rotation and resize mKeyguardBlur accordingly  
+6143dad Fix NPE in DocumentsUI when rotate UI before format as internal  
+634956e Revert "Only show keyguard panel if on lockscreen + no activity on top"  
   
 * **kernel/samsung/trlte/**  
-923b7ae Merge pull request #4 from theboss221/patch-1  
-e2df18d Create compiler-gcc6.h  
-  
-* **packages/apps/Gello/**  
-3914bbb Bring DuckDuckGo to parity with AOSP browser changes  
-1a35851 Gello: Add DuckDuckGo search engine to ES locale  
-  
-* **packages/apps/ROMControl/**  
-6ae76d5 values: fix German translation  
-886e8d9 values: add German translation  
-  
-* **packages/apps/Settings/**  
-ba502b1 values-es: import translation  
-  
-* **vendor/emotion/**  
-eefc32e r11 release  
-  
-* **vendor/samsung/**  
-b357f7a trltespr: added proper gps libs  
-8964017 trltespr: imported proper gps files  
-  
-###     05-30-2016  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-0df7f73 bluetooth: Fix a2dp issue  
-6feb869 init.qcom.rc: set late_start for mm-qcamera-daemon  
-d3a416a trlte-common: update Bluetooth config  
-a5c07fa trlte-common: update Wifi firmware  
-b0a3b98 trlte-common: Don't check these libs  
-  
-* **device/samsung/trltespr/**  
-0bc7bcd proprietary-files: update  
-  
-* **vendor/samsung/**  
-928e612 trltespr: update MM blobs  
-593b91d trlte-common: Fix camera  
-2a39c4b trlte-common: update Wifi firmware  
-  
-###     05-29-2016  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-9f6a503 Disable WITH_DEXPREOPT  
-  
-* **device/samsung/trltespr/**  
-3351ba5 trltespr: revert bluetooth libs  
-d42ec3d Added Missing Bluethooth Libs  
-  
-* **frameworks/base/**  
-ea80363 bootanimation: Call eglReleaseThread in threadLoop  
-f7037f3 bundle init.rc contents with its service  
-17c63f7 CallInBackground: Do not block HOME  
-99694b2 Adjust the CAF task manager layout  
-bc3c5f2 NetPluginDelegate: Disable SPAM in log  
-3108195 Fix Quick settings tiles font themes derp  
-72dac3a Keep it consistent, fling that is  
-  
-* **vendor/samsung/**  
-a767fa8 trltespr: removed bluetooth lines cashing crashes  
-863d459 trltespr: removed bluetooth lib causing crashes  
-c5b636f trltespr: removed bluetooth lib causing crashes  
-6e2c94e trlte: Update blobs from N910FXXU1DPE1  
-  
-###     05-28-2016  
-***  
-  
-  
-* **build/**  
-bdae8af qcom: Support 8937/8953  
-a97a422 build: Fix caf and aospremote  
-5d05f41 ereleasetools: Allow for custom boot image signing tools  
-b82735e Avoid accidentally using the host's native 'as' command.  
-  
-* **device/samsung/trlte-common/**  
-216f5c5 trlte-common: enable audio features (Low Latency)  
-c0db495 trlte-common: update proprietary-files.txt  
-e641b05 trlte-common: update KERNEL_CMDLINE  
-  
-* **device/samsung/trltespr/**  
-dde0375 Updated Qualcomm Framework  
-5ef27a5 Updated Qualcomm Framework  
-  
-* **device/samsung/trltexx/**  
-caa8333 trltexx: update proprietary-files.txt  
-  
-* **external/sqlite/**  
-2f90e16 Reduce sync safety levels from 3 to 1  
-  
-* **frameworks/base/**  
-525078d appops: Respect screen interactivity before creating dialogs.  
-86af724 appops: Implement concept of delayedcount.  
-63598a9 Automatic translation import  
+f454acb battery: update battery drivers  
   
 * **packages/apps/Bluetooth/**  
-9130e45 Automatic translation import  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-d6461d6 Correct the broadcast channel for Colombia  
+494d642 Automatic translation import  
   
 * **packages/apps/InCallUI/**  
-4b049a5 Automatic translation import  
-4527374 Fix copy constructor of ContactInfoCache  
-  
-* **packages/apps/Messaging/**  
-4cc542b Automatic translation import  
-ddf7c99 [SMS] Replace message content for protocol 0x41-0x47  
-  
-* **packages/apps/Screencast/**  
-1ecd521 Automatic translation import  
+0310a96 Automatic translation import  
+93a8c09 Fix call dialog not dismiss  
+2e2885b Explicitly set the visibility of right_icon within call notification  
   
 * **packages/apps/Settings/**  
-42beabf Automatic translation import  
+958215e Settings : Move trust agent search index to LockscreenSettings  
+880b651 Bring back the custom wallpaper picker [3/5]  
+a2359ee Automatic translation import  
+7cd84fc Settings: Apply decor padding in landscape storage wizard  
+d248bf0 Settings: Dissallow privacy guarding system apps on overlay.  
   
-* **packages/apps/Stk/**  
-f9aecea Stk: Make the text a little smaller  
-053ce97 Stk: Materialize message dialog icon  
-65aaf67 Change the theme and the style of the activities  
-a1e3c60 Fix tab/space inconsistencies in stk_msg_dialog.xml  
-  
-* **packages/apps/ThemeChooser/**  
-cd53946 ThemeChooser: fix on theme installed notification  
+* **packages/services/Telecomm/**  
+0bc4d98 Automatic translation import  
+e5de8f3 Handle IllegalArgumentException while setting default calling sub  
   
 * **packages/services/Telephony/**  
-e8ecb12 Automatic translation import  
-04f0c92 Automatic translation import  
-dec3a68 Move IMS strings to proper resource file  
+c351ec3 Automatic translation import  
+6465173 Telephony: change input type to phone for my phone no.  
   
 * **platform_manifest/**  
-71e8db6 qc hals: Add 8937/8953 variants  
-a09f9f9 Remove SpeechRecorder * This was never built and is ancient  
-26c5617 Revert "Track own external/conscrypt"  
+9510319 Revert "[1/2] Gello ships!"  
+f23642b Revert "[2/2] Gello ships!"  
+a7cb18b Revert "Gello: Fix derp"  
   
 * **vendor/cmsdk/**  
-47331f3 Automatic translation import  
+73a2408 cmsdk: Prevent NPE in CMWeatherManager  
+3b85d6b Automatic translation import  
+7a61441 Weather API test: Wait for a bit before Mockito verifies if method was called  
+1b99bdb cmsdk: Increase flaky test tolerance on zenmode tests.  
+ca044b2 ExtViews: Catch SecurityException due to bad interface  
+0f92425 cmsdk: Provide test coverage for remainder PartnerInterface's.  
+792adf4 cmsdk: Provide remainder test coverage for CMStatusbarManager.  
+23fec42 cmsdk: Provide remaining ProfileManager test coverage.  
+500fa5a cmsdk: Provide remaining Profile test coverage.  
+122d1f7 utils: Introduce FileUtils class  
+c732269 Provide remaining Weather API test coverage  
+5f16786 CMSDK : Add tests for ColorUtils  
   
 * **vendor/emotion/**  
-4ac16a4 Don't dex-preopt Gello  
-d520408 Revert "Delete Opticharger and Squisher [1/2]"  
+32db67b Bring back the custom wallpaper picker [5/5]  
+ee6d124 cmsdk-api-coverage: Don't prepend ANDROID_BUILD_TOP to file path  
+076b333 Revert "Include Gello."  
+43f137e Revert "Don't dex-preopt Gello"  
+c785907 Revert "Gello: Update to v20 artifact"  
   
 * **vendor/samsung/**  
-7eec799 trlte: add old libs  
+5afa59e vendor: fix BT issue  
   
-###     05-27-2016  
+###     06-20-2016  
 ***  
   
-  
-* **device/samsung/trlte-common/**  
-bc6ab74 init.qcom: disable subsystem ramdump  
-  
-* **external/chromium-webview/**  
-4f2df77 Google Webview 51.0.2704.61 (arm+arm64)  
-  
-* **frameworks/native/**  
-ea0ee31 dumpstate: add CM version to output  
-  
-* **packages/apps/CMFileManager/**  
-1f47310 Fix crash when rotate to landscape without grant permission  
-  
-* **packages/apps/Calendar/**  
-411ad09 Automatic translation import  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-eadcfcd Automatic translation import  
-  
-* **packages/apps/Contacts/**  
-ffaa045 Automatic translation import  
-  
-* **packages/apps/ContactsCommon/**  
-f759863 Automatic translation import  
-  
-* **packages/apps/Dialer/**  
-b4316ea Automatic translation import  
-03c2c84 Alias Dialer's settings activity for use as caller-info settings  
-bafc8fd Fix NPE in caller-info settings migration component  
-  
-* **packages/apps/Gello/**  
-f4d3ccf Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-26db7cf Automatic translation import  
-  
-* **packages/apps/PhoneCommon/**  
-2c6c8d3 Automatic translation import  
-  
-* **packages/apps/Profiles/**  
-77051de Automatic translation import  
-  
-* **packages/apps/Screencast/**  
-1ad771f Fix reference to a renamed string  
-e66278d Automatic translation import  
-  
-* **packages/apps/SetupWizard/**  
-6476f1b Automatic translation import  
-  
-* **packages/apps/SoundRecorder/**  
-0023df8 Automatic translation import  
-  
-* **packages/apps/Trebuchet/**  
-93e949f Wallpaper: Allow multiple partners to be loaded  
-cb3431d Automatic translation import  
-  
-* **packages/providers/DataUsageProvider/**  
-c42d795 Automatic translation import  
-  
-* **packages/services/LiveLockScreenService/**  
-ba3b4f9 Automatic translation import  
-  
-###     05-26-2016  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-527e8d2 trlte-common: move libqcci_legacy.so to trltexx  
-92b9510 trlte-common: Update proprietary-files.txt  
-e1e14a7 trlte-common: Fix Bluetooth detection for trlte devices  
-  
-* **device/samsung/trltexx/**  
-788486c trltexx: move libqcci_legacy.so to trltexx  
-7330330 trltexx: Update proprietary-files.txt  
-  
-* **frameworks/base/**  
-b75c56f SystemUI: fix qs pulldown on certain themes  
-ccf8339 pm: Use sourcerecord if available for protected app validation.  
-0c0ac50 SystemUI: improve keyguard with SIM PIN interactions  
-2a0c650 StatusBar: Do not just define vars...  
-  
-* **hardware/broadcom/libbt/**  
-48aeb7d Fix detection for trlte devices To use this workaround, simply add BCM_BLUETOOTH_TRLTE_BUG := true to your board config.  
-  
-* **packages/apps/CMFileManager/**  
-7201e71 Remove set as home menu item for secure storage  
-bbf2266 PickerActivity: Grant read url permission  
-  
-* **packages/apps/Contacts/**  
-f05914c Contacts : fix FAB when an InCall plugin tab is in focus  
-765f3a0 Contacts: only schedule metrics JobService if Ambient exists  
-  
-* **packages/apps/Dialer/**  
-5b9db20 Add migrations for CallerInfo related settings  
-  
-* **packages/apps/Messaging/**  
-a29d139 Integrate CallerInfo with notifications  
-  
-* **packages/apps/Settings/**  
-ca4803c Settings: Disable cancelable with multi-windows confirm dialog  
-79133d6 Settings: Update oem unlocking status with back button  
-2a6aa7e Settings: Update oem unlocking status when dismiss  
-1c97730 Fix NPE when user has his lockscreen set to "None"  
-  
-* **packages/services/Telephony/**  
-8fc3214 Switch back to Auto selection if Manual fail's  
-  
-* **platform_manifest/**  
-7af65ec Track our android_hardware_broadcom_libbt  
-  
-* **vendor/emotion/**  
-ea52037 Update ambientsdk version 1.5.11  
-  
-* **vendor/samsung/**  
-3417fba trlte: move the files to the correct path  
-75609aa trlte: move libqcci_legacy.so to trltexx  
-331d587 trlte-common: Add missing drm library  
-d6c6629 trltexx: Update vendor-blobs.mk  
-7e85023 trlte-common: Update vendor-blobs.mk  
-7d4bf50 trlte-common: commonize bluetooth & nfc firmware  
-4054ebd trlte-common: update Adreno-Nexus6-MOB30I proprietary  
-109171d trltexx: Update bluetooth firmware  
-  
-###     05-25-2016  
-***  
-  
-  
-* **cts/**  
-978b415 Merge "DO NOT MERGE ANYWHERE: Update CTS to 6.0R7" into marshmallow-cts-release  
-63ce966 DO NOT MERGE ANYWHERE: Update CTS to 6.0R7  
-  
-* **frameworks/native/**  
-0921754 Add dalvik heap/hwui overrides for xxhdpi phone with 3072MB RAM  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-89bcf56 Enable broadcast channels for Colombia  
-25e7ce5 Support playing the alert and vibrate until dismissed  
-  
-* **packages/apps/Dialer/**  
-560f3a8 Crash Fix When DeepLinkEnabled callback returns to a null Context.  
-  
-* **packages/apps/Messaging/**  
-110cdf8 Add handling of MMS Read report.  
-9da3129 Revert "[SMS] Replace message content can't be replaced"  
-88b174e [SMS] Replace message content can't be replaced  
-54374cf Added support for video and audio mms attachments  
-  
-* **packages/providers/TelephonyProvider/**  
-f320e09 Support playing the alert and vibrate until dismissed  
-  
-###     05-24-2016  
-***  
-  
-  
-* **device/qcom/sepolicy/**  
-1a4289d sepolicy: Add hand biometrics manager permission  
-a6485c0 sepolicy: Add improveTouch gesture manager permission  
-d081744 sepolicy: Add support for new mdtpd  
-  
-* **external/koush/ion/**  
-3bee672 Ion: Ignore get exif rotation exception  
-  
-* **frameworks/av/**  
-feef4dc audiopolicy: engineconfigurable: Don't include the example  
-7876474 stagefright: Correct Exynos4 stride alignment  
-  
-* **frameworks/base/**  
-3f87dcd Fix bug - words's position is wrong in the RTL  
-9fb33a3 fw: Move HOME key interception logic to interceptKeyBeforeDispatching  
-2eb3c0b SystemUI: improve layout of qs detail panel  
-66e88c3 Only call uncrypt when we're encrypted  
-dc1b7d2 SysUI: Use linear interpolator for battery level  
-a502b05 SysUI: Fix coloring of frame and bolt  
-214d0a2 SysUI: Allow styling of battery text/charge blend mode  
-a6efa2b fw: Repurpose PREVENT_POWER_KEY for preventing multiple system keys.  
-ccaa0f7 SystemUI: fix multi touch gestures and extra jank  
-03d0ea0 SystemUI: Filter out unsupported values off perf profile tile  
-fb4105b bootanim: Cleanup  
-ea09d82 frameworks/base: Support for third party NFC features  
-91c9dcb SysUI: Only set mKeyguardBlurEnabled if supported  
-0713da2 Expose lock screen blurring as a setting [2/2]  
-  
-* **frameworks/opt/telephony/**  
-88fb6a1 Telephony: don't show unsupported transfer on IMS  
-  
-* **packages/apps/Contacts/**  
-5391aed Request storage permission for gallery access  
-  
-* **packages/apps/Dialer/**  
-5f5b6ad Overflow popup menu may be null when overflow menu button is not null  
-  
-* **packages/apps/InCallUI/**  
-0f165cc View Note: Use the DeepLinkIntegrationManager method for view note  
-  
-* **packages/apps/Messaging/**  
-761d4cc Add UI/UX capability to attach a saved video to a MMS message  
-  
-* **packages/apps/ROMControl/**  
-62a75ad values: update translations  
-  
-* **packages/apps/Settings/**  
-e9749f8 Fix the momery leak in DrawOverlayDetails  
-7098ac1 IP protocol shows wrong in ApnEditor  
-38793b1 Fix so you can go back in Tonezone page  
-1ef6298 Fix the memory leak in TetherSettings  
-f06443a Settings: Fix blur preference removal  
-cf1c442 Give user control over lock screen blur  
-e7c1556 Settings: Remove redundant definition of SoundSettingsActivity.  
-  
-* **packages/apps/SetupWizard/**  
-4981bc9 SetupWizard: Ensure language picker is enabled onResume  
-  
-* **packages/providers/ContactsProvider/**  
-e78a3c7 Obtain region config from system-property for Contacts pre-loading  
-  
-* **vendor/cmsdk/**  
-9299046 Expose lock screen blurring as a setting [1/2]  
-  
-* **vendor/emotion/**  
-c5c9c58 r10 release  
-  
-###     05-23-2016  
-***  
-  
-* **OTA/**  
-8f7d93e OTA: trltexx r10 20160523-185727  
-  
-* **changelogs/**  
-0d9e876 r10: 20160523  
-  
-* **device/samsung/trltespr/**  
-325135a trltespr: update fingerprint to latest MM  
-  
-* **external/android-clat/**  
-8ac9b35 clatd: Fix packet corruption seen with GRO packets  
-  
-* **external/toybox/**  
-892c602 toybox: Fix netstat crash  
-baba9cf Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0  
-17dcbb7 Revert "toybox: Fix build of static executable"  
-71ddd1f Revert "toybox: find: Fix segfault when using -iname/-ipath with -exec"  
   
 * **hardware/qcom/audio-caf/msm8937/**  
-e1b5f35 make: Fixup cross-platform guards  
+a11ff3c ssr: Fix building with OSS materials  
   
-* **hardware/qcom/display-caf/msm8937/**  
-9f98625 make: Adjust to dynamic paths  
+* **packages/apps/CMFileManager/**  
+e337edc Fix Rename on VFat  
+80077de ListPopupWindow: set height of the list  
+2274d21 Search: Hide progress spinner if search fails  
   
-* **hardware/qcom/media-caf/msm8937/**  
-3965563 make: Adjust to dynamic paths  
+* **packages/apps/Messaging/**  
+20ee26e String improvements  
   
-* **packages/apps/Contacts/**  
-91aeaed Contacts : added a flag to track soft vs hard signed out state  
+###     06-19-2016  
+***  
   
-* **packages/apps/Dialer/**  
-9bee3a3 Mark contact info obtained from a lookup provider with remote source-type  
-00ddbb6 View Note: removes the ability to make multiple notes for the same call.  
   
-* **packages/apps/Gallery2/**  
-d5e574a Gallery: Try to open existing camera  
-  
-* **packages/apps/Nfc/**  
-6e8f825 NFC: Adding new vendor specific interface to NFC Service  
+* **packages/apps/Trebuchet/**  
+113538a Bring back the custom wallpaper picker [2/5]  
   
 * **vendor/samsung/**  
-4b1f04c trltexx: add new BT blobs  
+99566a4 trlte-common: don't overwrite libxml2.so  
+  
+###     06-18-2016  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+92980fa trlte-common: Fix camera  
+0cb8f30 power: be quiet please  
+  
+* **hardware/qcom/media-caf/msm8937/**  
+4b1c56f venc: Disable building vqzip into the encoder for OSS  
+  
+* **packages/apps/AudioFX/**  
+c5f90c1 Automatic translation import  
+  
+* **packages/apps/BluetoothExt/**  
+cba6d27 Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+2436b83 Automatic translation import  
+  
+* **packages/apps/Camera2/**  
+b380209 Automatic translation import  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+90661df Automatic translation import  
+  
+* **packages/apps/CertInstaller/**  
+7fa38ad Automatic translation import  
+  
+* **packages/apps/Contacts/**  
+dc8edef Automatic translation import  
+  
+* **packages/apps/ContactsCommon/**  
+0dba8fb Automatic translation import  
+  
+* **packages/apps/Dialer/**  
+8ecd4d5 Automatic translation import  
+  
+* **packages/apps/ExactCalculator/**  
+1992210 Automatic translation import  
+  
+* **packages/apps/LockClock/**  
+875f16e Automatic translation import  
+  
+* **packages/apps/ManagedProvisioning/**  
+0ded606 Automatic translation import  
+  
+* **packages/apps/Messaging/**  
+315e824 Automatic translation import  
+  
+* **packages/apps/PackageInstaller/**  
+97c5c80 Automatic translation import  
+  
+* **packages/apps/PhoneCommon/**  
+6115331 Automatic translation import  
+  
+* **packages/apps/Profiles/**  
+c49a6d5 Automatic translation import  
+  
+* **packages/apps/Screencast/**  
+d297fad Automatic translation import  
+  
+* **packages/apps/SetupWizard/**  
+b62056b Automatic translation import  
+  
+* **packages/apps/Snap/**  
+f6bb5ad Automatic translation import  
+  
+* **packages/apps/ThemeChooser/**  
+e7e52f8 Automatic translation import  
+  
+* **packages/apps/Trebuchet/**  
+fd3ac2a Automatic translation import  
+  
+* **packages/apps/TvSettings/**  
+69224db Automatic translation import  
+  
+* **packages/providers/BookmarkProvider/**  
+b9f8899 Automatic translation import  
+  
+* **packages/providers/CallLogProvider/**  
+31525d6 Automatic translation import  
+  
+* **packages/providers/ContactsProvider/**  
+0747d2d Automatic translation import  
+  
+* **packages/providers/DataUsageProvider/**  
+5178682 Automatic translation import  
+  
+* **packages/providers/TelephonyProvider/**  
+c8df0f0 Automatic translation import  
+  
+###     06-17-2016  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+db19c63 sepolicy: update  
+  
+* **device/samsung/trltespr/**  
+85b78d5 trltespr: moved gps to common  
+  
+* **frameworks/native/**  
+2a2eaab sf: Only apply hwrotation to primary displays  
+  
+* **frameworks/opt/hardware/**  
+35f6e78 DisplayColorCalibration: Fix logic  
+  
+* **kernel/samsung/trlte/**  
+476ac7f msm_thermal: change temp_threshold  
+529e625 thermal: fix limited_max_freq being undefined or out of range  
+98963e7 cpufreq/thermal: frequency mitigation preventer V2  
+64d4076 msm: thermal: add a module param to change the thermal throttle temperature point to userspace  
+7dbcf98 msm_thermal: add rt.h  
+9afe466 msm: thermal: Proceed thermal late init only if probe is successful  
+43353fb thermal: msm: Remove early init from board file  
+9ef39d9 msm: thermal: Check temperature only if probed  
+a00f7f9 msm: thermal: Add RT priority to kernel hotplug thread  
+241a7d4 msm: thermal: Store temperature of tsens on kernel panic notification  
+f03c341 thermal: remove intelli-thermal  
+  
+* **packages/apps/CMFileManager/**  
+5042221 Fix sort mode popup after rotation from portrait to landscape  
+  
+* **packages/apps/FMRadio/**  
+4da63b5 FmService: Fix crash when plug-in/out headset  
+3f0054b Revert "tracks: Check track states before transitioning states"  
+  
+* **vendor/samsung/**  
+d7a47f5 trltespr: uploaded missing blob  
+2c0b3a3 trltespr: fixed gps and moved it to common  
+a2e1a4c trltespr: fixed gps and moved it to common  
+13d7344 trltespr: fixed gps and moved it to common  
+3c00e8d trltespr: fixed gps and moved it to common  
+  
+###     06-16-2016  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+10ec9a4 remove invalid commands  
+23ff010 camera: update  
+13b7949 remove intelli-thermal on boot  
+  
+* **frameworks/opt/hardware/**  
+d2e68ea cmhw: Use cmsdk FileUtils  
+  
+* **hardware/ti/omap4/**  
+8d0de83 cmhw: Use cmsdk FileUtils  
+  
+###     06-15-2016  
+***  
+  
+  
+* **development/**  
+87654bc gdbclient: fix gdbclient <processname> invocation  
+  
+* **frameworks/base/**  
+9b77ec3 SysUI: Don't let rogue themes ruin notifications  
+b56a6d7 Themes: Expose Power Dialogs  
+97b4b1f DocumentsUI : Hide advanced menu option when in forced mode  
+  
+* **hardware/qcom/bt-caf/**  
+e024328 Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD  
+  
+* **hardware/qcom/wlan-caf/**  
+b1243a0 wcnss_service: Migrate from QMI to QCCI  
+e81bc90 Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0  
+  
+* **packages/apps/PackageInstaller/**  
+c963ecd Themes: Add tint mode so custom icons can show in permissions settings  
+  
+* **packages/apps/Settings/**  
+d9712b2 Settings: Remove hide navigation bar settings  
+7a71d78 Settings: fix crash when reset App preference  
+5a1e026 String improvements  
+  
+* **vendor/cmsdk/**  
+b5d0c24 External view test  
+482c029 cmsdk: fixup javadoc in CMHardwareManager  
+41114e5 cmsdk: Clean up posted tile in CustomTileListenerService test.  
   
