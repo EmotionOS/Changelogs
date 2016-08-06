@@ -1,4 +1,342 @@
+###     08-06-2016  
+***  
+  
+  
+* **device/qcom/common/**  
+97c0ac0 power: Undo video decode hint for ondemand  
+bf427ea power: Simplify display_hint_sent  
+ad4ba84 dtbtool: use O_TRUNC when writing to output file  
+  
+* **device/qcom/sepolicy/**  
+602038b sepolicy: Re-add legacy IOP rules  
+91d8c1b Revert "SElinux policy rules addition for early audio feature"  
+2e3a3b5 sepolicy: Fix garbage in upstream commit  
+2f61303 seandroid: allow QFP dameon access to Android services  
+f69a49b sepolicy: Add policy for VR service  
+acd21e8 sepolicy: remove exec permission for radio  
+dfc470a sepolicy: Add permissions for new dsp node  
+c81f059 Location: added media server access permission for test app  
+006dec8 SEPolicy: Update SePolicy for IOP  
+d8158ff SElinux policy rules addition for early audio feature  
+1c039be sepolicy: add permissions for i2c-6 device  
+3836a23 sepolicy : add inital rule to bootanimation.  
+c8771b5 sepolicy: Add secontexts boot and persist.nativehmi.exit  
+3c2a94c sepolicy : Allow bootkpi access to system apps and vold  
+a5c4054 common: add selinux policy for fastmmi  
+0047703 sepolicy: Policy for SmartcardService  
+61d25e9 sepolicy: allow fstman write permissions to wifi directory  
+e264d42 sepolicy: update iop socket path  
+30c854c sepolicy: Mark time_daemon domain as mlstrusted  
+  
+* **device/samsung/trlte-common/**  
+9e7183b boardconfig: update cmhw stuff  
+b1fadfe power: update  
+  
+* **frameworks/base/**  
+be985ee fix derp  
+4db25b8 Revert "bootanimation: add multithreaded decode"  
+db929c8 Frameworks: Change default Animation scale value to 0.5 for real (2/2)  
+b1cb2df Revert "Adding back pdf_printer_media_sizes for values-zh-rCN to accomodate mediasize_default"  
+289089e fw: enforce android.permission.PREVENT_SYSTEM_KEYS in system server  
+98651a6 bootanimation: add multithreaded decode  
+b54a76e SystemUI: Display bluetooth battery status when available  
+c74ccb3 framework: don't allow assist activities while not provisioned  
+  
+* **frameworks/native/**  
+59bd242 surfaceflinger: Fix uninitialized variable  
+ba3542b surfaceflinger: Unbreak casting and other use cases  
+beaf818 surfaceflinger: Add check for number of queued buffers  
+  
+* **frameworks/opt/telephony/**  
+494bb87 DCT: Tear down MMS+default connections raised by config_enable_mms_with_mobile_data_off  
+  
+* **kernel/samsung/trlte/**  
+011ff4e defconfig: update  
+17488ca Drop DPE1 source code  
+6613581 Revert "battery: update battery drivers"  
+  
+* **packages/apps/Bluetooth/**  
+c86a59f bluetooth: Broadcast battery status  
+  
+* **packages/apps/OmniSwitch/**  
+8b479ca OmniSwitch: launcher: no ripple no fun  
+3a0033f OmniSwitch: revert recent apps should not change order in quick switcher  
+5d7cbcc OmniSwitch: launcher: change essentials launch intents  
+e752e1a OmniSwitch: launcher: dont force using a chooser for the set wallpaper intent  
+f03ad98 OmniSwitch: handle overlay permission failures gracefully  
+8634c74 Updated DE-translations  
+27186bb OmniSwitch: disable all ListView and GridView selectors  
+ac83242 OmniSwitch: add revert recents  
+c98bdf0 OmniSwitch: launcher mode - fix saving state  
+c719a94 Added DE-translations for Launcher mode.  
+  
+* **packages/apps/Settings/**  
+bde6cc8 Revert "Allow restricted users to change status bar settings"  
+1b7066e Settings: Change default Animation scale value to 0.5 for real (1/2)  
+8e65c28 Allow restricted users to change status bar settings  
+  
+* **packages/services/Telephony/**  
+ae32c2f MobileNetworkSettings: Check CarrierConfig on isWorldMode  
+102efe1 EditPhoneNumberPreference: Prevent empty text from being set  
+  
+* **platform_manifest/**  
+584ddb4 default: remove it for now  
+  
+* **vendor/cmsdk/**  
+9ad3fa4 cmhw: Add support for display mode remapping  
+7d0bf43 livedisplay: Enable by default  
+  
+* **vendor/emotion/**  
+9c1e727 cm: extract_utils: Add a firmware extraction method  
+8634e36 cm: extract_utils: Fixup xml files  
+8536826 cm: extract_utils: Implement oat2dex  
+f07df2b cm: sepolicy: Fix the vold blkid.tab denial from recovery  
+621966b Tele2 (LT) APN updates  
+  
+###     08-05-2016  
+***  
+  
+  
+* **bionic/**  
+9259508 linker: Avoid logcat spam with some blobs  
+  
+* **frameworks/opt/hardware/**  
+91cb338 Revert "cmhw: Add PictureAdjustment stubs"  
+  
+* **packages/apps/CMFileManager/**  
+5d690dd Add ape file mimetype  
+  
+* **packages/apps/Messaging/**  
+3aaac3a Use app settings for conversation settings if no custom set  
+  
+* **packages/apps/Snap/**  
+c4762ff snap: fix untraslatables  
+  
+* **vendor/samsung/**  
+5e34388 Updated GPS Blobs To PE1  
+  
+###     08-04-2016  
+***  
+  
+  
+* **bionic/**  
+545862d bionic: Sort and cache hosts file data for fast lookup  
+  
+* **packages/apps/Snap/**  
+51be6e8 Revert "SnapdragonCamera: Fix AEC lock issue after non-zsl snapshot."  
+45769ae snap: Add constrained longshot mode  
+81110de snap: Additional fixes for auto-HDR mode  
+1ccf372 snap: Fixes for advanced features and scene modes  
+d91acef snap: Always turn touch-af-aec on  
+8fef7ac snap: Add missing resource  
+38a5e13 SnapdragonCamera: Fix the advanced features relative toast issue  
+846dc6a SnapdragonCamera: implement optizoom and chromaflash UI  
+9a1d5c2 SnapdragonCamera: Fix panorama cancel button location  
+ee8c922 SnapdragonCamera: Fix the issue that camera control is removed  
+a58a537 SnapdragonCamera: Add manufacture and model info  
+2a3c90c SnapdragonCamera: adjust video recording duration margins  
+53a2b18 SnapdragonCamera: Fix incorrect focus mode  
+72cf374 SnapdragonCamera: resolve touch af issue during countdown  
+16ac0c5 SnapdragonCamera: Add support for outputting MPO format files  
+e5d300a SnapdragonCamera: Removing unnecessary orientation check  
+96c7df0 SnapdragonCamera: Fix viewfinder flashing issue in camcorder mode  
+72a66ba SnapdragonCamera: hide the preview surface during suspend  
+4180e3b SnapdragonCamera: Resolve camera control overlapping issue  
+5bb6fe3 Fix android.process.media got killed when capture  
+c58924a SnapdragonCamera: Fix missing icon issue in error condition  
+038809e SnapdragonCamera: Reset menu when device is rotated  
+b2b382b SnapdragonCamera: fix null pointer exception  
+26d9ea2 SnapdragonCamera: Fix menu highlight issue when rotating device  
+d1712aa SnapdragonCamera: Adding null exception handler.  
+f64b94c SnapdragonCamera: Register media status listener  
+f5fb6cf SnapdragonCamera: Removing filmstrip view touch handler  
+2609176 SnapdragonCamera: Adding current camera null check  
+1f74331 SnapdragonCamera: Adding toast for media recording failure.  
+f10d6c1 SnapdragonCamera: Improving Burstmode performance  
+69d1c4d SnapdragonCamera: Do not update panorama thumbnail when cancelled  
+48feef9 SnapdragonCamera: Fix crash issue with enable FD with TruePortrait  
+e99828d VideoModule: Removing tmpPath and use path  
+a2794ea SnapdragonCamera: Handle startPreview exception in camera.  
+7383a2d SnapdragonCamera: Fix to make back key event work normally  
+bc53629 SnapdragonCamera: Reset navigation bar state whenever screen turns on  
+e039354 SnapdragonCamera: Always enable FD with TruePortrait on  
+48a4d32 SnapdragonCamera: Fix progress indicator overlapped by thumbnail icon  
+a93b185 SnapdragonCamera: Fix the preview thumbnail issue  
+20a0405 SnapdragonCamera: Fix not able to view other pictures when macro mode  
+322b414 SnapdragonCamera: Reduce the latency for panorama preview starting  
+e0b7ffe SnapdragonCamera: Limit preview size by capping display dimensions.  
+8e75470 SnapdragonCamera: add button border  
+1ff17d7 SnapdragonCamera: Fix app freeze when connect to camera failed  
+902626f SnapdragonCamera: Use StorageManager for SDCard  
+fb876ae SnapdragonCamera: Fix display smaller thumbnail on panorama preview  
+  
+###     08-03-2016  
+***  
+  
+  
+* **build/**  
+74c7aea MOB30Z  
+  
+* **external/DUtils/**  
+b6b6985 [Smartbar] Smarbar editor action [2/2]  
+b35a6ed Smartbar/Fling Volume panel action [1/2]  
+d0f23b9 DUtils: Add clear notifications action (1/2)  
+7675f01 Revert "DUI: Use DocumentsProvider API helper methods [2/2]"  
+d72c71d DUtils: Add app picker as an action (1/2)  
+6bedc04 DUI: Use DocumentsProvider API helper methods [2/2]  
+  
+* **external/sepolicy/**  
+f66b639 Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **frameworks/av/**  
+5efd3b3 Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **frameworks/base/**  
+859781a am: Notify zygote of font change in ActivityManagerService  
+60c48ee SysUI: Add theme manager permission  
+c3a253b Themes: Add permission to themes protected broadcasts  
+41b851c Merge tag 'android-6.0.1_r61' into HEAD  
+1590558 SystemUI: avoid null tile creation  
+baac939 Automatic translation import  
+  
+* **frameworks/native/**  
+639c3b3 Merge tag 'android-6.0.1_r61' into HEAD  
+778624d sf: Fix compliation for non-8996 platforms  
+a747836 surfaceflinger: Isolate S3D code to msm8996 only  
+86a6898 surfaceflinger: Cleanups for blur  
+3f89209 sf: Allow HWC composition of virtual displays for HDMI primary  
+c7258c1 SF: Add support to draw S3D framebuffer target  
+  
+* **frameworks/opt/telephony/**  
+880b9bd Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **packages/apps/DUI/**  
+06bf7b9 [Smartbar] Smarbar editor action [1/2]  
+6bbec40 Smartbar/Fling clear notifications action [2/2]  
+0ea5d47 Add a visual cue when editing smartbar  
+2a30441 SmartBar: reset button animation/pressed state when cancelled  
+4fdef1e Smartbar/Fling Volume panel action [2/2]  
+  
+* **packages/apps/DeskClock/**  
+5ab0696 Automatic translation import  
+  
+* **packages/apps/Eleven/**  
+4961f4e Merge "handle media keys" into cm-13.0  
+  
+* **packages/apps/Settings/**  
+ffd3c39 Automatic translation import  
+  
+* **packages/inputmethods/LatinIME/**  
+88e5634 InputMethods: set the default value for preference  
+  
+* **packages/providers/WeatherProvider/**  
+a2c3e78 Automatic translation import  
+7cd6909 Automatic translation import  
+f149f3a Automatic translation import  
+92c01b7 Automatic translation import  
+e215071 Automatic translation import  
+  
+* **platform_manifest/**  
+1d59bfc default: track cm repos  
+50e5926 default: update to r61  
+  
+* **system/core/**  
+f443507 Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **vendor/cmsdk/**  
+734f774 Themes: Broker the theme service  
+61e7714 livedisplay: Tweak defaults  
+0630ae4 cmsdk: Allow services to conditionally start before decryption  
+76e856b Automatic translation import  
+eb481c9 Automatic translation import  
+  
+* **vendor/emotion/**  
+cfab6bb config: Add ThemeManagerService to PRODUCT_PACKAGES  
+5a58b6a sepolicy: Put theme service in its own context  
+ba10edc sepolicy: More IOP rules  
+99beaf9 sepolicy: Fix MTP for sdcardfs  
+  
+###     08-02-2016  
+***  
+  
+  
+* **device/samsung/trltespr/**  
+ae5bac0 Updated proprietary-files  
+  
+* **external/libavc/**  
+6718ae7 Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **frameworks/opt/net/wifi/**  
+705773d Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **hardware/qcom/media-caf/msm8916/**  
+9a99017 DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  
+f0dcb1e DO NOT MERGE Fix wrong nAllocLen  
+  
+* **hardware/qcom/media-caf/msm8937/**  
+a7b4886 The libOmxSw encoders require prop headers :(  
+  
+* **hardware/qcom/media-caf/msm8952/**  
+2182d03 DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  
+8db7a42 DO NOT MERGE Fix wrong nAllocLen  
+  
+* **hardware/qcom/media-caf/msm8974/**  
+052ff8f DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  
+0977dcf DO NOT MERGE Fix wrong nAllocLen  
+  
+* **hardware/qcom/media-caf/msm8994/**  
+4e82dac DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  
+1c31219 DO NOT MERGE Fix wrong nAllocLen  
+  
+* **hardware/qcom/media-caf/msm8996/**  
+1cbab89 DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers  
+de2960f DO NOT MERGE Fix wrong nAllocLen  
+  
+* **hardware/qcom/media/default/**  
+a1b4b98 Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **packages/apps/Nfc/**  
+72fb115 Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **packages/apps/PackageInstaller/**  
+96f551c Merge tag 'android-6.0.1_r61' into HEAD  
+  
+* **system/bt/**  
+ccde045 Merge tag 'android-6.0.1_r61' into HEAD  
+  
 ###     08-01-2016  
+***  
+  
+* **OTA/**  
+c54f20a trltexx: OTA Emotion-trltexx-MM.r15.Official-20160801-001216  
+  
+* **changelogs/**  
+8fc5595 r15 changelog  
+  
+* **device/samsung/qcom-common/**  
+ef2b25d Automatic translation import  
+  
+* **hardware/qcom/display-caf/msm8996/**  
+b2ef0db Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0  
+  
+* **hardware/qcom/media-caf/msm8996/**  
+2345dca Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0  
+5029df7 venc: Fix VQZip issue  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+4cc0ece Automatic translation import  
+  
+* **packages/apps/Dialer/**  
+9144ad1 Automatic translation import  
+  
+* **packages/apps/Trebuchet/**  
+753e2ad Automatic translation import  
+  
+* **system/core/**  
+a30d704 cutils: realtime scheduler class support  
+29766d4 Use __ANDROID__ instead of HAVE_ANDROID_OS.  
+  
+###     07-31-2016  
 ***  
   
   
@@ -61,7 +399,18 @@ e220f6a auto tune dex2oat
 0f9c755 Tuning compiler thread count for optimal application install times  
 a342c01 native: sync dalvik config dalvik.vm.heapstartsize  
   
-###     07-31-2016  
+* **frameworks/opt/hardware/**  
+a8ef044 cmhw: Add PictureAdjustment stubs  
+  
+* **system/core/**  
+eb6b8d7 utils: add realtime scheduling priority  
+623be35 libutils: Add UNEXPECTED_NULL status_t  
+20e6baa Revert "Add a trace constant for PackageManager"  
+9bc1c53 Fix race bug in attemptIncStrong  
+af4669c Fix memory order and race bugs in Refbase.h & RefBase.cpp  
+dd0f939 logd: auditd: suppress multiple identical avc: messages to kmsg  
+  
+###     07-30-2016  
 ***  
   
   
@@ -89,6 +438,9 @@ d3d01d4 Automatic translation import
 eed947a SysUI: Add first time use lock screen hints  
 5b4ecf8 Automatic translation import  
   
+* **hardware/samsung/**  
+f9e2a71 libril: Remove unused include  
+  
 * **packages/apps/Settings/**  
 2ebffd2 Automatic translation import  
 daf1477 Automatic translation import  
@@ -105,7 +457,53 @@ fe201d2 Automatic translation import
 5b69dfa Automatic translation import  
 911dfde Automatic translation import  
   
-###     07-30-2016  
+* **packages/apps/Snap/**  
+d3497e2 SnapdragonCamera: Fix FD roll_dir issue  
+61c3ce9 SnapdragonCamera: Reduce number of countdown timer option  
+848bd70 SnapdragonCamera: limit AF animation FPS  
+118b54c SnapdragonCamera: fix crash after photo deletion  
+eb60e2e SnapdragonCamera: Fix app crash when taking longshot during countdown  
+828954c SnapdragonCamera: Fix app auto close when repeat plug in/out USB cable  
+2428156 SnapDragon: Changes to fix popup menu issue in camcorder  
+1fddfd0 SnapdragonCamera: fix camera FC when internal storage isn't enough  
+0bce7c9 SnapdragonCamera: fix crash with persist.panel.orientation  
+f09d9d0 SnapdragonCamera: fix a panorama memory leak  
+a704fe9 SnapdragonCamera: Fix face detection UI offset  
+5933a0b SnapdragonCamera: Fix AEC lock issue after non-zsl snapshot.  
+ebe93e5 SnapdragonCamera: Disable continuous shot when HDR is enabled  
+656585d SnapDragan: Changes to enable UI option for ASD mode.  
+858413d SnapdragonCamera: Fix the issue that IS is not disabled  
+2fc004c SnapdragonCamera: Disable CDS and TNR if SeeMore is enabled  
+6d7dfbf Snap: Unbreak auto-HDR  
+  
+* **system/core/**  
+35cdf07 healthd: Add DASH charger type  
+20e2c2b sdcard: Pass the umask to sdcardfs correctly  
+1d80855 sdcard: Fix sdcardFS check  
+9c56c91 sdcard: Add support for sdcardfs!  
+  
+* **vendor/emotion/**  
+9307d90 sepolicy: Let the IO prefetcher look at sdcardfs  
+642dbfa Revert "extract_utils: Don't write multilib tags on 32-bit only devices"  
+b19ecb8 cm: sepolicy: Allow system_server dir read access  
+1038d64 cm: extract_utils: Rewrite file existence checks  
+95d117b extract_utils: Don't write multilib tags on 32-bit only devices  
+15aba22 extract_utils: Add support for files in rootfs  
+7168ff2 sepolicy: Allow media_rw write to fix camcorder denials  
+8813e83 Add missing truphone APNs  
+4f49601 sepolicy: Revert custom sdcardfs policy in favor of AOSP  
+5881c61 sepolicy: A few more denials  
+6c54b7c sepolicy: More policy for sdcardfs  
+b3aff61 cm: include CMAudioService in builds  
+aa47ff9 Movistar [ES] APN updates  
+579f3f3 sepolicy: Add rule to allow sdcardfs to read package list  
+0083a2d sepolicy: Add sdcardfs support  
+416f7e5 sepolicy: Allow batterymanager and batteryproperties services to be found  
+9a4971c cm: Remove stray echo from extract_utils  
+d008ae6 cm: Underp dumping of 64-bit only libraries  
+7962690 cm: Configure mmcblk1 IO on sys.io.scheduler prop  
+  
+###     07-29-2016  
 ***  
   
   
@@ -118,6 +516,9 @@ a0dd2e4 sepolicy: msm8909: Remove duplicate boot/recovery/cache lines
   
 * **frameworks/native/**  
 08bc0a0 surfaceflinger: Fix the fix of the opaque check fix  
+  
+* **hardware/qcom/audio-caf/msm8937/**  
+bf8c1ab audio: Fix complilation warnings under Clang  
   
 * **hardware/qcom/display-caf/msm8916/**  
 f9b87fe display: Fix warnings on 64-bit clang  
@@ -136,7 +537,26 @@ dee345c Automatic translation import
 * **packages/apps/Snap/**  
 75096f2 Fix orientation handling in secure camera.  
   
-###     07-29-2016  
+* **packages/services/Telephony/**  
+956d369 NetworkSelection: Cleanup  
+0181b74 NetworkSelection: Fix for setting shortcut  
+40e0b8a NetworkSelection: Fix double display of radio technology  
+1a9557e Automatic translation import  
+3e57e4a Telephony: Fix voicemail preference issue  
+  
+* **system/netd/**  
+11825d1 Enforces bandwidth limit on portable access point  
+  
+* **vendor/cmsdk/**  
+063606b CMSettings: Add default overlay for forward and reverse lookup  
+4696d59 Automatic translation import  
+1d3b154 Automatic translation import  
+d85e5b0 Automatic translation import  
+433f8dd Automatic translation import  
+dc070b8 ThemeService:Component id is being changed for multiple entries in mixnmatch.  
+39ea6d6 cmsdk: Broker out CMAudioService  
+  
+###     07-28-2016  
 ***  
   
   
@@ -144,148 +564,15 @@ dee345c Automatic translation import
 3eab954 Merge "DO NOT MERGE, re-apply, Adjust testAppFailAccessPrivateData to fail on non-tagged sockets" into marshmallow-cts-release  
 3762c5d DO NOT MERGE, re-apply, Adjust testAppFailAccessPrivateData to fail on non-tagged sockets  
   
+* **device/samsung/trlte-common/**  
+5c000ca sepolicy: update bluetooth  
+  
 * **hardware/qcom/audio-caf/msm8996/**  
 abff8fe hal: Haxed header  
   
 * **packages/apps/LockClock/**  
 65407c7 AM/PM: Fix incorrect am/pm text  
   
-###     07-28-2016  
-***  
-  
-* **OTA/**  
-f53136d Emotion-trltespr-MM.r14.Official-20160727-021828  
-  
-* **device/samsung/qcom-common/**  
-da0d9bb Automatic translation import  
-  
-* **device/samsung/trlte-common/**  
-5c000ca sepolicy: update bluetooth  
-  
-* **hardware/qcom/audio-caf/msm8916/**  
-2040c84 policy_hal: Fix build with Clang  
-  
-* **hardware/qcom/audio-caf/msm8960/**  
-9cf54f4 hal: Increase deep buffer buffering  
-  
-* **packages/apps/Camera2/**  
-6d11621 Automatic translation import  
-  
-* **packages/apps/Dialer/**  
-5848ab6 Automatic translation import  
-  
-* **packages/apps/Eleven/**  
-a6f204a Merge "Eleven: fix possible NPE" into cm-13.0  
-  
-* **packages/apps/SetupWizard/**  
-aafff03 Automatic translation import  
-  
-* **packages/apps/SoundRecorder/**  
-3a37d06 Automatic translation import  
-  
-###     07-27-2016  
-***  
-  
-  
-* **hardware/qcom/audio-caf/msm8960/**  
-f7451db hal: Add legacy EDID channel retrieval  
-  
-* **packages/apps/CMFileManager/**  
-3d80dd5 Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-e4d05e7 Underp build  
-  
-###     07-26-2016  
-***  
-  
-  
-* **hardware/qcom/media-caf/msm8996/**  
-bd19a47 Merge tag 'LA.HB.1.3.2-19600-8x96.0' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0  
-  
-* **kernel/samsung/trlte/**  
-6036f5a selinux: fix sel_write_enforce broken return value  
-1222618 selinux: Android kernel compatibility with M userspace  
-ddd63f8 selinux: extended permissions for ioctls  
-aeb6d37 selinux: remove unnecessary pointer reassignment  
-59d5653 selinux: do not check open perm on ftruncate call  
-0477dbc selinux: enable genfscon labeling for sysfs and pstore files  
-921f228 selinux: enable per-file labeling for debugfs files.  
-3230a19 selinux: Remove obsolete selinux_audit_data initialization.  
-a684248 Revert "SELinux: per-command whitelisting of ioctls"  
-5a15369 Revert "SELinux: use deletion-safe iterator to free list"  
-ef779d6 Revert "SELinux: ss: Fix policy write for ioctl operations"  
-825cff2 Revert "SELinux: per-command whitelisting of ioctls"  
-46b3d56 Revert "SELinux: ss: Fix policy write for ioctl operations"  
-6b9ed83 SELinux: ss: Fix policy write for ioctl operations  
-5948072 selinux: add SOCK_DIAG_BY_FAMILY to the list of netlink message types  
-5f6601e selinux/nlmsg: add XFRM_MSG_MAPPING  
-0243a70 selinux/nlmsg: add XFRM_MSG_MIGRATE  
-6e8f92e selinux/nlmsg: add XFRM_MSG_REPORT  
-d8ce818 selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO  
-d2cce33 selinux/nlmsg: add XFRM_MSG_GETSPDINFO  
-8ad83d1 selinux/nlmsg: add XFRM_MSG_NEWSPDINFO  
-44d1a90 SELinux: per-command whitelisting of ioctls  
-ca6df47 selinux: make the netif cache namespace aware  
-6fb74b2 selinux: put the mmap() DAC controls before the MAC controls  
-5108ec1 selinux: put the mmap() DAC controls before the MAC controls  
-33147b4 selinux: reduce the number of calls to synchronize_net() when flushing caches  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-18b192a Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-fd22349 Themes: Expose new hard coded colors for themes  
-  
-* **packages/apps/SetupWizard/**  
-739026a Automatic translation import  
-  
-* **packages/apps/SoundRecorder/**  
-42655b0 Automatic translation import  
-  
-###     07-25-2016  
-***  
-  
-  
-* **hardware/qcom/display-caf/msm8996/**  
-c823234 libmemtrack: Update the parsing of flags field  
-5277cf2 sdm: Handle spurious wakeup from pthread_cond_wait  
-1a7387c hwc: Initialize pipe type to kPipeTypeUnused  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-5186532 Automatic translation import  
-  
-* **packages/apps/Dialer/**  
-d95a138 Automatic translation import  
-  
-* **packages/apps/Screencast/**  
-f419e0c Automatic translation import  
-  
-* **packages/apps/SetupWizard/**  
-af36bfb Automatic translation import  
-  
-* **packages/apps/Trebuchet/**  
-662dd19 Automatic translation import  
-  
-###     07-24-2016  
-***  
-  
-  
-###     07-23-2016  
-***  
-  
-  
-* **hardware/qcom/audio-caf/msm8996/**  
-618e5c4 audio: Fix three-way deadlock  
-8a6e08d audio: Fix memory leak  
-58f49e4 audio: Fix flac offload not working  
-  
-* **packages/apps/LockClock/**  
-fdc1069 Automatic translation import  
-  
-* **packages/apps/SetupWizard/**  
-ad287f7 Automatic translation import  
-  
-* **packages/apps/ThemeChooser/**  
-8c2033e Automatic translation import  
+* **system/vold/**  
+89599b6 vold: Allow reset after shutdown  
   
