@@ -1,3 +1,33 @@
+###     08-07-2016  
+***  
+  
+* **OTA/**  
+c932faa Emotion-trltespr-MM.r16.Official-20160806-193231  
+667c99d trltexx: OTA Emotion-trltexx-MM.r16.Official-20160806-232000  
+  
+* **changelogs/**  
+31a00a4 changelog: r16  
+  
+* **device/samsung/trlte-common/**  
+bcd3478 power: fix build  
+  
+* **frameworks/base/**  
+be985ee fix derp  
+  
+* **kernel/samsung/trlte/**  
+6ed92fc drivers: motor: reveal default/min/max/thresh values in sysfs  
+  
+* **packages/services/ThemeManagerService/**  
+07f8c6f Remove Themes Tile Methods & and fix Compile  
+  
+* **vendor/emotion/**  
+a75969b bump to r16  
+  
+* **vendor/samsung/**  
+b33404a trlte-common: back to stock GPU blobs  
+ca2fc22 trltespr: fixed gps derp  
+f0eede1 trltespr: gps updates  
+  
 ###     08-06-2016  
 ***  
   
@@ -33,7 +63,6 @@ e264d42 sepolicy: update iop socket path
 b1fadfe power: update  
   
 * **frameworks/base/**  
-be985ee fix derp  
 4db25b8 Revert "bootanimation: add multithreaded decode"  
 db929c8 Frameworks: Change default Animation scale value to 0.5 for real (2/2)  
 b1cb2df Revert "Adding back pdf_printer_media_sizes for values-zh-rCN to accomodate mediasize_default"  
@@ -78,9 +107,6 @@ bde6cc8 Revert "Allow restricted users to change status bar settings"
 * **packages/services/Telephony/**  
 ae32c2f MobileNetworkSettings: Check CarrierConfig on isWorldMode  
 102efe1 EditPhoneNumberPreference: Prevent empty text from being set  
-  
-* **platform_manifest/**  
-584ddb4 default: remove it for now  
   
 * **vendor/cmsdk/**  
 9ad3fa4 cmhw: Add support for display mode remapping  
@@ -301,6 +327,9 @@ a1b4b98 Merge tag 'android-6.0.1_r61' into HEAD
 * **packages/apps/PackageInstaller/**  
 96f551c Merge tag 'android-6.0.1_r61' into HEAD  
   
+* **packages/services/ThemeManagerService/**  
+256ba47 Initial code checkin  
+  
 * **system/bt/**  
 ccde045 Merge tag 'android-6.0.1_r61' into HEAD  
   
@@ -335,6 +364,7 @@ b2ef0db Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/ha
 * **system/core/**  
 a30d704 cutils: realtime scheduler class support  
 29766d4 Use __ANDROID__ instead of HAVE_ANDROID_OS.  
+eb6b8d7 utils: add realtime scheduling priority  
   
 ###     07-31-2016  
 ***  
@@ -403,7 +433,6 @@ a342c01 native: sync dalvik config dalvik.vm.heapstartsize
 a8ef044 cmhw: Add PictureAdjustment stubs  
   
 * **system/core/**  
-eb6b8d7 utils: add realtime scheduling priority  
 623be35 libutils: Add UNEXPECTED_NULL status_t  
 20e6baa Revert "Add a trace constant for PackageManager"  
 9bc1c53 Fix race bug in attemptIncStrong  
@@ -555,24 +584,4 @@ d85e5b0 Automatic translation import
 433f8dd Automatic translation import  
 dc070b8 ThemeService:Component id is being changed for multiple entries in mixnmatch.  
 39ea6d6 cmsdk: Broker out CMAudioService  
-  
-###     07-28-2016  
-***  
-  
-  
-* **cts/**  
-3eab954 Merge "DO NOT MERGE, re-apply, Adjust testAppFailAccessPrivateData to fail on non-tagged sockets" into marshmallow-cts-release  
-3762c5d DO NOT MERGE, re-apply, Adjust testAppFailAccessPrivateData to fail on non-tagged sockets  
-  
-* **device/samsung/trlte-common/**  
-5c000ca sepolicy: update bluetooth  
-  
-* **hardware/qcom/audio-caf/msm8996/**  
-abff8fe hal: Haxed header  
-  
-* **packages/apps/LockClock/**  
-65407c7 AM/PM: Fix incorrect am/pm text  
-  
-* **system/vold/**  
-89599b6 vold: Allow reset after shutdown  
   
