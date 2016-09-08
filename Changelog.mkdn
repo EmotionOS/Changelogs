@@ -1,264 +1,458 @@
-###     08-28-2016  
-***  
-  
-  
-* **device/oneplus/oneplus3/**  
-ba47c81 Revert "oneplus3: Optimize power config on boot"  
-27645c1 Revert "oneplus3: Remove debug/deprecated graphics props"  
-fca92ae Revert "oneplus3: Add custom power HAL"  
-5fff5af Revert "oneplus3: target Kryo for 32 bit"  
-8ae0e77 init: fix OnePlus name  
-  
-* **kernel/oneplus/msm8996/**  
-0c6efce Sound Control: Add control over earpiece  
-ce2810f Sound Control:Initial port for WCD9335 codec * Basic functionality for speakers and headphones * Using old sys entries to prevent incompatibility with other apps * Thanks to @flar2 for intial modifications  
-b93732e Revert "ASoC: wcd9335: Sound control"  
-5825917 Revert "ASoC: wcd9335: add mic gain and speaker gain for OnePlus3"  
-23ff9f8 Revert "ASoC: wcd9335: fix speaker gain controls"  
-1616ff6 Revert "ASoC: wcd9335: add analog headphone gain"  
-6bce0ea dm-verity: run in a WQ_HIGHPRI workqueue  
-3a30148 mmc: move to a SCHED_FIFO thread  
-dbffdcd drivers: mmc: sysfs interface to Enable / Disable CRC  
-3fec353 scripts: remove dirty and +  
-  
-###     08-27-2016  
-***  
-  
-  
-* **kernel/oneplus/msm8996/**  
-769d319 Revert "input: synaptics: s3320: Remove wild msleeps from init"  
-a48e710 defconfig: update  
-76128ab msm: mdss: KCAL: Send a pp display commit when changes are made  
-5531a39 mdss mdp: kcal for mdss_mdp_v1_7  
-d616655 ASoC: wcd9335: add analog headphone gain  
-99fa006 Revert "Revert "Revert "usb: dwc3: gadget: always enable IOC on bulk/interrupt transfers"""  
-e501762 Revert "usb: dwc3: fix for the isoc transfer EP_BUSY flag"  
-27ff38e defconfig: Enable CONFIG_SECURITY_PERF_EVENTS_RESTRICT  
-7d73e1b msm_defconfig: Enable config for b/29119870  
-503c0f9 USB: dwc3: msm: Kill tasklet before disabling irq in suspend  
-fe877cb FROMLIST: security,perf: Allow further restriction of perf_event_open  
-3e40238 spi: spi_qsd: Don't restrict first transfer in FIFO mode  
-07eb2a5 Merge branch 'linux-3.18.y' of git://git.kernel.org/pub/scm/linux/ker… …nel/git/stable/linux-stable into HEAD  
-282b5b5 Revert "Revert "usb: dwc3: gadget: always enable IOC on bulk/interrupt transfers""  
-  
-###     08-26-2016  
-***  
-  
-  
-###     08-25-2016  
+###     09-08-2016  
 ***  
   
 * **OTA/**  
-5d83563 OTA: add oneplus3  
-  
-* **art/**  
-a60a025 runtime: arch: support kryo for 32 bit  
-  
-* **bionic/**  
-bd18981 libc: arch-arm: create best optimized routines for kryo  
+5f8a32a Merge branch 'mm' of https://github.com/Emotroid-Rom/OTA into mm  
+ca3bed5 oneplsu3: update  
   
 * **build/**  
-efecaae core: add a variant for kryo armv7-neon  
-e503832 Mark the cortex-{a7,a53,a53.57} chips as supporting LPAE  
-b3ffcee core: combo: armv8-a: specific kryo tuning  
-dec00fb core: arm64: special tuning for cortex-a53.a57  
+75f27b3 MOB31E  
   
 * **device/oneplus/oneplus3/**  
-61edcf4 Revert "oneplus3: Remove Snap overlay"  
-154c854 oneplus3: target Kryo for 32 bit  
-d13dc4a system.prop: enable SystemUI burn-in protection  
-64f7c92 oneplus3: don't use swap during dexopt  
-843d6d5 oneplus3: wifi: enable QPower and Deep sleep at the same time  
-26aa11d HACK: Data toggle fix  
-8a31756 oneplus3: Remove LED happy dance  
-914e549 Fix a2dp  
-272e229 oneplus3: Disable premium location services  
-3e0db9d oneplus3: Use BOOTTIME timestamps for stagefright  
-d457747 oneplus3: Don't offload PCM and FLAC formats  
-5466eff oneplus3: Remove OnePlus comments from audio policy  
-051c56d oneplus3: Remove Snap overlay  
-1c19280 oneplus3: Set restart level to related for all subsystems  
-bf4933a oneplus3: Relax WiFi re-association RSSI thresholds  
-c35d728 oneplus3: Update vibrator sysfs permissions  
-2f62234 oneplus3: Update VibratorHW implementation from nightly branch  
-47889af oneplus3: Fix stable/cm-13.0-ZNH2K compilation  
-fcea94f oneplus3: Use SUPL version 2.0  
-454bbfa oneplus3: gps: Sync with CAF LA.HB.1.3.2-19000-8x96.0  
-71d843b oneplus3: Update WCNSS config from CAF LA.HB.1.3.2-19000-8x96.0  
-d706411 oneplus3: liblights: Calculate brightness ramp automatically on init  
-6d7e280 oneplus3: Remove perfd  
-1196aad oneplus3: Add custom power HAL  
-0c706da oneplus3: Remove debug/deprecated graphics props  
-6eac92a oneplus3: Optimize power config on boot  
+916ee8f op3: Support Taobao fingerprint payment  
+58107ed op3: Moving LiveDisplay native API to OSS  
+7b4369d oneplus3: few changes  
   
-* **kernel/samsung/trlte/**  
-e4dedda Revert "thermal: tsens: Don't cast iomem pointers to unsigned long"  
+* **external/bouncycastle/**  
+e73530d Merge tag 'android-6.0.1_r66' into HEAD  
   
-* **platform_manifest/**  
-fb69d4f default: track bionic  
-97010ec default: track snap camera  
+* **external/flac/**  
+4523c1d Merge tag 'android-6.0.1_r66' into HEAD  
   
-* **vendor/emotion/**  
-949f69d prebuilt: remove OpenCamera  
-7fc7bad bump to r18  
+* **external/libavc/**  
+f94f384 Merge tag 'android-6.0.1_r66' into HEAD  
   
-###     08-24-2016  
-***  
+* **external/libvpx/**  
+883c0ae Merge tag 'android-6.0.1_r66' into HEAD  
   
-  
-* **build/**  
-9e5c984 dt_image: Rename target  
-33005cc build: Add dt.img and kernel target  
-317ec69 generate_extra_images: Rename targets and add 'sec' prefix  
-693bf48 core_minimal.mk: Remove duplicate packages  
-  
-* **device/oneplus/oneplus3/**  
-45e451f Boardconfig: disable clang  
-56dc704 oneplus3: force HAL1 for certain apps  
-7bcedb3 op3: Fix the LED happy dance  
-8879d0a sepolicy: we use policy version 29  
+* **external/sonivox/**  
+3511c9d Merge tag 'android-6.0.1_r66' into HEAD  
   
 * **frameworks/av/**  
-4a7b612 stagefright: Disable thumbnail mode for 8996-class devices  
-e363643 audioflinger: Always process volume commands from a latest track  
-1fe89a6 audioflinger: set flush pending on invalidating offload track  
-b5b6075 Don't place large objects on the stack  
+5788af5 Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
+c4d9dcc libstagefright: mtk: Use vendor extensions to check if we should fixup cropping  
   
 * **frameworks/base/**  
-912fe66 Apps on adopted storage should stay there during update  
+918f690 Fw_base - Add option for position date left-right of clock [1/2]  
+2788a0f Fw_base - Hide Lockscreen clock & date [1/2]  
+2b7c406 Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
+c74acee Automatic translation import  
   
 * **frameworks/native/**  
-eb02d24 surfaceflinger: Add support for Exynos HWC services  
-995406d Fix xxhdpi 3072 heap sizes  
-8ef70a1 Fix xxxhdpi 3072 heap sizes  
+5b9d20b Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
+  
+* **frameworks/opt/telephony/**  
+59b6d42 Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
+3e5267e Revert "Revert "Fix problem with cell data service after SIM swap""  
   
 * **kernel/oneplus/msm8996/**  
-a4c70b0 defconfig: update  
-c567171 ASoC: wcd9335: fix speaker gain controls  
-ad1d140 ASoC: wcd9335: add mic gain and speaker gain for OnePlus3  
-c1b2786 ASoC: wcd9335: Sound control  
-68a4554 sweep2sleep: don't create input device  
-f520c92 wake_gestures: peacefully co-exist with cyanogenmod gestures  
-dfae480 sweep2sleep: fix device name  
-dd307fd OnePlus3: Wake gestures: sweep2wake and doubletap2wake  
-b5b5860 mdss_fb: add backlight dimmer option  
-343a1ba platform/msm: haptic: expose vibrate function  
-8559945 touch: sweep2sleep  
-2e7920e op3: Adjust display power settings  
-b6fae38 ARM: dts: 15801: Enable wakeup events for the volume keys  
-08b496e power: oneplus_fastcg: Remove project_info dependency  
-f31e01a misc: fpc1020: Clean up interrupt handler  
-b5a918a misc: fpc1020: Set fingerprintd priority to max when screen is off  
-5b6626f misc: fpc1020: Report key input when interrupt is fired with screen off  
-31a4ab0 misc: fpc1020: Clean up PM routines and move them into dedicated worker  
-e28fb30 input: synaptics: s3320: Silence log spam  
-014490c input: synaptics: s3320: Remove wild msleeps from init  
-1fed8dd input: synaptics: s3320: Actually set BTN_TOOL_FINGER keybit  
-6780885 input: synaptics: s3320: Clean up PM routines and move them into worker  
-9d7b349 input: synaptics: s3320: Don't run baseline on resume  
-16550ec msm: qpnp-haptic: Process haptics asynchronously  
-a72994f power: bq27541: Silence log spam  
-7b8c149 power: bq27541: Don't queue work onto a specific CPU  
-6eef935 ipv6: fix endianness error in icmpv6_err  
-5653c1d net: ipv6: Fix ping to link-local addresses.  
-2d7c3f1 BACKPORT: tcp: make challenge acks less predictable  
-e3c4c48 UPSTREAM: usb: gadget: configfs: add mutex lock before unregister gadget  
-b3dd412 ANDROID: net: fib: remove duplicate assignment  
-ac5fda3 usb: gadget: f_accessory: remove duplicate endpoint alloc  
+735deff FROMLIST: mm: mmap: Add new /proc tunable for mmap_base ASLR.  
+acc43b02 BACKPORT: FROMLIST: mm: ASLR: use get_random_long()  
+81264cf FROMLIST: arm64: mm: support ARCH_MMAP_RND_BITS.  
+a4ed377 FROMLIST: drivers: char: random: add get_random_long()  
+fecc365 msm: mdss: remove obsolete code related to write-back and rotator  
+74b9eff msm: vidc: add h264 8x8 transform mode support  
+fed5cb6 msm: vidc: add support for maximum bitrate rate control mode  
+fbd7a8d msm: vidc: Add support for setting packed QP range  
+2a8b85b msm: vidc: Fix masking of QP values for different codecs in driver  
+48e21c1 msm: vidc: Add support for color space information  
+d138da4 msm: vidc: Enable blur support for encode  
+6a5582f msm: vidc: Set constrained intra refresh property  
+45a7891 msm: vidc: add support to set low latency property to venus  
+99635e7 msm: vidc: Add SEI extradata  
+f230daf msm: mdss: Adding interface for supporting destination scaler.  
+7b48883 msm: mdss: add interface for all MDP supported formats  
+b85e770 msm: mdss: Update interface to support Qseed3.  
   
-* **kernel/samsung/trlte/**  
-2cb13b7 ashmem: Validate ashmem memory with fops pointer  
+* **libcore/**  
+decc545 Merge tag 'android-6.0.1_r66' into HEAD  
   
-* **packages/apps/EmotionOTA/**  
-ab31257 examples: add oneplus 3  
+* **packages/apps/Email/**  
+b7d0aee Merge tag 'android-6.0.1_r66' into HEAD  
+  
+* **packages/apps/InCallUI/**  
+e7802a6 [Glowpad] Remove marginBottom  
+4e16ae9 Automatic translation import  
+547c12c Automatic translation import  
+  
+* **packages/apps/Messaging/**  
+2bb428b Messaging: fix some int'l numbers from displaying incorrectly  
+5593d34 Messaging: fix bad recycle on sending two mms in a row  
+  
+* **packages/apps/ROMControl/**  
+ffcf495 fix derp  
+96630d8 add missing string  
+f057e8d import translation  
+bda4395 ROMControl - Add option for position date left-right of clock [2/2]  
+779db36 ROMControl - Hide Lockscreen clock & date [2/2]  
+  
+* **packages/apps/Settings/**  
+4bfdeb3 Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
+5e318f7 Automatic translation import  
+874d27b Automatic translation import  
+  
+* **packages/services/Telecomm/**  
+cad32af Automatic translation import  
+  
+* **packages/services/Telephony/**  
+18b4795 Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
+cf9b94d Automatic translation import  
+e140a8c Automatic translation import  
+  
+* **packages/services/ThemeManagerService/**  
+4cf0c6b Automatic translation import  
+ec10f23 Automatic translation import  
+  
+* **platform_manifest/**  
+3097745 default: update to r66  
+  
+* **system/core/**  
+1d3e1d6 Merge tag 'android-6.0.1_r66' into HEAD Android 6.0.1 release 66  
   
 * **vendor/cmsdk/**  
-60e0455 cmsdk: Finalize api level 6 (Fig).  
+2aa4992 cmsdk: fix visible check in hasChanged  
   
 * **vendor/emotion/**  
-1f7486a Fix Discovery permission blockage  
-b8979bf charger: Fix 640dpi symlink  
-6592659 charger: Add 640dpi support  
-  
-###     08-23-2016  
-***  
-  
+2f94c74 prebuilt: remove OpenCamera  
+ba592d5 emotion: bump to r20  
+7c835ad KernelAdiutor: bump to 0.9.30.2  
+101b4dc cm: charger: Center capacity and vertical offset  
   
 * **vendor/oneplus/**  
-ef728d4 op3: remove xtra_t_app for now  
+4881fab op3: Remove libjni_livedisplay  
   
-###     08-22-2016  
+###     09-07-2016  
+***  
+  
+* **OTA/**  
+7f88f56 Emotion-trltexx-MM.r19.1.Official  
+  
+* **packages/apps/AudioFX/**  
+5d47be9 Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+c6fab43 Automatic translation import  
+  
+* **packages/apps/Dialer/**  
+0bc1dbd Automatic translation import  
+  
+* **packages/apps/Messaging/**  
+d0145f1 Automatic translation import  
+  
+* **packages/apps/Profiles/**  
+ecadba2 Automatic translation import  
+  
+* **packages/apps/Screencast/**  
+b2142fc Automatic translation import  
+  
+* **packages/apps/Snap/**  
+54b3320 Automatic translation import  
+  
+* **packages/apps/SoundRecorder/**  
+2a7a6ad Automatic translation import  
+  
+* **packages/apps/ThemeChooser/**  
+4075c50 Automatic translation import  
+  
+* **packages/apps/Trebuchet/**  
+e37cfee Automatic translation import  
+  
+* **packages/apps/TvSettings/**  
+f2e84e8 Automatic translation import  
+  
+* **packages/providers/DataUsageProvider/**  
+2473a6a Automatic translation import  
+  
+* **packages/services/LiveLockScreenService/**  
+b58a3cc Automatic translation import  
+  
+* **packages/services/WeatherService/**  
+9aebfe4 Automatic translation import  
+  
+* **packages/wallpapers/Galaxy4/**  
+a630c40 Automatic translation import  
+  
+###     09-06-2016  
 ***  
   
   
-* **device/oneplus/oneplus3/**  
-eb0654d op3: Support WeChat fingerprint payment  
-9ecd947 sepolicy: Cleanup permissions  
-b771c06 Fix audio route issue.  
-125b428 op3: Tweak autobrightness  
-290427b op3: Set missing RIL_QCOM_VERSION  
-508a0cb op3: Remove unsupported wipower properties  
-916555b system.prop: Change the GLES version string to 3.1  
-37fbaec op3: Add Alipay fingerprint payment support  
+* **hardware/qcom/audio-caf/msm8916/**  
+255a26d policy_hal: Invert standard build flags  
+7b2112b Revert "policy_hal: Fix build with Clang"  
   
-* **kernel/oneplus/msm8996/**  
-9179a05 video: adf: Zero out the mapping data  
-3055cfa msm: mdss: fix autorefresh configs for pp-split cases  
-7096f4e msm: mdss: fix race condition between iommu attach and sending DCS cmds  
-6faee01 USB: dwc3: Fix to debugfs returns with spin_lock  
-b4fcd90 USB: dwc3: debugfs: Add boundary check in dwc3_store_ep_num()  
-18d0e72 soc: qcom: pil: Add flag to know if modem SSR happened.  
+* **hardware/qcom/media-caf/msm8916/**  
+7c1a7af Fix duplicated OMX.qcom.audio.decoder.aac entry  
   
-* **packages/apps/SetupWizard/**  
-22a428d SetupWizard: requires android.permission.BIND_DEVICE_ADMIN  
+* **packages/apps/Settings/**  
+3378ff2 KernelAdiutor: fix FC on new KA  
   
-* **vendor/oneplus/**  
-0f48809 op3: Add alipay fingerprint payment blobs  
+###     09-05-2016  
+***  
   
-###     08-21-2016  
+* **OTA/**  
+6aac2f9 Emotion-trltespr-MM.r19.Official-20160905-123752  
+  
+* **packages/apps/AudioFX/**  
+d4ff380 AudioFX: Resync with AOSP translations  
+  
+* **packages/apps/ThemeChooser/**  
+fa08a0a Remove BootReceiver  
+3f9abe2 Capitalize app name  
+78efee5 String updates  
+2587e7f Fix line wrapping for crowdin  
+  
+###     09-04-2016  
 ***  
   
   
-###     08-20-2016  
+* **external/DUtils/**  
+753612a fix navbar fc  
+bce432f Revert "Revert "DUI: Use DocumentsProvider API helper methods [2/2]""  
+  
+* **frameworks/base/**  
+e49d6a1 connectivity-service: fix/improve unique hostname  
+162720f Ensure DHCP requests have nonempty hostnames  
+304ef21 Automatic translation import  
+b8c6fa0 SystemUI: Don't pad when config_showScreenOnLockScreenHints is false  
+04fa19c Themes: Give power dialogs own set of volume icons for themes  
+124e04a Prevent invocation of startNavigating() when GPS is off  
+  
+* **frameworks/opt/telephony/**  
+90e2d3f Telephony: fix SMS NPE  
+bfd09d7 Skip unknown tags instead of aborting when parsing UICC TLV data  
+8d71b0f Implement UICC TLV Data decoding.  
+  
+* **packages/apps/ThemeChooser/**  
+f40ac25 Move actions in theme card to overflow menu  
+  
+* **platform_manifest/**  
+18f5cc6 default: use cm snap repo  
+  
+* **system/core/**  
+61934f1 libutils: fix deadlock in elapsedRealtimeNano  
+  
+* **vendor/emotion/**  
+45a9677 KernelAdiutor: update  
+  
+###     09-03-2016  
+***  
+  
+  
+* **packages/apps/Gallery2/**  
+0304394 Gallery2: Fix no android.permission.INTERACT_ACROSS_USERS in guest mode.  
+  
+* **packages/apps/ThemeChooser/**  
+7e4390f ThemeChooser: set untranslatable  
+  
+###     09-02-2016  
+***  
+  
+  
+###     09-01-2016  
+***  
+  
+  
+* **packages/apps/AudioFX/**  
+cf02e9a AudioFXTests: remove key sign warning  
+  
+* **platform_manifest/**  
+26e73b1 default: add CM Weather service repo  
+  
+###     08-31-2016  
+***  
+  
+  
+* **packages/apps/ThemeChooser/**  
+550e88b Fall cleaning  
+  
+###     08-30-2016  
 ***  
   
   
 * **device/samsung/qcom-common/**  
-5032052 qcom: Remove recovery power modes script  
+b0b67ad Automatic translation import  
   
-* **external/ffmpeg/**  
-0a27fb6 Revert "ffmpeg: Additional APE extradata"  
-b0f5859 Merge branch 'release/3.0' of https://github.com/FFmpeg/FFmpeg into cm-13.0  
+* **device/samsung/trlte-common/**  
+026b566 Fix up RIL  
   
-* **system/security/**  
-6b8a2a3 keystore: Fix SoterTest issues  
-  
-###     08-19-2016  
-***  
-  
+* **device/samsung/trltexx/**  
+f71747d boardconfig: added missing TW_THEME := portrait_hdpi  
   
 * **hardware/libhardware/**  
-a900556 keymaster: Add SOTER tags and API definations  
+7659cdd Memory leak fix during sensor HAL initialization  
+  
+* **hardware/samsung/**  
+48c7442 Automatic translation import  
+  
+* **packages/apps/AudioFX/**  
+33b5c82 Merge "AudioFX: finish rename; persist process" into cm-13.0  
+71e5da3 AudioFX: finish rename; persist process  
+  
+* **packages/apps/BasicSmsReceiver/**  
+df317d5 Automatic translation import  
+  
+* **packages/apps/BluetoothExt/**  
+c54b92b Automatic translation import  
+  
+* **packages/apps/Browser/**  
+21cc56b Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+2d6b1a8 Automatic translation import  
+  
+* **packages/apps/CMWallpapers/**  
+140370d Automatic translation import  
+  
+* **packages/apps/Calendar/**  
+51c4964 Automatic translation import  
+  
+* **packages/apps/Camera2/**  
+d3be19c Automatic translation import  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+27ae3fd Automatic translation import  
+  
+* **packages/apps/CertInstaller/**  
+c8f7e9b Automatic translation import  
+  
+* **packages/apps/Contacts/**  
+4185da3 Automatic translation import  
+  
+* **packages/apps/ContactsCommon/**  
+ee58643 Automatic translation import  
+  
+* **packages/apps/Dialer/**  
+af82bdc Automatic translation import  
   
 * **packages/apps/Eleven/**  
-675ece9 Handle headset hook multi click in playback service.  
+99370db Merge "Automatic translation import" into cm-13.0  
   
-* **packages/apps/SetupWizard/**  
-2d9f769 Revert "SetupWizard: add a CM-specific setup-complete settings key"  
-9585e30 Revert "SetupWizard: Use proper CMSetting for soft keys option"  
+* **packages/apps/Email/**  
+644cde9 Automatic translation import  
   
-* **platform_manifest/**  
-4f61534 change repo name  
+* **packages/apps/ExactCalculator/**  
+eb4a240 Automatic translation import  
   
-* **prebuilts/cmsdk/**  
-755b224 prebuilts/cmsdk: Provide release artifact for Fig.  
+* **packages/apps/Exchange/**  
+6c8130b Automatic translation import  
   
-* **system/keymaster/**  
-dc06a0f keymaster: Add SOTER support  
+* **packages/apps/FMRadio/**  
+6cc3f18 Automatic translation import  
   
-* **system/security/**  
-b926925 keystore: Add SOTER support in keystore  
+* **packages/apps/Gallery2/**  
+b6d3a52 Automatic translation import  
+  
+* **packages/apps/HTMLViewer/**  
+7f53cdd Automatic translation import  
+  
+* **packages/apps/KeyChain/**  
+6852242 Automatic translation import  
+  
+* **packages/apps/LockClock/**  
+cb8ef07 Automatic translation import  
+  
+* **packages/apps/ManagedProvisioning/**  
+250a661 Merge "Automatic translation import" into cm-13.0  
+  
+* **packages/apps/Messaging/**  
+3279dd0 Automatic translation import  
+  
+* **packages/apps/Nfc/**  
+375f151 Automatic translation import  
+  
+* **packages/apps/PackageInstaller/**  
+e5abb1e Automatic translation import  
+  
+* **packages/apps/PhoneCommon/**  
+2f2b01c Automatic translation import  
+  
+* **packages/apps/Profiles/**  
+eb67886 Merge "Automatic translation import" into cm-13.0  
+  
+* **packages/apps/Screencast/**  
+ae7bee3 Automatic translation import  
+  
+* **packages/apps/Snap/**  
+530f842 Automatic translation import  
+  
+* **packages/apps/SoundRecorder/**  
+1e32a30 Automatic translation import  
+  
+* **packages/apps/Stk/**  
+9f2f446 Automatic translation import  
+  
+* **packages/apps/Tag/**  
+12547f3 Automatic translation import  
+  
+* **packages/apps/Terminal/**  
+d36c1af Merge "Automatic translation import" into cm-13.0  
+  
+* **packages/apps/Trebuchet/**  
+c10e2d2 Automatic translation import  
+  
+* **packages/apps/TvSettings/**  
+fc148a2 Merge "Automatic translation import" into cm-13.0  
+  
+* **packages/apps/UnifiedEmail/**  
+11e56cb Automatic translation import  
+  
+* **packages/apps/WallpaperPicker/**  
+1b1b2a8 Automatic translation import  
+  
+* **packages/providers/BookmarkProvider/**  
+9be5364 Automatic translation import  
+  
+* **packages/providers/CalendarProvider/**  
+f8d89e3 Automatic translation import  
+  
+* **packages/providers/CallLogProvider/**  
+1a4649f Automatic translation import  
+  
+* **packages/providers/ContactsProvider/**  
+12cb7ea Automatic translation import  
+  
+* **packages/providers/DataUsageProvider/**  
+031f131 Automatic translation import  
+  
+* **packages/providers/DownloadProvider/**  
+a19e57a Automatic translation import  
+  
+* **packages/providers/MediaProvider/**  
+26e94e7 Automatic translation import  
+  
+* **packages/providers/TelephonyProvider/**  
+99bc91f Automatic translation import  
+  
+* **packages/providers/ThemesProvider/**  
+c8ca3e6 Automatic translation import  
+  
+* **packages/providers/UserDictionaryProvider/**  
+2d21c4f Automatic translation import  
+  
+* **packages/screensavers/Basic/**  
+1462f1c Automatic translation import  
+  
+* **packages/screensavers/PhotoTable/**  
+dd0908b Automatic translation import  
+  
+* **packages/services/LiveLockScreenService/**  
+03e5e4d Automatic translation import  
+  
+* **packages/services/WeatherService/**  
+70fb1ac Automatic translation import  
+  
+* **packages/wallpapers/Basic/**  
+0f4308b Automatic translation import  
+  
+* **packages/wallpapers/LivePicker/**  
+c4e7ff7 Automatic translation import  
+  
+* **packages/wallpapers/MagicSmoke/**  
+383a015 Automatic translation import  
+  
+* **packages/wallpapers/PhotoPhase/**  
+d9f98d6 Automatic translation import  
   
 * **vendor/emotion/**  
-2d2534c bootanimation: Add Emotion boot for 1080  
+49161b5 fix missing 520dpi file for trlte  
   
