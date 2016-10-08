@@ -1,3 +1,172 @@
+###     10-08-2016  
+***  
+  
+  
+* **device/oneplus/oneplus3/**  
+028ba62 oneplus3: Build OneplusPocketMode  
+029bb81 op3: Add pocketmode app  
+4fc3d33 clean up  
+  
+* **device/samsung/trlte-common/**  
+973d94a ril: fix derp  
+e7b81b7 Revert "klte-common: update wakelocks semantics"  
+9748de2 fingerprint: fixed incorrect include  
+  
+* **kernel/oneplus/msm8996/**  
+8585f4a usb: dwc3-msm: Remove indefinite wakeup  
+f4f6829 misc: fpc1020: Simplify proximity shut-off  
+dc6ac61 misc: fpc1020: Honor proximity state  
+  
+* **kernel/samsung/trlte/**  
+467bcd43 drivers: fingerprint: Kill FEATURE_SPI_WAKELOCK  
+  
+* **vendor/cmsdk/**  
+ae49a09 Themes: Introduce theme mixes into ThemesContract  
+  
+###     10-07-2016  
+***  
+  
+  
+* **build/**  
+5e7e324 M4B30X  
+  
+* **device/samsung/trlte-common/**  
+9b468ae fingerprint: Cleanup whitespace mess  
+69a9c6a trlte: Use new Fingerprint Hal without ValidityService  
+624df44 system_prop: clean up  
+9fe6e3a klte-common: update wakelocks semantics  
+b80d30e ril: update ril  
+  
+* **frameworks/av/**  
+01b5eb5 Merge tag 'android-6.0.1_r72' into HEAD Android 6.0.1 Release 72 (M4B30X)  
+  
+* **frameworks/base/**  
+3b4fefe Merge tag 'android-6.0.1_r72' into HEAD Android 6.0.1 Release 72 (M4B30X)  
+9dee636 bootanim: Allow configurable rescaling  
+  
+* **frameworks/native/**  
+c703e9b service_manager: fix derp  
+1f28450 Merge tag 'android-6.0.1_r72' into HEAD Android 6.0.1 Release 72 (M4B30X)  
+  
+* **frameworks/opt/telephony/**  
+05ecbb1 Telephony: Show the sender address of WAP push message  
+a85b87d Allow to define a default app to handle Wap Push  
+  
+* **kernel/oneplus/msm8996/**  
+b5f2bcc Add some OnePlus modifications.  
+  
+* **packages/providers/ThemesProvider/**  
+6abe369 Implement theme mixes from ThemesContract  
+  
+* **packages/services/Telephony/**  
+9eb2e2c Telephony: Fix mobile network settings for CDMA without LTE  
+9fbe078 Automatic translation import  
+  
+* **platform_manifest/**  
+c4d2b0c default: update to 6.0.1_r72  
+  
+* **system/core/**  
+17c19c2 Merge tag 'android-6.0.1_r72' into HEAD Android 6.0.1 Release 72 (M4B30X)  
+  
+* **vendor/emotion/**  
+63e0755 prebuilt: remove OpenCamera  
+792f1c7 bump to r23  
+  
+* **vendor/samsung/**  
+f89db61 trlte-common: remove fp blobs  
+  
+###     10-06-2016  
+***  
+  
+  
+* **external/bouncycastle/**  
+beba020 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **external/flac/**  
+be25551 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **external/libavc/**  
+130f76a Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **external/libvpx/**  
+22ab465 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **external/sonivox/**  
+4d2a2d9 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **frameworks/opt/net/wifi/**  
+e9e7aed Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **hardware/ril/**  
+65c8989 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **libcore/**  
+436c54b Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **packages/apps/AudioFX/**  
+73e1903 Merge "AudioFX: fix missing bassboost/virtualizer" into cm-13.0  
+  
+* **packages/apps/Email/**  
+de1a096 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **packages/providers/DownloadProvider/**  
+b25fddc Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **packages/providers/TelephonyProvider/**  
+c3d8153 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **system/media/**  
+69c4724 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+###     10-05-2016  
+***  
+  
+  
+###     10-04-2016  
+***  
+  
+  
+* **packages/apps/Eleven/**  
+1eee07b Merge "Eleven: Set preferences on play" into cm-13.0  
+  
+* **packages/apps/Trebuchet/**  
+abc57d4 IconCache: Simplify application of custom titles from STK  
+  
+###     10-03-2016  
+***  
+  
+* **OTA/**  
+ec96823 Emotion-trltespr-MM.r22.Official-20161002-133328  
+  
+* **packages/apps/AudioFX/**  
+e3661b8 Merge "AudioFX: Update copyright after OSS" into cm-13.0  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+60fd85c CellBroadcastReceiver: Show timestamp / appropriate title in the LatAm region  
+  
+* **packages/apps/Dialer/**  
+ba24a30 dialer: search: Don't attempt to get resources on a detached fragment  
+  
+###     10-02-2016  
+***  
+  
+* **OTA/**  
+7b985c6 Emotion-trltexx-MM.r22.1  
+63473bd Emotion-trltexx-MM.r22.Official  
+  
+* **build/**  
+2f4f418 tools: change a bit supersu  
+  
+* **changelogs/**  
+17fab00 r22 changelog  
+  
+* **kernel/samsung/trlte/**  
+9f6acef netfilter: xt_IDLETIMER: Revert to retain the kernel API format.  
+  
+* **vendor/emotion/**  
+2eb7562 bump to r22  
+05c838b SuperSU: update to SuperSU-v2.78-SR1  
+  
 ###     10-01-2016  
 ***  
   
@@ -70,14 +239,8 @@ fda53e9 UPSTREAM: netfilter: x_tables: validate e->target_offset early
 3d9dcfa netfilter: x_tables: make sure e->next_offset covers remaining blob size  
 b017959 nf: IDLETIMER: Adds the uid field in the msg  
   
-* **packages/apps/CMFileManager/**  
-96809f8 CMFileManager: remove shortcut option for secure folders  
-  
-* **packages/apps/Eleven/**  
-e832873 Merge "Avoid NPE" into cm-13.0  
-  
 * **packages/apps/Messaging/**  
-57cadbe MediaPicker: Check for NPE  
+7619c3c Adding metrics related to Ridesharing  
   
 * **packages/apps/Settings/**  
 3ad6713 Automatic translation import  
@@ -93,206 +256,27 @@ f850bb7 Automatic translation import
 ***  
   
   
+* **packages/apps/CMFileManager/**  
+96809f8 CMFileManager: remove shortcut option for secure folders  
+  
 * **packages/apps/Eleven/**  
-14d5e16 Eleven: Do not uppercase unnecessarily  
+df56b06 Eleven: Set preferences on play  
+e832873 Merge "Avoid NPE" into cm-13.0  
+  
+* **packages/apps/Messaging/**  
+57cadbe MediaPicker: Check for NPE  
   
 ###     09-29-2016  
 ***  
   
   
-* **packages/apps/Snap/**  
-c84f5b6 Snap: Add picture resolutions for Axon 7  
-  
-###     09-28-2016  
-***  
-  
-  
-###     09-27-2016  
-***  
-  
-  
-###     09-26-2016  
-***  
-  
-  
 * **packages/apps/AudioFX/**  
-5dbe618 Automatic translation import  
-  
-* **packages/apps/BasicSmsReceiver/**  
-ca20d95 Automatic translation import  
-  
-* **packages/apps/BluetoothExt/**  
-865465d Automatic translation import  
-  
-* **packages/apps/Browser/**  
-856061c Automatic translation import  
-  
-* **packages/apps/CMFileManager/**  
-80609d1 Automatic translation import  
-  
-* **packages/apps/CMWallpapers/**  
-cb8f43e Automatic translation import  
-  
-* **packages/apps/Calendar/**  
-d531eb3 Automatic translation import  
-  
-* **packages/apps/Camera2/**  
-042a29c Automatic translation import  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-ab8ccee Automatic translation import  
-  
-* **packages/apps/Contacts/**  
-d7eedfa Automatic translation import  
-  
-* **packages/apps/ContactsCommon/**  
-7744f5c Automatic translation import  
-  
-* **packages/apps/Dialer/**  
-2a2572a Automatic translation import  
-  
-* **packages/apps/Email/**  
-6e0da11 Automatic translation import  
-  
-* **packages/apps/ExactCalculator/**  
-6e780cf Automatic translation import  
-  
-* **packages/apps/Exchange/**  
-222f41e Automatic translation import  
-  
-* **packages/apps/FMRadio/**  
-6e58d26 Automatic translation import  
-  
-* **packages/apps/Gallery2/**  
-ebffdae Automatic translation import  
-  
-* **packages/apps/KeyChain/**  
-2674ad7 Automatic translation import  
-  
-* **packages/apps/LockClock/**  
-9599f79 Automatic translation import  
-  
-* **packages/apps/ManagedProvisioning/**  
-5024c35 Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-bd7ecd6 Automatic translation import  
-  
-* **packages/apps/Nfc/**  
-dba3313 Automatic translation import  
-  
-* **packages/apps/PackageInstaller/**  
-0dc4a6b Automatic translation import  
-  
-* **packages/apps/PhoneCommon/**  
-8460118 Automatic translation import  
-  
-* **packages/apps/Profiles/**  
-5385cd8 Automatic translation import  
-  
-* **packages/apps/Screencast/**  
-f4f2ed6 Automatic translation import  
-  
-* **packages/apps/Snap/**  
-113a6fd Automatic translation import  
-  
-* **packages/apps/SoundRecorder/**  
-0f42444 Automatic translation import  
-  
-* **packages/apps/Stk/**  
-9404130 Automatic translation import  
-  
-* **packages/apps/Terminal/**  
-63398de Automatic translation import  
-  
-* **packages/apps/ThemeChooser/**  
-56b2153 Automatic translation import  
-  
-* **packages/apps/Trebuchet/**  
-a50bf64 Automatic translation import  
-  
-* **packages/apps/TvSettings/**  
-2ed1168 Automatic translation import  
-  
-* **packages/apps/UnifiedEmail/**  
-351a9d1 Automatic translation import  
-  
-* **packages/apps/WallpaperPicker/**  
-d11a843 Automatic translation import  
-  
-* **packages/providers/CalendarProvider/**  
-bf66c52 Automatic translation import  
-  
-* **packages/providers/ContactsProvider/**  
-183a770 Automatic translation import  
-  
-* **packages/providers/DataUsageProvider/**  
-ffd3c50 Automatic translation import  
-  
-* **packages/providers/DownloadProvider/**  
-f65b576 Automatic translation import  
-  
-* **packages/providers/MediaProvider/**  
-468cce6 Automatic translation import  
-  
-* **packages/providers/ThemesProvider/**  
-6222a87 Automatic translation import  
-  
-* **packages/screensavers/Basic/**  
-de1b4b4 Automatic translation import  
-  
-* **packages/screensavers/PhotoTable/**  
-fc5761b Automatic translation import  
-  
-* **packages/services/LiveLockScreenService/**  
-40301ec Automatic translation import  
-  
-* **packages/services/Mms/**  
-477457f Automatic translation import  
-  
-* **packages/services/WeatherService/**  
-8859ec3 Automatic translation import  
-  
-* **packages/wallpapers/Basic/**  
-7faa195 Automatic translation import  
-  
-* **packages/wallpapers/HoloSpiral/**  
-69c0ea6 Automatic translation import  
-  
-* **packages/wallpapers/LivePicker/**  
-24c9bd7 Automatic translation import  
-  
-* **packages/wallpapers/MagicSmoke/**  
-b51da83 Automatic translation import  
-  
-* **packages/wallpapers/NoiseField/**  
-1cc45c9 Automatic translation import  
-  
-* **packages/wallpapers/PhaseBeam/**  
-4e6ecc6 Automatic translation import  
-  
-* **packages/wallpapers/PhotoPhase/**  
-d3e978f Automatic translation import  
-  
-###     09-25-2016  
-***  
-  
-  
-###     09-24-2016  
-***  
-  
+b15e56d AudioFX: Get rid of the DSPManager override  
+5e109ac AudioFX: Update copyright after OSS  
   
 * **packages/apps/Eleven/**  
-8d9973a Avoid NPE  
+14d5e16 Eleven: Do not uppercase unnecessarily  
   
-###     09-23-2016  
-***  
-  
-  
-* **hardware/qcom/audio-caf/msm8937/**  
-a21aa49 hal: Support custom mixer_paths file names  
-  
-###     09-22-2016  
-***  
-  
+* **packages/apps/Snap/**  
+c84f5b6 Snap: Add picture resolutions for Axon 7  
   
