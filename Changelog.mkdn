@@ -1,6 +1,23 @@
-###     10-08-2016  
+###     10-12-2016  
 ***  
   
+  
+###     10-11-2016  
+***  
+  
+  
+###     10-10-2016  
+***  
+  
+  
+###     10-09-2016  
+***  
+  
+* **OTA/**  
+db77c91 oneplus3: OTA r23  
+  
+* **changelogs/**  
+62e4aa0 up  
   
 * **device/oneplus/oneplus3/**  
 028ba62 oneplus3: Build OneplusPocketMode  
@@ -8,17 +25,23 @@
 4fc3d33 clean up  
   
 * **device/samsung/trlte-common/**  
-973d94a ril: fix derp  
-e7b81b7 Revert "klte-common: update wakelocks semantics"  
-9748de2 fingerprint: fixed incorrect include  
+af8da4f ril: fix derp  
+8b79bce Revert "klte-common: update wakelocks semantics"  
   
 * **kernel/oneplus/msm8996/**  
 8585f4a usb: dwc3-msm: Remove indefinite wakeup  
 f4f6829 misc: fpc1020: Simplify proximity shut-off  
 dc6ac61 misc: fpc1020: Honor proximity state  
   
-* **kernel/samsung/trlte/**  
-467bcd43 drivers: fingerprint: Kill FEATURE_SPI_WAKELOCK  
+* **packages/apps/Eleven/**  
+f1daeeb Merge "eleven: Add support for the MediaSession queue" into cm-13.0  
+  
+###     10-08-2016  
+***  
+  
+  
+* **packages/apps/Eleven/**  
+bd9e6d2 Eleven: Correctly set shake to play  
   
 * **vendor/cmsdk/**  
 ae49a09 Themes: Introduce theme mixes into ThemesContract  
@@ -31,8 +54,6 @@ ae49a09 Themes: Introduce theme mixes into ThemesContract
 5e7e324 M4B30X  
   
 * **device/samsung/trlte-common/**  
-9b468ae fingerprint: Cleanup whitespace mess  
-69a9c6a trlte: Use new Fingerprint Hal without ValidityService  
 624df44 system_prop: clean up  
 9fe6e3a klte-common: update wakelocks semantics  
 b80d30e ril: update ril  
@@ -55,6 +76,9 @@ a85b87d Allow to define a default app to handle Wap Push
 * **kernel/oneplus/msm8996/**  
 b5f2bcc Add some OnePlus modifications.  
   
+* **packages/apps/Eleven/**  
+488ce05 eleven: Add support for the MediaSession queue  
+  
 * **packages/providers/ThemesProvider/**  
 6abe369 Implement theme mixes from ThemesContract  
   
@@ -69,11 +93,7 @@ c4d2b0c default: update to 6.0.1_r72
 17c19c2 Merge tag 'android-6.0.1_r72' into HEAD Android 6.0.1 Release 72 (M4B30X)  
   
 * **vendor/emotion/**  
-63e0755 prebuilt: remove OpenCamera  
 792f1c7 bump to r23  
-  
-* **vendor/samsung/**  
-f89db61 trlte-common: remove fp blobs  
   
 ###     10-06-2016  
 ***  
@@ -108,6 +128,9 @@ e9e7aed Merge tag 'android-6.0.1_r72' into HEAD
   
 * **packages/apps/Email/**  
 de1a096 Merge tag 'android-6.0.1_r72' into HEAD  
+  
+* **packages/apps/SoundRecorder/**  
+4c55ff0 SoundRecorder: Add AAC recording option  
   
 * **packages/providers/DownloadProvider/**  
 b25fddc Merge tag 'android-6.0.1_r72' into HEAD  
@@ -146,137 +169,4 @@ e3661b8 Merge "AudioFX: Update copyright after OSS" into cm-13.0
   
 * **packages/apps/Dialer/**  
 ba24a30 dialer: search: Don't attempt to get resources on a detached fragment  
-  
-###     10-02-2016  
-***  
-  
-* **OTA/**  
-7b985c6 Emotion-trltexx-MM.r22.1  
-63473bd Emotion-trltexx-MM.r22.Official  
-  
-* **build/**  
-2f4f418 tools: change a bit supersu  
-  
-* **changelogs/**  
-17fab00 r22 changelog  
-  
-* **kernel/samsung/trlte/**  
-9f6acef netfilter: xt_IDLETIMER: Revert to retain the kernel API format.  
-  
-* **vendor/emotion/**  
-2eb7562 bump to r22  
-05c838b SuperSU: update to SuperSU-v2.78-SR1  
-  
-###     10-01-2016  
-***  
-  
-  
-* **build/**  
-7e73526 Revert "Revert "envsetup: Always look up JAVA_HOME path""  
-34f5dc1 Revert "envsetup: Always look up JAVA_HOME path"  
-  
-* **frameworks/base/**  
-cb14689 Automatic translation import  
-03ccc8b bootanimation: Fix preload of shutdown & themed animations  
-ce9299a SysUI: Don't set panel bar to null and avoid NPEs  
-  
-* **frameworks/opt/telephony/**  
-516f7dd CdmaServiceStateTracker: Load CarrierConfig for NV Subscription  
-  
-* **kernel/oneplus/msm8996/**  
-ff619f7 defconfig: update  
-a8625df msm_performance: fix big cluster value  
-f5140a1 msm: mdss: KCAL: disable igc update  
-b7f8d1d msm_performance: Make input boosting optional  
-69dfaf2 adrenoboost: disable by default  
-612301d adrenoboost: finetuning algorithm - scale it a bit down  
-573fda7 msm_adreno_tz: add adrenoboost parameter  
-0bcf514 misc: fpc1020: Ignore home key presses when touchscreen is in use  
-d857718 input: synaptics: s1302: Stop keypad when touchscreen is in use  
-cc47933 qcacld-2.0: Fix stack corruption issue in sme_RrmProcessNeighborReport  
-baa43cb Revert "qcacld-2.0: Fix stack corruption in sme_RrmProcessNeighborReport()"  
-de8c21c qcacld-2.0: Fix stack corruption in sme_RrmProcessNeighborReport()  
-1ff1a25 media: vidc: Remove unused function  
-e8dc84f msm: vidc: Revert translation of useltr ctrl value to bitmask.  
-bc67c04 msm: vidc: Communicate ref_ltr in bitmap as expected by firmware  
-c89800c msm: vidc: Fix kw reported issues.  
-b270431 msm: vidc: read platform version from efuse register  
-3b7dafb msm: vidc: pm qos stability fixes for video driver  
-22162e6 msm: vidc: enable passive buses while unload firmware  
-4c1c94b msm: vidc: Remove legacy code for re-asserting Venus clocks  
-3021614 msm: vidc: Dump Venus registers on fatal error  
-4c74793 msm: vidc: Delay output buffer setting to FW  
-9da703a msm: vidc: skip biggest internal buffer allocation for slave side CP  
-0b24bcc msm: vidc: Remove read-only flags for profile and level clusters  
-4686129 msm: vidc: Fix decoder output buffer size issue  
-9d3c6a6 msm: vidc: Fix limit for LTR mode control  
-0e409fa msm: vidc: Add Override QP extradata support  
-69d6c41 msm: vidc: avoid fd based search for non-extradata plane  
-d8661a5 msm_vidc: Fix hang due to incorrect buffer unmap  
-b2f0c0d msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl  
-992c62d msm: vidc: skip fps round off when client sets 1 fps  
-59fdb6a msm: vidc: Add codec type detail to page fault handler  
-23569a8 msm: vidc: check operating rate before bus voting  
-8859514 msm: vidc: consider max of dpb-opb resolutions to kick-in DCVS  
-4232103 msm: vidc: consider max of dpb-opb resolutions to pick proper ab value  
-0866f9a msm: vidc: Clean session immediately after session end  
-436a23a msm: vidc: Propagate time stamp information even filled length is zero  
-5f2fd92 msm: vidc: Fix issue in split mode for UBWC output  
-0c04cd3 msm: vidc: Intimate error to V4L2 client conditionally  
-0f8e365 msm: vidc: Correct qp min/max for VP8 control  
-c51633d msm: vidc: Fix an issue with high bitrate playback  
-049d55c msm: vidc: add ion_handle checking before mapping buffers  
-8d13a4e msm: vidc: Fix Low latency step size  
-7ff2ead msm: vidc: Remove forced-setting of layer-wise bitrate for HP  
-9c3cadc msm: vidc: Communicate session error to client if aborted.  
-c1ef365 msm: vidc: protect instance while accessing instance properties  
-8dc4de2 msm: vidc: Fix macro blocks number issue for intra refresh property  
-77c655d msm: vidc: Fail qbuf and prepare_buf incase of error  
-  
-* **kernel/samsung/trlte/**  
-d7aa348 netfilter: x_tables: fix unconditional helper  
-fda53e9 UPSTREAM: netfilter: x_tables: validate e->target_offset early  
-3d9dcfa netfilter: x_tables: make sure e->next_offset covers remaining blob size  
-b017959 nf: IDLETIMER: Adds the uid field in the msg  
-  
-* **packages/apps/Messaging/**  
-7619c3c Adding metrics related to Ridesharing  
-  
-* **packages/apps/Settings/**  
-3ad6713 Automatic translation import  
-77175b4 Settings: Fix possible NPE  
-86110a9 Settings: Notification light: Fix for app customization  
-1b7ae4b DevelopmentSettings: Add an opt-out for recovery updater  
-  
-* **vendor/cmsdk/**  
-f850bb7 Automatic translation import  
-243bdf9 themes: Relabel theme dir after creation  
-  
-###     09-30-2016  
-***  
-  
-  
-* **packages/apps/CMFileManager/**  
-96809f8 CMFileManager: remove shortcut option for secure folders  
-  
-* **packages/apps/Eleven/**  
-df56b06 Eleven: Set preferences on play  
-e832873 Merge "Avoid NPE" into cm-13.0  
-  
-* **packages/apps/Messaging/**  
-57cadbe MediaPicker: Check for NPE  
-  
-###     09-29-2016  
-***  
-  
-  
-* **packages/apps/AudioFX/**  
-b15e56d AudioFX: Get rid of the DSPManager override  
-5e109ac AudioFX: Update copyright after OSS  
-  
-* **packages/apps/Eleven/**  
-14d5e16 Eleven: Do not uppercase unnecessarily  
-  
-* **packages/apps/Snap/**  
-c84f5b6 Snap: Add picture resolutions for Axon 7  
   
