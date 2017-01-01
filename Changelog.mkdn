@@ -1,605 +1,538 @@
-###     12-21-2016  
+###     01-01-2017  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+d33f494 Revert "Use Snapdragon LLVM, if available"  
+f9fda02 update overlay  
+758bc49 system.prop: change DPI to 560  
+f4f7e45 Set TARGET_BOOTANIMATION_HALF_RES to true  
+  
+* **frameworks/opt/telephony/**  
+0663988 SubscriptionController: Make sure cis are not null  
+  
+* **packages/apps/Settings/**  
+3ab313e Settings: res: Add missing strings/string-arrays  
+  
+* **vendor/emotion/**  
+9bbcc3b Update EmotionOS versioning  
+  
+* **vendor/samsung/**  
+e9f4c44 add klte blobs  
+  
+###     12-31-2016  
 ***  
   
 * **OTA/**  
-6d21b50 trltexx: update to nougat changelog  
+6dd7a37 Emotion-7.1.1-20161230-R1-OFFICIAL-trltevzw  
   
 * **build/**  
-00ddc7c roomservice: update to cm14.1  
-  
-* **frameworks/base/**  
-4fef1bc Add OmniSwitch as option for default recents [1/2]  
-03890b2 Fw_base - Custom QS rows/columns [1/2]  
-e1e5047 Fw_base - Custom small QS tiles [1/2]  
-d4c4505 Fw_base - Factor out preference-in-storage check to overridable method.  
-37eddd5 Fw_base - Disable Quick Settings on secure lockscreen (1/2)  
-d546d64 Fw_base - Make PIN/password failed attempts dialog non-cancelable  
-d06374a Fw_base - Disable PIN entry after successful quick unlock  
-7b09bb3 Fw_base - Keyguard: Forward port lockscreen quick unlock (1/2)  
-2731d2b SystemUI: One edit is more than enough  
-  
-* **packages/apps/EmotionControl/**  
-d1aa9d6 EC: Custom QS rows/columns [2/2]  
-74d937d EC: Custom small QS tiles [2/2]  
-3742ca3 EC: Disable Quick Settings on secure lockscreen [2/2]  
-2ba9d86 EC: Forward port lockscreen quick unlock (2/2)  
-3f215e7 EC: Fix the switches  
-  
-* **packages/apps/EmotionOTA/**  
-ea4069e trltexx: update to nougat  
-  
-* **vendor/emotion/**  
-ccfcab7 Merge branch 'nougat' of https://github.com/Emotroid-Rom/vendor_emotion into nougat  
-c696589 build: bump to beta32  
-e5457a2 common: build Masquerade  
-  
-###     12-20-2016  
-***  
-  
-  
-* **vendor/emotion/**  
-38da921 vendor: fixed dependencies derp  
-8a1bdaa Update trltespr.dependencies  
-  
-###     12-19-2016  
-***  
-  
-  
-* **build/**  
-35aa22e envsetup: Split cached vars  
+ad3b6fc roomservice: RIP CyanogenMod  
+af9f963 build: repopick: point to LineageOS gerrit  
   
 * **device/oneplus/oneplus3/**  
-8573e3d op3: Fix enabled typo  
-  
-* **device/oppo/common/**  
-d85ce7b Automatic translation import  
-81ee6a0 oppo-common: configpanel: Commonize strings translations  
-  
-* **device/qcom/common/**  
-53e4f36 extractors: Split 32/64 makefiles  
-  
-* **frameworks/base/**  
-a38da49 Fw_base - dynamic navbar colors  
-90b6ee0 Fw_base - SystemUI: Double tap to sleep anywhere on the lock screen (1/2)  
-a13bd87 Fw_base - Do not start music app when headset is unplugged  
-33fe339 Fw_base - AudioService: launch default music player on headset connect [1/2]  
-588fe94 Fw_base - Fingerprint authentication vibration [1/2]  
-143d843 Fw_base - Add back transparency porn parts (1/2)  
-f98c89b Automatic translation import  
-85bda06 Automatic translation import  
-59ef410 Automatic translation import  
-3e5780d SystemUI: Fix clock seconds option  
-ea5a3b7 Automatic translation import  
-  
-* **packages/apps/CMParts/**  
-9895d31 Automatic translation import  
-42df532 Automatic translation import  
-b8232a0 Automatic translation import  
-3a53988 cosmetic fix: s/drawwable/drawable/g  
-eae6d04 Automatic translation import  
-  
-* **packages/apps/EmotionControl/**  
-e1461ff EC: fix lockscreen  
-e2e7f19 EC: Double tap to sleep anywhere on the lock screen (2/2)  
-0ac8a8d EC: launch default music player on headset connect [2/2]  
-0898e3e EC: Fingerprint authentication vibration [2/2]  
-30eede9 EC: Add back transparency porn parts (2/2)  
-373bbc9 EC: fix derps  
-  
-* **packages/apps/PhoneCommon/**  
-ae4c54d Automatic translation import  
-ac0894d Automatic translation import  
-96bb037 Automatic translation import  
-  
-* **packages/apps/Settings/**  
-607509b Add back a helper pref that holds a system setting.  
-da2727c SimSettings: avoid NPE  
-1f2099a Automatic translation import  
-79b253f Automatic translation import  
-d6e9653 Automatic translation import  
-7b21bcf Automatic translation import  
-1ee1e0e Settings - Add CM's preference files  
-  
-* **vendor/cmsdk/**  
-d89dbbc Automatic translation import  
-01f2fdf Automatic translation import  
-  
-* **vendor/emotion/**  
-dd313ae webview_packages: fix incorrect signatures  
-  
-###     12-18-2016  
-***  
-  
-  
-* **hardware/qcom/fm/**  
-f0dda9e Automatic translation import  
-  
-* **packages/apps/AudioFX/**  
-0726d88 Automatic translation import  
-  
-* **packages/apps/Bluetooth/**  
-794758b Automatic translation import  
-  
-* **packages/apps/Browser/**  
-ebd2f7d Automatic translation import  
-  
-* **packages/apps/CMFileManager/**  
-bd595be Automatic translation import  
-  
-* **packages/apps/Calendar/**  
-c0d86c2 Automatic translation import  
-  
-* **packages/apps/Camera2/**  
-f6e4362 camera2: Ask for PREVENT_POWER_KEY, not PREVENT_SYSTEM_KEYS permission  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-3f413e4 Automatic translation import  
-  
-* **packages/apps/Dialer/**  
-2f80083 Automatic translation import  
-  
-* **packages/apps/Gello/**  
-ccf2faf Automatic translation import  
-  
-* **packages/apps/LockClock/**  
-577bda2 Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-393d94a Automatic translation import  
-  
-* **packages/apps/Profiles/**  
-5187937 Automatic translation import  
-  
-* **packages/apps/Screencast/**  
-7e5714a Automatic translation import  
-  
-* **packages/apps/SetupWizard/**  
-2e1593c Automatic translation import  
-  
-* **packages/apps/Snap/**  
-8462b44 Automatic translation import  
-  
-* **packages/apps/SoundRecorder/**  
-45a9e20 Automatic translation import  
-  
-* **packages/apps/ThemeChooser/**  
-2a27b9b Automatic translation import  
-  
-* **packages/apps/Trebuchet/**  
-c9637ec Automatic translation import  
-  
-* **packages/providers/DataUsageProvider/**  
-6a6307d Automatic translation import  
-  
-* **packages/providers/DownloadProvider/**  
-a328ecb Automatic translation import  
-  
-* **packages/providers/WeatherProvider/**  
-1d663e0 Automatic translation import  
-  
-* **packages/services/CMAudioService/**  
-ccdac6b Automatic translation import  
-  
-* **packages/services/LiveLockScreenService/**  
-c1b207e Automatic translation import  
-  
-* **packages/services/Telephony/**  
-a5ebfa7 Automatic translation import  
-  
-* **packages/services/ThemeManagerService/**  
-b7255ae Automatic translation import  
-  
-* **packages/services/WeatherService/**  
-8286a31 Automatic translation import  
-  
-###     12-17-2016  
-***  
-  
-  
-* **kernel/moto/shamu/**  
-f8e2871 shamu: Update defconfig  
-48ddbe3 Revert "mdss_mdp_overlay: Change the syfs node from hbm to sre"  
-  
-###     12-16-2016  
-***  
-  
-  
-* **packages/apps/AudioFX/**  
-c5a438a Automatic translation import  
-  
-* **packages/apps/Snap/**  
-51281be Automatic translation import  
-  
-* **packages/services/Telephony/**  
-a934a52 Automatic translation import  
-  
-* **vendor/qcom/binaries/**  
-4d4d7ec graphic: Split msm8916 32 and 64 bit makefiles  
-  
-###     12-15-2016  
-***  
-  
-  
-* **build/kati/**  
-bc43789 Do not limit threads upon calling legacy GNU make  
-42a270b Merge github.com:google/kati into HEAD  
-  
-* **external/vim/**  
-a7b10a8 Merge tag 'v8.0.0133' into HEAD  
-  
-* **hardware/samsung/**  
-6980858 consumerir: Move CLEAR_VARS below LOCAL_PATH  
-464c0c9 consumerir: Allow devices to override default configs  
-  
-* **packages/services/Telephony/**  
-203efe5 Automatic translation import  
-  
-* **system/bt/**  
-69d13f7 Bluetooth: silence logspam  
-  
-###     12-14-2016  
-***  
-  
-  
-* **build/**  
-a2ad167 NMF26Q  
-753d0b8 OMS7-N: adb shell command to access OverlayManagerService  
-  
-* **frameworks/av/**  
-5f72b22 soundtrigger: fix memory corruption  
-  
-* **frameworks/base/**  
-3a29c02 Revert "Ambient notification inversion compatible with OMS7 (2/2)"  
-10a0ddf Store Network Mode selected in subId Table.  
-09d1798 Merge tag 'android-7.1.1_r6' into nougat  
-0f14ab6 core: Adjust power menu icons for 7.1  
-0358dd9 GlobalActions: Inform user of screenshot long-press action  
-c9e40d4 PackageManager: fix build  
-ed503d9 OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]  
-defbfc5 Themes: Expose various QuickSettings text colors  
-7017da2 Allow custom alpha for notification shade bg color  
-5d56953 Ambient notification inversion compatible with OMS7 (2/2)  
-9848d72 Notification dynamic colors bool compatible with OMS7 (2/2)  
-f2de9e0 values: add emotion stules and colors  
-3c6ba34 Notifications: Expose a bool to disable dynamic colors  
-a64415b SystemUI: Expose QS edit item decoration background color  
-4e05c72 Themes: Allow Resolver List BG to be fully themed  
-85be132 Themes: Make resolver list fully themeable  
-194b01d Themes: Allow Permission Icons to be fully themed  
-425f861 Themes: Allow Immersive cling colors to be fully themed  
-f04f33f Themes: Expose resolver hardcoded colors  
-3fd45cd N-Extras: Add dynamic theme fonts support  
-8f85244 N-Extras: AudioService: Allow system effect sounds to be themed  
-8c6dc61 N-Extras: Add dynamic theme BootAnimation support  
-8213d62 OMS7-N: ApplicationsState: add filter for Substratum overlays [1/2]  
-a374cff Resource Runtime Overlay: Repair damages to Zygote runtime overlays  
-0695463 OMS7-N: Implement multi-target enable/disable and disable-all [11/11]  
-265adf6 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]  
-702a497 OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]  
-735575c OMS7-N: Disable Zygote preloaded drawables [8/11]  
-b07d895 OMS7-N: installd: add command 'rmidmap' [7/11]  
-8d3f898 OMS7-N: Fix memory leak during idmap creation [6/11]  
-4c6b089 OMS7-N: idmap: suppress print for padded resources [5/11]  
-d059939 OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]  
-f1f450d OMS7-N: Integrate OverlayManagerService into framework [3/11]  
-1e25d86 OMS7-N: Introduce the OverlayManagerService [2/11]  
-caf7970 OMS7-N: Support tagging resources as OK to overlay [1/11]  
-7ba3fb8 SystemUI: add missing configs  
-c12547a Fw_base - Fix FC when killing apps with app circlebar  
-  
-* **packages/apps/CMParts/**  
-514632e CMParts: Fix Russian auto-power save translation  
-442b5f7 NotificationLightSettings: removed unused code  
-04b9558 CMParts: Properly remove perf profile category if unsupported  
-c2a3371 Automatic translation import  
-a8a44d8 Automatic translation import  
-5ca7962 CMParts: Improve button settings strings  
-8dccb08 Automatic translation import  
-  
-* **packages/apps/Contacts/**  
-0bf4fe3 Themes: Expose hardcoded layout and styles colors  
-  
-* **packages/apps/ContactsCommon/**  
-fbdb8a8 Themes: Expose hardcoded contact tile text colors  
-  
-* **packages/apps/Dialer/**  
-dfce8a1 Automatic translation import  
-  
-* **packages/apps/EmotionControl/**  
-6eb6d0d EC: clean up  
-  
-* **packages/apps/Messaging/**  
-abe1a3f Automatic translation import  
-  
-* **packages/apps/PhoneCommon/**  
-f5c5a4e Themes: Make dialpad seperator line theme-able  
-  
-* **packages/apps/Settings/**  
-e1b5fd3 Always show band 0 (Automatic)  
-2055e12 Settings: Fix removal of notification pulse LED preference  
-7983b88 Automatic translation import  
-3e4ce77 Themes: Expose condition card colors  
-2ca2296 Settings: Expose storage summary text  
-8f8a6b6 values: add missing strings  
-  
-* **packages/apps/Snap/**  
-ab3398b Manual translation import  
-7b90146 Automatic translation import  
-  
-* **packages/services/Telephony/**  
-32c24a3 Automatic translation import  
-  
-* **platform_manifest/**  
-1c02dad default: android-7.1.1_r6  
-e587264 emotion: track few repos  
-3e6b990 emotion: add teamsubratum and masquerade  
-  
-* **system/sepolicy/**  
-d3b6dda OMS7-N: Add service 'overlay' to service_contexts  
-  
-* **vendor/cmsdk/**  
-2993d86 Revert "cmsdk: Add device-specific strings"  
-  
-* **vendor/emotion/**  
-0ebdae6 emotion: bump to beta31  
-43b4c8d AdAway: update to v3.2 (60)  
-a3d5c00 Add Reliance Jio India IMS volte apn's  
-6f7334a Fix Reliance Jio India APNs.  
-  
-###     12-13-2016  
-***  
-  
-  
-* **device/samsung/qcom-common/**  
-08178e1 qcom: doze: Clean up ambient display pref dependencies  
-  
-* **frameworks/base/**  
-20a581b Fw_base - Disable Lockscreen Media Art [1/2]  
-68342f1 Fw_base - App sidebar: Fix Left/Right position.  
-171a1a7 Fw_base - App sidebar: notify if app is not installed  
-c55f9f0 Fw_Base - Fix force close for App Sidebar.  
-8f62876 Fw_base - App sidebar (1/2)  
-022dc86 Fw_base - App Circle Sidebar: Support for Configurable Trigger Region[1/2]  
-0487e1a Fw_base - Implement App circle sidebar [1/2]  
-9cd7caa Fw_base - Add double tap option to lockscreen shortcuts [1/2]  
-738be7c Fw_base - GA: Fix size of close button drawables  
-ee9c28b Fw_base - GA: Materialize close button and improve layout (squashed)  
-62e89b0 Fw_base - Gesture Anywhere - bring it back [1/2]  
-2b5f0c8 Fw_base - Lockscreen shortcuts improvements 2/2  
-2dea635 Fw_base - Add more lockscreen shortcut custom icons Part2  
-c4938c2 Fw_base - Add new 73 hd lockscreen shortcus icons  
-9026ba6 Fw_base - Update default material popup animations  
-18a2786 Fw_base - SystemUI: vector support for action icons  
-a8f9b35 Fw_base - Keyguard - Add user configurable shortcuts  
-73ff392 Fw_base - inital bringup of slim actions and helper classes  
-e5132a7 Fw_base - Add several Slim helper classes and constants back  
-f8bb856 Fw_base - Add ability to disable bar color in battery saver mode (1/2)  
-a8aa030 Fw_base - add shortcut action icons  
-299cd6d Fw_base - rest of shortcut icons by Sven R.  
-95cb87e Fw_base - moar shortcut icons by Sven R.  
-f27550c Fw_base - icon materialization  
-a790903 Fw_base - add all slim shortcut image resources  
-40ad4e6 Fw_base - PackageManager: allow build-time disabling of components  
-1e35c04 Fw_base - Notifications: Materialize missed calls icons  
-4d4c1ac Fw_base - core: Materialize text select handle  
-50d59f6 Fw_base - SettingsProvider: Update icon.  
-7980d95 Fw_base - Immersive Recents [1/2]  
-adc599d FW_base - Add 7 more power menu animations [1/2]  
-be0027f Fw_base - Get the reboot menus to follow power menu animations previously merged  
-3979dd4 Fw_base - Rotation anim to Power and reboot menu [1/2]  
-59d6694 Fw_base - Power Menu animations [1/2]  
-45a6f1a Fw_base - RecentsView: Simplify getting total memory:  
-ac1b497 Fw_base - Add membar to recents options [1/2]  
-54e5c5e Fw_base - Disable Immersive Messages [1/2]  
-4098736 Fw_base - Force Expanded Notifications [1/2]  
-90650b6 Fw_base - SlimSeekBarPreference refactor  
-43b36b9 Fw_base - Clean up a wee bit  
-465724e Fw_base - Set monitorbox text as string  
-38dc457 Fw_base - Forward port SlimSeekBarPreference  
-7bf7923 Fw_base - Allow toggling animations off [1/2]  
-d9ff758 Fw_base - Forward port power connect/disconnect notification support [1/2]  
-  
-* **frameworks/opt/telephony/**  
-225d8cf telephony: Respect user nw mode, handle DSDS non-multi-rat.  
-  
-* **packages/apps/Bluetooth/**  
-7d2f2d1 jni: fix merge failure  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-8d4dfa1 Fixes and cleanups after 7.1.0/7.1.1 merge  
-  
-* **packages/apps/EmotionControl/**  
-807d0cc EC: Disable Lockscreen Media Art [2/2]  
-0814f88 EC: App sidebar (2/2)  
-f3ab4fb EC: AppCircleSidebar: Support for Configurable Trigger Region [2/2]  
-35d7721 EC: Implement App circle sidebar [2/2]  
-dd28aaf EC: Gesture Anywhere - bring it back [2/2]  
-14cfb2a EC: Immersive Recents [2/2]  
-edccd6b EC: Add 7 more power menu animations [2/2]  
-53cbb87 EC: Rotation anim to Power and reboot menu [2/2]  
-5ea77bb EC: Power Menu animations [2/2]  
-e6679de EC: Add MemBar to Recents [2/2]  
-90f4a05 EC: add Recent tab  
-0a7cc6b ROMControl - Disable Immersive Messages [2/2]  
-5a6455a EC: Force Expanded Notifications [2/2]  
-deef751 EC: Allow toggling animations off [2/2]  
-  
-* **packages/apps/Settings/**  
-f5b3761 Settings - Color picker enable alpha slider as default  
-8e1c4e3 Settings - Add marginov color picker  
-1da9038 Settings - Add double tap option to lockscreen shortcuts [2/2]  
-a865925 Settings - DSLV: Resize system icons to match vector drawable size  
-bfa561c Settings - Lockscreen shortcuts improvements 1/2  
-5d4cf24 Settings - dslv: Remove add icon. We already have a FAB  
-fe5286d Settings - Add new lockscreen shortcus icons  
-de62585 Settings - dslv: Bring in FAB for Lockscreen Shortcuts  
-59f9313 Settings - Slim DSLV improvement  
-2a17bcb Settings - add user configurable lockscreen shortcuts (2/2)  
-8e24eca Settings - Materialize DSLV  
-6a8e02a Settings - add dslv controller  
-1a35fe3 Settings - add central slim ActionListViewSettings class back...  
-a8fb17c Settings - make unaccounted and over-counted battery usage configurable  
-f6ac8df Settings - Add ability to disable bar color in battery saver mode (2/2)  
-8741bda Settings - Forward port power connect/disconnect notification support [2/2]  
-a13f194 Settings - Re-add Heads up switch  
-  
-* **packages/apps/SetupWizard/**  
-e89bc04 SetupWizard: always prompt the user to setup a lockscreen  
-  
-* **packages/providers/DownloadProvider/**  
-26850ac Automatic translation import  
-  
-* **packages/services/CMAudioService/**  
-b26686e Automatic translation import  
-  
-* **packages/services/Telecomm/**  
-431166e Telecomm: Add missing CMSDK dependencies in tests  
-  
-* **packages/services/Telephony/**  
-c9c7aa3 Telephony: add external network selection activity  
-1219742 PhoneToggler: persist nw mode change  
-2eff9b5 Port network mode toggle from CM12  
-  
-###     12-12-2016  
-***  
-  
-  
-* **build/**  
-c1171ac core: allow specifying building ramdisk(s) with lzma  
-895b8e5 blockimgdiff: plz don't spam my terminal, thx  
-49f8182 NMF26O  
-90bf7ba build: Conditionally disable ccache for modules with FDO enabled  
-6a70a47 repopick: Avoid failing on commits lookup  
-34260b4 build: kernel: Remove duplicated targets  
-8656410 build: Set android jack args to global jack server args if existing  
-c3b4ba1 makefile: enable backuptool  
-  
-* **device/oneplus/oneplus3/**  
-4a84502 gps: update  
-a1979c8 op3: Add wifi config from OB8  
-d024fac Revert "op3: Add vendor changes to wifi configuration"  
-93ae745 oneplus3: Rewrite build-time symlinks creation  
-  
-* **device/oppo/common/**  
-993589e configpanel: Correct colors  
-39d9300 ConfigPanel: Update Colours to match SystemUI  
-32ac6bd Automatic translation import  
-  
-* **device/qcom/common/**  
-4342c52 qcom: extractors: Add msm8960 graphics list  
+5cd8df3 sepolicy: thermal-engine: allow reading kgsl sysfs  
   
 * **device/samsung/trlte-common/**  
-ff2c4b3 Use Snapdragon LLVM, if available  
-94b9bc7 trlte: remove libprotobuf-cpp-full  
-29aa4f7 overlay: Switch to the unified LED capabilities overlay  
-97a2de4 fingerprint: fix it for nougat  
-b73ac77 camera: clean up  
-  
-* **external/sqlite/**  
-c48eb60 sqlite: update to 3.15.2  
-  
-* **external/vim/**  
-fe38b49 patch 8.0.0133 Problem:    "2;'(" causes ml_get errors in an empty buffer.  (Dominique Pelle) Solution:   Check the cursor line earlier.  
-4c8980b patch 8.0.0132 Problem:    Test fails because of using :finish. Solution:   Change to return.  
-73b484c patch 8.0.0131 Problem:    Not enough test coverage for syntax commands. Solution:   Add more tests. (Dominique Pelle)  
+474c224 Add vsync phase offset  
+51f7e9a update init.cqom.rc  
+07656ef Symlink NFC node for backwards compatibility  
+ca77f7c boardconfig: use the right toolchain for the kernel  
   
 * **frameworks/base/**  
-b478106 SystemUI: fix build (remove BootReceiver.java)  
-1d6850b SystemUI: Don't vibrate on touchscreen camera gesture  
-b1f27ff Automatic translation import  
-b62effa Automatic translation import  
-6acd5b1 core: cm_symbols: Remove deprecated <private-symbols>  
-6853815 services: Doze only if GMS is installed  
-a6266db Automatic translation import  
-5b902fe Automatic translation import  
-9782691 fwb: services: tests: Remove duplicated WrappedAvoidBadWifiTracker class  
-eb10066 Merge tag 'android-7.1.1_r4' into cm-14.1  
-c8fea3c Fix the deadlock problem  
-b1de89e [AM] Fix system server may killed when monkey crash.  
-d0fe83c SystemUITests: fix compile error  
-d0c26b8 AppOps: Do not prune apps that are not present  
-12236af Support for MODE_ASK in commandline  
-1109c8e KeyguardStatusBarView: Fix battery text visibility issues  
-  
-* **frameworks/native/**  
-c2c3240 surfaceflinger: hwc1: Add missing mActiveFrameSequence counter  
-3a14886 surfaceflinger: Orient blur layer based on panel mount flip  
+259ac2d Sync battery tile icon with statusbar  
+1990a21 Allow blocking of notifications also on insecure lock screen (2/2)  
+e6f9db7 Enable\Disable bluetooth battery status[1/2]  
+ce3f6ad QS WiFi easy toggle: if enabled, long press for detail view  
+29edd3e QS: WiFi easy toggle [2/2]  
+a0bd55c QS BT easy toggle: if enabled, long press for detail view  
+5647bb4 QS: BT easy toggle [2/2]  
+de21d80 QS: Battery Saver Easy Toggle [1/2]  
+5b80f5c Telephony: Don't crash for too long baseband version  
   
 * **hardware/samsung/**  
-a7a0ecd macloader : add n5120 murata MAC address  
+a8fe2a1 liblights: Check for hardware support on HAL open  
   
-* **kernel/oneplus/msm8996/**  
-399e772 op3: Enable IP_NF_MATCH_RPFILTER  
+* **kernel/moto/shamu/**  
+0052a64 shamu: defconfig: Fix derp  
+99d5f9b shamu: Update defconfig  
   
-* **packages/apps/CMParts/**  
-6c79619 CMParts: Move resource utility methods into a util class  
+* **kernel/samsung/trlte/**  
+8d491aa ARM: msm: soc: Add Processor in CPU info  
   
-* **packages/apps/ContactsCommon/**  
-0d10624 Enable support for groups in External contacts accounts  
+* **packages/apps/Contacts/**  
+66b4e56 Automatic translation import  
+  
+* **packages/apps/EmotionControl/**  
+7424df2 EC: Enable\Disable bluetooth battery status[2/2]  
+45d8290 EC: WiFi easy toggle [1/2]  
+ca63780 EC: Bluetooth easy toggle [1/2]  
+d6e7020 EC: Battery Saver Easy Toggle [2/2]  
+  
+* **packages/apps/EmotionOTA/**  
+519b27b examples: Add OTA configuration file for trltevzw  
+  
+* **packages/apps/PhoneCommon/**  
+36f21bb Automatic translation import  
+912edad Automatic translation import  
+8db866e Automatic translation import  
+3495a3b Automatic translation import  
   
 * **packages/apps/Settings/**  
-833f0f9 Settings: Set summary for zen priority notif preference  
-355bf7c Automatic translation import  
-040291b Settings: Add toggle for heads up notifications  
-1f5a4d8 Automatic translation import  
-3b26af1 Settings: display: Add wake on plug switch  
-e09231b Settings: Remove our storage changes  
-5a89069 Automatic translation import  
-ce8d047 Settings: Fix the failing of more strings  
-dc09478 Settings: Fix the failing strings  
-0567f77 Fix asturian again  
-e4cd13a Automatic translation import  
-2eb472e Automatic translation import  
-0ab654d Unbreak Fingerprint Unlock Setup  
-16c616a Merge tag 'android-7.1.1_r4' into nougat  
-0f71843 Use bands.length instead of bands[0] when populating the bands list  
-78b0d5c Settings: Add CMHW vibrator intensity preference  
-  
-* **packages/apps/Snap/**  
-6d717ac Remove log spam  
-  
-* **packages/inputmethods/LatinIME/**  
-89cdc0c Merge tag 'android-7.1.1_r4' into nougat  
-  
-* **packages/services/Telephony/**  
-010e313 Automatic translation import  
-  
-* **platform_manifest/**  
-a130ff1 emotion: android-7.1.1_r4 * Use aosp wallpaper picker  
-  
-* **system/sepolicy/**  
-e5709ec Merge tag 'android-7.1.1_r4' into nougat  
-6d940ae sepolicy: exclude sdcard_posix/fuseblk from shipping builds  
+3d1d69c Allow blocking of notifications also on insecure lock screen (1/2)  
   
 * **vendor/cmsdk/**  
-c4588cc Automatic translation import  
-fdb1a9e FileUtils: Add util to check if a file exists  
-6be12da cmsdk: Add GlobalSettingSwitchPreference class  
-da98452 cmsdk: Use ConnectivityManager to manage tethering  
-3848dbb Automatic translation import  
-c8afb18 cmsdk: utils: Introduce PackageManagerUtils class  
-857dcda Automatic translation import  
-a2bda05 Automatic translation import  
-fead403 Automatic translation import  
+8f8a1a2 cmsdk: rebrand to LineageOS  
+eb82294 cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting  
+bda507e Automatic translation import  
+  
+###     12-30-2016  
+***  
+  
+  
+* **external/DUtils/**  
+1bfc9ca Revert "DUI: Update kill process logic [2/2]"  
+  
+* **frameworks/base/**  
+210d244 Fw_base - DUI: fix SmartBar edit mode  
+4f3781f Fw_base - DUI: Initialize package monitor class  
+b2728a2 Fw_base - Add a Switch to Enable/Disable Dynamic Navbar [1/2]  
+7b3e9fa Revert "Fw_base - dynamic navbar colors"  
+567edf5 Fw_base - Fix up disabling HW buttons when navbar is enabled  
+0836af9 Fw_base - DUI: Initial DUI checkin for N  
+72fad52 Fw_base - statusbar: add screenPinningStateChanged(boolean enabled) api and pipe to navigation bar  
+dce21d4 Fw_base - Bring back some removed statusbar API  
+d6d3971 Fw_base - DUI: core building support  
+c4cbb53 Fw_base - Pulse: forward port visualizer lock api  
+c3d33c2 Fw_base - Runtime toggle of navbar  
+36044b7 Fw_base - Revert "Runtime toggle of navbar"  
+a3bc4c5 Revert CM ADB notification icon  
+bcaf28c SystemUI: Initialize state linked volume  
+  
+* **hardware/qcom/audio-caf/msm8916/**  
+3790d0e Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916  
+  
+* **hardware/qcom/display-caf/msm8916/**  
+eda3b27 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916  
+  
+* **hardware/qcom/media-caf/msm8916/**  
+4c3361b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916  
+  
+* **packages/apps/CMParts/**  
+76e35ea CMParts - Move statusbar settings to EC  
+ba8e686 CMParts - Remove Navbar stuff and adapt HW keys switch for DUI  
+  
+* **packages/apps/DUI/**  
+666ee97 change directory  
+  
+* **packages/apps/EmotionControl/**  
+e8a57ab EC: arrays: fix  
+7a1d842 EC: statusbar: Enable notification icon count by default  
+996e306 EC: Move statusbar settings from CMParts  
+  
+* **packages/apps/Settings/**  
+42363e0 fix derp  
+fe1e7f0 Settings - Add a Switch to Enable Disable Dynamic Navbar [2/2]  
+5186dc3 Settings - SmartBar: add Flip button animation [2/2]  
+1134106 Settings - Fling: Fix FC in Fling settings when configuration changes  
+49887dc Settings - Add summary to Navbar dashboard item  
+627463f Settings - DU-Tweaks: Add CustomSeekBarPreference  
+6941363 Settings - DUI: Initial N checkin  
+034a269 Settings - ColorPickerPreference: Introduce set default button when attribute is set  
+66ddde0 Settings: rebrand to LineageOS  
+9e48803 Bluetooth/Wifi: center empty view and set textAppearance to medium  
+016e353 Automatic translation import  
+9744633 Expose option to change the device hostname.  
+  
+* **platform_manifest/**  
+3896f4e emotion: remove HexoLibre  
+d284a9d emotion: track DUI  
   
 * **vendor/emotion/**  
-3f215c4 emotion: bump to beta30  
-571ab6a emotion: bring back storage manager  
-8be80ab emotion: overlay: Enable auto-power-save modes globally  
-de379c1 emotion: Fix Trusted Face  
-1925082 sepolicy: Escape '.' character  
-4c5530a sepolicy: Fix "Allow adb pull of executables without root"  
+6230dc3 apns: Update hollandsnieuwe's (NL) APN  
+adab33c emotion: DU utils: Build utils library and add as boot jar  
   
-* **vendor/nxp-nfc/opensource/Nfc/**  
-1635d0f Merge tag 'LA.UM.5.5.r1-01800-8x96.0' into cm-14.1  
+###     12-29-2016  
+***  
   
-* **vendor/nxp-nfc/opensource/frameworks/**  
-ebc1234 Merge tag 'LA.UM.5.5.r1-01800-8x96.0' into cm-14.1  
   
-* **vendor/nxp-nfc/opensource/libnfc-nci/**  
-730ff6f Merge tag 'LA.UM.5.5.r1-01800-8x96.0' into cm-14.1  
+* **hardware/qcom/camera/**  
+702f237 camera: remove is-vendor-board-platform,QCOM check for kernel deps  
   
-* **vendor/qcom/binaries/**  
-6725f8b msm8996: audio: Updated sound trigger HAL  
-738a8d0 msm8996: graphics: Update graphics blobs  
+* **packages/apps/CMFileManager/**  
+774bd78 CMFileManager: rebrand to LineageOS  
+  
+* **packages/apps/masquerade/**  
+bf57c24 OMS7-N: Allow Play Store to filter out OMS-only themes  
+  
+* **vendor/emotion/**  
+125f5e7 emotion: Remove def_notif_count overlay  
+6d28528 sepolicy: Address new bluetooth denial  
+  
+###     12-28-2016  
+***  
+  
+  
+* **frameworks/base/**  
+77a31a3 SystemUI: Recents: Allow closing empty view via tapping  
+5c8a4b8 Fw_base - PhoneStatusBar: change ContentObserver  
+362778f Fw_base - Battery light: 100% charged level (1/2)  
+1bd2c33 [1/2] base: support separate encryption/lockscreen passwords  
+9163d7a Add wakelock option for flashlight  
+ddd685e StatusBarIconView: Enable notification icon count by default  
+b9cd40c SettingsProvider: Remove def_notif_count overlay  
+  
+* **packages/apps/CMParts/**  
+5094dfb CMParts: statusbar: Enable notification icon count by default  
+a11c31a CMParts - Battery light: 100% charged level (2/2)  
+  
+* **packages/apps/Email/**  
+d47c6a3 Merge "Automatic translation import" into cm-14.1  
+  
+* **packages/apps/OmniSwitch/**  
+6d541df fix derp  
+2da5666 OmniSiwtch: fix duplicate broadcast receiver  
+bc12d1c OmniSwitch: launcher: use WallpaperManager suggestDesiredDimensions  
+2280065 OmniSwitch: launcher: deep shortcut support  
+0b815b2 OmniSwitch: call resetRecentsPosition only on first open and not on refresh after a kill  
+651060d OmniSwitch: 99 little bugs in the code ...  
+  
+* **packages/apps/Settings/**  
+47456f0 [2/2] settings: support setting a separate encryption password  
+ad6ef0d values: rename Emotion version  
+  
+* **vendor/emotion/**  
+1d8f856 dependencies: RIP CyanogenMod, Welcome LineageOS!  
+864eb63 tools: changelog: Introduce CHANGELOG_PROJECTS  
+e768a92 tools: res: Cleanup Emotion banner  
+08af6c7 dependencies: Update to EmotionOS  
+ab8f50f configs: Update for the new Emotion versioning  
+83ff548 tools: build: Add option to select build variant  
+71353f4 tools: build: Add option to clean everything and exit  
+a7d890c tools: build: Update Emotion versioning  
+c72bca1 tools: build: Add options for boot and recovery images  
+60163ec backuptool: update it to 7.1.1  
+55f2478 tools: build: Remove resources limits and allow custom maintenance version  
+  
+###     12-27-2016  
+***  
+  
+  
+* **device/samsung/trltespr/**  
+4e5aaf3 trltespr: EmotionOS update  
+  
+* **hardware/qcom/audio-caf/msm8916/**  
+9a6477e Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.00.00.254.015 on remote branch  
+  
+* **packages/apps/EmotionControl/**  
+6b23fea EC: vectoring icons  
+  
+* **platform_manifest/**  
+3d1df3a LineageOS: Track AOSP for unmodified external projects  
+a7dc4da RIP CyanogenMod, Welcome LineageOS!  
+  
+###     12-26-2016  
+***  
+  
+  
+###     12-25-2016  
+***  
+  
+  
+* **build/**  
+f33ae86 buid: Update to EmotionOS  
+  
+* **frameworks/native/**  
+e98640f sf: hwc1: Add support for secondary color matrix  
+  
+* **hardware/qcom/fm/**  
+36179cb Automatic translation import  
+  
+* **packages/apps/Bluetooth/**  
+cc7dc8b Automatic translation import  
+  
+* **packages/apps/Browser/**  
+c55cc30 Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+d5f75e9 Automatic translation import  
+  
+* **packages/apps/Calendar/**  
+907cecc Automatic translation import  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+3b73375 Automatic translation import  
+  
+* **packages/apps/DeskClock/**  
+b96872d Automatic translation import  
+  
+* **packages/apps/Dialer/**  
+370ea98 Automatic translation import  
+  
+* **packages/apps/Eleven/**  
+7a9b22c Automatic translation import  
+  
+* **packages/apps/Email/**  
+1519e87 Automatic translation import  
+  
+* **packages/apps/Gello/**  
+8b58e1a Automatic translation import  
+  
+* **packages/apps/LockClock/**  
+c3d1475 Automatic translation import  
+  
+* **packages/apps/ManagedProvisioning/**  
+6a63118 Automatic translation import  
+  
+* **packages/apps/SetupWizard/**  
+b193375 Automatic translation import  
+  
+* **packages/apps/Trebuchet/**  
+e5ada2b Automatic translation import  
+  
+* **packages/apps/TvSettings/**  
+39e2c24 Automatic translation import  
+  
+* **packages/apps/UnifiedEmail/**  
+65154eb Automatic translation import  
+  
+* **packages/providers/DataUsageProvider/**  
+64b6c15 Automatic translation import  
+  
+* **packages/providers/MediaProvider/**  
+a2caf2b Automatic translation import  
+  
+* **packages/resources/devicesettings/**  
+409f74b add string for fp reader as home  
+  
+* **packages/services/Telecomm/**  
+62e76a3 Automatic translation import  
+  
+* **packages/services/Telephony/**  
+5162c0a Automatic translation import  
+  
+* **packages/wallpapers/LivePicker/**  
+1d41083 Automatic translation import  
+  
+* **platform_manifest/**  
+38c00e9 manifest: Update to EmotionOS  
+  
+###     12-24-2016  
+***  
+  
+  
+* **device/moto/shamu/**  
+5c15952 Allow shell to access battery info  
+b8449fe shamu: enable night mode *seems google just likes to lie  
+9519b75 shamu: set proper wifi and bluetooth power ratios  
+c06e4f6 add missing mobile data provisioning prop  
+a5f49b3 add missing aac 5.1 prop  
+0012f3a shamu: add facelock and drm props  
+1452454 shamu: add missing persist.radio.alt_mbn_name=tmo_alt.mbn  
+02840df shamu: fix shamu network values * in the past 3 factory images network values are set 10,0,1 but AOSP is set 9,0,1 lets fix it * just doing this as an overlay as im sure its shamu related as 10 is World Mode(Vzw)  
+5adf062 shamu: enable doze power saving mode *this is set to false by default and needs to be turned on per device depending if the device supports SENSOR_TYPE_SIGNIFICANT_MOTION more info here: https://source.android.com/devices/tech/power/mgmt.html  
+5f0db8f shamu: add missing persist.data.qmi.adb_logmask=0 prop  
+8ff49d4 shamu: enable miracast support  
+cd608fd shamu: Enable Wifi Display and fix screen mirroring  
+dac2608 shamu: set wifi calling props  
+e82992b shamu: disable rcs as per stock  
+775de30 shamu: add missing persist.radio.sib16_support prop  
+e9e8e8c shamu: Update config for snap camera  
+65e1e2e motodoze: Slot directly into dashboard  
+32d0ae9 shamu: disable mp-decision logspam  
+3807aaa shamu: Tune interactive for emotroid kernel  
+f56f8e5 shamu: Add missing sampling rates for compress offload  
+3116dc6 shamu: Disable live display by default  
+1539b9e shamu: bluetooth: set soc name to rome  
+52f585d shamu: Add MotoDoze package for Ambient Settings  
+4a3931f shamu: Add Gello and Snap  
+8e9ddf7 shamu: Enable VoLTE  
+bb54167 shamu: Add vulkan permissions  
+822fcf3 shamu: Reduce debug level for gps  
+d70f4d8 shamu: Remove verity leftover  
+24e7152 shamu: disable subsystem ramdump on userdebug builds  
+463a00d shamu: Enable sdcardfs  
+a89ff3b shamu: Use SDCLANG  
+9d7c2db shamu: Do not force encrypt  
+28f4b84 Revert "shamu: Use Snap camera app"  
+f093d50 Emotionify Shamu  
+  
+* **device/samsung/trlte-common/**  
+accf708 sepolicy update  
+  
+* **frameworks/base/**  
+05cec9a Improve scrolling cache  
+f2d7591 SystemUI: disable statusbar time refresh when screen off  
+fc7d15a base: Speed a couple more things up  
+b84dab6 Reset battery stats [1/2]  
+b112000 Base: fix facelock crash when lock screen is disabled  
+4d223c9 fix wrong algorithm in getMobilePowerPerPacket()  
+5a819f5 Fix struct vs. class mismatch in forward definitions  
+187c14e Debug: Initialize local to false  
+2d1dfcb Fix for google backup and restore  
+e18fa39 Fix Photosphere/Camera FCs  
+5288e66 better notification speed change  
+220a584 Adjusted animation timing  
+a70bda1 libhwui: use real-time scheduling  
+05f608f [AlarmManager] Prevent some alarm pathologies  
+9150a0b [AM] fix force stop home app may black screen.  
+a1d7fdc Delay move input method windows when exiting.  
+ee50f91 ANR related to split-screen  
+0f8c722 Fix NPE in TextUtils  
+18162a8 Fix warning: Potential leak of memory pointed to by 'set'  
+05aed10 Do not stop while mCurrentClient is already in the process of stop.  
+1755db0 Fix potential NULL dereference errors.  
+8806f12 Fix a memory leak.  
+8ff0663 Zygote: Deleted files can still be fstat(restat) success.  
+1ae3d19 Fix wrong focused stack if there are finishing tasks.  
+64077ae Fix BaseBundle IllegalArgumentException  
+c1e97d2 Move service from starting list once onStartCommand get called  
+590862b Fix the NullPointerException  
+a0a2aa5 Handle IllegalArgumentException  
+7a736f3 Deadlock in PackageInstallerSession  
+91a2003 SettingsLib: java.lang.NullPointerException  
+962174a Fix NPE from AppOpsManager.checkPackage.  
+2c72738 Fix the bug in replacing a fragment with itself.  
+ac28a6e pm: do not verify system apps signatures  
+82cac49 ListPopupWindow: Correct a negative height before showing  
+6bf5493 Fix pms systemReady NullpointerException  
+4ac1109 [BUG]fix OutOfBoundsException in DisplayContent.java  
+c83cf38 frameworks: squash of leak & race fixes  
+f030441 Catch KeyStoreException for setting profile lock  
+788ccf2 Prevent IndexOutOfBoundsException  
+69232b5 Fix incorrect FIFO cgroup assignment.  
+  
+* **frameworks/native/**  
+4833e21 sf: hwc1: Set SF EventThread to SCHED_FIFO in all cases  
+  
+* **hardware/qcom/audio-caf/msm8960/**  
+b8c1155 hal: Remove volume boost feature for msm8960  
+  
+* **packages/apps/Settings/**  
+d2f4230 Changelog: change colors  
+0dd34de Always show screen on time  
+f39f53c Reset battery stats [2/2]  
+  
+* **platform_manifest/**  
+2719f68 emotion: rename system_core name  
+56ef528 emotion: track system_core  
+  
+* **system/core/**  
+3aa7316 utils: add realtime scheduling priority  
+79c652a cutils: realtime scheduler class support  
+  
+###     12-23-2016  
+***  
+  
+  
+* **build/**  
+e83b96e roomservice: remove reload local manifest  
+  
+* **device/moto/shamu/**  
+8cee3f7 shamu: enable gesture settings  
+  
+* **frameworks/av/**  
+85d28bf libaudiopolicyservice: make legacy build with Werror  
+  
+* **frameworks/base/**  
+70bc7fc Automatic translation import  
+bc0b857 Automatic translation import  
+b756a70 Automatic translation import  
+4751c69 Automatic translation import  
+fb5a4a7 NightLight: automatic brightness options [1/2]  
+69ffd9a base: Add three-fingers-swipe to screenshot [1/2]  
+7fc3ee6 Powermenu screenshot delay [1/2]  
+169beb1 FWB - Add Screen Record to the Power Menu [1/2]  
+338f2cb Optional screenshot type [1/2]  
+412ccee Revert "GlobalActions: Long press screenshot action to take a partial screenshot"  
+7b799bd Revert "Fw_base - Add Screen Record to the Power Menu [1/2]"  
+8743cbe Fix NPE caused by custom small QS tiles  
+218359e remove the extra synchronized lock  
+2db070e circlebattery: bring back pulsing animation  
+4f604a6 Fix right lockscreen shortcut icon resetting  
+7ce3344 SystemUI: Fix Fab button no disappearing in multiwindow  
+a6fb454 values: remove config  
+382d756 Recents fab button improvements  
+7be05dc fb: add back all keyboard IME features back (1/2)  
+  
+* **hardware/ril-caf/**  
+5291cf8 ril-caf: Only allow GET_CARRIER_RESTRICTIONS for ril versions >= 14  
+  
+* **kernel/oneplus/msm8996/**  
+1a036ad misc: fpc1020: Wait for uevent to send before exiting IRQ handler  
+676d220b misc: fpc1020: Simplify proximity shut-off  
+5106e1a misc: fpc1020: Honor proximity state  
+  
+* **kernel/samsung/trlte/**  
+b925ffa Drop DPK3 source code  
+  
+* **packages/apps/CMFileManager/**  
+4ed86f6 cmfm: Target SDK version 23  
+04d4055 Revert "cmfm: Use FileProvider for serving files"  
+  
+* **packages/apps/CMParts/**  
+7e236d5 CMParts: fix untranslatable translation  
+f4c2485 Automatic translation import  
+e264951 Automatic translation import  
+8b44421 Automatic translation import  
+  
+* **packages/apps/DUI/**  
+d5d99e4 Automatic translation import  
+  
+* **packages/apps/Email/**  
+c3c978f Merge tag 'LA.UM.5.5.r1-02200-8x96.0' into cm-14.1  
+  
+* **packages/apps/EmotionControl/**  
+86d43a8 EC: fix derp  
+dc9e7ee EC: Add three-fingers-swipe to screenshot [2/2]  
+16894a9 EC: Powermenu screenshot delay [2/2]  
+4b225c2 EC: Optional screenshot type [2/2]  
+  
+* **packages/apps/Settings/**  
+9920176 Automatic translation import  
+eb5ee66 Automatic translation import  
+55a019e Remove LED pulsation when device isn't capable of it  
+170b2d1 Automatic translation import  
+4704e11 NightLight: automatic brightness options [2/2]  
+457e952 Settings: add back all keyboard IME features back (2/2)  
+203184a Settings: Fix selinux switch (#601)  
+84dab8b Avoid running setenforce if it ain't needed  
+a148135 Selinux Switch: Show toast only for permissive on boot  
+b24554c Selinux Switch  
+  
+* **packages/apps/Snap/**  
+2064b85 Snap: make openLegacy an option  
+1a7d451 Snap: update caf icons  
+d58b217 Snap: prevent NPE when checking if controls are visible  
+c2427aa Always set JPEG quality.  
+95b4bc9 Initialize focus manager in onResume().  
+f29da12 Modernize look of review controls.  
+e600930 Clean up module switcher.  
+a62bda4 Stop data loader on activity destroy.  
+7bcdf0a Improve RTL layout behaviour.  
+2bf3a05 Use transparent navigation bar.  
+3acc722 Use material versions of share/delete/edit icons.  
+1e7ddd0 Fix some photo UI layout issues.  
+  
+* **packages/apps/Stk/**  
+426dd82 Stk: New launcher icon  
+  
+* **packages/apps/ThemeChooser/**  
+870d934 Automatic translation import  
+  
+* **platform_manifest/**  
+b11ec8d manifest: don't track Launcher3  
+919025c manifest: only clone latest rev of chromium prebuilts  
+  
+* **system/sepolicy/**  
+90b25b9 fix denials for rootfs:lnk_file  
+  
+* **vendor/cmsdk/**  
+e0f6e08 Automatic translation import  
+9730aab Automatic translation import  
+174470e Automatic translation import  
+  
+* **vendor/emotion/**  
+ca4d590 emotion: Remove Launcher3 makefile entry  
+bd2f5ec tools: fix repo sync in getdependencies.py  
   
