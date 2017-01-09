@@ -1,28 +1,60 @@
+###     01-09-2017  
+***  
+  
+  
+* **build/**  
+5c2cf77 build: envsetup: Update CAF remote  
+a9e60bb build: qcom_target: Define MSM_VIDC_TARGET_LIST  
+485f979 build: qcom_target: Clean up QCOM_HARDWARE_VARIANT checks  
+a30290f Update build ID to N6F26Q  
+092533d Update build ID to NMF26V  
+  
+* **packages/apps/EmotionControl/**  
+09e28f9 EC: Fix statusbar clock position and remove the hide option  
+fa98de6 EC: Update and rebrand Emotion Control  
+  
+* **packages/apps/Settings/**  
+33cf111 EC: Update to the new Emotion Control package  
+  
+* **packages/apps/SnapdragonGallery/**  
+8528b0b Revert "Gallery2: enable beautification by default"  
+aa40908 snapdragongallery: fix dark on dark toolbar titles  
+0951488 snapdragongallery: add a round launcher icon  
+d691e9f snapdragongallery: make navbar color match actionbar  
+1d31d0d snapdragongallery: make a lot of the app use framework colors  
+357ff14 snapdragongallery: use accent color from frameworks  
+36a8bea snapdragongallery: change drawer drawable to a sd logo  
+  
+* **platform_manifest/**  
+5df510e emotion:track SnapdragonGallery  
+  
+* **vendor/emotion/**  
+7c09881 build SnapdragonGallery  
+6ff7d9d prebuilt: update KernelAdiutor to 0.9.6.1 beta  
+74d6b88 sepolicy:  Allow system/platform apps and system server to run su  
+93a439b prebuilt: bump Substratum to 524  
+1912b3f extract_utils: Update smali/backsmali to v2.2b4  
+25f3755 extract_utils: Update backsmali command  
+931a443 tools: getb64key - print the base64 version of a PEM public key file  
+6308d43 configs: stats: Update to EmotionOS statistics  
+  
 ###     01-08-2017  
 ***  
   
   
 * **build/**  
-a24a30a build: envsetup: Update CAF remote  
-5d118f4 build: qcom_target: Define MSM_VIDC_TARGET_LIST  
-83f74b8 build: qcom_target: Clean up QCOM_HARDWARE_VARIANT checks  
-e153302 N6F26Q  
-d9f2bae NMF26V  
 121d942 lunch: Use cd - instead of popd and pushd  
 2d27113 core: finish using PRIVATE_RECOVERY_OUT rather than hard-coding "RECOVERY"  
+  
+* **changelogs/**  
+8126fb0 20170108  
   
 * **device/moto/shamu/**  
 0b7b6a2 shamu: enable verizon visual voicemail support  
 c176bd9  Merge remote-tracking branch 'aosp/nougat-mr1.2-release' into cm-14.1  
   
-* **external/icu/**  
-554db26 Merge tag 'android-7.1.1_r9' into cm-14.1  
-  
 * **external/sqlite/**  
 120db45 sqlite: update to 3.16.1  
-  
-* **frameworks/av/**  
-00a823e Merge tag 'android-7.1.1_r9' into cm-14.1  
   
 * **frameworks/base/**  
 2a379c4 Tethering: Fix number of device connected  
@@ -33,14 +65,8 @@ c345749 Remove leftover power menu profile resources
 9cd7a09 core: Fix camel case  
 37467e1 SystemUI: remove 'hide clock' option from clock position tunable  
   
-* **frameworks/native/**  
-cc92c1b Merge tag 'android-7.1.1_r9' into cm-14.1  
-  
 * **hardware/qcom/audio-caf/msm8960/**  
 5e95ac2 hal: Additional checks for dedicated VOIP input  
-  
-* **hardware/qcom/audio/default/**  
-584bfb8 Merge tag 'android-7.1.1_r9' into cm-14.1  
   
 * **kernel/moto/shamu/**  
 add7a40 Uupdate shamu_defconfig for january security update  
@@ -58,9 +84,6 @@ add7a40 Uupdate shamu_defconfig for january security update
 * **packages/apps/Settings/**  
 692169f development_prefs: move selinux to the right place  
   
-* **packages/services/Telephony/**  
-deee082 Merge tag 'android-7.1.1_r9' into cm-14.1  
-  
 * **platform_manifest/**  
 a131141 default: android-7.1.1_r13  
 bbe7d5e default: android-7.1.1_r9  
@@ -69,13 +92,6 @@ bbe7d5e default: android-7.1.1_r9
 da4c93f cmsdk: remove 'hide clock' option from clock position tunable  
   
 * **vendor/emotion/**  
-cd7aebc prebuilt: update KernelAdiutor to 0.9.6.1 beta  
-2e9973c sepolicy:  Allow system/platform apps and system server to run su  
-5ba2587 prebuilt: bump Substratum to 524  
-3f20a89 extract_utils: Update smali/backsmali to v2.2b4  
-99e4796 extract_utils: Update backsmali command  
-1ae31be tools: getb64key - print the base64 version of a PEM public key file  
-42844b1 configs: stats: Update to EmotionOS and temporarily disable stats  
 010096e configs: Add missing CM/LineageOS system properties  
   
 * **vendor/motorola/**  
@@ -85,7 +101,11 @@ cd7aebc prebuilt: update KernelAdiutor to 0.9.6.1 beta
 ***  
   
   
+* **external/icu/**  
+554db26 Merge tag 'android-7.1.1_r9' into cm-14.1  
+  
 * **frameworks/av/**  
+00a823e Merge tag 'android-7.1.1_r9' into cm-14.1  
 7a17a62 Revert "Revert "Stagefright: Allow setting high-framerates in CameraSource""  
   
 * **frameworks/base/**  
@@ -104,8 +124,11 @@ a81e7a8 Fw_base - QS: Add toggle for fancy QS animation [1/2]
 732a7b4 Fw_base - Hide Lockscreen clock & date [1/2]  
 5988e02 BatteryTile: fix InflateException  
   
-* **hardware/qcom/audio-caf/msm8974/**  
-becbb2f hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
+* **frameworks/native/**  
+cc92c1b Merge tag 'android-7.1.1_r9' into cm-14.1  
+  
+* **hardware/qcom/audio/default/**  
+584bfb8 Merge tag 'android-7.1.1_r9' into cm-14.1  
   
 * **packages/apps/CMParts/**  
 d11502d CMParts: Match pulse speed to frameworks default  
@@ -143,7 +166,26 @@ c511e46 OMS7-N: Apps: show/hide Substratum overlays [2/2]
 c865c0e Exclude overlays from the app counter  
 3a3e7b3 Settings - move 2 switches to EC  
   
+* **packages/services/Telephony/**  
+deee082 Merge tag 'android-7.1.1_r9' into cm-14.1  
+  
 ###     01-06-2017  
+***  
+  
+  
+* **hardware/qcom/audio-caf/msm8916/**  
+d414d15 hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
+  
+* **hardware/qcom/audio-caf/msm8974/**  
+becbb2f hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
+  
+* **packages/apps/EmotionOTA/**  
+5cdf6f4 Automatic OTA configuration for multiple supported devices  
+  
+* **platform_manifest/**  
+75c512c Remove obsolete OTA project  
+  
+###     01-05-2017  
 ***  
   
   
@@ -160,8 +202,8 @@ af55c06 op3: Update bloblist for official N blobs
 e6b8451 op3: Update IPACM for new BSP  
 bf93a7d op3: Misc updates from official N  
   
-* **hardware/qcom/audio-caf/msm8916/**  
-d414d15 hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
+* **device/samsung/qcom-common/**  
+e4c6a86 qcom-common: Rebrand to LineageOS  
   
 * **hardware/qcom/audio-caf/msm8937/**  
 95ccc85 policy_hal: Fix mismerges  
@@ -182,6 +224,10 @@ f4e5f48 audio: Fix complilation warnings under Clang
   
 * **hardware/qcom/display-caf/msm8937/**  
 3dfb72a sdm: Always include kernel headers  
+3c389e0 Fix duplicate copy file rules  
+5ab047e display: Cleanup flags  
+381813d Don't build lights module if vendor supplies it  
+8908ec8 display: Use * **pathmap  
   
 * **hardware/qcom/media-caf/msm8937/**  
 64e0fc1 mm-video: Disable proprietary extension  
@@ -189,6 +235,56 @@ becaa72 venc: Fix VQZip issue
 d322c9f vidc: Fix makefiles  
 0e5dd32 media: Avoid collision with FFMPEG plugin  
 671cbd6 media: Use * **pathmap  
+  
+* **kernel/moto/shamu/**  
+4fc6918 Update shamu_defconfig  
+ab6ec28 block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.  
+6f38c0c block: zen: crashing on selection fixup  
+9179fc2 block: scheduler: add ZEN  
+754edef mm: thp: fix SMP race condition between THP page fault and MADV_DONTNEED  
+49cc49a kgsl: convert some workqueues to use kthreads  
+09005cf mdss: move to a kthread for vsync_retire_work_handler  
+7df85ff Add SIO and FIOPS i/o schedulers  
+11661ec tcp_cubic: do not set epoch_start in the future  
+c1c3713 tcp_cubic: better follow cubic curve after idle period  
+8a9b5fa tcp: fix timing issue in CUBIC slope calculation  
+d881024 cfq-iosched: fix the setting of IOPS mode on SSDs  
+8a3b2f1 block: Make CFQ default to IOPS mode on SSDs  
+3b48a14 mmc: sdhci-msm: Fix HW issue with power IRQ handling during reset  
+1ec9e1f Revert "power: max17042: Enable Empty Learning feature."  
+9a898ae block: Reserve only one queue tag for sync IO if only 3 tags are available  
+edba02f readahead: make context readahead more conservative  
+8450ea2 writeback: fix writeback cache thrashing  
+5c778b2 writeback: fix race that cause writeback hung  
+9005e4b sync: don't block the flusher thread waiting on IO  
+ce97054 cpufreq_elementalx: pick next freq from freq tables  
+122294a cpufreq_elementalx: tune and make less aggressive  
+c3aa3ae cpufreq_elementalx: replace input boost with down factor and floor frequency  
+05f3895 cpufreq_elementalx: disable input boost  
+8b9c91c cpufreq_elementalx: let input boost drop to lower frequency  
+07b06f1 cpufreq_elementalx: increase max screen off freq  
+d34c335 cpufreq_elementalx: apply input boost per-cpu  
+f5c8aba cpufreq_elementalx: refactor and adjust  
+47166ef ElementalX governor version 2  
+5ba5c38 cpufreq: remove race while accessing cur_policy  
+86b3732 cpufreq: governor: remove copy_prev_load from 'struct cpu_dbs_common_info'  
+d8997fa cpufreq: governor: Be friendly towards latency-sensitive bursty workloads  
+c3874ab cpufreq: stats: Don't update cpufreq_stats_table if it's NULL  
+5c674b7 perf: remove duplicate call when removing per cpu events  
+2a4da09 cpufreq: Return directly in __cpufreq_get if policy is NULL  
+8daedcb msm: Fix high load average from uninterruptible waits  
+6d1c728 deadline: decrease fifo_batch  
+4b1e390 msm: kgsl: Bump the GPU frequency for long blocks of processing  
+576475b msm: kgsl: set the correct max_state  
+167d84e PM: devfreq: Use high priority workqueue  
+aa0e5b8 msm: kgsl: Report correct GPU frequency in sysfs  
+1475a01 tcp: enable sockets to use MSG_FASTOPEN by default  
+a6c0ced Adjust Makefile  
+13ed03a bcmdhd: reduce wakelocks  
+c634d6e PM: devfreq: Fix simple_ondemand crashing on startup  
+195ef11 mm: slub: Default slub_max_order to 0  
+bec39fd binfmt_elf.c: use get_random_int() to fix entropy depleting  
+21ebeda .gitignore  
   
 * **kernel/oneplus/msm8996/**  
 36e015d soc: qcom: glink: Fix uninitialized return value  
@@ -500,86 +596,13 @@ f2dc156 msm: ipa3: add ipc logging for ipa driver
 b565222 Search engines: Add DuckDuckGo FR  
   
 * **packages/apps/EmotionOTA/**  
-5cdf6f4 Automatic OTA configuration for multiple supported devices  
-  
-* **packages/resources/devicesettings/**  
-8ec6740 Add button settings strings  
-  
-* **platform_manifest/**  
-75c512c Remove obsolete OTA project  
-  
-* **vendor/oneplus/**  
-e167665 op3: Add radio images  
-a858fb7 op3: Update blobs from Open Beta 9  
-151b275 op3: Update to official N blobs  
-  
-###     01-05-2017  
-***  
-  
-  
-* **hardware/qcom/display-caf/msm8937/**  
-3c389e0 Fix duplicate copy file rules  
-5ab047e display: Cleanup flags  
-381813d Don't build lights module if vendor supplies it  
-8908ec8 display: Use * **pathmap  
-  
-* **kernel/moto/shamu/**  
-4fc6918 Update shamu_defconfig  
-ab6ec28 block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.  
-6f38c0c block: zen: crashing on selection fixup  
-9179fc2 block: scheduler: add ZEN  
-754edef mm: thp: fix SMP race condition between THP page fault and MADV_DONTNEED  
-49cc49a kgsl: convert some workqueues to use kthreads  
-09005cf mdss: move to a kthread for vsync_retire_work_handler  
-7df85ff Add SIO and FIOPS i/o schedulers  
-11661ec tcp_cubic: do not set epoch_start in the future  
-c1c3713 tcp_cubic: better follow cubic curve after idle period  
-8a9b5fa tcp: fix timing issue in CUBIC slope calculation  
-d881024 cfq-iosched: fix the setting of IOPS mode on SSDs  
-8a3b2f1 block: Make CFQ default to IOPS mode on SSDs  
-3b48a14 mmc: sdhci-msm: Fix HW issue with power IRQ handling during reset  
-1ec9e1f Revert "power: max17042: Enable Empty Learning feature."  
-9a898ae block: Reserve only one queue tag for sync IO if only 3 tags are available  
-edba02f readahead: make context readahead more conservative  
-8450ea2 writeback: fix writeback cache thrashing  
-5c778b2 writeback: fix race that cause writeback hung  
-9005e4b sync: don't block the flusher thread waiting on IO  
-ce97054 cpufreq_elementalx: pick next freq from freq tables  
-122294a cpufreq_elementalx: tune and make less aggressive  
-c3aa3ae cpufreq_elementalx: replace input boost with down factor and floor frequency  
-05f3895 cpufreq_elementalx: disable input boost  
-8b9c91c cpufreq_elementalx: let input boost drop to lower frequency  
-07b06f1 cpufreq_elementalx: increase max screen off freq  
-d34c335 cpufreq_elementalx: apply input boost per-cpu  
-f5c8aba cpufreq_elementalx: refactor and adjust  
-47166ef ElementalX governor version 2  
-5ba5c38 cpufreq: remove race while accessing cur_policy  
-86b3732 cpufreq: governor: remove copy_prev_load from 'struct cpu_dbs_common_info'  
-d8997fa cpufreq: governor: Be friendly towards latency-sensitive bursty workloads  
-c3874ab cpufreq: stats: Don't update cpufreq_stats_table if it's NULL  
-5c674b7 perf: remove duplicate call when removing per cpu events  
-2a4da09 cpufreq: Return directly in __cpufreq_get if policy is NULL  
-8daedcb msm: Fix high load average from uninterruptible waits  
-6d1c728 deadline: decrease fifo_batch  
-4b1e390 msm: kgsl: Bump the GPU frequency for long blocks of processing  
-576475b msm: kgsl: set the correct max_state  
-167d84e PM: devfreq: Use high priority workqueue  
-aa0e5b8 msm: kgsl: Report correct GPU frequency in sysfs  
-1475a01 tcp: enable sockets to use MSG_FASTOPEN by default  
-a6c0ced Adjust Makefile  
-13ed03a bcmdhd: reduce wakelocks  
-c634d6e PM: devfreq: Fix simple_ondemand crashing on startup  
-195ef11 mm: slub: Default slub_max_order to 0  
-bec39fd binfmt_elf.c: use get_random_int() to fix entropy depleting  
-21ebeda .gitignore  
-  
-* **packages/apps/EmotionOTA/**  
 2dc68ee examples: CLeanup and update for EmotionOS versioning  
   
 * **packages/apps/Settings/**  
 9e22b97 Settings: Set root access options appropriately  
   
 * **packages/resources/devicesettings/**  
+8ec6740 Add button settings strings  
 4464b7a Fix malformed XML  
 e46e4d5 Add strings for fingerprint sensor wake-up  
   
@@ -589,8 +612,10 @@ e3991b6 Gello artifact v40
 c1843f4 Don't dex-preopt Gello  
 cfa2814 Include Gello.  
   
-* **vendor/motorola/**  
-00af5e4 athene: switch to more N blobs  
+* **vendor/oneplus/**  
+e167665 op3: Add radio images  
+a858fb7 op3: Update blobs from Open Beta 9  
+151b275 op3: Update to official N blobs  
   
 ###     01-04-2017  
 ***  
@@ -600,9 +625,6 @@ cfa2814 Include Gello.
 244485f update sepolicy 2  
 27e81f2 Merge branch 'nougat' of https://github.com/EmotionOS/android_device_samsung_trlte-common into HEAD  
 0c10282 update sepolicy  
-  
-* **device/samsung/trltespr/**  
-39e72c4 ril: add missing import  
   
 * **external/libhevc/**  
 b25d141 Handle invalid slice_address in slice header  
@@ -638,19 +660,15 @@ d17a69b dtbhtool: Fix missing PATH_MAX macro from limits.h
 * **kernel/samsung/trlte/**  
 1a1ef5b defconfig: enable CONFIG_IP_NF_MATCH_RPFILTER  
   
-* **packages/apps/EmotionOTA/**  
-d2ffa10 OTA: shamu  
-  
-* **packages/apps/Settings/**  
-241a8a2 Adapt your life  
-e7788f7 Add Substratum dashboard tile  
-  
 * **packages/apps/Snap/**  
 3f92dde Snap: Remove storage menu if no external storage available  
 da58793 Add PREVENT_POWER_KEY to fix Crash when using 'Power Shutter'  
   
 * **vendor/emotion/**  
 04aa88d prebuilt: clean up  
+  
+* **vendor/motorola/**  
+00af5e4 athene: switch to more N blobs  
   
 ###     01-03-2017  
 ***  
@@ -665,6 +683,7 @@ da58793 Add PREVENT_POWER_KEY to fix Crash when using 'Power Shutter'
 28c2a61 trlte: use mpdecision  
   
 * **device/samsung/trltespr/**  
+39e72c4 ril: add missing import  
 13774fd ril: update missing wakelocks semantics  
 4dc9cc4 trltespr: trlteRIL update/fix  
   
@@ -696,8 +715,12 @@ aa79435 CMParts - Fix the button's part
 92a52b2 EC: Show 4G instead of LTE switch [2/2]  
 d6d5c55 EC: remove unused weather toggle for statusbar  
   
+* **packages/apps/EmotionOTA/**  
+d2ffa10 OTA: shamu  
+  
 * **packages/apps/Settings/**  
-5221863 Revert "Settings: display: Add wake on plug switch"  
+241a8a2 Adapt your life  
+e7788f7 Add Substratum dashboard tile  
   
 * **packages/services/Telecomm/**  
 9d6a21f Telecomm: Fix error due to protected broadcast  
@@ -715,6 +738,9 @@ d6d5c55 EC: remove unused weather toggle for statusbar
   
 * **device/samsung/trlte-common/**  
 5f78239 Revert "Keep sim on"  
+  
+* **packages/apps/Settings/**  
+5221863 Revert "Settings: display: Add wake on plug switch"  
   
 * **vendor/emotion/**  
 387b4eb Update EmotionOS versioning  
@@ -771,12 +797,6 @@ a8fe2a1 liblights: Check for hardware support on HAL open
 * **kernel/samsung/trlte/**  
 8d491aa ARM: msm: soc: Add Processor in CPU info  
   
-* **packages/apps/EmotionControl/**  
-7424df2 EC: Enable\Disable bluetooth battery status[2/2]  
-45d8290 EC: WiFi easy toggle [1/2]  
-ca63780 EC: Bluetooth easy toggle [1/2]  
-d6e7020 EC: Battery Saver Easy Toggle [2/2]  
-  
 * **packages/apps/Settings/**  
 3ab313e Settings: res: Add missing strings/string-arrays  
 3d1d69c Allow blocking of notifications also on insecure lock screen (1/2)  
@@ -785,120 +805,4 @@ d6e7020 EC: Battery Saver Easy Toggle [2/2]
 3b473b7 harpia: initial blob set  
 c606cd8 msm8916-common: update blobs  
 31a4cdc msm8916-common: make libmot-qc-fd-offline device specific  
-  
-###     12-30-2016  
-***  
-  
-  
-* **build/**  
-ad3b6fc roomservice: RIP CyanogenMod  
-af9f963 build: repopick: point to LineageOS gerrit  
-  
-* **device/oneplus/oneplus3/**  
-5cd8df3 sepolicy: thermal-engine: allow reading kgsl sysfs  
-  
-* **external/DUtils/**  
-1bfc9ca Revert "DUI: Update kill process logic [2/2]"  
-  
-* **frameworks/base/**  
-5b80f5c Telephony: Don't crash for too long baseband version  
-210d244 Fw_base - DUI: fix SmartBar edit mode  
-4f3781f Fw_base - DUI: Initialize package monitor class  
-b2728a2 Fw_base - Add a Switch to Enable/Disable Dynamic Navbar [1/2]  
-7b3e9fa Revert "Fw_base - dynamic navbar colors"  
-567edf5 Fw_base - Fix up disabling HW buttons when navbar is enabled  
-0836af9 Fw_base - DUI: Initial DUI checkin for N  
-72fad52 Fw_base - statusbar: add screenPinningStateChanged(boolean enabled) api and pipe to navigation bar  
-dce21d4 Fw_base - Bring back some removed statusbar API  
-d6d3971 Fw_base - DUI: core building support  
-c4cbb53 Fw_base - Pulse: forward port visualizer lock api  
-c3d33c2 Fw_base - Runtime toggle of navbar  
-36044b7 Fw_base - Revert "Runtime toggle of navbar"  
-a3bc4c5 Revert CM ADB notification icon  
-bcaf28c SystemUI: Initialize state linked volume  
-  
-* **hardware/qcom/audio-caf/msm8916/**  
-3790d0e Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916  
-  
-* **hardware/qcom/display-caf/msm8916/**  
-eda3b27 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916  
-  
-* **hardware/qcom/display-caf/msm8996/**  
-420f0a1 hwc2: Handle empty lists in AcceptDisplayChanges  
-46ff2a6 msm8996: hwc2: check for null layers in layer map  
-bb2d518 hwc2 : Fix layer updating flag  
-db11764 gralloc: Return an error if the buffer was not mapped  
-b6284a2 Revert "Revert "gralloc: Default to 601 color space""  
-3a95498 hwc2: Workaround use after free by surfaceflinger  
-b2ba26f hwc2: Update composition types on AcceptDisplayChanges  
-8ad5b82 Revert "gralloc: Default to 601 color space"  
-4845057 gralloc: Disable UBWC for writeback buffers  
-f2225c8 hwc2: Initialize color mode to native  
-6b50329 hwc2 : Allow only top most cursor layer  
-57f81b6 Revert "gralloc: Return an error if the buffer was not mapped"  
-7a794ad hwc2: Fix solid fill  
-1cff9c5 sdm:hwc2: Store higher order mode id in case of clash  
-4fddd51 gralloc: Return an error if the buffer was not mapped  
-4c94a81 hwc2: Fix retire fences  
-d0b819c hwc2: Always store a release fence if a layer is presented  
-47fb16d hwc2: Use current frames retire fence only for the primary  
-81b1d0b 8996/HWC2: Return this frame's retire fence  
-c71ad4a hwc2: Remove default mode application at boot.  
-74c49b7 hwc2: Support HWC2_CAPABILITY_SKIP_CLIENT_COLOR_TRANSFORM  
-2b80b32 Merge tag 'LA.UM.5.5.r1-02200-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into caf  
-  
-* **hardware/qcom/media-caf/msm8916/**  
-4c3361b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916  
-  
-* **packages/apps/CMParts/**  
-76e35ea CMParts - Move statusbar settings to EC  
-ba8e686 CMParts - Remove Navbar stuff and adapt HW keys switch for DUI  
-  
-* **packages/apps/Contacts/**  
-66b4e56 Automatic translation import  
-  
-* **packages/apps/DUI/**  
-666ee97 change directory  
-  
-* **packages/apps/EmotionControl/**  
-e8a57ab EC: arrays: fix  
-7a1d842 EC: statusbar: Enable notification icon count by default  
-996e306 EC: Move statusbar settings from CMParts  
-  
-* **packages/apps/PhoneCommon/**  
-36f21bb Automatic translation import  
-912edad Automatic translation import  
-8db866e Automatic translation import  
-3495a3b Automatic translation import  
-  
-* **packages/apps/Settings/**  
-42363e0 fix derp  
-fe1e7f0 Settings - Add a Switch to Enable Disable Dynamic Navbar [2/2]  
-5186dc3 Settings - SmartBar: add Flip button animation [2/2]  
-1134106 Settings - Fling: Fix FC in Fling settings when configuration changes  
-49887dc Settings - Add summary to Navbar dashboard item  
-627463f Settings - DU-Tweaks: Add CustomSeekBarPreference  
-6941363 Settings - DUI: Initial N checkin  
-034a269 Settings - ColorPickerPreference: Introduce set default button when attribute is set  
-66ddde0 Settings: rebrand to LineageOS  
-9e48803 Bluetooth/Wifi: center empty view and set textAppearance to medium  
-016e353 Automatic translation import  
-9744633 Expose option to change the device hostname.  
-  
-* **packages/services/Telephony/**  
-0e904e4 Telephony: Further improve network selection  
-be0e1a4 Telephony: Improve NetworkSelection  
-  
-* **platform_manifest/**  
-3896f4e emotion: remove HexoLibre  
-d284a9d emotion: track DUI  
-  
-* **vendor/cmsdk/**  
-8f8a1a2 cmsdk: rebrand to LineageOS  
-eb82294 cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting  
-bda507e Automatic translation import  
-  
-* **vendor/emotion/**  
-6230dc3 apns: Update hollandsnieuwe's (NL) APN  
-adab33c emotion: DU utils: Build utils library and add as boot jar  
   
