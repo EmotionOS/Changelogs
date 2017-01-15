@@ -1,4 +1,208 @@
-###     01-09-2017  
+###     01-16-2017  
+***  
+  
+  
+* **build/**  
+d1577d8 cm: build: kernel: Remove obsolete checks  
+  
+* **device/oneplus/oneplus3/**  
+6f1d848 overlay: Hardware keys on/off option  
+  
+* **device/oppo/common/**  
+35fa7de oppo-common: configpanel: Commonize button settings strings translations  
+efe66b5 Automatic translation import  
+ef7b5f2 Automatic translation import  
+  
+* **device/samsung/trlte-common/**  
+3470112 overlay: Hardware keys on/off option  
+  
+* **frameworks/base/**  
+bbe4b21 Fw_base - Navigation Bar Tile  
+eea84a4 Fw_base - provide the bool for HW_Keys switch  
+  
+* **kernel/moto/shamu/**  
+b97d129 shamu: Catch up Jaegeuk's stable branch to v4.10-rc1-3.10  
+f3f3344 proc: Remove verifiedbootstate flag from /proc/cmdline  
+2c113bb UPSTREAM: net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  
+e3fcf87 BACKPORT: smarter propagate_mnt()  
+badd319 BACKPORT: don't bother with propagate_mnt() unless the target is shared  
+a4d7ea6 lib: introduce upper case hex ascii helpers  
+79adb7b lib/vsprintf.c: squash commits up tp https://github.com/torvalds/linux/commit/675cf53c1deaffadc7b6a0b4afe6cdafec86bedb#diff-26ab5d5fc75f4b8ed497c269d1f33ff2  
+d6e087d qdsp6v2: extend compilation with Os  
+dbfa1c0 sound: soc: optimize for size  
+1796275 sound: msm: qdsp6v2: optimize for size  
+a2a3839 UPSTREAM: l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()  
+d87f7d4 f2fs: f2fs.h: reverting the idle interval timer to prevent deadlocks courtesy of @arter97  
+  
+* **kernel/oneplus/msm8996/**  
+e7bad19 Merge branch 'linux-3.18.y' of git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable into nougat  
+7de64f1 qcacld-2.0: Update to LA.UM.5.5.c1-06000-8x96.0  
+  
+* **packages/apps/CMParts/**  
+5ae1f9a CMParts - Remove button settings stuff - moved to EC  
+825907a Revert "Settings - Forward port Long press back to kill app + timeout (2/2)"  
+bd9c7db CMParts: Fix expandable desktop  
+  
+* **packages/apps/Dialer/**  
+4ff2151 Dialer: Fix translations  
+  
+* **packages/apps/EmotionControl/**  
+caccdf5 EC: add buttons tab (2/2)  
+  
+* **packages/apps/Settings/**  
+9ef1387 Settings: Improve hotspot timeout strings  
+37013b9 Expose gesture settings switchbar  
+7015e6a Expose condition card colors  
+996763f Revert "Settings: add back all keyboard IME features back (2/2)"  
+  
+* **packages/apps/Snap/**  
+32825fc Snap: CAF strings cleanup second interation  
+  
+* **vendor/emotion/**  
+6835c7a overlay: Enable Visual Voicemail for Verizon devices  
+c58b47c apns: Update H2O Wireless  
+58b95b7 extract_utils: Introduce variable INITIAL_COPYRIGHT_YEAR  
+  
+###     01-15-2017  
+***  
+  
+  
+* **device/moto/shamu/**  
+1073a64 shamu: Fix audio  
+294e61f shamu: set the gpu's default_pwrlevel to 4  
+  
+* **packages/apps/Bluetooth/**  
+36ec67c cleanup unused resource strings  
+  
+* **packages/apps/EmotionOTA/**  
+f53424c trltevzw: Push 7.1.1-20170114 OTA update  
+  
+* **packages/services/Telephony/**  
+0245fca Telephony: Fix translations  
+  
+###     01-14-2017  
+***  
+  
+  
+* **build/**  
+4f29436 kernel: RIP CyanogenMod, Welcome LineageOS!  
+0fefdc3 build: kernel: build arm kernel modules with -fno-pic  
+  
+* **device/samsung/qcom-common/**  
+8cd28f3 qcom: doze: Move to display settings  
+  
+* **packages/apps/Snap/**  
+65bec49 Snap: Fix missing untranslatables  
+  
+* **system/bt/**  
+cc99880 bt: Allowed WBS to be disabled when building with QTI_SW  
+  
+###     01-13-2017  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+84655bd some small updates  
+c9708f2 mount /sys/kernel/debug  
+ae2d279 changes for qseecom  
+068fc7b Merge branch 'nougat' of https://github.com/EmotionOS/android_device_samsung_trlte-common into HEAD  
+  
+* **frameworks/base/**  
+410a6ca Bring back quick install with N adaptations  
+d794557 DefaultPermissionGrantPolicy: Pass correct arguments  
+b5f02c7 Fix stack-buffer-overflow detected by AddressSanitizer.  
+81761bd Fix NullPointerException in MediaPlayer  
+a793cc0 Fw_base - Change Heads up QS tile longpress intent to notifications  
+d69adcf Fw_base - Add Heads up QS Tile  
+ba63906 Fw_base: App picker Tile  
+bb511c3 Themes: Expose manifest styles for themes  
+329d4c1 SystemUI: Expose switch bar title  
+  
+* **packages/apps/Email/**  
+592c2e3 Revert "Add account"  
+  
+* **packages/apps/EmotionOTA/**  
+c8bc386 trltevzw: Push 7.1.1-20170112 OTA update  
+  
+* **packages/apps/Settings/**  
+fe46e07 Expose dashboard category padding bottom  
+dd6a554 Expose dashboard category and tile color  
+  
+* **packages/apps/Snap/**  
+69b66d2 Fix camera controls rotation.  
+2876bc5 Snap: Replace strings  
+  
+###     01-12-2017  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+9693337 Enable Google Assistant  
+14b878e set ro.sys.fw.dex2oat_thread_count=4  
+3de55a7 Enable Android XLAT  
+da9d226 Enable HW Acceleration  
+ad5fc79 Use real shadows in recents UI  
+  
+* **frameworks/base/**  
+f853b3d Frameworks: Cleanup and remove duplicate sounds  
+  
+* **hardware/qcom/audio-caf/msm8916/**  
+42fd8b9 Fix security vulnerability: Equalizer command might allow negative indexes  
+b9cbb87 Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **kernel/samsung/trlte/**  
+076fa33 Update QCOM MHI driver  
+  
+* **packages/apps/Settings/**  
+c9025d7 Settings: Let's get to choose keyboard again in Settings.  
+4fbb0e2 Sim-Settings: Don't allow empty sim name  
+  
+* **packages/apps/Snap/**  
+acd2288 Snap: Fix whitespace issues  
+70cf903 Snap: Fix untranslatable strings  
+  
+###     01-11-2017  
+***  
+  
+  
+* **device/moto/shamu/**  
+84ab292 shamu: Update fingerprint to N6F26Q  
+37daabd shamu: add CarrierServices.apk  
+aa99aad shamu: Use phone-xxhdpi-3072-hwui-memory config  
+4918a4d shamu: Do not force encrypt  
+  
+* **hardware/qcom/audio-caf/msm8937/**  
+af95d62 Fix security vulnerability: Equalizer command might allow negative indexes  
+c0f34fd Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **hardware/qcom/audio-caf/msm8952/**  
+7b2cdc3 Fix security vulnerability: Equalizer command might allow negative indexes  
+d3b387e Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **hardware/qcom/audio-caf/msm8960/**  
+89ea159 Fix security vulnerability: Equalizer command might allow negative indexes  
+cefa8c2 Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **hardware/qcom/audio-caf/msm8974/**  
+2eab42c Fix security vulnerability: Equalizer command might allow negative indexes  
+730371f Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **hardware/qcom/audio-caf/msm8994/**  
+61970b6 Fix security vulnerability: Equalizer command might allow negative indexes  
+3a6ccb7 Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **hardware/qcom/audio-caf/msm8996/**  
+ff84df6 Fix security vulnerability: Equalizer command might allow negative indexes  
+87d52fd Fix security vulnerability: Effect command might allow negative indexes  
+  
+* **hardware/samsung/**  
+28bf1cc exynos4: allow using SLSI stack  
+  
+* **vendor/motorola/**  
+03e0c15 shamu: Add missing CarrierServices.apk  
+a8a8dfe shamu: Update blobs to N6F26Q  
+  
+###     01-10-2017  
 ***  
   
   
@@ -9,12 +213,68 @@ a9e60bb build: qcom_target: Define MSM_VIDC_TARGET_LIST
 a30290f Update build ID to N6F26Q  
 092533d Update build ID to NMF26V  
   
+* **changelogs/**  
+b4e78da Changelog 20170109  
+  
+* **external/sqlite/**  
+c7f06f1 enable ATOMIC_WRITE  
+  
+* **packages/apps/Dialer/**  
+b828cf4 Move CAF strings to cm_strings and fix wrong line breaks.  
+  
 * **packages/apps/EmotionControl/**  
 09e28f9 EC: Fix statusbar clock position and remove the hide option  
 fa98de6 EC: Update and rebrand Emotion Control  
   
+* **packages/apps/EmotionOTA/**  
+5abe463 oneplus3: Push 7.1.1-20170109 OTA update  
+fa73bf9 trltevzw: Push 7.1.1-20170109 OTA update  
+  
 * **packages/apps/Settings/**  
 33cf111 EC: Update to the new Emotion Control package  
+  
+* **packages/apps/SetupWizard/**  
+52a78fd SetupWizard: rebrand to LineageOS  
+  
+* **packages/services/Telephony/**  
+ebdfcc3 Telephony: Number of slot should start with 1  
+  
+* **vendor/emotion/**  
+7c09881 build SnapdragonGallery  
+6ff7d9d prebuilt: update KernelAdiutor to 0.9.6.1 beta  
+74d6b88 sepolicy:  Allow system/platform apps and system server to run su  
+93a439b prebuilt: bump Substratum to 524  
+1912b3f extract_utils: Update smali/backsmali to v2.2b4  
+25f3755 extract_utils: Update backsmali command  
+931a443 tools: getb64key - print the base64 version of a PEM public key file  
+6308d43 configs: stats: Update to EmotionOS statistics  
+  
+###     01-09-2017  
+***  
+  
+  
+* **changelogs/**  
+8126fb0 20170108  
+  
+* **device/moto/shamu/**  
+0b7b6a2 shamu: enable verizon visual voicemail support  
+c176bd9  Merge remote-tracking branch 'aosp/nougat-mr1.2-release' into cm-14.1  
+  
+* **frameworks/base/**  
+2a379c4 Tethering: Fix number of device connected  
+  
+* **kernel/moto/shamu/**  
+add7a40 Uupdate shamu_defconfig for january security update  
+68ea959 Merge remote-tracking branch 'googlesource/android-msm-shamu-3.10-nou…  
+  
+* **packages/apps/EmotionControl/**  
+5354d8a EC: statusbar: Fix clock font style/size FCs  
+  
+* **packages/apps/EmotionOTA/**  
+266aff6 Update OTA XML and add more information  
+  
+* **packages/apps/Settings/**  
+692169f development_prefs: move selinux to the right place  
   
 * **packages/apps/SnapdragonGallery/**  
 8528b0b Revert "Gallery2: enable beautification by default"  
@@ -29,14 +289,7 @@ d691e9f snapdragongallery: make navbar color match actionbar
 5df510e emotion:track SnapdragonGallery  
   
 * **vendor/emotion/**  
-7c09881 build SnapdragonGallery  
-6ff7d9d prebuilt: update KernelAdiutor to 0.9.6.1 beta  
-74d6b88 sepolicy:  Allow system/platform apps and system server to run su  
-93a439b prebuilt: bump Substratum to 524  
-1912b3f extract_utils: Update smali/backsmali to v2.2b4  
-25f3755 extract_utils: Update backsmali command  
-931a443 tools: getb64key - print the base64 version of a PEM public key file  
-6308d43 configs: stats: Update to EmotionOS statistics  
+010096e configs: Add missing CM/LineageOS system properties  
   
 ###     01-08-2017  
 ***  
@@ -46,43 +299,56 @@ d691e9f snapdragongallery: make navbar color match actionbar
 121d942 lunch: Use cd - instead of popd and pushd  
 2d27113 core: finish using PRIVATE_RECOVERY_OUT rather than hard-coding "RECOVERY"  
   
-* **changelogs/**  
-8126fb0 20170108  
-  
-* **device/moto/shamu/**  
-0b7b6a2 shamu: enable verizon visual voicemail support  
-c176bd9  Merge remote-tracking branch 'aosp/nougat-mr1.2-release' into cm-14.1  
+* **external/icu/**  
+554db26 Merge tag 'android-7.1.1_r9' into cm-14.1  
   
 * **external/sqlite/**  
 120db45 sqlite: update to 3.16.1  
   
+* **frameworks/av/**  
+00a823e Merge tag 'android-7.1.1_r9' into cm-14.1  
+7a17a62 Revert "Revert "Stagefright: Allow setting high-framerates in CameraSource""  
+  
 * **frameworks/base/**  
-2a379c4 Tethering: Fix number of device connected  
 6ea6fb0 core: remove duplicate const  
 b93aec3 Merge tag 'android-7.1.1_r9' into nougat  
 20f9be3 SystemUI: Remove unused string  
 c345749 Remove leftover power menu profile resources  
 9cd7a09 core: Fix camel case  
 37467e1 SystemUI: remove 'hide clock' option from clock position tunable  
+a68548f FWB: Statusbar clock font size (SQUASHED) (1/2)  
+c677e52 FWB: Clock font style (SQUASHED)  
+48588ef FWB: AppSidebar: Auto hide timeout (1/2)  
+  
+* **frameworks/native/**  
+cc92c1b Merge tag 'android-7.1.1_r9' into cm-14.1  
   
 * **hardware/qcom/audio-caf/msm8960/**  
 5e95ac2 hal: Additional checks for dedicated VOIP input  
   
-* **kernel/moto/shamu/**  
-add7a40 Uupdate shamu_defconfig for january security update  
-68ea959 Merge remote-tracking branch 'googlesource/android-msm-shamu-3.10-nou…  
+* **hardware/qcom/audio/default/**  
+584bfb8 Merge tag 'android-7.1.1_r9' into cm-14.1  
+  
+* **packages/apps/Calendar/**  
+cdfc529 Calendar: String improvements  
   
 * **packages/apps/ContactsCommon/**  
 4395a38 Merge tag 'android-7.1.1_r9' into nougat  
   
 * **packages/apps/EmotionControl/**  
-5354d8a EC: statusbar: Fix clock font style/size FCs  
+705cc3f EC: Statusbar clock font size (SQUASHED) (2/2)  
+aeea422 EC: Clock font style (SQUASHED)  
+a0b259c EC: AppSidebar: Fix build errors  
+4090b9b EC: AppSidebar: Auto hide timeout (2/2)  
   
-* **packages/apps/EmotionOTA/**  
-266aff6 Update OTA XML and add more information  
+* **packages/apps/Messaging/**  
+f5b8d0f Messaging: String improvements  
   
 * **packages/apps/Settings/**  
-692169f development_prefs: move selinux to the right place  
+64e11d8 remove kill_app_longpress from here  
+  
+* **packages/services/Telephony/**  
+deee082 Merge tag 'android-7.1.1_r9' into cm-14.1  
   
 * **platform_manifest/**  
 a131141 default: android-7.1.1_r13  
@@ -91,27 +357,11 @@ bbe7d5e default: android-7.1.1_r9
 * **vendor/cmsdk/**  
 da4c93f cmsdk: remove 'hide clock' option from clock position tunable  
   
-* **vendor/emotion/**  
-010096e configs: Add missing CM/LineageOS system properties  
-  
-* **vendor/motorola/**  
-6408e29 Shamu: Update blobs to Android 7.1.1 (N6F26Q)  
-  
 ###     01-07-2017  
 ***  
   
   
-* **external/icu/**  
-554db26 Merge tag 'android-7.1.1_r9' into cm-14.1  
-  
-* **frameworks/av/**  
-00a823e Merge tag 'android-7.1.1_r9' into cm-14.1  
-7a17a62 Revert "Revert "Stagefright: Allow setting high-framerates in CameraSource""  
-  
 * **frameworks/base/**  
-a68548f FWB: Statusbar clock font size (SQUASHED) (1/2)  
-c677e52 FWB: Clock font style (SQUASHED)  
-48588ef FWB: AppSidebar: Auto hide timeout (1/2)  
 b1a7fd0 Fw_base - Forward port Long press back to kill app + timeout(1/2)  
 acd875d Fw_base - Ambient display: Battery status (1/2)  
 40cce11 OMS: Introduce MODIFY_OVERLAYS permission for user apps  
@@ -124,25 +374,18 @@ a81e7a8 Fw_base - QS: Add toggle for fancy QS animation [1/2]
 732a7b4 Fw_base - Hide Lockscreen clock & date [1/2]  
 5988e02 BatteryTile: fix InflateException  
   
-* **frameworks/native/**  
-cc92c1b Merge tag 'android-7.1.1_r9' into cm-14.1  
+* **hardware/qcom/audio-caf/msm8916/**  
+d414d15 hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
   
-* **hardware/qcom/audio/default/**  
-584bfb8 Merge tag 'android-7.1.1_r9' into cm-14.1  
+* **hardware/qcom/audio-caf/msm8974/**  
+becbb2f hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
   
 * **packages/apps/CMParts/**  
 d11502d CMParts: Match pulse speed to frameworks default  
 03faefe Fix handling of auto power save summary.  
 19c709c Settings - Forward port Long press back to kill app + timeout (2/2)  
   
-* **packages/apps/Calendar/**  
-cdfc529 Calendar: String improvements  
-  
 * **packages/apps/EmotionControl/**  
-705cc3f EC: Statusbar clock font size (SQUASHED) (2/2)  
-aeea422 EC: Clock font style (SQUASHED)  
-a0b259c EC: AppSidebar: Fix build errors  
-4090b9b EC: AppSidebar: Auto hide timeout (2/2)  
 0ae553a EC: fix derps  
 693090c EC: Option for date style/position, left-right of clock (2/2)  
 e2a8eee EC: Smart Pulldown [2/2]  
@@ -153,11 +396,7 @@ d71c827 EC: Max Lockscreen Notification count [2/2]
 e19fd38 EC: Keyguard statusbar left clock [2/2]  
 931d599 EC: Hide Lockscreen clock & date [2/2]  
   
-* **packages/apps/Messaging/**  
-f5b8d0f Messaging: String improvements  
-  
 * **packages/apps/Settings/**  
-64e11d8 remove kill_app_longpress from here  
 eb131e7 Settings - Ambient display: Battery status (2/2)  
 b9d73e5 Expose color for external settings icons  
 314ef9f Hide the "show/hide overlays" when no overlay installed  
@@ -165,644 +404,4 @@ eea8019 OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
 c511e46 OMS7-N: Apps: show/hide Substratum overlays [2/2]  
 c865c0e Exclude overlays from the app counter  
 3a3e7b3 Settings - move 2 switches to EC  
-  
-* **packages/services/Telephony/**  
-deee082 Merge tag 'android-7.1.1_r9' into cm-14.1  
-  
-###     01-06-2017  
-***  
-  
-  
-* **hardware/qcom/audio-caf/msm8916/**  
-d414d15 hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
-  
-* **hardware/qcom/audio-caf/msm8974/**  
-becbb2f hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH  
-  
-* **packages/apps/EmotionOTA/**  
-5cdf6f4 Automatic OTA configuration for multiple supported devices  
-  
-* **platform_manifest/**  
-75c512c Remove obsolete OTA project  
-  
-###     01-05-2017  
-***  
-  
-  
-* **device/oneplus/oneplus3/**  
-6cd98a2 op3: Add radio filesmap  
-cd2f470 op3: Switch to XML audio policy configuration  
-51018ff op3: Disable FRP  
-d894920 op3: Update ramdisk from LA.UM.5.5.r1-02200-8x96.0  
-c55e5b7 op3: Correct the name of the frp partition  
-8fdb0dc op3: Add net_raw group to ril-daemon  
-37855f2 op3: Build libgnsspps.so  
-af55c06 op3: Update bloblist for official N blobs  
-7937eb3 op3: Update GPS hal from upstream  
-e6b8451 op3: Update IPACM for new BSP  
-bf93a7d op3: Misc updates from official N  
-  
-* **device/samsung/qcom-common/**  
-e4c6a86 qcom-common: Rebrand to LineageOS  
-  
-* **hardware/qcom/audio-caf/msm8937/**  
-95ccc85 policy_hal: Fix mismerges  
-b24ef94 audio policy: fix capture indication to sound trigger service.  
-3f05588 audio policy: fix media volume after ringtone  
-1e29be0 Revert "hal: Add abstraction for soundtrigger session"  
-8c2743e hal: Don't try to record using 3-mic unless we mean it  
-a8490ea hal: Haxed header  
-ab64a44 audio: Fix flac offload not working  
-bd04719 hal: Fix build with HDMI disabled  
-f4e5f48 audio: Fix complilation warnings under Clang  
-1394524 msm8996: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled  
-04ed235 audio: Extend platform parser to allow device name aliasing  
-326d03c hal: post_proc: enabled / disable volume listener based on prop  
-966b853 hal: Support the audio amplifier hook  
-284d304 hal: Allow building hardware audio encoders  
-7d10d9a audio: Use direct * **pathmap  
-  
-* **hardware/qcom/display-caf/msm8937/**  
-3dfb72a sdm: Always include kernel headers  
-3c389e0 Fix duplicate copy file rules  
-5ab047e display: Cleanup flags  
-381813d Don't build lights module if vendor supplies it  
-8908ec8 display: Use * **pathmap  
-  
-* **hardware/qcom/media-caf/msm8937/**  
-64e0fc1 mm-video: Disable proprietary extension  
-becaa72 venc: Fix VQZip issue  
-d322c9f vidc: Fix makefiles  
-0e5dd32 media: Avoid collision with FFMPEG plugin  
-671cbd6 media: Use * **pathmap  
-  
-* **kernel/moto/shamu/**  
-4fc6918 Update shamu_defconfig  
-ab6ec28 block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.  
-6f38c0c block: zen: crashing on selection fixup  
-9179fc2 block: scheduler: add ZEN  
-754edef mm: thp: fix SMP race condition between THP page fault and MADV_DONTNEED  
-49cc49a kgsl: convert some workqueues to use kthreads  
-09005cf mdss: move to a kthread for vsync_retire_work_handler  
-7df85ff Add SIO and FIOPS i/o schedulers  
-11661ec tcp_cubic: do not set epoch_start in the future  
-c1c3713 tcp_cubic: better follow cubic curve after idle period  
-8a9b5fa tcp: fix timing issue in CUBIC slope calculation  
-d881024 cfq-iosched: fix the setting of IOPS mode on SSDs  
-8a3b2f1 block: Make CFQ default to IOPS mode on SSDs  
-3b48a14 mmc: sdhci-msm: Fix HW issue with power IRQ handling during reset  
-1ec9e1f Revert "power: max17042: Enable Empty Learning feature."  
-9a898ae block: Reserve only one queue tag for sync IO if only 3 tags are available  
-edba02f readahead: make context readahead more conservative  
-8450ea2 writeback: fix writeback cache thrashing  
-5c778b2 writeback: fix race that cause writeback hung  
-9005e4b sync: don't block the flusher thread waiting on IO  
-ce97054 cpufreq_elementalx: pick next freq from freq tables  
-122294a cpufreq_elementalx: tune and make less aggressive  
-c3aa3ae cpufreq_elementalx: replace input boost with down factor and floor frequency  
-05f3895 cpufreq_elementalx: disable input boost  
-8b9c91c cpufreq_elementalx: let input boost drop to lower frequency  
-07b06f1 cpufreq_elementalx: increase max screen off freq  
-d34c335 cpufreq_elementalx: apply input boost per-cpu  
-f5c8aba cpufreq_elementalx: refactor and adjust  
-47166ef ElementalX governor version 2  
-5ba5c38 cpufreq: remove race while accessing cur_policy  
-86b3732 cpufreq: governor: remove copy_prev_load from 'struct cpu_dbs_common_info'  
-d8997fa cpufreq: governor: Be friendly towards latency-sensitive bursty workloads  
-c3874ab cpufreq: stats: Don't update cpufreq_stats_table if it's NULL  
-5c674b7 perf: remove duplicate call when removing per cpu events  
-2a4da09 cpufreq: Return directly in __cpufreq_get if policy is NULL  
-8daedcb msm: Fix high load average from uninterruptible waits  
-6d1c728 deadline: decrease fifo_batch  
-4b1e390 msm: kgsl: Bump the GPU frequency for long blocks of processing  
-576475b msm: kgsl: set the correct max_state  
-167d84e PM: devfreq: Use high priority workqueue  
-aa0e5b8 msm: kgsl: Report correct GPU frequency in sysfs  
-1475a01 tcp: enable sockets to use MSG_FASTOPEN by default  
-a6c0ced Adjust Makefile  
-13ed03a bcmdhd: reduce wakelocks  
-c634d6e PM: devfreq: Fix simple_ondemand crashing on startup  
-195ef11 mm: slub: Default slub_max_order to 0  
-bec39fd binfmt_elf.c: use get_random_int() to fix entropy depleting  
-21ebeda .gitignore  
-  
-* **kernel/oneplus/msm8996/**  
-36e015d soc: qcom: glink: Fix uninitialized return value  
-2bfa067 drivers: soc: add size checks and update log messages  
-0777546 soc: qcom: build kryo perf events only for MSM8996  
-162ed94 soc: qcom: glink_ssr: Fix uninitialized variable  
-0527a98 soc: qcom: flush persistent kmaps and fixmap mappings for subsystem mdt  
-18fef75 coresight: fix the dangling pointer issues on coresight  
-1e1bafb memshare: Add support to listen to SUBSYS_RAMDUMP_NOTIFICATION  
-9e83c02 soc: qcom: smp2p: Fix kernel address leak  
-ff3ae8e soc: qcom: rpm-smd: wait till all active set acks are cleared  
-8939b62 soc: qcom: protect kernel text from other bus masters  
-8ec0071 msm: mink: Adding SMCInvoke Driver  
-d0c446b soc: qcom: ssr: Return from acknowledgment wait if modem is crashed  
-2cc057e socinfo: Export API for getting SOC serial number  
-54cc5fd qcom: PMRESR register read returns zero for un supported group events  
-bf1e097 qcom: ssr: Fix possible overflow when copying firmware name  
-96253ba soc: qcom: spm: Poll for the PMIC_STATE after updating the VCTL register  
-54545c5 socinfo: Add support for ADP platform  
-3d95fdf soc: qcom: bam_dmux: create Rx work queue with WQ_UNBOUND  
-717c8eb soc: qcom: Add new scm API support in function scm_set_boot_addr  
-e7be2b9 soc: qcom: pil: Proxy vote for QPIC clock during modem boot  
-d6458be soc: qcom: boot_marker: change module load order  
-d44ccfe drivers: soc: Add buffer overflow check for svc send request  
-9f81a14 soc: qcom: pil: timeouts to be disabled from pil-imem  
-9d13535 soc: qcom: boot_marker: pass formatted buffer to marker  
-ee27a45 soc: qcom: pil-q6v5: Update cx_max to INT_MAX while voting for CX rail  
-22cc3de drivers: soc: qcom: system_stats: Support for System stats  
-6d9a20f soc: qcom: pil: Allow the MBA memory to be dynamic or a carveout  
-f3f9c86 soc: qcom: boot_stats: Add boot KPI markers  
-9ebdd62 drivers: soc: Add intent notification callback for APR Glink  
-e1cd8aa soc: qcom: bam_dmux: exit ul_wakeup() thread in SSR case  
-89edb76 soc: qcom: pil-q6v5: Update max voltage level to INT_MAX for CX rail  
-f6a60f0 msm: watchdog: Initialize delay_time variable with 0  
-3be116b memshare: Synchronize memory allocation and free operations  
-be463e5 soc: qcom: Return failure when subsystem descriptor is NULL  
-6e7bbd4 soc: qcom: remoteqdss: Implement the remaining message types  
-5d7a44c soc: qcom: remoteqdss: Implement the new communication protocol  
-45acfe7 soc: qcom: add support for the socinfo v0.12 format  
-98ea83b soc: qcom: Add offlining state to subsystem private state machine  
-7fdb480 spcom: add ION buffer support  
-05bae7d soc: qcom: jtagv8: disable the etm save-restore based on soc version  
-3415993 soc: qcom: Add support for gladiator error reporting v2  
-2dd4552 soc: qcom: pil: Make provision for collecting complete subsystem dump  
-121bf54 soc: qcom: fix spcom getting the file dentry  
-34dc67c qcom: subsystem_restart: Ignore SSR requests during system reboot/shutdown  
-fb01fa3 icnss: Update WLAN mode in wlan_firmware_service  
-e0d8406 icnss: Allocate msa memory in icnss_probe  
-32fdd6a drivers: soc: Fix implicit typecast warning  
-18c7907 soc: qcom: pil-mss: Add scm call to inform TZ of modem area  
-b615ea5 soc: qcom: Use scm_is_secure_device() API to find secure boot or not  
-e1e2a7f qcom: scm: provide scm_is_secure_device() api  
-a4066f8 drivers: soc: Add transport info when APR opens a channel  
-1dfc33b drivers: soc: put APR Tx buffer back into queue in error scenario  
-ff5b43c drivers: soc: Fix possible APR null pointer dereference  
-1ef4a3c icnss: Add support of skiping QMI  
-ad1d584 msm: secure_buffer: Add WLAN support  
-045d81a icnss: Update WLFW QMI messages  
-42edfdc soc: qcom: service-locator: add enable module parameter  
-991fe1a trace, scm: trace scm calls  
-c41481f soc: qcom: gladiator_hang: Increase the max threshold value  
-ec4012f defconfig: arm: msm: Enable MSM_TZ_SMMU for msmtitanium  
-56aae64 soc: qcom: Increase the retry timeout to 2 seconds  
-fb87c40 soc: qcom: bam_dmux: Fix race condition between power up and power down  
-1161d6d soc: qcom: pil-q6v5: Read the written value back in reset sequence  
-b186424b msm: socinfo: Add socinfo for wearable platforms  
-3f7ac7b socinfo: Add MSM8996AU automotive support  
-6d6d29a soc: qcom: Add generic irq handler for secure processor  
-f318992 soc: qcom: Avoid double free of inrush current mitigation driver  
-41c3527 soc: qcom: pil-q6v5: Add support to read acc register value and override it  
-798f0b9 APR: Add G-link transport layer for packet routing  
-0e27ed1 memshare: Add support for hypervisor mapping  
-24754b4 soc: qcom: sysmon: Enable back MSM_SYSMON_COMM interface support  
-c8878407 soc: qcom: Add debugfs interface for enabling SOC debug events  
-91b97f0 soc: qcom: Correct the logic to determine if device is secure boot or not.  
-5af5101 soc: qcom: flush persistent kmaps and fixmap mappings for MBA  
-58fca2a usb: gadget: Support endpoint allocation by ep name  
-81fce63 msm: gsi: update channel scratch structures  
-4d236a9 msm: gsi: update MHI channel scratch  
-202683f usb: f_serial: Add function suspend/resume for super-speed wakeup  
-e2e40e4 usb: debug: Add a macro for logging pr_info messages  
-e1e304a usb: gadget: gsi: Handle EVT_HOST_READY event in STATE_INITIALIZED state  
-68f18ae usb: f_gsi: Update connection parameters for GSI channels  
-7bb4d01 usb: gadget: gsi: Optimize TRB's buffer allocation functionality  
-845fbf8 usb: gadget: gsi: Use pm_runtime related API from state machine  
-f7c76e5 usb: gadget: f_gsi: Use 16KB buffer with each TRB for MBIM DL  
-cddd36f usb: gadget: f_gsi: Increase USB GSI OUT TRBs from 7 to 31 for ECM  
-be592cb usb: gadget: gsi: Fix reporting of USB device's usage count  
-93847e5 Revert "usb: gadget: gsi: Decrement USB gadget pm usage count on cable disconnect"  
-ec26a65 USB: dwc3-msm: Perform DBM config/unconfig under spinlock protection  
-61bd756 USB: dwc3: msm: Check endpoint status and request NULL or not  
-76d89329 USB: dwc3-msm: Add module parameter to disable host mode  
-ef4d1a0a USB: dwc3-msm: Check endpoint status and request queued or not first  
-69b12db USB: gadget: Unconfigure bam2bam endpoints during suspend  
-f0f19d8 USB: dwc3-msm: Don't schedule sm_work initially during probe  
-bb5c55d USB: dwc3-msm: Disable DBM endpoint in msm_ep_unconfig if no req queued  
-228dc54 usb: dwc3: Skip check for U3 when handling Function Suspend  
-1e3a063 USB: dwc3-msm: Enable power event irq in case of host bus suspend  
-c108e6d USB: dwc3-msm: Turn on iface_clk before accessing AHB2PHY registers  
-be64a56 usb: dwc3-msm: Fix restart usb work functionality  
-114cfe4 usb: gadget: gsi: Decrement USB gadget pm usage count on cable disconnect  
-7e7a733 usb: f_gsi: Fix resume handling by making PM calls  
-d8f8d6d usb: f_gsi: Set RNDIS DL aggr size based on host DL buffer size  
-a80524f usb: f_gsi: Report Function Remote Wake capabilities  
-e044782 usb: f_gsi: Send Function Suspend state to GSI EP OP for suspend  
-8ffa38f usb: f_gsi: Fix IP address assigment failure on RNDIS enable/disable  
-dc40a94 usb: f_gsi: Add support for DPL suspend/resume  
-0b27c18 iommu: Add domain attribute for getting page table info  
-74b767d iommu: Add {enable,disable}_config_clocks ops  
-1f0daef iommu: Add tlbi_domain op  
-f723099 iommu: Add DOMAIN_ATTR_FAST for requesting a fast domain  
-7cc5f09 iommu: msm: use phys_addr_t for PA in secure mapping  
-c7e047a iommu/iommu-debug: Make debug driver 32 bit compatible  
-e1d4d58 iommu: dma-mapping-fast: Remove unused #define  
-16c8afb iommu/iommu-debug:: initialize variables before use  
-1a0c7e7 iommu/io-pgtable-fast: validate data before use  
-ed8ca07 iommu/iommu-debug: Do a software table walk if ATOS fails  
-b203af5 iommu: msm: Remove IRQF_TRIGGER_RISING flag while registering interrupt  
-ae102d6 iommu/arm-smmu: Don't enable/disable clocks in inv_range_nosync  
-05abfc7 iommu/io-pgtable-fast: Prove correctness of TLB maintenance  
-1656c92 iommu/iommu-debug: Add debugfs file to enable config clocks  
-8d7c5d3 iommu/iommu-debug: Add functional test for ARM DMA IOMMU mapper  
-68b6aa0 iommu/iommu-debug: Add functional tests for fast mapper  
-e12237f iommu/iommu-debug: Add file for profiling the fast DMA APIs  
-77d2197 iommu: Add DMA mapper for io-pgtable-fast  
-ee1b888 arm64: dma_mapping: Support DOMAIN_ATTR_S1_BYPASS  
-a13d848 iommu/arm-smmu: Implement DOMAIN_ATTR_PGTBL_INFO  
-f576c65 iommu/arm-smmu: Implement {enable,disable}_config_clocks  
-4027f0f iommu/arm-smmu: Implement the .tlbi_domain op  
-fae20e5 iommu/iommu-debug: Add file for profiling fast mapper  
-0a560ad iommu/arm-smmu: Wire up io-pgtable-fast for domains that request it  
-12dac8c iommu/io-pgtable: Add fast page table mapper for ARMv8L  
-c063450 iommu/arm-smmu: Implement .get_pgsize_bitmap for domain  
-b5a3f28 iommu: Support dynamic pgsize_bitmap  
-eb9efe0 iommu: Introduce DOMAIN_ATTR_S1_BYPASS  
-a05ef5d iommu: add new iommu_ops callback for adding an OF device  
-4b606d3 iommu: provide early initialisation hook for IOMMU drivers  
-7b2550a iommu/iommu-debug: Maintain list of domains during alloc  
-a96fc1b iommu/arm-smmu: Fix DOMAIN_ATTR_S1_BYPASS check  
-28096ba iommu/arm-smmu: Fix a Null pointer dereference  
-4a98bdc iommu/arm-smmu: Fix uninitialized use of variable error  
-a6d9e95 iommu/arm-smmu: Support DOMAIN_ATTR_S1_BYPASS  
-8bfd553 Revert "iommu/arm-smmu: add DT option to avoid enabling translations on attach"  
-1d65d47 iommu/arm-smmu: Defer SMMU probe if clock-tree is not ready  
-4088034 iommu/arm-smmu: Check for static-cb option before requesting TZ  
-286bf0c iommu/arm-smmu: Request TZ to change page table format to V8L  
-cde1310 soc: qcom: Expose TZ specific device id to other functions  
-bb9bcf2 iommu/arm-smmu: Add explicit restore_sec_cfg call at SMMU probe  
-2b934af iommu/arm-smmu: Make atomic scm call in slave side protection mode  
-2d13b74 iommu/arm-smmu: Add support for slave side protection  
-e32f0d5 iommu/arm-smmu: add option to enable static context bank allocation  
-d989f20 iommu/arm-smmu: Be explicit about security mechanism  
-0888079 msm: ipa: sync with LA.UM.5.5.r1-01800-8x96.0  
-24cb842 msm: ipa: fix ioctl input param validation  
-de80450 msm: ipa: fix skb recycle logic  
-e8fa433 msm: ipa: fix potential race condition ioctls  
-dc492ad msm: ipa3: add mapping for IPA SMEM to SMMU  
-211ffef msm: ipa: handle information leak on ADD_FLT_RULE_INDEX ioctl  
-8bb98af msm: ipa: fix potential NULL deference on SMMU  
-dc5b0b0 msm: ipa: allow dtsi based lan rx ring size  
-277f4bc msm: ipa3: Fix unclocked access to IPA SMEM register  
-422563a msm: ipa: add mhi test suite  
-13acb47 msm: ipa: recycle skb for lan data path  
-f6fee49 msm: ipa: do not use skb clones for lan clients  
-5c2fb0e msm: ipa: fix multiple static analysis issues  
-2de4280 msm: ipa: Add support for IPA unit-test framework  
-9561f2a msm: ipa: IPA Disable API fix  
-0e84196 msm: ipa: Add parameters validation to handle static analysis issues  
-b4bcee1 msm: ipa: fix IPA driver processing context delete logic  
-a25b983 msm: ipa3: add support for SMMU to USB  
-b53e269 msm: ipa3: changes to IPA USB APIs to support SMMU  
-4b52fde msm: ipa: Neutrino IPA offload support  
-17b94b78 msm: ipa3: add support for additional mappings to smmu  
-14a5723 msm: ipa: add support for configuring polling interval/sleep time  
-60845ad msm: ipa3: fix packet handling for multiple buffers  
-8e3c788 msm: ipa: disconnect sequence change for USB 2.0  
-a4bb25b msm: ipa: do not use delay in SSR  
-8fcb5cc msm: ipa: Fix the memory leak on exception  
-56d252a msm: ipa3: don't check offset_entry when using DDR address  
-74abf79 msm: ipa: update wan rx size buffer  
-0692f45 msm: ipa: print resource bandwidth in ipa rm  
-d50e374 msm: ipa: exit when hdr proc ctx table is full  
-b9f403a msm: ipa: change default low watermark for rx buffers  
-4ccf0df msm: ipa3: Do not use APPS pipes for IPA kernel-test  
-11c89a9 msm: ipa3: fix the double ipa3_pre_init issue  
-2e6e5e4 msm: ipa2: fix wrong check for memory allocation  
-ce42158b msm: ipa: Fix queuing the inactive timer work on perf cluster  
-01dfbca msm: ipa3: support use for 64bit DMA mask  
-fa3b7f1 msm: ipa3: fix condition tested on ipahal wrapper  
-19c5678 msm: ipa: fix delete dependency race condition  
-c2770cf msm: ipa3: fix qmap deaggregation issue  
-953c743 msm: ipa: fix static analysis issues  
-89f2bbb msm: ipa3: fix dereferencing of offset_entry without check  
-1d06ed7 msm: ipa3: lower turbo voting threshold  
-2d6c30f msm: ipa: fix the order issue of meq128 equation  
-1eb5877 msm: ipa: Remove usage of stack memory  
-97ac0ae msm: ipa3: add ipa_mhi to ipa_clients  
-707b26b msm: ipa: header change for wlan VA mapping  
-164a006 msm: ipa: header file change for WDI2.0  
-d61de9d msm: ipa3: remove odu_bridge functions from ipa.h  
-b09b8fc msm: ipa: support GRO feature on msmcobalt  
-5b674ed msm: ipa: enable power save to ODU  
-eaeb4a9 msm: ipa3: fix to read hw tables from debugfs  
-e40e9e7 msm: ipa: clear uC interrupt only before processing  
-b0f4e7a Revert "msm: ipa: clear uC interrupt only before processing"  
-1c5cab09 msm: rmnet_ipa3: add RMNET_IOCTL_GET_SG_SUPPORT support  
-a1fa096 msm: ipa3: fix odu debugfs  
-101be75 msm: ipa3: WA for incorrect state retention for GSI channel 20  
-fe2827d msm: ipa: add support for SMMU fastpath  
-6b65728 msm: ipa: use 2 MEQ32 equations for MAC matching  
-70314cf msm: ipa3: make function names consistent with ipav2  
-09a30db msm: ipa3: add support for TX of sk_buff's with paged data  
-0fe8fa9 msm: ipa: Fix to memory leak when sending non-linear data  
-cf1abdd msm: ipa3: Send limited chained descriptors to IPA  
-a1252a8 msm: ipa3: drain UL data for ECM/RNDIS tethering  
-c61770d msm: ipa: Add NETIF_F_SG to RMNET_IPA's hw features  
-c9b5e6a msm: ipa: add a general function for assert  
-e8245bb msm: ipa3: Flush Filtering and Routing cache on SSR event  
-76c8cd6c msm: ipa3: Fix to release IPA clock during ap suspend  
-187f8bc msm: ipa: Fix to accessing ipa_q6_clnt handle  
-8967f3a msm: ipa3: Move IPA headers building to IPAHAL  
-43c2752 msm: ipa3: rmnet_ipa: add IPC logging to common buffer  
-28dc118 msm: ipa3: mhi: add IPC logging to common buffer  
-50aaf3b msm: ipa: odu: change IPC logging to common buffer  
-8837cf5 msm: ipa: usb: change IPC logging to common buffer  
-1c20f2b msm: ipa: add IPC logging to IPA RM  
-929ebcf msm: ipa: ipahal: change IPC logging to common buffer  
-3e816cf msm: ipa3: allocate ipa_low IPC only when needed  
-3f79c98 msm: ipa3: use user parameter for GSI ring len  
-083a689 msm: ipa3: enable GSI doorbell mode GPI channels  
-c7ae10d msm: ipa3: enable smart prefetch control for xDCI  
-7900ccc msm: ipa3: enable smart prefetch control for MHI  
-7d3f41b msm: ipa3: fix the interrupt loop issue  
-3b7a9ac msm: ipa3: fix WDI1.0 on mdmcalifornia  
-44d08a4 msm: ipa: Fix to update the descriptor length in SG scenario  
-024fc67 msm: ipa: add support for DOMAIN_ATTR_S1_BYPASS  
-437b7f5 msm: ipa: Fix to release IPA clock during ap suspend  
-b4278af msm: ipa: Fix to QMI initialization and polling state  
-7754aac msm: ipa3: enable smart prefetch control for GPI  
-a1979b5 msm: ipa: support WDI 2.0 suspend  
-da64020 msm: ipa: fix to handle deaggr error  
-6b3119f msm: ipa: Fix memory free issue  
-326cec5 msm: ipa: change for WDI2.0  
-f40dea2 ipa: Fix holb monitor response handling from Uc  
-a1e9b02 msm: ipa: Fix suspend bit clearing on disconnected pipe  
-5260a47 msm: ipa: unify IPA RM  
-7036c6d msm: ipa: add common internal header  
-2488159 msm: ipa: fix hdr log print  
-7a810b7 msm: ipa3: Add SSR support for IPA3.1  
-867ca7e msm: ipa3: fix the qmap_id config in IPA-HW  
-7f4187a msm: ipa3: add support for MHI burst mode  
-2aaa037 Revert "msm: ipa: Decrement ipa clock count"  
-c31c565 msm: ipa: Fix warning messages  
-d1366f5 msm: ipa3: remove ul_dl sync from IPA MHI  
-10e39d0 msm: ipa3: add support for FW loading on MSMs  
-5922df6 msm: ipa3: update resource configuration for DIAG and DMA RGs  
-71fbf4a msm: ipa3: fix device hang issue if ipa_clk failed  
-1238de8 msm: ipa3: configure QMB HW max reads / writes  
-d833c36 msm: ipa3: use vaddr instead of paddr to load IPA FWs  
-b2008f1 msm: ipa3: Add the ability to set dynamically HPS/DPS seq type  
-d770494 msm: ipa3: fix event ring allocation for CONS pipes  
-e395e19 msm: ipa: fix to use valid ep index value  
-d351dcc msm: ipa3: add ipc logging support for ipahal  
-7931122 msm: ipa: add support for AGGR_SW_EOF_ACTIVE  
-7ceaac4 msm: ipa: fix to make sure IPA clock is on  
-f5082b2 msm: ipa: use timeout mechanism for holb monitoring command  
-a31e53c msm: ipa: fix multiple issues  
-bcc6b4b msm: ipa: fix race condition when teardown pipe  
-243711f msm: ipa: protect qmi context using mutex  
-e8235a4 msm: ipa3:  add ipc logging for odu_bridge driver  
-e6f7543 msm: ipa3: Move IPA Status Packet parsing to IPAHAL  
-f480e0b msm: ipa3: add odu_bridge to ipa_clients folder  
-7f57336 msm: ipa3: BUG on uC error  
-6f297d2 msm: ipa3: add ipc logging for ipa_usb driver  
-5a9c234 msm: rmnet_ipa3: fix the crash issue  
-4c9f8c8 msm: ipa3: Move IPA immediate commands building to IPAHAL  
-7c7af63 msm: ipa3: Add IPA HAL layer I/S and registers support  
-a3f2154 msm: ipa3: create ipa_clients folder and add USB client  
-3e23517 usb: gadget: f_gsi: Remove gadget restart while composition switch  
-a080144 USB: dwc3-msm: Don't configure DBM for GSI endpoints  
-7b8e698 USB: dwc3-msm: Disable Update xfer for DBM on ep disable or dequeue  
-6cca391 USB: dwc3-msm: Initialize DBM ep before BAM pipe reset  
-f4947a2 usb: dwc3: Allocate fixed h/w eps for GSI endpoints  
-7d1220c USB: dwc3-msm: Turn ON clocks before bringing PHYs out of suspend in resume  
-62a7ea5 usb: f_gsi: Ignore supsend/resume events if data interface is not selected  
-7437e2f usb: f_gsi: Configure fixed GSI endpoints and related EP OPs  
-0130a17 usb: gadget: gsi: Fix error handling when memory allocation fails  
-5261b91 usb: gadget: f_gsi: Make the header file a local header  
-639c923 usb: gadget: f_gsi: Add handling of SET_CONTROL_LINE_STATE control request  
-f546869 usb: gadget: f_gsi: Avoid calling suspend again in case of func suspend  
-31cc9c2 usb: gadget: f_gsi: Add logging support  
-1a2ea2d msm: gsi: data path statistics  
-bc5160c msm: ipa3: ensure IPA registers are dumped by modem  
-4c8832c msm: ipa: fix the un-initialized variable issue  
-0c6c197 msm: ipa3: nullify FW IRAM before loading  
-a10a7c0 msm: ipa: fix the printing of ipa resources  
-7236588 msm: ipa: rmnet_ipa: unify global variables to a context  
-3983175 msm: ipa3: recycle skb for lan data path  
-f0c4628 msm: ipa3: do not use skb clones for lan clients  
-5afe3cf msm: ipa3: do not enable GSI from APPS  
-404ed76 msm: ipa: Change BAM event threshold towards USB consumer pipe  
-3702075 msm: ipa3: do not clear irq before register  
-0142a95 msm: ipa: fix compilation issue with compat_ioctl  
-0ed660f msm: ipa3: use new filter data members  
-f2dc156 msm: ipa3: add ipc logging for ipa driver  
-72afac1 msm: ipa3: fix setting USB state to invalid before count is 0  
-  
-* **packages/apps/Browser/**  
-b565222 Search engines: Add DuckDuckGo FR  
-  
-* **packages/apps/EmotionOTA/**  
-2dc68ee examples: CLeanup and update for EmotionOS versioning  
-  
-* **packages/apps/Settings/**  
-9e22b97 Settings: Set root access options appropriately  
-  
-* **packages/resources/devicesettings/**  
-8ec6740 Add button settings strings  
-4464b7a Fix malformed XML  
-e46e4d5 Add strings for fingerprint sensor wake-up  
-  
-* **vendor/emotion/**  
-00be59b vendor: Add a task for getting prebuilts via http  
-e3991b6 Gello artifact v40  
-c1843f4 Don't dex-preopt Gello  
-cfa2814 Include Gello.  
-  
-* **vendor/oneplus/**  
-e167665 op3: Add radio images  
-a858fb7 op3: Update blobs from Open Beta 9  
-151b275 op3: Update to official N blobs  
-  
-###     01-04-2017  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-244485f update sepolicy 2  
-27e81f2 Merge branch 'nougat' of https://github.com/EmotionOS/android_device_samsung_trlte-common into HEAD  
-0c10282 update sepolicy  
-  
-* **external/libhevc/**  
-b25d141 Handle invalid slice_address in slice header  
-  
-* **external/libnl/**  
-77a7bed libnl: Check data length in nla_reserve / nla_put  
-  
-* **external/libopus/**  
-1ad8009 Ensure that NLSF cannot be negative when computing a min distance between them  
-  
-* **external/libvpx/**  
-145f317 vp8:fix threading issues  
-  
-* **external/tremolo/**  
-a4327f0 Tremolo: fix ARM assembly code for decode_map type 3 case  
-  
-* **external/zlib/**  
-b666691 Revert "Upgrade to zlib 1.2.10."  
-  
-* **frameworks/ex/**  
-30ee0df resolve merge conflicts of 3802db4 to mnc-dev  
-  
-* **hardware/samsung/**  
-872abc6 Allow targets to build dtbhtool  
-9e0baab dtbhtool: Rename unpackbootimg to avoid conflicts  
-7e73d2e dtbhtool: Split out dtimg components  
-357950e dtbhtool: Move target defs to header  
-d17a69b dtbhtool: Fix missing PATH_MAX macro from limits.h  
-72b1c49 Samsung Exynos DTBH device tree support  
-0c2cc5a Add signature support  
-6384637 Initial commit, from CM's system/core  
-  
-* **kernel/samsung/trlte/**  
-1a1ef5b defconfig: enable CONFIG_IP_NF_MATCH_RPFILTER  
-  
-* **packages/apps/Snap/**  
-3f92dde Snap: Remove storage menu if no external storage available  
-da58793 Add PREVENT_POWER_KEY to fix Crash when using 'Power Shutter'  
-  
-* **vendor/emotion/**  
-04aa88d prebuilt: clean up  
-  
-* **vendor/motorola/**  
-00af5e4 athene: switch to more N blobs  
-  
-###     01-03-2017  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-7c7c6e1 trlte: remove this line  
-577f83c time_daemon: class main  
-95d7630 Removed su policy which conflicts with a neverallow. (#4)  
-4ad83fb Addressed init, bluetooth, time_daemon and su denials. (#3)  
-368c81f fingerprintd fix denial  
-28c2a61 trlte: use mpdecision  
-  
-* **device/samsung/trltespr/**  
-39e72c4 ril: add missing import  
-13774fd ril: update missing wakelocks semantics  
-4dc9cc4 trltespr: trlteRIL update/fix  
-  
-* **external/zlib/**  
-b934bc0 Upgrade to zlib 1.2.10.  
-  
-* **frameworks/base/**  
-ddb716f Reduce log verbosity: Don't spam logcat  
-53f2a9e Fix for wallpaper flicker on bootup on some targets  
-9ea64ca Fix QuickQS visibility at non-first page  
-1cb929b OMS: StrictMode and files under /data/system/theme/  
-14b34f1 Themes: Expose QS battery  
-a5b88b0 Battery icon: fix getDrawable for new Android API  
-21d81d9 Fix wrong peek height of the notification panel  
-7f39355 FWB: Show 4G instead of LTE switch (1/2)  
-  
-* **hardware/qcom/display-caf/msm8996/**  
-12980ba hwc2: Only set display_width and display_height when equal to zero  
-  
-* **kernel/samsung/trlte/**  
-0655bf1 go away msm_hotplug and intelliplug  
-  
-* **packages/apps/CMParts/**  
-970d8c0 CMParts: Properly fix auto-power-save string format exception  
-ebd872d Another LineageOS rebrand  
-aa79435 CMParts - Fix the button's part  
-  
-* **packages/apps/EmotionControl/**  
-92a52b2 EC: Show 4G instead of LTE switch [2/2]  
-d6d5c55 EC: remove unused weather toggle for statusbar  
-  
-* **packages/apps/EmotionOTA/**  
-d2ffa10 OTA: shamu  
-  
-* **packages/apps/Settings/**  
-241a8a2 Adapt your life  
-e7788f7 Add Substratum dashboard tile  
-  
-* **packages/services/Telecomm/**  
-9d6a21f Telecomm: Fix error due to protected broadcast  
-  
-###     01-02-2017  
-***  
-  
-  
-* **changelogs/**  
-8947b36 7.1.1-20170102  
-  
-* **device/moto/shamu/**  
-740c105 shamu: Use phone-xhdpi-2048-dalvik-heap again.  
-7b6da5f shamu: Switch to BFQ  
-  
-* **device/samsung/trlte-common/**  
-5f78239 Revert "Keep sim on"  
-  
-* **packages/apps/Settings/**  
-5221863 Revert "Settings: display: Add wake on plug switch"  
-  
-* **vendor/emotion/**  
-387b4eb Update EmotionOS versioning  
-  
-###     01-01-2017  
-***  
-  
-  
-* **changelogs/**  
-f673108 7.1.1-20170101  
-  
-* **device/samsung/trlte-common/**  
-d33f494 Revert "Use Snapdragon LLVM, if available"  
-f9fda02 update overlay  
-758bc49 system.prop: change DPI to 560  
-f4f7e45 Set TARGET_BOOTANIMATION_HALF_RES to true  
-  
-* **frameworks/opt/telephony/**  
-0663988 SubscriptionController: Make sure cis are not null  
-  
-* **packages/apps/EmotionOTA/**  
-8789209 examples: Add OTA configuration file for trltevzw  
-  
-* **vendor/samsung/**  
-e9f4c44 add klte blobs  
-  
-###     12-31-2016  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-474c224 Add vsync phase offset  
-51f7e9a update init.cqom.rc  
-07656ef Symlink NFC node for backwards compatibility  
-ca77f7c boardconfig: use the right toolchain for the kernel  
-  
-* **frameworks/base/**  
-259ac2d Sync battery tile icon with statusbar  
-1990a21 Allow blocking of notifications also on insecure lock screen (2/2)  
-e6f9db7 Enable\Disable bluetooth battery status[1/2]  
-ce3f6ad QS WiFi easy toggle: if enabled, long press for detail view  
-29edd3e QS: WiFi easy toggle [2/2]  
-a0bd55c QS BT easy toggle: if enabled, long press for detail view  
-5647bb4 QS: BT easy toggle [2/2]  
-de21d80 QS: Battery Saver Easy Toggle [1/2]  
-  
-* **hardware/samsung/**  
-a8fe2a1 liblights: Check for hardware support on HAL open  
-  
-* **kernel/moto/shamu/**  
-0052a64 shamu: defconfig: Fix derp  
-99d5f9b shamu: Update defconfig  
-  
-* **kernel/samsung/trlte/**  
-8d491aa ARM: msm: soc: Add Processor in CPU info  
-  
-* **packages/apps/Settings/**  
-3ab313e Settings: res: Add missing strings/string-arrays  
-3d1d69c Allow blocking of notifications also on insecure lock screen (1/2)  
-  
-* **vendor/motorola/**  
-3b473b7 harpia: initial blob set  
-c606cd8 msm8916-common: update blobs  
-31a4cdc msm8916-common: make libmot-qc-fd-offline device specific  
   
