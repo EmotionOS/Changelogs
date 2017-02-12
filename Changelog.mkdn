@@ -1,16 +1,543 @@
-###     02-06-2017  
+###     02-12-2017  
 ***  
   
+  
+* **frameworks/base/**  
+6680e9d import translations  
+673c247 Automatic translation import  
+  
+* **hardware/qcom/fm/**  
+f132291 Automatic translation import  
+  
+* **hardware/samsung/**  
+1983165 Automatic translation import  
+757e2d8 audio: Remove device bit only on active_input  
+04037e7 audio: Add a mixer_path_0.xml template for the HAL  
+107a848 audio: Add support for voice session mic mute  
+59486fa audio: Add voice call wideband support  
+82f3248 audio: Add support for two mic control  
+97fa7f1 audio: Leave out_get_presentation_position() early when switching to WB  
+d635918 audio: Do not segfault in out_get_presentation_position()  
+  
+* **packages/apps/AudioFX/**  
+c591503 Automatic translation import  
+  
+* **packages/apps/Bluetooth/**  
+e377bdc Automatic translation import  
+  
+* **packages/apps/Browser/**  
+652e0a5 Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+aaf23a3 Automatic translation import  
+  
+* **packages/apps/CMParts/**  
+c6dd1f3 Add "Letter V" string  
+  
+* **packages/apps/CMWallpapers/**  
+62f591b Automatic translation import  
+  
+* **packages/apps/Calendar/**  
+df43875 Automatic translation import  
+  
+* **packages/apps/Camera2/**  
+6ac4fde Automatic translation import  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+c7866f5 Automatic translation import  
+  
+* **packages/apps/CertInstaller/**  
+2332b25 Automatic translation import  
+  
+* **packages/apps/DeskClock/**  
+edaca30 Automatic translation import  
+  
+* **packages/apps/Dialer/**  
+5fbe4ec import translations  
+  
+* **packages/apps/Eleven/**  
+7a9e5c2 Automatic translation import  
+  
+* **packages/apps/Email/**  
+b0fadab Automatic translation import  
+  
+* **packages/apps/EmergencyInfo/**  
+82eb30a Automatic translation import  
+  
+* **packages/apps/EmotionControl/**  
+b5563ff import translations  
+  
+* **packages/apps/ExactCalculator/**  
+a70d604 Automatic translation import  
+  
+* **packages/apps/Exchange/**  
+e458fec Automatic translation import  
+  
+* **packages/apps/FMRadio/**  
+cf589ab Automatic translation import  
+  
+* **packages/apps/Gello/**  
+3a2438d Automatic translation import  
+  
+* **packages/apps/HTMLViewer/**  
+88fe2d8 Automatic translation import  
+  
+* **packages/apps/KeyChain/**  
+b6f7264 Automatic translation import  
+  
+* **packages/apps/LockClock/**  
+3092f9d Automatic translation import  
+  
+* **packages/apps/ManagedProvisioning/**  
+6cc07ae Automatic translation import  
+  
+* **packages/apps/Nfc/**  
+1cce1b3 Automatic translation import  
+  
+* **packages/apps/PackageInstaller/**  
+fe20f2b Automatic translation import  
+  
+* **packages/apps/Profiles/**  
+f1c23ad Automatic translation import  
+  
+* **packages/apps/Recorder/**  
+e4e79ce Automatic translation import  
+  
+* **packages/apps/SafetyRegulatoryInfo/**  
+0b5fc12 Automatic translation import  
+  
+* **packages/apps/Settings/**  
+03c35e9 import translations  
+  
+* **packages/apps/SetupWizard/**  
+167ac2c Automatic translation import  
+  
+* **packages/apps/Snap/**  
+e8a6615 Automatic translation import  
+  
+* **packages/apps/Stk/**  
+e15be25 Automatic translation import  
+  
+* **packages/apps/Tag/**  
+12cab82 Automatic translation import  
+  
+* **packages/apps/Terminal/**  
+6f71e9f Automatic translation import  
+  
+* **packages/apps/ThemeChooser/**  
+7817771 Automatic translation import  
+  
+* **packages/apps/Trebuchet/**  
+6a669a3 Automatic translation import  
+  
+* **packages/apps/TvSettings/**  
+d1bc85b Automatic translation import  
+  
+* **packages/apps/UnifiedEmail/**  
+d39d44a Automatic translation import  
+  
+* **packages/apps/WallpaperPicker/**  
+eb5be41 Automatic translation import  
+  
+* **packages/providers/BookmarkProvider/**  
+dc3bb73 Automatic translation import  
+  
+* **packages/providers/CalendarProvider/**  
+168badf Automatic translation import  
+  
+* **packages/providers/CallLogProvider/**  
+0715865 Automatic translation import  
+  
+* **packages/providers/ContactsProvider/**  
+68f1225 Automatic translation import  
+  
+* **packages/providers/DataUsageProvider/**  
+60282f9 Automatic translation import  
+  
+* **packages/providers/DownloadProvider/**  
+783d5cf Automatic translation import  
+  
+* **packages/providers/MediaProvider/**  
+8bfb878 Automatic translation import  
+  
+* **packages/providers/TelephonyProvider/**  
+de1f545 Automatic translation import  
+  
+* **packages/providers/ThemesProvider/**  
+dd7ff50 Automatic translation import  
+  
+* **packages/providers/UserDictionaryProvider/**  
+3d347b1 Automatic translation import  
+  
+* **packages/providers/WeatherProvider/**  
+68a67f3 Automatic translation import  
+  
+* **packages/resources/devicesettings/**  
+64395d2 Automatic translation import  
+  
+* **packages/screensavers/Basic/**  
+31ccb14 Automatic translation import  
+  
+* **packages/screensavers/PhotoTable/**  
+a3afce8 Automatic translation import  
+  
+* **packages/services/CMAudioService/**  
+00e085e Automatic translation import  
+  
+* **packages/services/LiveLockScreenService/**  
+226fe91 Automatic translation import  
+  
+* **packages/services/Telephony/**  
+afc718d import translations  
+  
+* **packages/services/ThemeManagerService/**  
+0f49c72 Automatic translation import  
+  
+* **packages/services/WeatherService/**  
+b64184a Automatic translation import  
+  
+* **packages/wallpapers/LivePicker/**  
+dfc9087 Automatic translation import  
+  
+* **platform_manifest/**  
+8fc5de0 Revert "emotion: Remove external/google"  
+  
+* **vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/**  
+847f472 Automatic translation import  
+  
+* **vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/**  
+0d0f144 Automatic translation import  
+  
+###     02-11-2017  
+***  
+  
+  
+* **build/**  
+1f20192 releasetools: Generate recovery-from-boot.p with bsdiff if necessary  
+  
+* **device/oneplus/oneplus3/**  
+1e3ba37 op3: doze: Protect com.android.systemui.doze.pulse  
+70c289e op3: doze: Set different timings for wave and pocket detection  
+7da6020 op3: doze: Cleanup  
+  
+* **external/sqlite/**  
+0d26071 enable ATOMIC_WRITE  
+75be589 sqlite: update to 3.16.2  
+  
+* **frameworks/base/**  
+2860768 PhoneWindowManager: add mTopFullscreenOpaqueWindowState null check to fix exception  
+fbda740 Automatic translation import  
+  
+* **hardware/broadcom/libbt/**  
+c30d308 libbt: Import CID_PATH from samsung_macloader.h  
+  
+* **hardware/samsung/**  
+696959d audio: Enable voice call support  
+5a2f100 audio: Remove unused variables and function  
+ecd17ce Revert "audio: Remove unused screen_state parameter"  
+9c19561 audio: Improve error message for RILD connection  
+41c9f3d audio: Initialize the radio voice session  
+bc52af5 audio: Add ril_interface to talk to radio  
+74ef3a1 audio: Create a structure for voice to group values  
+afec0fd macloader: Rework mac address half classification  
+759368f audio: Add a delay for DSP firmware loading  
+  
+* **kernel/oneplus/msm8996/**  
+b9eaad0 BACKPORT: aio: mark AIO pseudo-fs noexec  
+  
+* **packages/apps/Contacts/**  
+3939f6c Improve CAF strings  
+  
+* **packages/apps/ContactsCommon/**  
+5b8502d Improve CAF strings  
+  
+* **packages/apps/Dialer/**  
+128e82c Improve CAF strings  
+ffdb28e Automatic translation import  
+d208a2f Automatic translation import  
+  
+* **packages/apps/PhoneCommon/**  
+f60e61b Automatic translation import  
+4513416 Automatic translation import  
+  
+* **packages/apps/Settings/**  
+6aab5a8 Settings: Set ADB notification on by default  
+e27ac91 Automatic translation import  
+90026dd Automatic translation import  
+f918b4f wifi: Allow configuration of country code for wifi  
+  
+* **packages/apps/Snap/**  
+678971d Snap: Fix filtering of unsupported HFR/HSR modes  
+  
+* **packages/inputmethods/LatinIME/**  
+d500d0c Automatic translation import  
+  
+* **platform_manifest/**  
+fdd0a2e emotion: Remove external/google  
+  
+* **system/sepolicy/**  
+bc82c47 Permit dumpstate to run "ip xfrm policy".  
+  
+* **vendor/cmsdk/**  
+56950f1 Automatic translation import  
+  
+* **vendor/emotion/**  
+94586dd backup: move to prebuilt/common/bin  
+6be8459 qcom: Permit dumpstate to run "ip xfrm policy"  
+97ec948 cm: charger: Correct res_create_multi_display_surface() usage  
+98794e7 http_prebuilt: Improve retrieval of artifacts from archive  
+0de049a http_prebuilt: Implement archive of artifacts  
+  
+###     02-10-2017  
+***  
+  
+  
+* **device/lge/ls997/**  
+4dfef52 Revert "ls997: actually do something with system.prop"  
+  
+* **device/lge/v20-common/**  
+1ed654e Revert "v20: ril: Actually do something with LGE unsolicited responses"  
+  
+* **device/samsung/trlte-common/**  
+590a197 init: add more values  
+  
+* **device/samsung/trltespr/**  
+2d9b8d9 trltespr: update fingerprint  
+ad8110e Revert "trltespr: update fingerprint and ril props"  
+  
+* **frameworks/base/**  
+7cf92ca Fw_base - Blur: Color Filters implementation (1/2)  
+b7afea6 Fw_base - Blur: Fix qs shade alpha to show correctly after LS  
+f7217b0 Fw_base - Blur: Implement Recents Blur (1/2)  
+998851e Fw_base - [SQUASHED] Implement XOSP Blur personalization options (1/2)  
+b65b0f8 Fw_base - Add a controller for in-call proximity sensor (1/3)  
+9e0d692 Fw_base - Breathing missedcall/sms/voicemail [1/5]  
+9ed6c4f Fw_base - port SlimSeekBarPreference to Nougat  
+ee0a386 Fw_base - National Data Roaming [1/3]  
+  
+* **frameworks/opt/telephony/**  
+a650b46 Fw_opt_tel - National Data Roaming [2/3]  
+  
+* **hardware/libhardware_legacy/**  
+68203c8 wifi: Import CID_PATH from samsung_macloader.h  
+  
+* **hardware/qcom/audio-caf/msm8974/**  
+f67da5f hal: Remove duplicated HFP if branch (mismerge)  
+  
+* **hardware/samsung/**  
+5fada9b power: Add support for POWER_HINT_CPU_BOOST  
+c7dd07a macloader: Add another SEMCO mac address half  
+df4a1d6 macloader: Add default NVRAM calibration path  
+59ba89e macloader: Allow overriding non-standard paths  
+cd60dd8 fingerprint: bauth: convert % completed to remaining  
+b23aaf7 add Samsung BAUTH Fingerprint HAL  
+6508486 ril: Align to AOSP libril  
+  
+* **kernel/samsung/trlte/**  
+62db424 autosmp: update defaults  
+a7a06a7 remove cpuboost  
+293fe52 Dont let limiter override user MAX freq  
+a8be430 msm: autosmp: Final fixes  
+4e9f6fc msm: autosmp: Fix initialization of hotplug  
+c283e4f msm: autosmp: Remove redundancy and fix logic  
+f6acdc5 msm: mdss: reduce pm runtime autosuspend delay to 50 ms  
+54e9293 msm: mdss: Adjust fence timeouts  
+1be9e7d msm: mdss: update max fence wait timeout for all acquire fence  
+a21c4da msm: autosmp: Clean up hotplug_suspend toggle  
+557fc72 msm: autosmp: Do not keep CPUs awake unnecessarily  
+228f521 msm: Import autosmp hotplug driver  
+4865a65 msm: lpm-levels: add suspend_again handler  
+0aecefb power: quickwakeup: initial driver  
+a3db2a1 netfilter: xt_IDLETIMER: Revert to retain the kernel API format.  
+9cae7f3 UPSTREAM: netfilter: x_tables: validate e->target_offset early  
+d97bbbe nf: IDLETIMER: Adds the uid field in the msg  
+  
+* **packages/apps/CMFileManager/**  
+71b49b8 Automatic translation import  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+335abec Alert tone does not play for ETWS  
+  
+* **packages/apps/Dialer/**  
+14703c1 Dialer - InCallUI: Add a controller for in-call proximity sensor (2/3)  
+  
+* **packages/apps/EmotionControl/**  
+0e10b7d EC: Blur: Color Filters implementation (2/2)  
+774c8b2 EC: sometimes transparency is opacity  
+9eb6a58 EC: BlurUI update strings and dependencies  
+f8381d3 EC: Blur: edit notice, stroke is working now  
+4d84145 EC: Blur: Implement Recents Blur (1/2)  
+417096c EC: Blur: Add recents blur back that XOSP removed just for the fun  
+299a41c EC: BlurUI: update to N  
+ca02336 EC: Blur: Main switch now restores previous switch values  
+9362d01 EC: Implement XOSP Blur personalization options (2/2) [SQUASHED]  
+a8deade EC: Breathing missedcall/sms/voicemail [5/5]  
+  
+* **packages/apps/Messaging/**  
+203e173 Messaging - Breathing missedcall/sms/voicemail [4/5]  
+  
+* **packages/apps/Recorder/**  
+ef8d286 Automatic translation import  
+  
+* **packages/apps/SetupWizard/**  
+3d3519e Automatic translation import  
+  
+* **packages/apps/Snap/**  
+46c1ac4 Automatic translation import  
+fe100c6 Snap: Fix max brightness and power shutter settings  
+84752f9 Snap: VideoModule: Update flash status on preference change  
+75de9ea Snap: Replace noisy debug line  
+342b617 Snap: VideoModule: Restore check on mPreferenceRead  
+  
+* **packages/resources/devicesettings/**  
+6bbc51e Automatic translation import  
+  
+* **packages/services/Telecomm/**  
+8b47a57 services/Telecomm - Breathing missedcall/sms/voicemail [2/5]  
+  
+* **packages/services/Telephony/**  
+4034669 Automatic translation import  
+38d9006 Services_Telephony - Proximity speaker [2/3]  
+edcba1a Telephony Service - Add a controller for in-call proximity sensor (3/3)  
+bdb4bb7 services/Telephony - Breathing missedcall/sms/voicemail [3/5]  
+e458742 Services_Telephony - National Data Roaming [3/3]  
+  
+* **platform_manifest/**  
+11a750f emotion: track more repos  
+  
+* **system/media/**  
+57fc1b8 audio_route: Add support to set complete byte arrays  
+  
+###     02-09-2017  
+***  
+  
+  
+* **device/lge/ls997/**  
+e8f0a2a ls997: actually do something with system.prop  
+  
+* **device/lge/v20-common/**  
+de330aa v20: set to permissive  
+8dc686c v20: ril: Actually do something with LGE unsolicited responses  
+7d0101e v20: Our device doesnt support DOZE_SUSPEND  
+  
+* **device/moto/shamu/**  
+0bce2d3 shamu: Update fingerprint to N6F26R  
+0ad7ae6 addrloader: Fix missing string.h include  
+  
+* **device/samsung/trltespr/**  
+95a3ae9 trltespr: update fingerprint and ril props  
+  
+* **hardware/samsung/**  
+928ddca libsecril-client: Fix logging  
+86ac234 audio: Allow playback on earpiece too  
+  
+* **kernel/samsung/trlte/**  
+e616e83 kernel: add missing sprint defconfig  
+e673956 Merge pull request #1 from micky387/lineage-14.1  
+  
+* **packages/apps/Calendar/**  
+573612e Calendar: Fix check for things to import  
+7315b87 Calendar: Prevent NPE  
+  
+* **packages/apps/OmniStyle/**  
+af2a41e OmniStyle: allow croping larger wallpapers  
+  
+* **packages/apps/Recorder/**  
+3e48f73 Automatic translation import  
+  
+* **packages/apps/Snap/**  
+8613b05 Snap: VideoModule: properly update focus settings when switching between cameras  
+8c64fae Snap: Fix zoom in video mode  
+8ba41f4 Snap: Remove touch AF/AEC option  
+  
+* **packages/providers/TelephonyProvider/**  
+9484d15 Revert "telephony: Initialize USER_NETWORK_MODE with DEFAULT_NW_MODE"  
+  
+* **packages/resources/devicesettings/**  
+659ccee Automatic translation import  
+  
+* **vendor/emotion/**  
+890ee57 configs: Use the actual build username  
+  
+###     02-08-2017  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+938440c audio: update values  
+ab5e7c9 camera: disable zsl for video  
+2555d04 trlte-common: Quiet "KERNEL IS NOT SEANDROID ENFORCING" boot message  
+  
+* **hardware/samsung/**  
+6e35157 macloader: Decapitalize wisol MAC addresses  
+6d31bae audio: in_call is a bool type  
+  
+* **kernel/samsung/trlte/**  
+28a7245 F2FS: Catch up Jaegeuk's stable branch to v4.9-rc1-3.10  
+eb8d17c F2FS: Add flag for security  
+ed89302 f2fs: Merge with 5.1.1 previous release  
+  
+* **packages/apps/AudioFX/**  
+30d2aeb Automatic translation import  
+  
+* **packages/apps/Bluetooth/**  
+0d12073 Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+81c2530 Automatic translation import  
+  
+* **packages/apps/Calendar/**  
+d8743b6 Automatic translation import  
+  
+* **packages/apps/Gello/**  
+2f31869 Automatic translation import  
+  
+* **packages/apps/LockClock/**  
+2ccf116 Automatic translation import  
+  
+* **packages/apps/Messaging/**  
+2887322 Automatic translation import  
+  
+* **packages/apps/OmniStyle/**  
+3d90527 OmniStyle: guard all the things  
+  
+* **packages/apps/Recorder/**  
+63a278b Recorder: add play action to notifications  
+27187eb Recorder: bump support libraries  
+d32b39e Recorder: cleanup  
+7c28074 Correctly unregister shared preference change listener.  
+a645771 Recorder: add latest records cards  
+c3f7f8d Recorder: fix broken services on activity changes  
+3843e8d Recorder: fix mic request for screen recorder  
+61901ce Avoid fragment state management issues.  
+  
+* **packages/apps/SetupWizard/**  
+42a4e55 Automatic translation import  
+  
+* **packages/apps/Snap/**  
+1d0b8ac Automatic translation import  
+  
+* **packages/apps/ThemeChooser/**  
+36c1213 Automatic translation import  
+  
+* **vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/**  
+a6fc233 Automatic translation import  
+  
+* **vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/**  
+655b92a Automatic translation import  
+  
+###     02-07-2017  
+***  
+  
+  
+* **changelogs/**  
+53bbe0f Changelog 20170206  
   
 * **device/oneplus/oneplus3/**  
 faa00fc op3: Show correct device model for 3T  
   
 * **device/oppo/common/**  
 50c2717 Automatic translation import  
-  
-* **device/samsung/trlte-common/**  
-e7676a5 camera: disable zsl for video  
-15a1d77 init.qcom: more updates  
   
 * **external/DUtils/**  
 ad395fe OHM Actions: Use separate icon (1/2)  
@@ -33,7 +560,262 @@ b527287 SystemUI: Fix the unlock sound played repeatedly
 2ac2d06 Broadcom BT: Add support fm/bt via v4l2.  
   
 * **hardware/samsung/**  
+7cc49b4 audio: Remove unused audio routes  
+a366011 libsecril-client: Turn off logging by default  
+560e37a libsecril-client: Use RLOG  
+0130b88 libril: Use RLOG  
 fc68d3a exynos4x12: use common samsung liblights  
+  
+* **kernel/moto/shamu/**  
+6c35196 power: bcl: Re-evaluate hotplug for unexpected cpu online  
+4118b7d Update drivers/cpufreq/cpufreq_interactive.c  
+4bf0289 cpufreq: cpu-boost: don't boost over user set max freq  
+e2e9131 msm: kgsl: Unbind the kgsl-event workqueue  
+6c02567 arm: fix handling of F_OFD_... in oabi_fcntl64()  
+aafe7d5 block: cfq: accept cfq_slice_async, cfq_slice_idle and cfq_group_idle as 0 unless HZ is >= 1000  
+d76a62c fs: sync: add fsync_enabled_on_input_boost param, enabled by default  
+3dcbb39 fs: sync: if we're blocking fsync then we should also avoid getting the file descriptor, avoiding some overhead  
+064f548 EXPERIMENTAL: fs: sync: block fsync() operations during input boost events  
+9ee2ede PM / devfreq: Add a governor white list  
+d3af89e UPSTREAM: arm64: vdso: Mark vDSO code as read-only  
+5c45aa0 packet: fix race condition in packet_set_ring  
+746a93a BACKPORT: security: fix typo in security_task_prctl  
+35d0a34 Revert "lib: align source before using optimized implementation"  
+451a1e1 sched_avg: we ain't usin' mpdecisin' so we kill ya... with class  
+c43d9cb cputime: Fix jiffies based cputime assumption on steal accounting  
+954c707 sched/core: Fix an SMP ordering race in try_to_wake_up() vs. schedule()  
+c3a8c6f IKSWM-5880:sched/rt: really force updates rq clock in pick_next_task_rt  
+3a6ca24 sched/fair: Fix tg_set_cfs_bandwidth() deadlock on rq->lock  
+d4d27b5 sched: Avoid throttle_cfs_rq() racing with period_timer stopping  
+f5f8760 sched: Fix race in idle_balance()  
+4024157 sched: Fix reference to stale task_struct in try_to_wake_up()  
+8c9b85a sched: Update rq clock before calling check_preempt_curr()  
+6701b74 sched/balancing: Prevent the reselection of a previous env.dst_cpu if some tasks are pinned  
+49050b1 [backport] sched, nohz: Change rq->nr_running to always use wrappers  
+a2d6767 sched/fair: Implement fast idling of CPUs when the system is partially loaded  
+c82b47f cpumask: Fix cpumask leak in partition_sched_domains()  
+a016eee sched: Fix inaccurate accounting for real-time task  
+7e3c7b6 sched/idle: Avoid spurious wakeup IPIs  
+8169d65 sched/__wake_up_sync_key(): Fix nr_exclusive tasks which lead to WF_SYNC clearing  
+ef7eb8d sched/fair: Optimize find_busiest_queue()  
+6917d8b sched: Remove one division operation in find_busiest_queue()  
+7f88ea9 sched: Fix bug in average nr_running and nr_iowait calculation  
+fc677a6 Revert "sched: Fix bug in average nr_running and nr_iowait calculation"  
+e1eaadd BACKPORT: audit: fix a double fetch in audit_log_single_execve_arg()  
+42f9b6e UPSTREAM: ARM: 8494/1: mm: Enable PXN when running non-LPAE kernel on LPAE processor The VMSA field of MMFR0 (bottom 4 bits) is incremented for each added feature.  PXN is supported if the value is >= 4 and LPAE is supported if it is >= 5.  
+67cb25d BACKPORT: ARM: 8235/1: Support for the PXN CPU feature on ARMv7 Modern ARMv7-A/R cores optionally implement below new hardware feature:  
+040b5a3 UPSTREAM: USB: usb_driver_claim_interface: add sanity checking  
+8b0210d drivers: mdss: disable backlight dimmer by default  
+5cec30b BACKPORT: Bluetooth: Fix potential NULL dereference in RFCOMM bind callback  
+56fe5b99 xpad: latest upstream version  
+58325d2 net: rest NAPI bit if IPI failed  
+0581bb9 lib: align source before using optimized implementation  
+2eca2f4 KEYS: Fix race between read and revoke  
+e488aa0 fuse: break infinite loop in fuse_fill_write_pages()  
+2b036a3 block: bfq: set IOPS mode by default with slice_idle set to 0  
+4684cb5 rcu: Squashed commit of the following:  
+448a310 UPSTREAM: memcg: Only free spare array when readers are done  
+a995105 IKSWL-3373: selinux: Improve avc logging  
+5c9cd73 OOM, PM: OOM killed task shouldn't escape PM suspend  
+affc463 oom_kill: add rcu_read_lock() into find_lock_task_mm()  
+a090303 oom_kill: has_intersects_mems_allowed() needs rcu_read_lock()  
+8ca752d oom_kill: change oom_kill.c to use for_each_thread()  
+57a65dd proc: add a reschedule point in proc_readfd_common()  
+35a6a19 net: fix IP early demux races  
+a1851f5 ksm: Provide support to use deferred timers for scanner thread  
+67bc9fe IKSWL-3402 proc: stat: fix idle time jump  
+a8bebe4 mm/slub: don't wait for high-order page allocation  
+1a98698 apq8084: mdss: add high brightness mode controller commands  
+a287430 fs/buffer.c: increase the buffer-head per-CPU LRU size  
+208ae91 Bluetooth: hidp: fix device disconnect on idle timeout  
+25b9dc0 net: fix a race in dst_release()  
+ff5f7b9 net: avoid NULL deref in inet_ctl_sock_destroy()  
+d9329ba net: Fix skb_set_peeked use-after-free bug  
+c0b1540 net: Fix skb csum races when peeking  
+bf9b29d net: Clone skb before setting peeked flag  
+bd765cc net: call rcu_read_lock early in process_backlog  
+aea73f1 ipc/sem.c: update/correct memory barriers  
+a1ff1ac ipc,sem: fix use after free on IPC_RMID after a task using same semaphore set exits  
+8db34bb md: use kzalloc() when bitmap is disabled  
+6debf74 ipv6: addrconf: validate new MTU before applying it  
+3350d4d rcu: Don't disable CPU hotplug during OOM notifiers  
+e3af584 hrtimer: Allow concurrent hrtimer_start() for self restarting timers  
+0791031 mdss_fb: backlight dimmer option  
+9c63eee usb: ipc: use interruptible wait to decrease load_average  
+9162394 scripts: mkcompile: increment .version regardless if the tree has been changed or not, since we're changing .version manually before each build. Don't pick this for other Kernels, it's only useful for my build setup  
+bcff8ff ksoftirqd: Enable IRQs and call cond_resched() before poking RCU  
+39bfe7d timer: Prevent overflow in apply_slack  
+4d1439e Turn off trace_printk in vidc's dprink.  
+b7804ab vfs: conditionally clear close-on-exec flag  
+4ecd417 vfs: Fix pathological performance case for __alloc_fd()  
+48e5c83 mm: get rid of 'vmalloc_info' from /proc/meminfo  
+de61769 tcp_cubic: fix the range of delayed_ack  
+3938c51 mmc: clk_scaling: add sysfs for avoiding scale down in write  
+b20190f msm: mdss: reduce log level when ping pong timeout happens  
+169eddf mm: make shrink_page_list with pages work from multiple zones  
+3540e47 mm: prevent to write out dirty page in CMA by may_writepage  
+8d9a673 Input: optimize events_per_packet count calculation  
+5aa8a7c vmscan: fix increasing nr_isolated incurred by putback unevictable pages  
+08effb4 rpm-smd: Raise priority of thread waiting for ack using RT mutex  
+8fe9c05 rpm-smd: Raise priority of thread waiting for SMD buffer  
+5f22f31 ext4: rate limit printk in buffer_io_error()  
+0c3f92a msm: cpp: Limit the rate of pop buffer messages  
+3ed1286 arm/dt:8084: Disable always-on for pma8084_lvs4  
+fe659ed mm: use managed_pages to calculate default zonelist order  
+5af2f60 mm: fix sleeping function warning from __put_anon_vma  
+e4b33e4 mm: rmap: fix use-after-free in __put_anon_vma  
+7330384 mm/compaction: make isolate_freepages start at pageblock boundary  
+5999364 mm: compaction: detect when scanners meet in isolate_freepages  
+8f03782 mm: compaction: reset cached scanner pfn's before reading them  
+c8d2ee2 mm: correctly update zone->managed_pages  
+c89457d mm: use a dedicated lock to protect totalram_pages and zone->managed_pages  
+270e859 mm: accurately calculate zone->managed_pages for highmem zones  
+cea301a cma: Make the default CMA region not reserved by default  
+a0404f9 ARM: mm: don't limit default CMA region only to low memory  
+98de06b hrtimer: Prevent stale expiry time in hrtimer_interrupt()  
+04568b2 nohz: Convert a few places to use local per cpu accesses  
+d33bafa fs: Workaround the compiler's bad optimization  
+573423d netfilter: xt_socket: use IP early demux  
+ec5bfbf clk: qcom: Use rt mutexes for the rpm and voter clock locks  
+7a4b38a tools/include: use stdint types for user-space byteshift headers  
+593422f list: introduce list_next_entry() and list_prev_entry()  
+9bf6ce9 msm: mdss: fix ret value during error case  
+4253f33 msm: mdss: rate limit log spam  
+4beec33 msm: camera: suppress excessive logging - boot faster  
+abaa456 staging: ion: fix corruption of ion_import_dma_buf  
+b4b1894 Fix NULL pointer dereference in tcp_nuke_addr.  
+253fb59 sysrq: Emergency Remount R/O in reverse order  
+2789215 blk-throttle: check stats_cpu before reading it from sysfs  
+5e09d60 cfq-iosched: fix incorrect filing of rt async cfqq  
+84605f9 cfq-iosched: handle failure of cfq group allocation  
+683aa8c block: fix alignment_offset math that assumes io_min is a power-of-2  
+436fbe6 lowmemorykiller: use for_each_thread instead of buggy while_each_thread  
+5e2b628 ARM: 7919/1: mm: refactor v7 cache cleaning ops to use way/index sequence  
+9d14f83 ARM: mm: use inner-shareable barriers for TLB and user cache operations  
+4eb6a5e ARM: 8387/1: arm/mm/dma-mapping.c: Add arm_coherent_dma_mmap  
+398db0d ARM: DMA: ensure that old section mappings are flushed from the TLB  
+f832e13 cma: Increase number of retries for allocation  
+e4aa378 cma: Add 100ms delay before retrying for CMA allocation  
+2a1d00e dma-contiguous: Re-order the error handling sequence  
+e32452f cfq-iosched: fix the setting of IOPS mode on SSDs  
+363b0bc block: Make CFQ default to IOPS mode on SSDs  
+4912327 fs: take i_mutex during prepare_binprm for set[ug]id executables  
+c1a9e4e netfilter: nf_conntrack: reserve two bytes for nf_ct_ext->len  
+6191ea2 writeback: Fix occasional slow sync(1)  
+c67faac crypto: msm: remove wakeup lock in qcrypto driver  
+f183197 ASoC: Avoid wrong map/unmap of ocmem  
+fd4248e vfs: fix data corruption when blocksize < pagesize for mmaped data  
+bb9a822 xhci: hsic: Fix bug in handling events in event ring segment  
+fe8fc17 xhci: hsic: Offload event handling to softirq context  
+46319d1 iommu: msm: Avoid null-pointer derefs in ion_map_iommu  
+d18002b usb: gadget: f_fs: fix NULL pointer dereference when there are no strings  
+ac54eb8 drivers: base: close firmware file after use  
+d942698 msm_serial_hs: release dma wakelock properly  
+2ad9faa msm: mdss: Grouping enable and prepare calls for dsi link clocks  
+27103dc drivercore: Avoid adding devices without pm_ops to dpm list  
+0d77ea9 mmc: core: Fix null pointer dereference due to race conditions  
+1769aa7 mmc: core: Fix NULL pointer dereference issue with mmc_blk_reset()  
+af25d0d mmc: sdhci-msm: fix possible NULL pointer dereference  
+c1d0f46 mmc: core: Fix possible NULL pointer dereference  
+06c5dbc qcom: mpm-of: fix bug in finding the pending interrupts  
+2df4a0a msm: mpm-of: set wakeup interrupt as NO_SUSPEND  
+c56f5d6b mm/vmalloc.c: Correctly calculate VMALLOC_TOTAL  
+bf5fdb3 mm: vmscan: support complete shrinker reclaim  
+c7a83a6 tty: fix memleak in alloc_pid  
+fe476a1 USB: Skip PM_suspend if interface usage count is greater than 0  
+3d1881b char: msm_smd_pkt: Rate limit error logs in smd pkt functions  
+4df5bee binder: Quiet Binder  
+755813b net: rmnet_data: use memcpy() during deaggration of MAP frames  
+74e4ea2 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support  
+91d953c vfs: read file_handle only once in handle_to_path  
+a0a5c5f mnt: Prevent pivot_root from creating a loop in the mount tree  
+927bbea mnt: Only change user settable mount flags in remount  
+ce8e31a netfilter: conntrack: disable generic tracking for known protocols  
+8e1e73a eCryptfs: Remove buggy and unnecessary write in file name decode routine  
+6f57060 tracing/syscalls: Ignore numbers outside NR_syscalls' range  
+4728a4f net: llc: use correct size for sysctl timeout entries  
+40f6965 mmc: core: Fix mmc clk scale down during writes.  
+0b067aa msm: vidc: Convert realloc to resource managed malloc to avoid memleak.  
+baec3dc crypto: arm/aes update NEON AES module to latest OpenSSL version  
+b81edc6 cfq-iosched: Fix wrong children_weight calculation  
+67d9290 fs/proc/task_mmu.c: don't use task->mm in m_start() and show_*map()  
+13c15e3 netfilter: xt_qtaguid: fix memory leak in seq_file handlers  
+44ddd75 mm/page_alloc: restrict max order of merging on isolated pageblock Current pageblock isolation logic could isolate each pageblock individually.  This causes freepage accounting problem if freepage with pageblock order on isolate pageblock is merged with other freepage on normal pageblock.  We can prevent merging by restricting max order of merging to pageblock order if freepage is on isolate pageblock.  
+2891947 mm/page-writeback.c: do not count anon pages as dirtyable memory  
+c4c6b92 msm:pproc:Freed the vpe prameters to avoid memleak  
+9bc054c pinctrl: msm: prevent bogus wake up from suspend  
+e649cfc regulator: core: Fix enable GPIO reference counting  
+6ff4998 regulator: Only enable disabled regulators on resume  
+bda706d msm: mdss: fix wb memory registration optimization  
+d836e2b soc: qcom: smd: Fix SMD packet sync loss issue  
+acc4391 tick: don't update idle time if cpu offline  
+cd0fe78 pinctrl: fix a memleak when freeing maps  
+a389859 ARM: dts: msm: disable support of 50MHz for i2c for apq8084  
+83e8d1c ASoC: msm: qdsp6v2: add support for any number of ASM buffers  
+7635e90 gpio: sysfs: fix memory leak in gpiod_sysfs_set_active_low  
+a891064 gpio: sysfs: fix memory leak in gpiod_export_link  
+4f61cd0 futex-prevent-requeue-pi-on-same-futex.patch futex: Forbid uaddr == u…  
+dc047fa futex: Prevent attaching to kernel threads  
+03cc7ac futex: Add another early deadlock detection check  
+7acaaac genirq: Allow forcing cpu affinity of interrupts  
+355f921 irqchip: Gic: Support forced affinity setting  
+8d0d9b8 hrtimer: Set expiry time before switch_hrtimer_base()  
+5fc505f hrtimer: Prevent remote enqueue of leftmost timers  
+7e4110f hrtimer: Prevent all reprogramming if hang detected  
+4e88daf mm: vmscan: do not throttle based on pfmemalloc reserves if node has no ZONE_NORMAL  
+5eb3a53 mm: vmscan: clear kswapd's special reclaim powers before exiting  
+91dc986 genirq: Sanitize spurious interrupt detection of threaded irqs  
+1ebfff9 Input: fix defuzzing logic  
+cbafa2a tty: Fix high cpu load if tty is unreleaseable  
+66b6666 ARM: sched_clock: Load cycle count after epoch stabilizes  
+cf8fdc1 writeback: fix a subtle race condition in I_DIRTY clearing  
+20d23dd mm: Don't count the stack guard page towards RLIMIT_STACK  
+de9d339 mm: propagate error from stack expansion even for guard page  
+5a374c7 mm, vmscan: prevent kswapd livelock due to pfmemalloc-throttled process being killed  
+a5d46b9 timer: Fix lock inversion between hrtimer_bases.lock and scheduler locks  
+458a9ac net: rps: fix cpu unplug  
+9b3f010 sched, smp: Correctly deal with nested sleeps  
+e86237d smpboot: Add missing get_online_cpus() in smpboot_register_percpu_thread()  
+5775223 mmc: core: Fix unclocked access in get_xfer_remain/stop_request  
+f250ef7 char: msm_smd_pkt: Remove hexdump of  userspace read/write buffers  
+98ef798 char: msm_smd_pkt: flush pending work on release  
+1b31093 msm: mdss: increase mdp core clock to match panel pixel clock  
+b7c7fad clk: qcom: clock-generic: Use DIV_ROUND_CLOSEST for div clock  
+b87625fb mm/page_alloc: move freepage counting logic to __free_one_page()  
+3f58ff3 mm/page_alloc: add freepage on isolate pageblock to correct buddy list  
+3109a7f mm/page_alloc: fix incorrect isolation behavior by rechecking migratetype  
+699c092 selinux: conditionally reschedule in hashtab_insert while loading selinux policy  
+c2eb996 selinux: conditionally reschedule in mls_convert_context while loading selinux policy  
+eae48bc selinux: no recursive read_lock of policy_rwlock in security_genfs_sid()  
+bcab31e selinux: fix a possible memory leak in cond_read_node()  
+7f9ca19 selinux: simple cleanup for cond_read_node()  
+c592f0b usb: gadget: dwc3: Improve interrupt handler performance  
+272dd1d PM: Fix a bug in dpm_suspend_late()  
+18a23a0 msm: pcie: correct shadow memory access  
+1295bb5 msm: pcie: reduce the PERST latency  
+b803b62 arch: arm: TLB invalidate if power collapse gets aborted  
+fb87bb8 mmc: block: fix race in deferred resume  
+78df2bd mm: vmscan: limit the number of pages kswapd reclaims at each priority  
+bc4a831 irq_work: register irq_work_cpu_notify in early init  
+4b54712 msm_serial_hs: Handle core interrupt irrespective of wakeup interrupt  
+fd9b44d cpuidle: remove cross-cpu IPI by new latency request.  
+0d0a3cd ext4: Speedup WB_SYNC_ALL pass called from sync(2)  
+61c9bf7 mm, vmalloc: remove useless variable in vmap_block  
+34308bc mm, vmalloc: use well-defined find_last_bit() func  
+29ec2fc kthread_work: wake up worker only when the worker is idle  
+6ddf867 sched: Fix bug in average nr_running and nr_iowait calculation  
+7b7a943 cpufreq: cpu-boost: export input_boost_enable to userspace  
+aee2257 cpufreq: cpu-boost: Use one work to remove input boost for all CPUs  
+309102d cpufreq: cpu-boost: Support separate input_boost_freq for different CPUs  
+a7c93e5 cpufreq: cpu-boost: Make the code 64 bit compatible  
+6a961a1 cpufreq: cpu-boost: Use interruptible wait to not affect load average  
+4b583b7 display: add a simple api to query the display state (on/off) at any point in time  
+4576a40 cpufreq: interactive: update to https://github.com/franciscofranco/Shamu/commits/marshmallow/drivers/cpufreq/cpufreq_interactive.c  
+db1f2be sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire. From http://ripke.com/loadavg/moire  
+12b37a4 usb: disable more debugging... this is called WAY to often, it's not pretty to be doing divisions and locking this often. I wonder why these slip past userdebug builds.  
+7c097e0 msm: mpm: disable debugging  
+7487dd0 usb: xhci: disable debugs  
+689b765 usb: ks_bridge: disable debugging  
   
 * **kernel/oneplus/msm8996/**  
 8fcaee0 arm64: lib: improve copy_page to deal with 128 bytes at a time  
@@ -85,6 +867,9 @@ ea9b80f Automatic translation import
 * **packages/apps/EmotionControl/**  
 6c0f15b EC: Port PA battery circle style [1/3]  
   
+* **packages/apps/EmotionOTA/**  
+89571bb oneplus3: Push 7.1.1-20170206 OTA update  
+  
 * **packages/apps/OmniSwitch/**  
 9cda74d OmniSwitch: change app icon  
 d8bc6d7 Automatic translation import  
@@ -94,6 +879,12 @@ d8bc6d7 Automatic translation import
   
 * **packages/apps/Settings/**  
 0a4304a Automatic translation import  
+  
+* **packages/apps/WallpaperPicker/**  
+d1bc43f WallpaperPicker: bring back cm wallpapers  
+1dde84a WallpaperPicker: update icon  
+66b854f WallpaperPicker: materialize delete icon  
+6c33146 WallpaperPicker: bump gradle  
   
 * **packages/inputmethods/LatinIME/**  
 1604f19 LatinIME: Add Hungarian QWERTY, enable predictive dictionary  
@@ -112,22 +903,41 @@ effdaff  CMSDK: Port PA battery circle style [3/3]
 54c002c apns: Add SingTel hi!card sim APN  
 0389407 apns: Update H2O Wireless for LTE  
   
+###     02-06-2017  
+***  
+  
+  
+* **device/samsung/trlte-common/**  
+44d7737 trlte: add fingerprint prop  
+  
+* **device/samsung/trltexx/**  
+bdd6d25 boardconfig: fix recovery image size  
+  
+* **kernel/samsung/trlte/**  
+ebf82f7 WG: remove vib  
+87bdf9a cpufreq: convert "index" to corresponding variable  
+8db1af4 cpufreq: Introduce new relation for freq selection Introduce CPUFREQ_RELATION_C for frequency selection. It selects the frequency with the minimum euclidean distance to target. In case of equal distance between 2 frequencies, it will select the greater freq.  
+  
+* **packages/apps/EmotionOTA/**  
+4e1c3b0 trltevzw: Push 7.1.1-20170205 OTA update  
+  
+* **system/extras/su/**  
+d30f4ad su: don't crash on SIGPIPE while passing return code to client  
+  
+* **vendor/emotion/**  
+edbc0e9 trltexx: change kernel dependencies  
+  
 ###     02-05-2017  
 ***  
   
   
 * **device/samsung/trlte-common/**  
-f1c3a6e trlte-common: Quiet "KERNEL IS NOT SEANDROID ENFORCING" boot message  
-44d7737 trlte: add fingerprint prop  
 d9544bf system_prop: remove mm.enable.smoothstreaming=true  
 ede0bc9 boardconfig: clean up  
 2aa2460 overlay: remove useless snap overlays  
 b30008a init: clean up  
 b4357e0 trlte: remove duplicate libstlport  
 4c66e03 trlte: fix screen density  
-  
-* **device/samsung/trltexx/**  
-bdd6d25 boardconfig: fix recovery image size  
   
 * **frameworks/opt/telephony/**  
 aae108c Fix SIM detection when encrypted for older RIL  
@@ -137,125 +947,12 @@ aae108c Fix SIM detection when encrypted for older RIL
   
 * **hardware/samsung/**  
 9227fbe Automatic translation import  
-  
-* **kernel/samsung/trlte/**  
-ebf82f7 WG: remove vib  
-87bdf9a cpufreq: convert "index" to corresponding variable  
-8db1af4 cpufreq: Introduce new relation for freq selection Introduce CPUFREQ_RELATION_C for frequency selection. It selects the frequency with the minimum euclidean distance to target. In case of equal distance between 2 frequencies, it will select the greater freq.  
-98ed2a6 ss_vibrator: Make sysfs compatible with CMHW * Add default/max/min/threshold * Change max value to 100 * Move intensity sysfs for CMHW  
-f3a4f06 ss_vibrator: Nah, we have plenty of rage  
-659dc4a defconfig: add trltexx config  
-  
-* **packages/apps/AudioFX/**  
-0e6e947 Automatic translation import  
-  
-* **packages/apps/Bluetooth/**  
-a269f28 Automatic translation import  
-  
-* **packages/apps/Browser/**  
-866b0bf Automatic translation import  
-  
-* **packages/apps/CMFileManager/**  
-08bd02b Automatic translation import  
-  
-* **packages/apps/Calendar/**  
-b499a05 Automatic translation import  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-a187c4a Automatic translation import  
-  
-* **packages/apps/DeskClock/**  
-29c1d2d Automatic translation import  
-  
-* **packages/apps/Eleven/**  
-ee30de9 Automatic translation import  
-  
-* **packages/apps/Email/**  
-20cdcda Automatic translation import  
-  
-* **packages/apps/EmotionOTA/**  
-4e1c3b0 trltevzw: Push 7.1.1-20170205 OTA update  
-  
-* **packages/apps/Gello/**  
-3089d2f Automatic translation import  
-  
-* **packages/apps/LockClock/**  
-cafbdea Automatic translation import  
-  
-* **packages/apps/ManagedProvisioning/**  
-bb79517 Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-8606417 Automatic translation import  
-  
-* **packages/apps/SetupWizard/**  
-54311c0 Automatic translation import  
-  
-* **packages/apps/Snap/**  
-cf63021 Automatic translation import  
-  
-* **packages/apps/Terminal/**  
-068eaa3 Automatic translation import  
-  
-* **packages/apps/ThemeChooser/**  
-7ca2ce5 Automatic translation import  
-  
-* **packages/apps/Trebuchet/**  
-aaa3783 Automatic translation import  
-  
-* **packages/apps/TvSettings/**  
-b9b9215 Automatic translation import  
-  
-* **packages/apps/UnifiedEmail/**  
-0bdbeb6 Automatic translation import  
-  
-* **packages/providers/DataUsageProvider/**  
-6981666 Automatic translation import  
-  
-* **packages/providers/DownloadProvider/**  
-4da4543 Automatic translation import  
-  
-* **packages/providers/MediaProvider/**  
-a64c9b8 Automatic translation import  
-  
-* **packages/resources/devicesettings/**  
-f8073ff Automatic translation import  
-  
-* **packages/services/CMAudioService/**  
-6dad83d Automatic translation import  
-  
-* **packages/services/Telecomm/**  
-1369ae3 Automatic translation import  
-  
-* **packages/services/ThemeManagerService/**  
-d345819 Automatic translation import  
-  
-* **packages/services/WeatherService/**  
-d3f16b2 Automatic translation import  
-  
-* **packages/wallpapers/LivePicker/**  
-5acf0e7 Automatic translation import  
-  
-* **system/extras/su/**  
-d30f4ad su: don't crash on SIGPIPE while passing return code to client  
-  
-* **vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/**  
-97dc85c Automatic translation import  
-  
-* **vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/**  
-1efd29a Automatic translation import  
-  
-* **vendor/emotion/**  
-edbc0e9 trltexx: change kernel dependencies  
-  
-###     02-04-2017  
-***  
-  
-  
-* **hardware/samsung/**  
 67a7444 add a common mkbootimg.mk to quiet "KERNEL IS NOT SEANDROID ENFORCING" warning  
   
 * **kernel/samsung/trlte/**  
+98ed2a6 ss_vibrator: Make sysfs compatible with CMHW * Add default/max/min/threshold * Change max value to 100 * Move intensity sysfs for CMHW  
+f3a4f06 ss_vibrator: Nah, we have plenty of rage  
+659dc4a defconfig: add trltexx config  
 0425a00 fix compile error  
 d85aa20 ARM: msm: soc: Add Processor in CPU info  
 30d5842 selinux: fix sel_write_enforce broken return value  
@@ -371,19 +1068,132 @@ d737d1b Fix compilation
 f13350b fix mhi build error  
 d0ef93e Drop N910FXXS1DPK3 source code  
   
+* **packages/apps/AudioFX/**  
+0e6e947 Automatic translation import  
+  
+* **packages/apps/Bluetooth/**  
+a269f28 Automatic translation import  
+  
+* **packages/apps/Browser/**  
+866b0bf Automatic translation import  
+  
+* **packages/apps/CMFileManager/**  
+08bd02b Automatic translation import  
+  
+* **packages/apps/Calendar/**  
+b499a05 Automatic translation import  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+a187c4a Automatic translation import  
+  
+* **packages/apps/DeskClock/**  
+29c1d2d Automatic translation import  
+  
+* **packages/apps/Eleven/**  
+ee30de9 Automatic translation import  
+  
+* **packages/apps/Email/**  
+20cdcda Automatic translation import  
+  
 * **packages/apps/EmotionOTA/**  
 c79e8ba shamu: Push 7.1.1-20170203 OTA update  
   
+* **packages/apps/Gello/**  
+3089d2f Automatic translation import  
+  
 * **packages/apps/LockClock/**  
+cafbdea Automatic translation import  
 f9d9201 LockClock: change forecast text color to white  
   
-###     02-03-2017  
+* **packages/apps/ManagedProvisioning/**  
+bb79517 Automatic translation import  
+  
+* **packages/apps/Messaging/**  
+8606417 Automatic translation import  
+  
+* **packages/apps/SetupWizard/**  
+54311c0 Automatic translation import  
+  
+* **packages/apps/Snap/**  
+cf63021 Automatic translation import  
+  
+* **packages/apps/Terminal/**  
+068eaa3 Automatic translation import  
+  
+* **packages/apps/ThemeChooser/**  
+7ca2ce5 Automatic translation import  
+  
+* **packages/apps/Trebuchet/**  
+aaa3783 Automatic translation import  
+  
+* **packages/apps/TvSettings/**  
+b9b9215 Automatic translation import  
+  
+* **packages/apps/UnifiedEmail/**  
+0bdbeb6 Automatic translation import  
+  
+* **packages/providers/DataUsageProvider/**  
+6981666 Automatic translation import  
+  
+* **packages/providers/DownloadProvider/**  
+4da4543 Automatic translation import  
+  
+* **packages/providers/MediaProvider/**  
+a64c9b8 Automatic translation import  
+  
+* **packages/resources/devicesettings/**  
+f8073ff Automatic translation import  
+  
+* **packages/services/CMAudioService/**  
+6dad83d Automatic translation import  
+  
+* **packages/services/Telecomm/**  
+1369ae3 Automatic translation import  
+  
+* **packages/services/ThemeManagerService/**  
+d345819 Automatic translation import  
+  
+* **packages/services/WeatherService/**  
+d3f16b2 Automatic translation import  
+  
+* **packages/wallpapers/LivePicker/**  
+5acf0e7 Automatic translation import  
+  
+* **vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/**  
+97dc85c Automatic translation import  
+  
+* **vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/**  
+1efd29a Automatic translation import  
+  
+###     02-04-2017  
 ***  
   
   
 * **bionic/**  
 91b06f9 linker: Allow only specified non-PIE executables  
 9936a63 Revert "Revert "Reenable support for non-PIE executables""  
+  
+* **device/samsung/trlte-common/**  
+242017c trlte: build SnapdragonCamera  
+  
+* **frameworks/base/**  
+b13a632 import French translations  
+  
+* **packages/apps/Dialer/**  
+e657207 import French translations  
+  
+* **packages/apps/EmotionControl/**  
+8dc6236 EC: import French translation  
+  
+* **packages/apps/Settings/**  
+5879ca4 import French translations  
+  
+* **packages/services/Telephony/**  
+f48174d import French translations  
+  
+###     02-03-2017  
+***  
+  
   
 * **changelogs/**  
 294c27a Changelog 20170202  
@@ -396,112 +1206,30 @@ b9fe50f ls997: change radio access family
 * **device/moto/shamu/**  
 a5e7b28 Revert "shamu: enable gesture settings"  
   
-* **device/samsung/trlte-common/**  
-242017c trlte: build SnapdragonCamera  
-  
-* **frameworks/base/**  
-b13a632 import French translations  
-cc4be51 OHM recents thumbnails fix: code cleanup  
-a5c0a66 Base: Pixel Colors: Change dividers from Holo Blue to Pixel Blue  
-556b97f Add OOM adj & level config value for lowmemorykiller  
-421759c7 Fix crash issue on Storage Manager app  
-  
-* **packages/apps/Dialer/**  
-e657207 import French translations  
-  
-* **packages/apps/EmotionControl/**  
-8dc6236 EC: import French translation  
-  
-* **packages/apps/EmotionOTA/**  
-85ea30b oneplus3: Push 7.1.1-20170202 OTA update  
-  
-* **packages/apps/Settings/**  
-5879ca4 import French translations  
-  
-* **packages/services/Telephony/**  
-f48174d import French translations  
-  
-* **platform_manifest/**  
-834055d emotion: remote SnapdragonCamera from CAF  
-  
-* **vendor/lge/**  
-930f7dc proprietary: add bluetooth blobs to common  
-2344fd9 proprietary: move bluetooth to common  
-  
-###     02-02-2017  
-***  
-  
-  
-* **build/**  
-f86ce46 Always copy bootable images in BOOTABLE_IMAGES/  
-b11ceb9 Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"  
-d6c431f Move ro.bootimage.build.fingerprint to build.prop  
-  
-* **device/lge/ls997/**  
-62099f5 device: update dependencies to emotionos  
-  
-* **device/lge/v20-common/**  
-c9d7c52 v20: update dependencies to emotionos  
-af92f2c Revert "v20: Cleanup sepolicy and init for new bluetooth driver"  
-b40b119 Revert "v20: bluetooth fix test"  
-de974e0 v20: bluetooth fix test  
-  
 * **device/oneplus/oneplus3/**  
 17c912e fixing a potential race condition  
 a74698e fixing a race condition on MsgTask::destroy()  
 5a370f5 update gps.conf  
 5b1eb9b oneplus3: Don't vibrate for T2W  
-78d2ff8 op3: s6e3fa5: add QDCM configuration  
-6c4bde1 op3: Update README for 3t  
-d9f130f op3: Add support for op3t  
-1e5beda op3: Update to N camera blobs  
-1ad932b Revert "op3: Remove obsolete Snap overlay"  
-d477dfa op3: Support more gestures  
-01203eb op3: Switch to the CMHW touchscreen gestures implementation  
-c86f478 op3: Add TrustZone assertion  
-670f81c op3: Enable Wifi calling  
-f48cf41 Revert "op3: Fix installing stock build"  
-6f10bfe ipacm: Fix KW issues  
-cb8bcf9 ipacm: Fix race condition between nat delete rule and update timestamp  
   
 * **device/oppo/common/**  
 35537ba Automatic translation import  
-b3ad23e common: Switch to the CMHW touchscreen gestures implementation  
-bfed0cd oppo-common: Calculate TrustZone size at runtime  
   
 * **device/qcom/common/**  
 c8fc2db power: Remove POWER_HINT_AUDIO  
 fb3e4c6 extractors: Set INITIAL_COPYRIGHT_YEAR  
 9405568 extractors: Add msm8952 blobs  
   
-* **external/DUtils/**  
-b5f0454 DUI: Add one handed mode action [1/2]  
-  
 * **frameworks/base/**  
+cc4be51 OHM recents thumbnails fix: code cleanup  
+a5c0a66 Base: Pixel Colors: Change dividers from Holo Blue to Pixel Blue  
+556b97f Add OOM adj & level config value for lowmemorykiller  
+421759c7 Fix crash issue on Storage Manager app  
 59debf0 Use STREAM_RING on non-voice capable devices  
 8063fab Automatic translation import  
 60ac456 strings: remove duplicate string  
 6adea16 FW: import Spanish translations  
 efb944d Edit ss: Move Edit action and fix share action  
-32100e4 PhoneWindowManager: Support multiple key handlers  
-a7a7ead SystemUI: Never link nofication volume on non-voice capable devices  
-d84d0bd core: more descriptive vendor image mismatch message  
-9be6b6a Fw_base - add back AICP-memo to "N"  
-4ac7dc9 Fw_base - Make Heads Up snooze toast more informative  
-8cbe716 Fw_base - HeadsUp snooze function [1/2]  
-1191d9f Fw_base - HeadsUp: add timeout option (1/2)  
-18eb330 Fw_base - Flip to Mute/Reject Call [1/3]  
-baa4783 base: volume dialog: hide headers on all streams if requested  
-  
-* **frameworks/native/**  
-9ff1aaa gralloc1: Acquire mutex early in release  
-159be52 sf1 : Avoid resetting skip flag for dim layer  
-89c7e89 surfaceflinger: Increase SurfaceFlinger dump buffer size to 16k.  
-f73e75e Preserve app data if neither ce nor de have xattr user.default  
-  
-* **hardware/libhardware/**  
-f29cb1f hardware: power: Remove POWER_HINT_AUDIO  
-4be06d8 Revert "power: Add support for camera preview in powerHAL"  
   
 * **hardware/samsung/**  
 3b64383 audio: Disable support for IRQ affinity by default  
@@ -563,21 +1291,15 @@ c8b3f1f mm: slub: Default slub_max_order to 0
 fe8f3ae cpuidle: don't disable cpuidle when entering suspend  
 1368a4a config: match with device tree  
   
-* **packages/apps/CMParts/**  
-c42c61b CMParts: Add touchscreen gesture settings and keyhandler  
-a92590f Automatic translation import  
-  
-* **packages/apps/DUI/**  
-acd734c One hand: slidetouch listener only on navbar view  
-dd4c4cd DUI: Add one handed mode action [2/2]  
-  
 * **packages/apps/Dialer/**  
 557f370 Automatic translation import  
 bb91990 import Spanish translations  
-ec45c05 Dialer - Flip to Mute/Reject Call [3/3]  
   
 * **packages/apps/EmotionControl/**  
 19d231c EC: import spanish translation  
+  
+* **packages/apps/EmotionOTA/**  
+85ea30b oneplus3: Push 7.1.1-20170202 OTA update  
   
 * **packages/apps/PhoneCommon/**  
 7aeb454 Automatic translation import  
@@ -589,498 +1311,24 @@ ec45c05 Dialer - Flip to Mute/Reject Call [3/3]
 97c7884 Automatic translation import  
 35c6fbd Settings: import Spanish translations  
 3d57bd2 display: fix doze dependency  
-a79e5ec Settings: gesture: Add CMParts touchscreen gesture settings  
-8ca5ad2 development: Add setting for updating recovery  
-058e293 Settings - HeadsUp snooze function [2/2]  
-ab96c7a Settings - HeadsUp: add timeout option (2/2)  
-3b55701 [2/2] Settings: Double tap to wake on doze  
-  
-* **packages/apps/SetupWizard/**  
-fdf1c87 Automatic translation import  
   
 * **packages/services/Telephony/**  
 3ca21ed Automatic translation import  
 fcdbb53 import Spanish translations  
-a1c9bcd services/Telephony - Flip to Mute/Reject Call [2/3]  
   
 * **platform_manifest/**  
-f05022e emotion: track services_telephony  
-9eb84c8 emotion: switch to LineageOS recorder  
+834055d emotion: remote SnapdragonCamera from CAF  
   
 * **vendor/cmsdk/**  
 601b346 cmsdk: PerformanceManager: Update POWER_HINT_SET_PROFILE value  
 1b21f00 Automatic translation import  
-19a2f1e cmsdk: Add touchscreen gestures support  
-27443eb cmsdk: Add DeviceKeyHandler overlays  
   
-* **vendor/emotion/**  
-d560cae dependencies: add lg v20 dependencies  
-b67c487 cm: overlay: Settings: Enable gesture settings  
-31eda10 emotion: add LineageOS recorder  
+* **vendor/lge/**  
+930f7dc proprietary: add bluetooth blobs to common  
+2344fd9 proprietary: move bluetooth to common  
   
 * **vendor/oneplus/**  
 b778552 op3: Add op3t adreno firmware  
 cdec2b4 op3: Update to OxygenOS 4.0.2 blobs  
 46f0235 op3: Update to N camera blobs  
-  
-###     02-01-2017  
-***  
-  
-  
-* **device/lge/ls997/**  
-8d7e90c Update system.prop  
-  
-* **device/lge/v20-common/**  
-5ceb3a9 v20: change set_baseband service to start after boot complete  
-5cb8c99 v20: re-enable blur support  
-bdb25a7 v20: Build libtinyxml  
-9e2c030 v20: Cleanup sepolicy and init for new bluetooth driver  
-440f766 v20: fix set_baseband.sh to allow spaces  
-3c7223f v20: removed for ril testing  
-9d6b08b Revert "v20: ril test"  
-427f7b7 Update system.prop  
-dbc76ea Update LgeLteRIL.java  
-  
-* **frameworks/base/**  
-a257bcd Fix for reboot due to Volume State not updated in callback  
-0af1624 Fix recents thumbnails for one hand mode  
-9baebaf [1/2] Frameworks_base: Double tap to wake on doze  
-ed29cc0 Custom ambient display settings (1/2)  
-c224843 base: Add bool to enable/disable doze by default  
-  
-* **frameworks/opt/hardware/**  
-3a49878 cmhw: Add TouchscreenGestures API  
-  
-* **hardware/qcom/fm/**  
-a02172a Automatic translation import  
-  
-* **kernel/lge/msm8996/**  
-0e5152e Add files via upload  
-  
-* **kernel/oneplus/msm8996/**  
-f27e576 input: synaptics_s3320: Support all gestures  
-3616808 input: synaptics_s3320: Clean up gesture handling  
-eee5f91 input: synaptics_s3320: Commonize gesture flags  
-  
-* **packages/apps/AudioFX/**  
-68476c6 Automatic translation import  
-  
-* **packages/apps/Bluetooth/**  
-8fc4ad3 Automatic translation import  
-  
-* **packages/apps/CMFileManager/**  
-ff821d4 Automatic translation import  
-  
-* **packages/apps/Calendar/**  
-e7899e8 Automatic translation import  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-7f56ce1 Automatic translation import  
-  
-* **packages/apps/Eleven/**  
-bb82223 Automatic translation import  
-  
-* **packages/apps/EmotionControl/**  
-43cbc3c EC: fix values  
-  
-* **packages/apps/Gello/**  
-794fdd5 Automatic translation import  
-  
-* **packages/apps/LockClock/**  
-1cfcb29 Automatic translation import  
-  
-* **packages/apps/Messaging/**  
-196421b Automatic translation import  
-  
-* **packages/apps/OmniStyle/**  
-726a9bb OmniStyle: add Syed header pack  
-1353ec7 OmniStyle: add creator meta data for header packs  
-  
-* **packages/apps/Settings/**  
-f4b2173 Custom ambient display settings (2/2)  
-  
-* **packages/apps/SetupWizard/**  
-cd34a58 Build org.cyanogenmod.platform.internal as static library  
-4e218b6 Remove Google Play Services dependency  
-  
-* **packages/apps/Snap/**  
-289e677 Automatic translation import  
-  
-* **packages/apps/ThemeChooser/**  
-ed41164 Automatic translation import  
-  
-* **packages/apps/Trebuchet/**  
-3778f4d Automatic translation import  
-  
-* **packages/providers/DataUsageProvider/**  
-be55cf6 Automatic translation import  
-  
-* **packages/providers/DownloadProvider/**  
-e346efc Automatic translation import  
-  
-* **packages/providers/WeatherProvider/**  
-67824b6 Automatic translation import  
-  
-* **packages/resources/devicesettings/**  
-b857442 Automatic translation import  
-  
-* **packages/services/CMAudioService/**  
-9d998c1 Automatic translation import  
-  
-* **packages/services/ThemeManagerService/**  
-149b09d Automatic translation import  
-  
-* **packages/services/WeatherService/**  
-dc3564a Automatic translation import  
-  
-###     01-31-2017  
-***  
-  
-  
-* **external/jemalloc/**  
-1407a53 Avoid a potential innocuous compiler warning.  
-  
-* **frameworks/base/**  
-fd0886a Ability to enable/disable settings drawer [1/2]  
-  
-* **hardware/qcom/display-caf/msm8960/**  
-f27984c hwc: clear HWC_SKIP_LAYER flag for all layers under opaque layer  
-  
-* **hardware/qcom/media-caf/msm8960/**  
-3e34f24 mm-video: Handle async_message_thread error  
-  
-* **hardware/samsung/**  
-cabe5e6 audio: Fix memory leak when preprocessing is disabled  
-8414bd2 audio: Allow targets to override the deep buffer device  
-d23c6b5 audio: Move card specfic defines to a header  
-757ac41 audio: Factor out offload code  
-0612a4e audio: Rename header guard macro  
-c8502b9 audio: Update module name/author  
-052094b audio: Remove dummybuf headphone GPIO code  
-2f6f858 audio: Remove HTC acoustic amplifier code  
-297a636 audio: Import N HAL from flounder  
-  
-* **kernel/oneplus/msm8996/**  
-5bdc89f Revert "msm: camera: isp: Handle standby mode for B+M"  
-2f01a39 qcacld-2.0: Update to LA.UM.5.5.r1-02800-8x96.0  
-7da2bbe Merge tag 'LA.UM.5.5.r1-02800-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1-bringup  
-1ab7bc4 sg_write()/bsg_write() is not fit to be called under KERNEL_DS  
-b981abe netlink: Fix dump skb leak/double free  
-5a9f921 ALSA: pcm : Call kill_fasync() in stream lock  
-13833b2 net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  
-7e4c598 ring-buffer: Prevent overflow of size in ring_buffer_resize()  
-56f637b packet: fix race condition in packet_set_ring  
-6a67489 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands  
-01bb16f usbnet: cleanup after bind() in probe()  
-290deb0 USB: cdc-acm: more sanity checking  
-75cc79d netfilter: x_tables: check for size overflow  
-05489f2 pipe: limit the per-user amount of pages allocated in pipes  
-7940da7 ALSA: hrtimer: Fix stall by hrtimer_cancel()  
-bd4967e Input: aiptek - fix crash on detecting device without endpoints  
-2eae6da BACKPORT: mm: avoid setting up anonymous pages into file mapping  
-935d8ff net: llc: use correct size for sysctl timeout entries  
-  
-* **packages/apps/EmotionControl/**  
-08e1456 EC: Ability to enable/disable settings drawer [2/2]  
-4ea1a4d EC: update translations  
-  
-* **packages/apps/OmniStyle/**  
-338bd87 OmniStyle: add wallpaper contribution and picker  
-  
-* **system/core/**  
-33ba86e healthd: Use real time values for lockscreen charging info  
-  
-###     01-30-2017  
-***  
-  
-  
-* **device/oneplus/oneplus3/**  
-80763d9 op3: Use OOS brightness values  
-5d05058 op3: add camera-daemon cpuset  
-ff49e75 op3: update cpusets at boot complete  
-  
-* **frameworks/base/**  
-8c991a6 Lockscreen charging: "mAh" to "mA"  
-5b1b10a Lockscreen charging: Formatting improvements  
-6170140 Lockscreen charging info: real time values [1/4]  
-a0fdbf7 Revert "Frameworks: fix living wallpaper exception when reboot"  
-49807f5 Correctly name LID_STATE_CHANGED broadcast  
-  
-* **hardware/qcom/display-caf/msm8996/**  
-c372a9b Revert "display: Add color metadata definition"  
-d714c70 Revert "sdm: Use ColorMetadata in SDM"  
-  
-* **hardware/qcom/media-caf/msm8996/**  
-86c766c Revert "mm-video-v4l2: vdec: Support for HDR Info extension"  
-524280d Revert "mm-video-v4l2: vdec:Metadata for HDR and ColorAspects"  
-bb55321 Revert "mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2"  
-  
-* **packages/apps/EmotionControl/**  
-43a4aec EC: Lockscreen charging info: real time values [4/4]  
-  
-* **packages/apps/EmotionOTA/**  
-58b8ed2 oneplus3: fix OTA link  
-  
-* **packages/apps/Snap/**  
-9936197 Fix thumbnail sometimes not being shown initially in video mode.  
-7cf0bf3 Fix shutter button pressed state tracking issues.  
-  
-* **system/core/**  
-ca8206e Lockscreen charging info: real time values [2/4]  
-  
-###     01-29-2017  
-***  
-  
-  
-* **frameworks/av/**  
-e690119 libstagefright: Restore AOSP's handling of 24/32-bit wav files  
-  
-* **frameworks/base/**  
-11eaf12 telephony: Add state check for LteOnCdma to isGsm and isCdma  
-c34f261 EasterEgg: We like cats  
-  
-* **hardware/qcom/audio-caf/msm8996/**  
-25bbb88 Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996  
-0c8637a Revert "post proc : volume listener : fix effect release crash"  
-  
-* **hardware/qcom/display-caf/msm8996/**  
-b55e7d6 Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996  
-  
-* **hardware/qcom/media-caf/msm8996/**  
-a0bb242 Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996  
-  
-* **kernel/lge/msm8996/**  
-8fad249 elsa: update DTs for new bluetooth driver  
-116ef15 touchscreen alignment cleanup  
-  
-* **kernel/moto/shamu/**  
-2edf015 Add ZZMOOVE to shamu_defconfig  
-  
-* **packages/apps/EmotionControl/**  
-05b5503 EC: move torch feature to buttons settings  
-009ef59 EC: order header pack names same ordering as in the browse activity  
-  
-* **packages/apps/EmotionOTA/**  
-41b723a trltevzw: Push 7.1.1-20170129 OTA update  
-  
-* **packages/apps/Recorder/**  
-8e9a287 Recorder: grant permissions to read opened files to apps started from notifications  
-29a86fe Recorder: tmp app icon  
-5231b70 Recorder: update gradle plugin  
-  
-* **packages/apps/Settings/**  
-0cb5039 Settings: Don't crash in SUW if no talkback service is installed  
-  
-* **packages/apps/Snap/**  
-a425da8 Snap: store module index  
-2bc5051 Snap: Fix NPE when parameters.getSupportedVideoSizes() is null  
-  
-* **packages/services/Telecomm/**  
-51d6bb0 CallAudioModeStateMachineTest: fix compilation  
-  
-* **vendor/emotion/**  
-1d3ff0c apns: Add differentiation to FreedomPop Global GSM APN  
-30e88b4 apns: Add FreedomPop US LTE sim APN  
-563634b apns: Correct FreedomPop Global GSM APN  
-  
-###     01-28-2017  
-***  
-  
-  
-* **bootable/recovery/**  
-171e4bd Fixup custom bootloader msg offset in block misc  
-  
-* **device/moto/shamu/**  
-8ecd9b8 MotoDoze: Commonize strings  
-  
-* **frameworks/base/**  
-1c4c06e Fix USB intent warning on deviceAttached()  
-6ccaae2 base: remove telephony check from airplane toggle in globalactions  
-a03da33 SystemUI: FIX No sim - airplane mode padding  
-8a98d27 battery: fix warning text ! size issue the bounds kept being reset upon rotation or density change which made the ! huge  
-ef0c3a3 Power connect/disconnect notif: fix sound playing when set to silent  
-8e823db Disable touch slop for generated gesture events  
-6a71e9e Fix a use-of-uninitialized-value warning.  
-0d175d3 Disable hwui blending for first draw to main FBO  
-f8587b5 Fast paths for hwui matrix and gradient shaders  
-83cacd2 Optimised hwui rounded corners shader  
-1e40060 Reduce hwui CPU time by using glDrawRangeElements  
-0137ad3 Optimised hwui shadow shader by using Vec2 alpha  
-4a5e732 Avoid NPE when restarting task all activities of which will be cleared  
-410496e Avoid deadlock when installing app  
-e034e1b Frameworks: Re-adapt toast window animations for 7.1.1  
-b5773c3 UI: Fix checkbox item display error status when scrolled ListView  
-c638e26 Cleanup uses of sprintf so we can deprecate it.  
-f284a2f KernelWakelockReader: stop the panic  
-a878d38 ParcelFileDescriptor: can we stop the panic here?  
-7f05243 Add support for MTP perceived device type property.  
-1a78151 [1/2] base: SystemUI: header pack config enhancements  
-444f329 Expose external qs tile tint color  
-56c7892 DUI Smartbar: double tap to sleep on navbar [1/3]  
-2f6e0b4 base: SystemUI: fix custom header dpi change behaviour  
-950de8d Fw_base: custom header extensions [1/3]  
-9fc57b6 FW_ base: SystemUI: custom QS header images [1/2]  
-  
-* **kernel/lge/msm8996/**  
-66b221b elsa: us996: update DTs for new bluetooth driver  
-  
-* **kernel/moto/shamu/**  
-ae75207 cpufreq: remove cpu utilization from elementalx gov  
-b3bb65a msm: mdss: Adding lcd notifier  
-f5573da cpufreq: zzmoove default to profile 7 upon selecting  
-9ebd5f0 cpufreq: add zzmove governor  
-  
-* **kernel/oneplus/msm8996/**  
-946bec2 msm: camera: Comment out upstream changes to get camera working  
-3d33b9a Merge tag 'LA.UM.5.5.r1-02500-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD  
-4f61b53 ARM: dts: 15811: Target different GPU firmware image name  
-4ebbc00 op3: Preserve memory on restart  
-f097931 power: reset: Allow device to preserve memory on restart  
-cc0b754 ext4 crypto: fix bugs in ext4_encrypted_zeroout()  
-4724c04 ext4 crypto: replace some BUG_ON()'s with error checks  
-9ac9b39 ext4 crypto: ext4_page_crypto() doesn't need a encryption context  
-d05fadf ext4: optimize ext4_writepage() for attempted 4k delalloc writes  
-82ae8d0 ext4 crypto: fix memory leak in ext4_bio_write_page()  
-d9ae57c ext4: disable zeroout optimization when encryption is enabled  
-5a6d06c ext4 crypto: remove duplicate header file  
-3804073 ext4 crypto: fix spelling typo in comment  
-830c6d9 ext4 crypto: exit cleanly if ext4_derive_key_aes() fails  
-0ca25c8 ext4 crypto: check for too-short encrypted file names  
-d85df4f ext4 crypto: use a jbd2 transaction when adding a crypto policy  
-21852e8 ext4 crypto: fail the mount if blocksize != pagesize  
-2728e6b ext4 crypto: fix sparse warnings in fs/ext4/ioctl.c  
-858ea8c ext4 crypto: fix ext4_get_crypto_ctx()'s calling convention in ext4_decrypt_one  
-5fff275 ext4 crypto: allocate bounce pages using GFP_NOWAIT  
-e5c9fd0 ext4 crypto: release crypto resource on module exit  
-f5a8004 ext4 crypto: handle unexpected lack of encryption keys  
-581bb7f ext4 crypto: allocate the right amount of memory for the on-disk symlink  
-19cea38 ext4 crypto: clean up error handling in ext4_fname_setup_filename  
-55ee7ef ext4 crypto: policies may only be set on directories  
-4ca7edc ext4 crypto: enforce crypto policy restrictions on cross-renames  
-4b75461 ext4 crypto: encrypt tmpfile located in encryption protected directory  
-9c02e52 ext4 crypto: make sure the encryption info is initialized on opendir(2)  
-2ee4382 ext4 crypto: set up encryption info for new inodes in ext4_inherit_context()  
-a321943 ext4 crypto: fix memory leaks in ext4_encrypted_zeroout  
-296bbbf ext4 crypto: use per-inode tfm structure  
-3625318 ext4 crypto: require CONFIG_CRYPTO_CTR if ext4 encryption is enabled  
-c61eb54 ext4 crypto: shrink size of the ext4_crypto_ctx structure  
-ef08a64 ext4 crypto: get rid of ci_mode from struct ext4_crypt_info  
-bca66a7 ext4 crypto: use slab caches  
-dac2106 ext4: clean up superblock encryption mode fields  
-837b2a9 ext4 crypto: reorganize how we store keys in the inode  
-cec791a ext4 crypto: separate kernel and userspace structure for the key  
-aa3b639 ext4 crypto: don't allocate a page when encrypting/decrypting file names  
-433c706 ext4 crypto: optimize filename encryption  
-4381d44 ext4 crypto: Do not select from EXT4_FS_ENCRYPTION  
-a00cb6d ext4 crypto: add padding to filenames before encrypting  
-50bcb55 ext4 crypto: simplify and speed up filename encryption  
-81e8e15 ext4 crypto: enable encryption feature flag  
-47cfa32 ext4 crypto: Add symlink encryption  
-7991299 ext4 crypto: enable filename encryption  
-771ac19 ext4 crypto: filename encryption modifications  
-6652ca0 ext4 crypto: partial update to namei.c for fname crypto  
-8db04f5 ext4 crypto: insert encrypted filenames into a leaf directory block  
-abda5cb ext4 crypto: teach ext4_htree_store_dirent() to store decrypted filenames  
-2899cbc ext4 crypto: filename encryption facilities  
-6533108 ext4 crypto: implement the ext4 decryption read path  
-5bbae68 ext4 crypto: implement the ext4 encryption write path  
-a004972 ext4 crypto: inherit encryption policies on inode and directory create  
-0d2568b ext4 crypto: enforce context consistency  
-b40b9b6 ext4 crypto: add encryption key management facilities  
-d709b32 ext4 crypto: add ext4 encryption facilities  
-1ed1471 ext4 crypto: add encryption policy and password salt support  
-58986fb ext4 crypto: add encryption xattr support  
-a9b1a6c ext4 crypto: export ext4_empty_dir()  
-5c9ad73 ext4 crypto: add ext4 encryption Kconfig  
-02a4f44 ext4 crypto: reserve codepoints used by the ext4 encryption feature  
-aad1fbf ext4 crypto: add ext4_mpage_readpages()  
-7476ef5 FROMLIST: pstore: drop pmsg bounce buffer  
-1303d28 Revert "f2fs: reset default idle interval value"  
-b56ce72 Merge branch 'linux-3.18.y' of git://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-stable into HEAD  
-7e14d57 Revert "BACKPORT: f2fs: add a max block check for get_data_block_bmap"  
-a419d21 op3: Update defconfig  
-6c897a3 misc: fpc1020: Wait for uevent to send before exiting IRQ handler  
-cd59d0b misc: fpc1020: Simplify proximity shut-off  
-f374cb5 misc: fpc1020: Honor proximity state  
-a6669c1 usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs  
-b190fb1 power: oneplus_fastcg: Remove project_info dependency  
-076ed89 misc: fpc1020: Clean up interrupt handler  
-30d0786 misc: fpc1020: Set fingerprintd priority to max when screen is off  
-c7c7a23 misc: fpc1020: Report key input when interrupt is fired with screen off  
-e633b39 misc: fpc1020: Clean up PM routines and move them into dedicated worker  
-1cd8d42 input: synaptics: s3320: Silence log spam  
-5743f20 input: synaptics: s3320: Actually set BTN_TOOL_FINGER keybit  
-1799257 input: synaptics: s3320: Clean up PM routines and move them into worker  
-601529b input: synaptics: s3320: Don't run baseline on resume  
-1b5fc56 msm: qpnp-haptic: Process haptics asynchronously  
-43e824e power: bq27541: Silence log spam  
-7b5a043 power: bq27541: Don't queue work onto a specific CPU  
-e2b013a op3: CONFIG_HZ_300  
-222bd7c asoc/msm: Disable unwanted modules in arch config  
-2e21138 Silences WLAN, PCIe, and CPU suspend state kernel messages  
-a2fcce6 sdcardfs: Flag files as non-mappable  
-486862f vfs: Add setattr2 for filesystems with per mount permissions  
-51f4243 vfs: Allow filesystems to access their private mount data  
-93ed449 mnt: Add filesystem private data to mount points  
-d7b17aa vfs: Add permission2 for filesystems with per mount permissions  
-9f9a0e8 ANDROID: sdcardfs: Fix locking issue with permision fix up  
-73a38f7 sdcardfs: Use per mount permissions  
-a6e4c2b sdcardfs: Add gid and mask to private mount data  
-5f38901 sdcardfs: User new permission2 functions  
-625f485 sdcardfs: Move directory unlock before touch  
-59cd6f1 sdcardfs: fix external storage exporting incorrect uid  
-a1127da sdcardfs: Added top to sdcardfs_inode_info  
-c4effde sdcardfs: Switch package list to RCU  
-cab6ccb sdcardfs: Fix locking for permission fix up  
-8bce514 sdcardfs: Check for other cases on path lookup  
-8f723a1 sdcardfs: override umask on mkdir and create  
-b94c5ff ANDROID: sdcardfs: fix itnull.cocci warnings  
-7c1b25e8 sdcardfs: Truncate packages_gid.list on overflow  
-21f9574 vfs: change d_canonical_path to take two paths  
-9d4bd9d asoc/msm: Reduce min capture size  
-127710a arm64: crypto: reduce priority of core AES cipher  
-f0e7c8c arm64/crypto: use crypto instructions to generate AES key schedule  
-0601237 arm64: crypto: increase AES interleave to 4x  
-7ba3e21 arm64/crypto: issue aese/aesmc instructions in pairs  
-eebea3d arm64: crypto: Change priority of arm64 aes cipher.  
-d77f74a crypto: arm64/crc32 - bring in line with generic CRC32  
-1d9588c crypto: crc32 - Add ARM64 CRC32 hw accelerated module  
-7b7337d op3: Adjust display power settings  
-5b41efc asoc: msm: Add async ops for SLIMBUS_6 backend  
-e752e10 sys: Horrible hack for compat_sysinfo userspace confusion  
-c49d881 op3: Fix and optimize SRGB commands  
-83f91ec mdss: livedisplay: Add commands to enable SRGB mode  
-5f4cbb4 qpnp-haptic: Dejank the haptics  
-e0ce04f input: synaptics_s3320: Report nanosecond timestamps to improve accuracy  
-b522c0a input: add new input event code to pass timestamp to userspace  
-abfa259 op3: Enable partial update mode for Samsung display  
-1d88f33 op3: Fix display brightness  
-1cb3524d video: mdss: LiveDisplay driver  
-ecf391a cpuset: Make cpusets restore on hotplug  
-fd4310a cpuset: Add allow_attach hook for cpusets on android.  
-dc64b86 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.18.0  
-3dfe521 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r7 for 3.18.0  
-ad56120 block: introduce the BFQ-v7r7 I/O sched for 3.18  
-1fd5167 block: cgroups, kconfig, build bits for BFQ-v7r7-3.18  
-71c976f msm: qpnp-haptic: set up sysfs interface for common cmhw implementation  
-bf017ca qpnp-haptic: Add sysfs interface to control intensity  
-f9330e7 input: tri-state-key: Get it ready for CM  
-dff5098 input: synpatics_s3320: Get gestures ready for CM  
-bcd1367 input: synaptics_s3320: Clean up oneplus' logic  
-1560fe5 ARM: dts: 15801: Correct MPP4 behaviour  
-7454780 op3: Adjust LEDs configuration slightly  
-b072373 ARM: dts: 15801: Add add synchronized RGB blink params  
-b5c1cb1 leds: leds-qpnp: add synchronized rgb control  
-e9ff2b5 pwm: qpnp-pwm: add api for synchronous enable of pwms  
-  
-* **packages/apps/DUI/**  
-e0549f0 Smartbar: double tap to sleep on navbar [2/3]  
-  
-* **packages/apps/EmotionControl/**  
-25a1100 EC: custom header extensions [2/3]  
-dc1acd7 EC: custom QS header images [2/2]  
-  
-* **packages/apps/Settings/**  
-b7bf116 Make the icon consistent before / after pairing  
-c443383 DUI Smartbar: double tap to sleep on navbar [3/3]  
   
