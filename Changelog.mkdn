@@ -1,3 +1,256 @@
+###     04-10-2017  
+***  
+  
+  
+* **device/oneplus/oneplus3/**  
+630caed op3: replace cpu boost with cpu input boost driver  
+2bd9a73 op3: Enable framework sched boost  
+d5e6ae9 op3: remove unneeded post-processing  
+a048ffb op3: Remove uneeded graphics props  
+eaa734b op3: Don't set default GPU power level  
+  
+* **device/qcom/common/**  
+0e39010 power: Kill "Failed to acquire lock" log  
+  
+* **device/samsung/qcom-common/**  
+538177d overlay: Remove animate screen lights  
+  
+* **frameworks/base/**  
+7c05950 Revert "SystemUI: Add SlotId for MultiSim"  
+339cfac PowerManager: Bring back the compatibility with AOSP  
+4b4cc00 Fix permission description string for DE.  
+  
+* **frameworks/native/**  
+fd68581 sensorservice: Register orientation sensor if HAL doesn't provide it  
+  
+* **kernel/oneplus/msm8996/**  
+4040360 defconfig: Enable transparent hugepage support  
+8a687b9 cpu_input_boost: Fix up dangling return in validate_cpu_freq()  
+02481aa cpu_input_boost: Fix panics on init due to race  
+e8f35c4 defconfig: change cpu_boost with cpu_input_boost  
+54a15fc cpu_input_boost: Ensure validate_cpu_freq() only uses valid freqs  
+f88779a cpu_input_boost: Remove scheduler boost on screen wake  
+dd6e2e1 cpu_input_boost: Make get_valid_cpufreq() usage hotplug-safe  
+9a7eb41 cpu_input_boost: Fix checkpatch.pl warnings and clean up some styling  
+8ad3c04 cpu_input_boost: Fix trivial unsigned integer underflow  
+c2745a0 cpu_input_boost: Validate input boost frequencies  
+f48b6a0 cpu_input_boost: Enable scheduler boost on screen wake  
+a815026 cpu_input_boost: Perform load assessment based on policy->cur  
+b52a651 cpu_input_boost: Increase duration for screen-wake boost to 3000 ms  
+2e903b0 cpu_input_boost: Make boosting more dynamic and efficient  
+d1be819 cpu_input_boost: Don't extend little CPU's boost duration  
+f89b46f cpu_input_boost: Don't sleep in atomic context for continuous boosts  
+051c69e cpu_input_boost: Improve efficiency when there is constant input  
+3809d09 cpu_input_boost: Boost multiple CPUs more often  
+a8048d3 cpu_input_boost: Trigger max boost when button is pressed during suspend  
+5d3bc53 cpu_input_boost: Boost on button input  
+507a892 cpu_input_boost: Use FB_EARLY_EVENT_BLANK for unblank boost  
+b527384 cpu_input_boost: Give fb_boost_nb the highest priority  
+134c0b7 cpu_input_boost: Restructure for big.LITTLE CPUs  
+2965c2b cpu_input_boost: Remove WQ_NON_REENTRANT  
+ed06aa4 cpu_input_boost: Use fixed-width integer types for local variables  
+d30cb1b cpu_input_boost: Remove unnecessary kzallocs  
+62a101f cpu_input_boost: Clean up code style  
+87789f3 cpu_input_boost: Increase framebuffer boost duration to 1100 ms  
+f675877 cpu_input_boost: Fix synchronization issues  
+b3fdba6 cpu_input_boost: Remove module references  
+db79047 cpu_input_boost: Remove thread-migration boosting and clean up  
+4b94bf8 cpu_input_boost: Remove sync_threshold to recover from regression  
+2538c85 cpu_input_boost: Rewrite to use dual-core boosting and clean up  
+382d915 cpu_input_boost: Increase unblank-boost duration to 900ms  
+6ebac0f cpu_input_boost: Reduce input-boost duration  
+a9f4e47 cpu_input_boost: Remove input-boost frequency limitations  
+ccf41e1 cpu_input_boost: Remove boost on framebuffer blank  
+44e1e6d cpu_input_boost: Add boosting on thread migration  
+eb1efcf cpu_input_boost: Boost on framebuffer blank/unblank  
+54488f4 cpu_input_boost: Clean up and fix bugs  
+f3e6e77 cpu_input_boost: Remove deprecated sprintf usage  
+7b1f7f2 cpu_input_boost: Minor clean-up in notifier  
+1e231c6 cpu_input_boost: Run all workers on CPU0  
+e0f8b5e cpu_input_boost: Add support for userspace control  
+c828509 cpu_input_boost: Update boost duration equation  
+17f2508 cpu_input_boost: Remove redundant calculations and logic  
+e5fcea9 cpu_input_boost: Remove cpufreq get/put API usage  
+b4b531b cpu_input_boost: Remove spin locks  
+eb78ece cpu_input_boost: Make long function names shorter and more consistent  
+5bb8ed2 cpu_input_boost: Use spinlocks instead of mutex locks  
+fb16a3f cpu_input_boost: Specify some variables as read-mostly  
+ccf1483 cpu_input_boost: Replace auto-freq finder with sysfs interface  
+6f27f9b cpu_input_boost: Prioritize primary CPU  
+3bd8a15 cpufreq: Introduce CPU input boost driver  
+efb9ee3 cpufreq: interactive: Skip govinfo chain call when there are no listeners  
+899091f cpufreq: interactive: Skip timer when policy->min == policy->max  
+ce3201b display: add a simple api to query the display state (on/off) at any point in time  
+15370c6 defconfig: enable usb fast charge  
+937e0fc defconfig: clean up  
+0cfef0e cpufreq: interactive: slightly faster sampling during screen off to offset cases like Android Auto and Viper4Android hi-resolution audio decoding where 60ms was a bit too aggressive  
+df07762 cpufreq: interactive: remove hispeed_freq init restriction  
+d819cd7 cpufreq: interactive governor drops bits in time calculation  
+3274976 cpufreq: interactive: reduce timer with screen off  
+3327d29 drivers: thermal: queue work on system_power_efficient_wq  
+f748387 cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0  
+d824462 cpufreq: cpu-boost: export input_boost_enable to userspace  
+904c0fc cpufreq: cpu-boost: don't boost over user set max freq  
+04e8817 drivers: cpu-boost: optimize policy update loop on input cpufreq boost  
+918960c cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value  
+3df7092 drivers: misc: implement usb fast charge mode  
+ab2c256 power:qpnp-charger: extended charge time from 30s to 100s when battery status is near to full  
+  
+* **kernel/samsung/trlte/**  
+f9961b8 bluetooth: tx timeout 10 seconds  
+  
+* **packages/apps/CMParts/**  
+334c861 PerfProfileSettings: Update slider on powersave mode change  
+  
+* **packages/apps/Snap/**  
+2480c51 CameraControls: Toggle the status of disabled views  
+12baf7b Never remove unsupported controls  
+a14e7a0 WideAnglePanoramaUI: Correctly position the progressbar  
+803a008 Snap: CaptureModule: set switcher index on resume  
+022d3fe Snap: CaptureUI: fix ModuleSwitcher being invisible  
+  
+* **packages/services/Telephony/**  
+0814fa2 telephony: fix crash when missing simcard  
+ea6159e VoicemailSettingsActivity: Fix NPE  
+  
+* **vendor/cmsdk/**  
+08b3b34 PerformanceManager: Don't override the user preference  
+9dfdaa5 PerformanceManager: Don't force powersave mode with powersave profile  
+  
+* **vendor/emotion/**  
+447027f prebuilt: bump KA to 0.9.6.11  
+c3bd656 Make a data only config  
+151c2cc Add email app to device idle whitelist.  
+0080a91 build: Update smali and baksmali to 2.2.0  
+9d20445 Merge branch 'nougat' of https://github.com/EmotionOS/vendor_emotion into nougat  
+4d52a2c prebuilt: bump Substratum to 632  
+  
+###     04-09-2017  
+***  
+  
+  
+* **packages/apps/EmotionOTA/**  
+fe2a737 trltexx: Push 7.1.1-20170402 OTA update  
+  
+###     04-08-2017  
+***  
+  
+  
+###     04-07-2017  
+***  
+  
+  
+* **device/lge/msm8996-common/**  
+7f54440 msm8996: remove duplicate audio props and attempt to fix low mic  
+fd27f5d msm8996: Add symphony DSP blobs  
+1a67678 msm8996: Add missing widevine blobs  
+  
+* **device/lge/v20-common/**  
+c5d36d5 Revert "test 2"  
+2970ba5 test 2  
+76c1a76 Revert "test"  
+9a1f795 test  
+ce51ede Revert "v20: test sound"  
+3ab7eca v20: test sound  
+80d5d8d Revert "v20: update mixer paths"  
+  
+* **packages/apps/CarrierConfig/**  
+8821cae Consider Q-TELECOM Greece as non-roaming  
+  
+* **packages/apps/OmniStyle/**  
+5144838 OmniStyle: apply default size on omnirom logo  
+  
+* **vendor/lge/**  
+c47992a msm8996: Update blobs from v872 v10e  
+25afb96 msm8996: Add symphony DSP blobs  
+84d8385 msm8996: Add missing widevine blobs  
+  
+###     04-06-2017  
+***  
+  
+  
+* **device/lge/msm8996-common/**  
+d633747 msm8996: fixed missing derp  
+  
+* **device/lge/v20-common/**  
+5da0199 v20: update mixer paths  
+f84e7ae v20: fixed derp  
+f74ab9f v20: remove duplicate dependencies  
+  
+* **device/moto/shamu/**  
+0d746a8 shamu: update build fingerprint & description to N6F26Y  
+  
+* **external/sqlite/**  
+4138e2f sqlite: update to 3.18.0  
+  
+* **packages/apps/EmotionOTA/**  
+ebc4f79 shamu: Push 7.1.1-20170405 OTA update  
+  
+* **vendor/emotion/**  
+8a537e3 fix mistake  
+36ee161 add klte  
+39775a5 prebuilt: bump Substratum to 627  
+  
+* **vendor/motorola/**  
+412d28f Fix shamu: update blobs from N6F26Y factory image  
+4a94011 shamu: update blobs from N6F26Y factory image  
+  
+* **vendor/samsung/**  
+523c39c update klte files  
+  
+###     04-05-2017  
+***  
+  
+  
+* **changelogs/**  
+f43e056 Changelog 20170404  
+  
+* **device/lge/msm8996-common/**  
+4619af6 msm8996: Decommonize OIS firmware  
+c387a2e msm8996: Add libqmiservices to Radio as well as QMI  
+f0216db msm8996: Remove pinning hashes from GPS blobs  
+9fb7615 msm8996: Update NXP NFC config for 10.01.1F firmware  
+30b6d10 msm8996: Add missing NFC extras permission  
+5b87acb msm8996: ramdisk: Remove rogue nfc node symlink  
+0c608ae msm8996: Adjust audio configs and switch to XML audio config  
+4c2c57c msm8996: Disable PQ encoding  
+f6c1a42 msm8996: Add h872 to build guards  
+  
+* **device/lge/v20-common/**  
+33cf989 v20: Decommonize OIS firmware  
+  
+* **frameworks/av/**  
+eb594c4 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""  
+  
+* **hardware/samsung/**  
+3fa2b69 power: Align to AOSP API  
+5781c8e power: Remove unused variables  
+e37aedd lights: Put back fd checks before closing  
+  
+* **packages/apps/Bluetooth/**  
+cca216e Revert "Bluetooth: handle opening incoming APK files"  
+  
+* **packages/apps/CellBroadcastReceiver/**  
+fa4d7a7 CellBroadcastReceiver: fix channel 50 not disabling  
+  
+* **packages/apps/EmotionOTA/**  
+306d72a s2 : Push 7.1.1-20170405 OTA update  
+b529b76 oneplus3: Push 7.1.1-20170404 OTA update  
+  
+* **vendor/emotion/**  
+5690dbe s2 : re-correcting qcom source  
+b8969c6 s2 : updated vendorsetup for s2  
+d8b0015 Update s2.dependencies  
+953ad6b s2 : Adding s2 dependencies  
+  
+* **vendor/lge/**  
+2675018 msm8995/v20: Decommonize OIS firmware  
+c8d2ab1 msm8996: Update libqmiservices from OP3 7.1.1  
+5f76fff msm8996: Add missing GPS blobs  
+5c1622a msm8996: Update pn548 firmware to 10.01.1F  
+a0a06e5 msm8996: Update CNE, DPM, GPS, and Radio blobs from OP3 7.1.1  
+e06eb3b msm8996: Add G6 devices to build guard  
+  
 ###     04-04-2017  
 ***  
   
@@ -37,6 +290,43 @@ e72a683 SystemUI: Add NFC tile
 255b83e SmartBar: allow set custom buttons opacity when Pulse is active [3/3]  
 4dfb99c FWB: SmartBar Color: Custom app color filter switch (1/3)  
 e74fee9 FWB: SmartBar Button Tint [1/3]  
+  
+* **hardware/qcom/media-caf/msm8960/**  
+f462f4d mm-video-v4l2: vdec: add safety checks for freeing buffers  
+b040ed5 mm-video-v4l2: venc: add safety checks for freeing buffers  
+  
+* **hardware/ti/omap4/**  
+86ea9e8 omap4: add more common build properties  
+368f365 omap4: define BOARD_CANT_REALLOCATE_OMX_BUFFERS  
+cce4d95 omap4: camera: restore compatibility with older Android versions (< Android N)  
+0254e40 omap4: define TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES  
+7839bd6 camera: Use GBAllocator.allocate for N_MR1.  
+3c75dc7 Revert "camera: switch to Gralloc.allocate and generate unique Id for allocation"  
+c9d954d camera: Rename version_major/minor to the new, non-deprecated names.  
+0f2b557 camera: clean up build when various OMAP_ENHANCEMENTs are disabled  
+9cf111b Revert "hwc: publicly define omap specific usage flags"  
+9a75172 seccomp: allow clock_nanosleep syscall  
+3a17e59 Fix camera video recording on N.  
+547e464 android-api: Add N_MR1 defines.  
+c7d8882 camera: fix build for LP  
+9843c81 android-api: Add LP_MR1 defines.  
+ef46c42 Add DOMX syscalls to seccomp filter  
+6c31b84 domx: Remove implicit libc shared library declarations.  
+6fc761d domx: Overhaul omx_proxy_component makefile.  
+0efd58f domx: for ion_alloc alloc flag must be (1 << ID) and not the ID  
+3088f9e camera: for carveout alloc we must use ID OMAP_ION_HEAP_SECURE_INPUT  
+16aca2a android-api: add N  
+38636fa camera: fix build for KK  
+6c5b8a8 libcorkscrew: only build for Lollipop and newer  
+4cd6c92 camera: Init all members of camera_module_t to fix warnings.  
+f439503 libtiutils: C++11 compat fix.  
+97eba14 libstagefrighthw: Build with -Wall -Werror.  
+5076f97 libI420colorconvert: Build with -Wall -Werror.  
+2c59035 Make bltsville opt-in.  
+072fa04 camera: Makefile overhaul.  
+07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"  
+06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.  
+d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied  
   
 * **kernel/oneplus/msm8996/**  
 e67f010 time: Remove CONFIG_TIMER_STATS  
@@ -145,9 +435,22 @@ d5a57e4 Automatic translation import
 ba58a47 emotion: remove special access to unused cmfm  
 fb72a8b emotion: allow apps to find profile manager service  
   
+* **vendor/samsung/**  
+f2d5376 trlte: partially revert 5cc1a8978c1e5637a8d9162fc2b1a018471cc18d  
+  
 ###     04-03-2017  
 ***  
   
+  
+* **hardware/ti/omap4/**  
+eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism  
+dbe532a board/init: Common PVR KM build target for reuse by devices  
+492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere  
+42c669c SGX-BIN: buildvars: Compile PVR KM with -fno-pic  
+55bfee6 libpower: Avoid overwriting custom user frequencies.  
+357aaac libpower: Initialize inited variable.  
+5ae1155 libpower: Add optional support for API 0.3  
+c55f2bb Add OMAP PowerHAL  
   
 * **packages/providers/MediaProvider/**  
 e0e756f New Material icon  
@@ -160,11 +463,15 @@ de8277e Add Material icon & app label
   
   
 * **hardware/samsung/**  
+235c298 lights_helper: I/O API cleanup  
 d483dd7 audience: Cleanup write_int()  
 658f447 audience: Use O_WRONLY flag for write_int()  
 2036814 audience: Always log write_int() fails  
 7052460 audience: Warn when we cannot handle the output device  
 f9b8e83 power: Add POWER_HINT_DISABLE_TOUCH support  
+  
+* **packages/apps/CarrierConfig/**  
+65fe5ff Consider O2 and E-Plus as non-roaming  
   
 * **packages/apps/CustomTiles/**  
 a25d845 WakelockService: Refactor  
@@ -202,315 +509,4 @@ d062bdc Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.9' into cm-14.1-caf-
   
 * **vendor/samsung/**  
 5cc1a89 trlte: update from N910FXXS1DQC3  
-  
-###     03-31-2017  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-d48b678 trlte-common: init.qcom.rc updates from DQB4  
-  
-* **kernel/samsung/trlte/**  
-17046ba Updates from N910FXXS1DQC3  
-  
-* **packages/apps/OmniStyle/**  
-de831f7 OmniStyle: use vector logo  
-  
-* **packages/apps/ThemeInterfacer/**  
-ae4821c Fix failed authorization toast on restartService  
-  
-* **packages/resources/devicesettings/**  
-a765ae0 Add strings for fingerprint pocketmode  
-  
-###     03-30-2017  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-d06c240 trlte-common: disable fingerprint for now  
-  
-* **kernel/moto/shamu/**  
-8577b29 Update shamu_defconfig  
-9a94d83 Mako_Hotplug: This needs to be in the kconfig to be a config item  
-9c3ae20 PM / sleep: Fix request_firmware() error at resume  
-2f2352a PM / Sleep: fix recovery during resuming from hibernation  
-db0ccf0 power: increment wakeup_count when save_wakeup_count failed.  
-767e874 arch/arm: mako hotplug disable/enable  
-467bc2b QoS: Enhance framework to support cpu/irq specific QoS requests  
-ad35cde QoS: Modify data structures and function arguments for scalability.  
-5603f42 Power: pmqos: Add emc freq pmqos constraint  
-33c70b1 power: Fix coverity error  
-3469a11 power: Prefer min over max for online cpus  
-1fc4558 PM / QoS: Add notifier for flags  
-fe41c6e power: PM QoS support for bounded constraints  
-19bdbad pmqos: Replace spinlock with mutex for pm_qos_lock  
-219dee2 PM QoS: Add GPU frequency limits to PM QoS  
-681cb9b PM / QoS: export pm_qos_update_request_timeout()  
-e8c51f4 PM QoS: Add disable parameter  
-4854213 PM Qos: Add min online cpus as PM QoS parameter  
-859b3e7 PM QoS: Add CPU frequency min/max as PM QoS params  
-bc5d9bd PM QoS: Add max online cpus as PM QoS parameter  
-836bc3ff PM / freezer: Clean up code after recent fixes  
-9bfab43 PM / sleep: Mechanism for aborting system suspends unconditionally  
-a2435ce PM / Sleep: Remove ftrace_stop/start() from suspend and hibernate  
-875568f PM / sleep: fix freeze_ops NULL pointer dereferences  
-a085927 ACPI / PM: Hold ACPI scan lock over the "freeze" sleep state  
-a5b84e2 PM / suspend: Make cpuidle work in the "freeze" state  
-7ca25a3 PM: Add missing "freeze" state  
-7dc3adf PM / suspend: Remove unnecessary !!  
-901b7db PM / wakeup: Include appropriate header file in kernel/power/wakelock.c  
-e3c1356 PM / sleep: Move prototype declaration to header file kernel/power/power.h  
-6557a97 arm, pm, vmpressure: add missing slab.h includes  
-659921a PM / sleep: Fix memory leak in pm_vt_switch_unregister().  
-e4cea1b PM / hibernate / memory hotplug: Rework mutual exclusion  
-5fc3fa7 PM / hibernate: Create memory bitmaps after freezing user space  
-3870036 PM / Sleep: increase ftrace coverage in suspend/resume  
-b2156cd mako_hotplug: increase the work schedule time when dual-core or quad-core mode is active, from 1 to 2 seconds  
-6e2af79 mako_hotplug: don't use PAGE_SIZE for snprintf  
-fa6ba1a mako_hotplug: run the main work only once every second if special cases apply  
-aea68a6 mako_hotplug: don't offline cores if the load at that sample is above the threshold, even if we met all the other conditions  
-7b0d358 mako_hotplug: let's use an unbound wq  
-38fbd5e PM / sleep: unregister wakeup source when disabling device wakeup  
-fec0088 include: added earlysuspend  
-6843d0a wakeup: add userspace knob to enable/disable msm_hsic_host wakelock  
-f0904e7 power: skip sensor_ind wakeup source activation via sysfs  
-0a38966 mako_hotplug: if the nr of runnable threads is high, online all cores, no questions asked  
-dd6041a Mako_hotplug: adapt counter_hysteria for the latest changes and update the description  
-8288f96 mako_hotplug: start evaluating the system load and decide what to do with is only after the device has booted up  
-f847e3f EXPERIMENTAL: mako_hotplug: remove cpufreq_callback to cap/uncap cpu frequencies on screen off/on  
-68efdfd mako_hotplug: raise max_freq on screen off - sometimes during data connection changes we can hear some audio garbage so let's see if a higher freq fixes it  
-ec06c08 EXPERIMENTAL: mako_hotplug: make cpu2 and cpu3 less nervous  
-f363cf6 mako_hotplug: re-add resume-suspend works  
-fcb8576 mako_hotplug: add my hotplug driver, kill mpdecision with fire  
-afc2206 netfilter: makefile: no unsafe math optimizations  
-  
-* **packages/apps/CustomTiles/**  
-ee80e81 CaffeineTile: Use 'off' icon by default  
-6bcbc09 AdbOverNetworkTile: Use 'off' icon by default  
-cb6961e WakelockService: Don't check if wakelock is held twice  
-513dfbf WakelockService: reference the wakelock  
-04e54c3 CaffeineTile: Start service connection as current user  
-  
-* **packages/resources/devicesettings/**  
-d653283 Automatic translation import  
-  
-* **vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/**  
-77358cc Automatic translation import  
-  
-* **vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/**  
-7c8a02e Automatic translation import  
-  
-###     03-29-2017  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-d2f8968 Merge branch 'nougat' of https://github.com/EmotionOS/android_device_samsung_trlte-common into HEAD  
-da41d3b init.qcom.rc: updates for fingerprint  
-7d160c4 Revert "Resolution 1920x1088 doesn't seem very common, so I assume this should be 1080"  
-441b485 trlte: Add support for 2160p media profile  
-a270c15 trlte: Allow tethering without provisioning app  
-482b9b6 trlte: liblights: Remove device level HAL  
-  
-* **hardware/samsung/**  
-047075e Automatic translation import  
-  
-* **packages/apps/AudioFX/**  
-2cd4a6e Automatic translation import  
-  
-* **packages/apps/Bluetooth/**  
-f4196b3 Automatic translation import  
-  
-* **packages/apps/Browser/**  
-bc8a6c7 Automatic translation import  
-  
-* **packages/apps/Calendar/**  
-918bd81 Automatic translation import  
-  
-* **packages/apps/Camera2/**  
-e96a1aa Automatic translation import  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-17e633f Automatic translation import  
-  
-* **packages/apps/CustomTiles/**  
-5bfa7e9 Automatic translation import  
-  
-* **packages/apps/DeskClock/**  
-ded6afb Automatic translation import  
-8de8bd0 AlarmService : Change stopSelf into stopSelfResult  
-1f3d393 DeskClock: fix ringtones stored on /sdcard/Alarms  
-  
-* **packages/apps/Eleven/**  
-3f8bab8 Automatic translation import  
-  
-* **packages/apps/Email/**  
-92c2de4 Automatic translation import  
-  
-* **packages/apps/FMRadio/**  
-bd6dd73 Automatic translation import  
-  
-* **packages/apps/FlipFlap/**  
-d08398a Automatic translation import  
-  
-* **packages/apps/Gello/**  
-a80d06a Automatic translation import  
-  
-* **packages/apps/LockClock/**  
-4afc8af Automatic translation import  
-  
-* **packages/apps/PackageInstaller/**  
-0fc5fe1 Automatic translation import  
-  
-* **packages/apps/Profiles/**  
-2a86c63 Automatic translation import  
-  
-* **packages/apps/Recorder/**  
-b427c2f Automatic translation import  
-  
-* **packages/apps/SetupWizard/**  
-cd33504 Automatic translation import  
-  
-* **packages/apps/Terminal/**  
-44781da Automatic translation import  
-  
-* **packages/apps/ThemeChooser/**  
-39343e1 Automatic translation import  
-  
-* **packages/apps/ThemeInterfacer/**  
-0f51d79 JobService: Fix inital font application  
-bed5f44 JobService: fix initial theme dir creation  
-  
-* **packages/apps/Trebuchet/**  
-defe11d Automatic translation import  
-  
-* **packages/apps/TvSettings/**  
-952bf19 Automatic translation import  
-  
-* **packages/apps/UnifiedEmail/**  
-251c7bd Automatic translation import  
-  
-* **packages/providers/DataUsageProvider/**  
-149eb22 Automatic translation import  
-  
-* **packages/providers/DownloadProvider/**  
-4f6cf59 Automatic translation import  
-  
-* **packages/providers/ThemesProvider/**  
-6d5910a Automatic translation import  
-  
-* **packages/providers/WeatherProvider/**  
-fd0d410 Automatic translation import  
-  
-* **vendor/samsung/**  
-25d415d trltexx: libuiblur is now in trlte-common  
-  
-###     03-28-2017  
-***  
-  
-  
-* **bionic/**  
-5848aaf libc: memcpy_base: Disable opt for certain targets  
-  
-* **frameworks/base/**  
-db0f183 DocumentsUI: make shapes great again  
-  
-* **hardware/samsung/**  
-4bf8a79 PowerHAL: Update the hispeed_freq value before using it  
-  
-* **kernel/samsung/trlte/**  
-3200586 makefile: we don`t like erros because of implicit-function-declaration  
-b659410 Updates from N910FXXS1DQB4  
-d22f71b Updates from N910FXXS1DQA2  
-  
-* **packages/apps/EmotionOTA/**  
-b0ea655 trltevzw: Push 7.1.1-20170328 OTA update  
-  
-* **packages/apps/Settings/**  
-4bfde32 Settings: Fix AOSP WiFi AP translations  
-7ce3b7a Settings: Fix german string  
-d577653 Automatic translation import  
-068b6e0 Fix zen mode allowed event preference summary.  
-be643b2 Automatic translation import  
-  
-* **system/core/**  
-7e83288 adb: Look for bu in /sbin when in recovery mode  
-  
-* **vendor/emotion/**  
-87a6bae vendor: add h918 us996 and vs995 lg v20 devices  
-18f10cd Make a data only config  
-988206a APN: Fix TalkTalk  
-1dcd148 apns: Update Swiss APNs  
-57c8c97 apn: Updating TelkomSA from 8ta South Africa APN  
-  
-* **vendor/lge/**  
-2499e73 v20: add us996 vs996 and h918 proprietary files  
-  
-* **vendor/samsung/**  
-07390ff trlte: add libuiblur  
-  
-###     03-27-2017  
-***  
-  
-  
-* **device/lge/msm8996-common/**  
-c296665 msm8996: update old audio file  
-ab70aba msm8996: bring back old media files  
-  
-* **device/lge/v20-common/**  
-ff85868 Revert "v20: new media paths tasha"  
-05c1689 Revert "v20: update correct mixer paths tasha"  
-  
-* **packages/apps/OmniStyle/**  
-a89a338 Automatic translation import  
-  
-###     03-26-2017  
-***  
-  
-  
-* **bionic/**  
-6f130ca linker: Restore optional platform text relocations use  
-  
-* **device/lge/msm8996-common/**  
-e4ff6c0 msm8996: nfc: Kang gemini configs for new driver  
-79d0f91 msm8996: Disable HWC virtual displays  
-d005e53 msm8996: Allow radio subsystem to access oem.device.imeicache  
-3e499f8 msm8996: Switch to 560 DPI  
-  
-* **hardware/qcom/audio-caf/msm8952/**  
-baabf8a audio: Fix msm8952-snd-card-mtp support  
-  
-* **hardware/qcom/audio-caf/msm8994/**  
-8174213 audio: Fix flac offload not working  
-d758485 policy_hal: Line up default features with rest of HAL  
-  
-* **hardware/qcom/display-caf/msm8994/**  
-2f02a3e Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.9' into cm-14.1-caf-8994  
-  
-* **hardware/ti/omap4/**  
-71be556 Include common omap4 vendor repo if available.  
-02837a7 libEGL_POWERVR: Replace remaining LOCAL_LDLIBS (KK compatibility)  
-115c4a4 pvrsrvinit/libEGL_POWERVR: Actually ready needed vendor libraries  
-aff0723 pvrsrvinit/libEGL_POWERVR: Link against generic library symlinks  
-b132a61 pvrsrvinit: PVRScopeServices symlink lives in vendor/ti now  
-3c61176 pvrsrvinit: define the libraries to link against in LOCAL_LDFLAGS  
-ca79788 symlinks: Move Gralloc's to vendor/ti (together with processing)  
-  
-* **kernel/lge/msm8996/**  
-58c1616 vs995: Use new NFC driver and common DT  
-459c6e3 h918: Use new NFC driver and common DT  
-4273b27 ls997: Use new NFC driver and common DT  
-ece15db h910: Use new NFC driver and common DT  
-59d4f13 h850: Use new NFC driver and common DT  
-4516ae5 h830: Use new NFC driver and common DT  
-8aea3e7 lge: Add common NFC DT for new NFC driver  
-bd40c4f drivers: nfc: Import Xiaomi NFC PN548 driver  
-08759d6 nfc: Reset to CAF  
-  
-* **packages/apps/Trebuchet/**  
-315b2f9 Moving a few testing classes to a separate package  
-3c58753 Trebuchet: Remove ambient SDK leftover  
-  
-* **vendor/lge/**  
-177b6c5 msm8996: Update pn548 firmware to 10.1.1E  
   
