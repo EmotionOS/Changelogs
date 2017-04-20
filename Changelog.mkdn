@@ -1,13 +1,237 @@
-###     04-10-2017  
+###     04-20-2017  
+***  
+  
+  
+* **changelogs/**  
+e5da154 Changelog 20170420  
+  
+* **frameworks/base/**  
+ae62530 [Stability]: fix system_server crash issue caused by fd leak.  
+bdf1a82 Fix for wakelock being held during bootup and idle scenario.  
+cc2bad7 Redundant waiting time of keyguard unlocking after reboot  
+28492d5 [AppErrors]: Remove duplicate code for binder ID clear and restore.  
+9cc3ad2 [Stability]: fix system_server crash issue caused by fd leak.  
+026de3d jni: adapt to removal of property name size limit  
+ca3a2fb Fix the reset of boosted zygote thread priority.  
+ea26192 Fix NPE when call stack.setLauncheTime.  
+166923c fix incorrect context classloader initialization in system_server  
+ee6f0ca Fix crash issue on Storage Manager app  
+4a0f020 Remove bg_non_interactive cgroup  
+222930f Set mProximity to PROXIMITY_UNKNOWN on screen off  
+10a7ee7 Revert "sqlite query perf"  
+99b8aeb fingerprint: notify client when cancelling succeeded  
+  
+* **hardware/broadcom/libbt/**  
+0ae2332 Merge tag 'android-7.1.2_r2' into cm-14.1  
+be53fc7 BT: Added the libbt configuration file for nerka  
+  
+* **packages/apps/EmotionOTA/**  
+538900e trltexx: push 7.1.2-20170419  
+  
+* **packages/apps/Gallery2/**  
+44c49a0 Gallery2: renice the album layout  
+e52453f Gallery2: remove some leftover camera integration bits  
+1ba7697 Gallery2: support the newly added media file types in MTP mode  
+bbda803 Gallery2: Fix use of uninitialized stack variables  
+f1fd140 Gallery2: Remove unused renderscript class  
+  
+* **vendor/emotion/**  
+68d0766 backuptool: update for 7.1.2  
+5101dbd prebuilt: bump Substratum to 671  
+  
+###     04-19-2017  
 ***  
   
   
 * **device/oneplus/oneplus3/**  
+1e47ea7 op3: Remove fpc delays after authentication cancelled  
+  
+* **kernel/oneplus/msm8996/**  
+52a1db3 block: fix derp after merge  
+90534ff Merge remote-tracking branch 'LAOS/cm-14.1' into nougat  
+  
+* **packages/apps/EmotionControl/**  
+b85fdae EC: check if device has a camera and a flashlight  
+  
+###     04-18-2017  
+***  
+  
+  
+* **build/**  
+6ef43ef build: allow to disable recovery-two-step.img generation  
+3fefd18 build: Fix build_image.py  
+b7ae341 build: fix verity generation  
+161cc0a build - fix build after 7.1.2 r2 tag merge  
+b25b337 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **device/oneplus/oneplus3/**  
+5b1b90f op3: Doze: Refactor  
+4714bac op3: Doze: Perform operations as current user  
+  
+* **device/oppo/common/**  
+49444ad oppo-common: ConfigPanel: Use cmsdk FileUtils wherever it suits  
+  
+* **frameworks/base/**  
+13948c6 Fw_base - Add kill button to notification guts [1/2]  
+2363839 Fw_base - Powermenu Torch option [1/2]  
+64382c6 SystemUI: fix derp  
+690704d Hold "volume up" during boot to disable all overlays  
+487a95e Themes: Expose Keyboard Shortcuts Dialog  
+eb99219 fw_base - Expose Screenshot flash and background colors  
+53d8b63 Various fixes and cleanups after 7.1.2 merge  
+9c34d7c Zygote: Fix GL preload property evaluation  
+3ec387e Merge tag 'android-7.1.2_r2' into cm-14.1  
+1ee18de systemui: Fix DE translation for navbar buttons  
+007a60f Show lockscreen wallpaper when blur effect is enabled  
+  
+* **frameworks/native/**  
+1b6ed8b Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **frameworks/opt/telephony/**  
+fa2bf7b Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/apps/Contacts/**  
+bb2d559 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/apps/ContactsCommon/**  
+4ae8ee7 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/apps/Dialer/**  
+325dfd3 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/apps/EmotionControl/**  
+a1b6d29 Fix reorientation of volume buttons on portrait tablets  
+fa546d0 EC: Kill button for notification guts - setting [2/2]  
+78d6989 EC: Powermenu Torch option [2/2]  
+  
+* **packages/apps/Messaging/**  
+98e30cd Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/apps/PhoneCommon/**  
+74e6c64 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/apps/Settings/**  
+4315607 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/inputmethods/LatinIME/**  
+053c1c6 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/services/Telecomm/**  
+c8a689f Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **packages/services/Telephony/**  
+b0edc72 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **platform_manifest/**  
+a0ca691 manifest: android-7.1.1_r25 -> android-7.1.2_r2  
+  
+* **system/core/**  
+043e84b Revert "Create "theme extras" directory"  
+74c01d0 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **system/extras/**  
+b5332df Update verity_verifier from master branch  
+196ed2f verity: Include libcrypto_utils_static  
+252fe23 Revert "Revert "Switch to BoringSSL for crypto.""  
+442b784 Revert "Switch to BoringSSL for crypto."  
+  
+* **system/sepolicy/**  
+dbff395 Merge tag 'android-7.1.2_r2' into cm-14.1  
+  
+* **vendor/emotion/**  
+057a747 charger: updates for 7.1.2 minui  
+  
+###     04-17-2017  
+***  
+  
+  
+* **kernel/oneplus/msm8996/**  
+d1f9ee5 Merge tag 'LA.UM.5.5.r1-04300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD  
+  
+###     04-16-2017  
+***  
+  
+  
+* **kernel/oneplus/msm8996/**  
+b35cf78 mdss: Fix solid fill unpack pattern  
+0950aba mdss: move to a kthread for vsync_retire_work_handler  
+52201e6 msm: mdss: avoid scheduling pp work during continuous updates  
+ec65633 mdss: Do not wait for kickoff in display commit  
+5d99f96a kgsl: convert some workqueues to use kthreads  
+ebba2b9 input: synaptics: Ditch oneplus virtual abs code  
+  
+###     04-15-2017  
+***  
+  
+  
+* **hardware/qcom/audio/default/**  
+2627639 msm8960: define HFP_ASM_RX_TX 24  
+  
+###     04-14-2017  
+***  
+  
+  
+* **frameworks/av/**  
+4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return  
+  
+###     04-13-2017  
+***  
+  
+  
+* **device/lge/msm8996-common/**  
+bc9681d msm8996: Remove EIS system props (EIS is being annoying)  
+de86e41 msm8996: Move camera postprocessing to msm8996-common  
+3d7e8c3 msm8996: Re-set qcom DPM and location jars as boot jars  
+2740826 msm8996: Move libqmiservices to Radio only and remove secureui hash  
+  
+* **device/lge/v20-common/**  
+ee036bc v20: Move camera postprocessing to msm8996-common  
+  
+* **kernel/oneplus/msm8996/**  
+35cc568 perf:arm64: fix lockdep warning when handling CPU_STARTING.  
+244b831 perf:arm64: fix pmu percpu irq handling at hotplug.  
+42d9f73 perf: arm64: fix RCU usage on pmu resume from low-power  
+c44ed3d perf: arm64: implement CPU_PM notifier  
+2744baa Revert "Perf: arm64: support hotplug and power collapse"  
+f7c91cd Revert "Perf: arm64: fix disable of pmu irq during hotplug"  
+cc6a6a0 Revert "Perf: arm64: restore registers after reset"  
+a831293 Revert "Perf: arm64: stop counters when going into hotplug"  
+c675d5c input: synaptics: fw_update: Fix various memory leaks  
+2c32cf5 BACKPORT: tcp: avoid infinite loop in tcp_splice_read()  
+e4c429c BACKPORT: posix_acl: Clear SGID bit when setting file permissions  
+  
+* **packages/apps/Nfc/**  
+3090980 Nfc: Include android-support-v4 for the NXP stack  
+  
+* **vendor/lge/**  
+4a29d43 v20/msm8996: Move camera postprocessing to common  
+  
+###     04-12-2017  
+***  
+  
+  
+* **frameworks/av/**  
+18a402d stagefright: Remove the HAL3 limitation from the video reference clock selection  
+  
+* **packages/apps/CarrierConfig/**  
+fd64a03 Consider O2 and E-Plus as non-roaming  
+  
+* **packages/apps/EmotionOTA/**  
+89bc0d6 trltexx: Push 7.1.1-20170410 OTA update  
+  
+* **packages/apps/ThemeInterfacer/**  
+754b6ea restartService --> forceStopService  
+31b36ca Polish copyright  
+  
+###     04-11-2017  
+***  
+  
+  
+* **changelogs/**  
+4645fdc Changelog 20170410  
+  
+* **device/oneplus/oneplus3/**  
 630caed op3: replace cpu boost with cpu input boost driver  
-2bd9a73 op3: Enable framework sched boost  
-d5e6ae9 op3: remove unneeded post-processing  
-a048ffb op3: Remove uneeded graphics props  
-eaa734b op3: Don't set default GPU power level  
   
 * **device/qcom/common/**  
 0e39010 power: Kill "Failed to acquire lock" log  
@@ -23,84 +247,26 @@ eaa734b op3: Don't set default GPU power level
 * **frameworks/native/**  
 fd68581 sensorservice: Register orientation sensor if HAL doesn't provide it  
   
+* **hardware/qcom/display-caf/msm8960/**  
+09cce1b hwcomposer: Fix regression in hwc_sync  
+  
 * **kernel/oneplus/msm8996/**  
+233ced3 tcp: take care of truncations done by sk_filter()  
+1efc82c rose: limit sk_filter trim to payload  
 4040360 defconfig: Enable transparent hugepage support  
 8a687b9 cpu_input_boost: Fix up dangling return in validate_cpu_freq()  
 02481aa cpu_input_boost: Fix panics on init due to race  
 e8f35c4 defconfig: change cpu_boost with cpu_input_boost  
-54a15fc cpu_input_boost: Ensure validate_cpu_freq() only uses valid freqs  
-f88779a cpu_input_boost: Remove scheduler boost on screen wake  
-dd6e2e1 cpu_input_boost: Make get_valid_cpufreq() usage hotplug-safe  
-9a7eb41 cpu_input_boost: Fix checkpatch.pl warnings and clean up some styling  
-8ad3c04 cpu_input_boost: Fix trivial unsigned integer underflow  
-c2745a0 cpu_input_boost: Validate input boost frequencies  
-f48b6a0 cpu_input_boost: Enable scheduler boost on screen wake  
-a815026 cpu_input_boost: Perform load assessment based on policy->cur  
-b52a651 cpu_input_boost: Increase duration for screen-wake boost to 3000 ms  
-2e903b0 cpu_input_boost: Make boosting more dynamic and efficient  
-d1be819 cpu_input_boost: Don't extend little CPU's boost duration  
-f89b46f cpu_input_boost: Don't sleep in atomic context for continuous boosts  
-051c69e cpu_input_boost: Improve efficiency when there is constant input  
-3809d09 cpu_input_boost: Boost multiple CPUs more often  
-a8048d3 cpu_input_boost: Trigger max boost when button is pressed during suspend  
-5d3bc53 cpu_input_boost: Boost on button input  
-507a892 cpu_input_boost: Use FB_EARLY_EVENT_BLANK for unblank boost  
-b527384 cpu_input_boost: Give fb_boost_nb the highest priority  
-134c0b7 cpu_input_boost: Restructure for big.LITTLE CPUs  
-2965c2b cpu_input_boost: Remove WQ_NON_REENTRANT  
-ed06aa4 cpu_input_boost: Use fixed-width integer types for local variables  
-d30cb1b cpu_input_boost: Remove unnecessary kzallocs  
-62a101f cpu_input_boost: Clean up code style  
-87789f3 cpu_input_boost: Increase framebuffer boost duration to 1100 ms  
-f675877 cpu_input_boost: Fix synchronization issues  
-b3fdba6 cpu_input_boost: Remove module references  
-db79047 cpu_input_boost: Remove thread-migration boosting and clean up  
-4b94bf8 cpu_input_boost: Remove sync_threshold to recover from regression  
-2538c85 cpu_input_boost: Rewrite to use dual-core boosting and clean up  
-382d915 cpu_input_boost: Increase unblank-boost duration to 900ms  
-6ebac0f cpu_input_boost: Reduce input-boost duration  
-a9f4e47 cpu_input_boost: Remove input-boost frequency limitations  
-ccf41e1 cpu_input_boost: Remove boost on framebuffer blank  
-44e1e6d cpu_input_boost: Add boosting on thread migration  
-eb1efcf cpu_input_boost: Boost on framebuffer blank/unblank  
-54488f4 cpu_input_boost: Clean up and fix bugs  
-f3e6e77 cpu_input_boost: Remove deprecated sprintf usage  
-7b1f7f2 cpu_input_boost: Minor clean-up in notifier  
-1e231c6 cpu_input_boost: Run all workers on CPU0  
-e0f8b5e cpu_input_boost: Add support for userspace control  
-c828509 cpu_input_boost: Update boost duration equation  
-17f2508 cpu_input_boost: Remove redundant calculations and logic  
-e5fcea9 cpu_input_boost: Remove cpufreq get/put API usage  
-b4b531b cpu_input_boost: Remove spin locks  
-eb78ece cpu_input_boost: Make long function names shorter and more consistent  
-5bb8ed2 cpu_input_boost: Use spinlocks instead of mutex locks  
-fb16a3f cpu_input_boost: Specify some variables as read-mostly  
-ccf1483 cpu_input_boost: Replace auto-freq finder with sysfs interface  
-6f27f9b cpu_input_boost: Prioritize primary CPU  
-3bd8a15 cpufreq: Introduce CPU input boost driver  
-efb9ee3 cpufreq: interactive: Skip govinfo chain call when there are no listeners  
-899091f cpufreq: interactive: Skip timer when policy->min == policy->max  
-ce3201b display: add a simple api to query the display state (on/off) at any point in time  
-15370c6 defconfig: enable usb fast charge  
-937e0fc defconfig: clean up  
-0cfef0e cpufreq: interactive: slightly faster sampling during screen off to offset cases like Android Auto and Viper4Android hi-resolution audio decoding where 60ms was a bit too aggressive  
-df07762 cpufreq: interactive: remove hispeed_freq init restriction  
-d819cd7 cpufreq: interactive governor drops bits in time calculation  
-3274976 cpufreq: interactive: reduce timer with screen off  
-3327d29 drivers: thermal: queue work on system_power_efficient_wq  
-f748387 cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0  
-d824462 cpufreq: cpu-boost: export input_boost_enable to userspace  
-904c0fc cpufreq: cpu-boost: don't boost over user set max freq  
-04e8817 drivers: cpu-boost: optimize policy update loop on input cpufreq boost  
-918960c cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value  
-3df7092 drivers: misc: implement usb fast charge mode  
-ab2c256 power:qpnp-charger: extended charge time from 30s to 100s when battery status is near to full  
+ca3d5ee Merge a724557a85fcd09e14294c5e30b8f6644ab4045c on remote branch  
   
 * **kernel/samsung/trlte/**  
 f9961b8 bluetooth: tx timeout 10 seconds  
   
 * **packages/apps/CMParts/**  
 334c861 PerfProfileSettings: Update slider on powersave mode change  
+  
+* **packages/apps/EmotionOTA/**  
+8de987e oneplus3: Push 7.1.1-20170410 OTA update  
   
 * **packages/apps/Snap/**  
 2480c51 CameraControls: Toggle the status of disabled views  
@@ -124,389 +290,4 @@ c3bd656 Make a data only config
 0080a91 build: Update smali and baksmali to 2.2.0  
 9d20445 Merge branch 'nougat' of https://github.com/EmotionOS/vendor_emotion into nougat  
 4d52a2c prebuilt: bump Substratum to 632  
-  
-###     04-09-2017  
-***  
-  
-  
-* **packages/apps/EmotionOTA/**  
-fe2a737 trltexx: Push 7.1.1-20170402 OTA update  
-  
-###     04-08-2017  
-***  
-  
-  
-###     04-07-2017  
-***  
-  
-  
-* **device/lge/msm8996-common/**  
-7f54440 msm8996: remove duplicate audio props and attempt to fix low mic  
-fd27f5d msm8996: Add symphony DSP blobs  
-1a67678 msm8996: Add missing widevine blobs  
-  
-* **device/lge/v20-common/**  
-c5d36d5 Revert "test 2"  
-2970ba5 test 2  
-76c1a76 Revert "test"  
-9a1f795 test  
-ce51ede Revert "v20: test sound"  
-3ab7eca v20: test sound  
-80d5d8d Revert "v20: update mixer paths"  
-  
-* **packages/apps/CarrierConfig/**  
-8821cae Consider Q-TELECOM Greece as non-roaming  
-  
-* **packages/apps/OmniStyle/**  
-5144838 OmniStyle: apply default size on omnirom logo  
-  
-* **vendor/lge/**  
-c47992a msm8996: Update blobs from v872 v10e  
-25afb96 msm8996: Add symphony DSP blobs  
-84d8385 msm8996: Add missing widevine blobs  
-  
-###     04-06-2017  
-***  
-  
-  
-* **device/lge/msm8996-common/**  
-d633747 msm8996: fixed missing derp  
-  
-* **device/lge/v20-common/**  
-5da0199 v20: update mixer paths  
-f84e7ae v20: fixed derp  
-f74ab9f v20: remove duplicate dependencies  
-  
-* **device/moto/shamu/**  
-0d746a8 shamu: update build fingerprint & description to N6F26Y  
-  
-* **external/sqlite/**  
-4138e2f sqlite: update to 3.18.0  
-  
-* **packages/apps/EmotionOTA/**  
-ebc4f79 shamu: Push 7.1.1-20170405 OTA update  
-  
-* **vendor/emotion/**  
-8a537e3 fix mistake  
-36ee161 add klte  
-39775a5 prebuilt: bump Substratum to 627  
-  
-* **vendor/motorola/**  
-412d28f Fix shamu: update blobs from N6F26Y factory image  
-4a94011 shamu: update blobs from N6F26Y factory image  
-  
-* **vendor/samsung/**  
-523c39c update klte files  
-  
-###     04-05-2017  
-***  
-  
-  
-* **changelogs/**  
-f43e056 Changelog 20170404  
-  
-* **device/lge/msm8996-common/**  
-4619af6 msm8996: Decommonize OIS firmware  
-c387a2e msm8996: Add libqmiservices to Radio as well as QMI  
-f0216db msm8996: Remove pinning hashes from GPS blobs  
-9fb7615 msm8996: Update NXP NFC config for 10.01.1F firmware  
-30b6d10 msm8996: Add missing NFC extras permission  
-5b87acb msm8996: ramdisk: Remove rogue nfc node symlink  
-0c608ae msm8996: Adjust audio configs and switch to XML audio config  
-4c2c57c msm8996: Disable PQ encoding  
-f6c1a42 msm8996: Add h872 to build guards  
-  
-* **device/lge/v20-common/**  
-33cf989 v20: Decommonize OIS firmware  
-  
-* **frameworks/av/**  
-eb594c4 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""  
-  
-* **hardware/samsung/**  
-3fa2b69 power: Align to AOSP API  
-5781c8e power: Remove unused variables  
-e37aedd lights: Put back fd checks before closing  
-  
-* **packages/apps/Bluetooth/**  
-cca216e Revert "Bluetooth: handle opening incoming APK files"  
-  
-* **packages/apps/CellBroadcastReceiver/**  
-fa4d7a7 CellBroadcastReceiver: fix channel 50 not disabling  
-  
-* **packages/apps/EmotionOTA/**  
-306d72a s2 : Push 7.1.1-20170405 OTA update  
-b529b76 oneplus3: Push 7.1.1-20170404 OTA update  
-  
-* **vendor/emotion/**  
-5690dbe s2 : re-correcting qcom source  
-b8969c6 s2 : updated vendorsetup for s2  
-d8b0015 Update s2.dependencies  
-953ad6b s2 : Adding s2 dependencies  
-  
-* **vendor/lge/**  
-2675018 msm8995/v20: Decommonize OIS firmware  
-c8d2ab1 msm8996: Update libqmiservices from OP3 7.1.1  
-5f76fff msm8996: Add missing GPS blobs  
-5c1622a msm8996: Update pn548 firmware to 10.01.1F  
-a0a06e5 msm8996: Update CNE, DPM, GPS, and Radio blobs from OP3 7.1.1  
-e06eb3b msm8996: Add G6 devices to build guard  
-  
-###     04-04-2017  
-***  
-  
-  
-* **build/**  
-4f25f10 emotion: build: Don't convert patchset to int if it's None  
-209511b emotion: build: Fix cherry picking specific patchsets  
-4090900 Use 'release-keys' for build tag  
-  
-* **device/oneplus/oneplus3/**  
-98c7501 oneplus3: Fix touchscreen and keypad firmware update process  
-674dbcf oneplus3: Set restart level to related for all subsystems  
-  
-* **device/oppo/common/**  
-ef3a9b9 Automatic translation import  
-2278e80 Oppo -> OPPO  
-1803a79 Automatic translation import  
-  
-* **external/DUtils/**  
-d28959c Smartbar media arrows: more code improvements [2/2]  
-d221ec5 DUI: validate image size before attempting to set as icon [1/2]  
-  
-* **frameworks/base/**  
-0299502 Fw_base - Add AOKP Tha Battery [1/3]  
-efd1029 PhoneStatusBar: fix derp  
-c7cb654 core: remove duplicate string  
-19b1737 Hotspot Tile: longclick should open Tethering settings  
-3726dd9 Fix Hotspot tile is shown on Guest user  
-712be9f Automatic translation import  
-1937993 Revert "[1/2] base: support separate encryption/lockscreen passwords"  
-5a49977 Automatic translation import  
-9638727 Core: Make tethering notifications fully translatable  
-cafba14 Automatic translation import  
-e00c3f7 SystemUI: enable NFC tile  
-e72a683 SystemUI: Add NFC tile  
-09db814 Smarbar Pixel Navbar Animation Duration Settings [1/3]  
-255b83e SmartBar: allow set custom buttons opacity when Pulse is active [3/3]  
-4dfb99c FWB: SmartBar Color: Custom app color filter switch (1/3)  
-e74fee9 FWB: SmartBar Button Tint [1/3]  
-  
-* **hardware/qcom/media-caf/msm8960/**  
-f462f4d mm-video-v4l2: vdec: add safety checks for freeing buffers  
-b040ed5 mm-video-v4l2: venc: add safety checks for freeing buffers  
-  
-* **hardware/ti/omap4/**  
-86ea9e8 omap4: add more common build properties  
-368f365 omap4: define BOARD_CANT_REALLOCATE_OMX_BUFFERS  
-cce4d95 omap4: camera: restore compatibility with older Android versions (< Android N)  
-0254e40 omap4: define TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES  
-7839bd6 camera: Use GBAllocator.allocate for N_MR1.  
-3c75dc7 Revert "camera: switch to Gralloc.allocate and generate unique Id for allocation"  
-c9d954d camera: Rename version_major/minor to the new, non-deprecated names.  
-0f2b557 camera: clean up build when various OMAP_ENHANCEMENTs are disabled  
-9cf111b Revert "hwc: publicly define omap specific usage flags"  
-9a75172 seccomp: allow clock_nanosleep syscall  
-3a17e59 Fix camera video recording on N.  
-547e464 android-api: Add N_MR1 defines.  
-c7d8882 camera: fix build for LP  
-9843c81 android-api: Add LP_MR1 defines.  
-ef46c42 Add DOMX syscalls to seccomp filter  
-6c31b84 domx: Remove implicit libc shared library declarations.  
-6fc761d domx: Overhaul omx_proxy_component makefile.  
-0efd58f domx: for ion_alloc alloc flag must be (1 << ID) and not the ID  
-3088f9e camera: for carveout alloc we must use ID OMAP_ION_HEAP_SECURE_INPUT  
-16aca2a android-api: add N  
-38636fa camera: fix build for KK  
-6c5b8a8 libcorkscrew: only build for Lollipop and newer  
-4cd6c92 camera: Init all members of camera_module_t to fix warnings.  
-f439503 libtiutils: C++11 compat fix.  
-97eba14 libstagefrighthw: Build with -Wall -Werror.  
-5076f97 libI420colorconvert: Build with -Wall -Werror.  
-2c59035 Make bltsville opt-in.  
-072fa04 camera: Makefile overhaul.  
-07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"  
-06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.  
-d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied  
-  
-* **kernel/oneplus/msm8996/**  
-e67f010 time: Remove CONFIG_TIMER_STATS  
-44fd504 sctp: deny peeloff operation on asocs with threads sleeping on it  
-6de4c40 irda: Fix lockdep annotations in hashbin_delete().  
-47be7de net/llc: avoid BUG_ON() in skb_orphan()  
-9c3a0e1 power: oneplus_fastcg: Silence log spam  
-8e122e6 misc: Sync with OxygenOS 4.1.0 kernel release  
-408bd1e mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()  
-  
-* **packages/apps/CMParts/**  
-70640c0 Automatic translation import  
-723ea4c Automatic translation import  
-df78aee Automatic translation import  
-  
-* **packages/apps/Contacts/**  
-ae300e7 Automatic translation import  
-3551211 Automatic translation import  
-b339d45 Automatic translation import  
-  
-* **packages/apps/ContactsCommon/**  
-220dcbe Automatic translation import  
-e8838b3 Automatic translation import  
-  
-* **packages/apps/DUI/**  
-2558739 SmartBar Media Arrows: add streaming music support  
-eb57a29 Make Smartbar Pixel Animation Durations Customizable [2/3]  
-623960a Smartbar media arrows: more code improvements [1/2]  
-40c4708 Smartbar media arrows: more code improvements  
-1ef24c4 Smartbar track arrows: code cleanup and don't show them on video playing  
-8aa4844 SmartBar: show arrows for next/previous track when media playing [1/2]  
-6cdb377 SmartBar: allow set custom buttons opacity when Pulse is active [1/3]  
-5450148 DUI: SmartBar Color: Custom app color filter switch (2/3)  
-dec9b3b DUI: SmartBar Button Tint [2/3]  
-  
-* **packages/apps/Dialer/**  
-6967ea4 Automatic translation import  
-72f433c Automatic translation import  
-  
-* **packages/apps/EmotionControl/**  
-57272c9 EC: Add AOKP Tha Battery [2/3]  
-ddeaf22 EC: fix toast test  
-  
-* **packages/apps/Messaging/**  
-2ccb210 Automatic translation import  
-88598f6 Automatic translation import  
-  
-* **packages/apps/OmniSwitch/**  
-f597263 Automatic translation import  
-217711e OmniSwitch: reduce vertical padding on app icons  
-e4037b5 OmniSwitch: add missing docked task indicator for other views  
-a2773b6 OmniSwitch: on the fly update on dpi changes  
-  
-* **packages/apps/PhoneCommon/**  
-2ac71ae Automatic translation import  
-71217a5 Automatic translation import  
-fe80a14 Automatic translation import  
-  
-* **packages/apps/Settings/**  
-18b1d31 Settings - Restore doze settings device related  
-b61acb9 Automatic translation import  
-ff36d89 Revert "[2/2] settings: support setting a separate encryption password"  
-1247295 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]  
-55e8e85 SmartBar: show arrows for next/previous track when media playing [2/2]  
-b13166e SmartBar: allow set custom buttons opacity when Pulse is active [2/3]  
-407d93e Settings: SmartBar Color: Custom app color filter switch (3/3)  
-aa3ef76 Settings : SmartBar Button Tint [3/3]  
-94a0057 DUI: validate image size before attempting to set as icon [2/2]  
-  
-* **packages/apps/Snap/**  
-8b2677c CaptureUI: fix crash on setOrientation  
-9f4bdd1 Snap: Fix effect and picture program overlay buttons  
-3824939 Always apply frame size reduction to panorama pictures  
-e7e5d22 Never ignore finger swipes in gallery mode  
-08970de Fix record time sometimes not seen  
-4669a48 Automatic translation import  
-37ba6e0 Automatic translation import  
-bc20baa Automatic translation import  
-  
-* **packages/inputmethods/LatinIME/**  
-370e075 Automatic translation import  
-9f125fd Automatic translation import  
-  
-* **packages/services/Telecomm/**  
-efac576 Automatic translation import  
-  
-* **packages/services/Telephony/**  
-613a068 Revert "Add support to launch call barring"  
-97ac56d Revert "CallFeatureSettings: Only show call barring option if QTI package installed"  
-bb8ebb1 Automatic translation import  
-4a83f52 Automatic translation import  
-  
-* **platform_manifest/**  
-7b6890f manifest: add FlipFlap app for flip cover  
-a4d1a3b emotion: add ahbottomnavigation library  
-  
-* **vendor/cmsdk/**  
-2ddd0e1 cmsdk - Add AOKP Tha Battery [3/3]  
-78f1110 Automatic translation import  
-ece2c17 Automatic translation import  
-d5a57e4 Automatic translation import  
-  
-* **vendor/emotion/**  
-924a5ce extract_utils: support extracting directly from an ota zip  
-83c88a7 Fix APNs for Cyprus  
-ba58a47 emotion: remove special access to unused cmfm  
-fb72a8b emotion: allow apps to find profile manager service  
-  
-* **vendor/samsung/**  
-f2d5376 trlte: partially revert 5cc1a8978c1e5637a8d9162fc2b1a018471cc18d  
-  
-###     04-03-2017  
-***  
-  
-  
-* **hardware/ti/omap4/**  
-eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism  
-dbe532a board/init: Common PVR KM build target for reuse by devices  
-492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere  
-42c669c SGX-BIN: buildvars: Compile PVR KM with -fno-pic  
-55bfee6 libpower: Avoid overwriting custom user frequencies.  
-357aaac libpower: Initialize inited variable.  
-5ae1155 libpower: Add optional support for API 0.3  
-c55f2bb Add OMAP PowerHAL  
-  
-* **packages/providers/MediaProvider/**  
-e0e756f New Material icon  
-  
-* **packages/services/Mms/**  
-de8277e Add Material icon & app label  
-  
-###     04-02-2017  
-***  
-  
-  
-* **hardware/samsung/**  
-235c298 lights_helper: I/O API cleanup  
-d483dd7 audience: Cleanup write_int()  
-658f447 audience: Use O_WRONLY flag for write_int()  
-2036814 audience: Always log write_int() fails  
-7052460 audience: Warn when we cannot handle the output device  
-f9b8e83 power: Add POWER_HINT_DISABLE_TOUCH support  
-  
-* **packages/apps/CarrierConfig/**  
-65fe5ff Consider O2 and E-Plus as non-roaming  
-  
-* **packages/apps/CustomTiles/**  
-a25d845 WakelockService: Refactor  
-e4a5f65 Caffeine: Stop service if not enabled  
-  
-* **packages/apps/OmniStyle/**  
-1611f0d Automatic translation import  
-  
-* **packages/providers/CalendarProvider/**  
-94029d1 New Material icon  
-  
-* **packages/providers/TelephonyProvider/**  
-059380f TelephonyProvider: Update icon to Material  
-  
-* **packages/wallpapers/LivePicker/**  
-bf06fdf New Material icon  
-  
-###     04-01-2017  
-***  
-  
-  
-* **device/samsung/trlte-common/**  
-3bc5f15 Revert "trlte-common: disable fingerprint for now"  
-a293f69 update camera stuff. remove 4k again. HDR is still broken...  
-252d5ae fstab: fix small typing error  
-728e131 trlte-common: BOOTANIMATION_MULTITHREAD_DECODE  
-ced6b55 turn on TARGET_USE_COMPAT_GRALLOC_ALIGN - fixes 480p camera preview  
-e625c1c trlte-common: fix F2FS  
-  
-* **hardware/qcom/audio-caf/msm8916/**  
-ab780a8 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.14' into cm-14.1-caf-8916  
-  
-* **hardware/qcom/audio-caf/msm8994/**  
-d062bdc Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.9' into cm-14.1-caf-8994  
-  
-* **vendor/samsung/**  
-5cc1a89 trlte: update from N910FXXS1DQC3  
   
