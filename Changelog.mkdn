@@ -1,293 +1,360 @@
-###     04-20-2017  
-***  
-  
-  
-* **changelogs/**  
-e5da154 Changelog 20170420  
-  
-* **frameworks/base/**  
-ae62530 [Stability]: fix system_server crash issue caused by fd leak.  
-bdf1a82 Fix for wakelock being held during bootup and idle scenario.  
-cc2bad7 Redundant waiting time of keyguard unlocking after reboot  
-28492d5 [AppErrors]: Remove duplicate code for binder ID clear and restore.  
-9cc3ad2 [Stability]: fix system_server crash issue caused by fd leak.  
-026de3d jni: adapt to removal of property name size limit  
-ca3a2fb Fix the reset of boosted zygote thread priority.  
-ea26192 Fix NPE when call stack.setLauncheTime.  
-166923c fix incorrect context classloader initialization in system_server  
-ee6f0ca Fix crash issue on Storage Manager app  
-4a0f020 Remove bg_non_interactive cgroup  
-222930f Set mProximity to PROXIMITY_UNKNOWN on screen off  
-10a7ee7 Revert "sqlite query perf"  
-99b8aeb fingerprint: notify client when cancelling succeeded  
-  
-* **hardware/broadcom/libbt/**  
-0ae2332 Merge tag 'android-7.1.2_r2' into cm-14.1  
-be53fc7 BT: Added the libbt configuration file for nerka  
-  
-* **packages/apps/EmotionOTA/**  
-538900e trltexx: push 7.1.2-20170419  
-  
-* **packages/apps/Gallery2/**  
-44c49a0 Gallery2: renice the album layout  
-e52453f Gallery2: remove some leftover camera integration bits  
-1ba7697 Gallery2: support the newly added media file types in MTP mode  
-bbda803 Gallery2: Fix use of uninitialized stack variables  
-f1fd140 Gallery2: Remove unused renderscript class  
-  
-* **vendor/emotion/**  
-68d0766 backuptool: update for 7.1.2  
-5101dbd prebuilt: bump Substratum to 671  
-  
-###     04-19-2017  
-***  
-  
-  
-* **device/oneplus/oneplus3/**  
-1e47ea7 op3: Remove fpc delays after authentication cancelled  
-  
-* **kernel/oneplus/msm8996/**  
-52a1db3 block: fix derp after merge  
-90534ff Merge remote-tracking branch 'LAOS/cm-14.1' into nougat  
-  
-* **packages/apps/EmotionControl/**  
-b85fdae EC: check if device has a camera and a flashlight  
-  
-###     04-18-2017  
-***  
-  
-  
-* **build/**  
-6ef43ef build: allow to disable recovery-two-step.img generation  
-3fefd18 build: Fix build_image.py  
-b7ae341 build: fix verity generation  
-161cc0a build - fix build after 7.1.2 r2 tag merge  
-b25b337 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **device/oneplus/oneplus3/**  
-5b1b90f op3: Doze: Refactor  
-4714bac op3: Doze: Perform operations as current user  
-  
-* **device/oppo/common/**  
-49444ad oppo-common: ConfigPanel: Use cmsdk FileUtils wherever it suits  
-  
-* **frameworks/base/**  
-13948c6 Fw_base - Add kill button to notification guts [1/2]  
-2363839 Fw_base - Powermenu Torch option [1/2]  
-64382c6 SystemUI: fix derp  
-690704d Hold "volume up" during boot to disable all overlays  
-487a95e Themes: Expose Keyboard Shortcuts Dialog  
-eb99219 fw_base - Expose Screenshot flash and background colors  
-53d8b63 Various fixes and cleanups after 7.1.2 merge  
-9c34d7c Zygote: Fix GL preload property evaluation  
-3ec387e Merge tag 'android-7.1.2_r2' into cm-14.1  
-1ee18de systemui: Fix DE translation for navbar buttons  
-007a60f Show lockscreen wallpaper when blur effect is enabled  
-  
-* **frameworks/native/**  
-1b6ed8b Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **frameworks/opt/telephony/**  
-fa2bf7b Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/apps/Contacts/**  
-bb2d559 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/apps/ContactsCommon/**  
-4ae8ee7 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/apps/Dialer/**  
-325dfd3 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/apps/EmotionControl/**  
-a1b6d29 Fix reorientation of volume buttons on portrait tablets  
-fa546d0 EC: Kill button for notification guts - setting [2/2]  
-78d6989 EC: Powermenu Torch option [2/2]  
-  
-* **packages/apps/Messaging/**  
-98e30cd Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/apps/PhoneCommon/**  
-74e6c64 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/apps/Settings/**  
-4315607 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/inputmethods/LatinIME/**  
-053c1c6 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/services/Telecomm/**  
-c8a689f Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **packages/services/Telephony/**  
-b0edc72 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **platform_manifest/**  
-a0ca691 manifest: android-7.1.1_r25 -> android-7.1.2_r2  
-  
-* **system/core/**  
-043e84b Revert "Create "theme extras" directory"  
-74c01d0 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **system/extras/**  
-b5332df Update verity_verifier from master branch  
-196ed2f verity: Include libcrypto_utils_static  
-252fe23 Revert "Revert "Switch to BoringSSL for crypto.""  
-442b784 Revert "Switch to BoringSSL for crypto."  
-  
-* **system/sepolicy/**  
-dbff395 Merge tag 'android-7.1.2_r2' into cm-14.1  
-  
-* **vendor/emotion/**  
-057a747 charger: updates for 7.1.2 minui  
-  
-###     04-17-2017  
-***  
-  
-  
-* **kernel/oneplus/msm8996/**  
-d1f9ee5 Merge tag 'LA.UM.5.5.r1-04300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD  
-  
-###     04-16-2017  
-***  
-  
-  
-* **kernel/oneplus/msm8996/**  
-b35cf78 mdss: Fix solid fill unpack pattern  
-0950aba mdss: move to a kthread for vsync_retire_work_handler  
-52201e6 msm: mdss: avoid scheduling pp work during continuous updates  
-ec65633 mdss: Do not wait for kickoff in display commit  
-5d99f96a kgsl: convert some workqueues to use kthreads  
-ebba2b9 input: synaptics: Ditch oneplus virtual abs code  
-  
-###     04-15-2017  
-***  
-  
-  
-* **hardware/qcom/audio/default/**  
-2627639 msm8960: define HFP_ASM_RX_TX 24  
-  
-###     04-14-2017  
-***  
-  
-  
-* **frameworks/av/**  
-4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return  
-  
-###     04-13-2017  
-***  
-  
-  
-* **device/lge/msm8996-common/**  
-bc9681d msm8996: Remove EIS system props (EIS is being annoying)  
-de86e41 msm8996: Move camera postprocessing to msm8996-common  
-3d7e8c3 msm8996: Re-set qcom DPM and location jars as boot jars  
-2740826 msm8996: Move libqmiservices to Radio only and remove secureui hash  
-  
-* **device/lge/v20-common/**  
-ee036bc v20: Move camera postprocessing to msm8996-common  
-  
-* **kernel/oneplus/msm8996/**  
-35cc568 perf:arm64: fix lockdep warning when handling CPU_STARTING.  
-244b831 perf:arm64: fix pmu percpu irq handling at hotplug.  
-42d9f73 perf: arm64: fix RCU usage on pmu resume from low-power  
-c44ed3d perf: arm64: implement CPU_PM notifier  
-2744baa Revert "Perf: arm64: support hotplug and power collapse"  
-f7c91cd Revert "Perf: arm64: fix disable of pmu irq during hotplug"  
-cc6a6a0 Revert "Perf: arm64: restore registers after reset"  
-a831293 Revert "Perf: arm64: stop counters when going into hotplug"  
-c675d5c input: synaptics: fw_update: Fix various memory leaks  
-2c32cf5 BACKPORT: tcp: avoid infinite loop in tcp_splice_read()  
-e4c429c BACKPORT: posix_acl: Clear SGID bit when setting file permissions  
-  
-* **packages/apps/Nfc/**  
-3090980 Nfc: Include android-support-v4 for the NXP stack  
-  
-* **vendor/lge/**  
-4a29d43 v20/msm8996: Move camera postprocessing to common  
-  
-###     04-12-2017  
-***  
-  
-  
-* **frameworks/av/**  
-18a402d stagefright: Remove the HAL3 limitation from the video reference clock selection  
-  
-* **packages/apps/CarrierConfig/**  
-fd64a03 Consider O2 and E-Plus as non-roaming  
-  
-* **packages/apps/EmotionOTA/**  
-89bc0d6 trltexx: Push 7.1.1-20170410 OTA update  
-  
-* **packages/apps/ThemeInterfacer/**  
-754b6ea restartService --> forceStopService  
-31b36ca Polish copyright  
-  
-###     04-11-2017  
-***  
-  
-  
-* **changelogs/**  
-4645fdc Changelog 20170410  
-  
-* **device/oneplus/oneplus3/**  
-630caed op3: replace cpu boost with cpu input boost driver  
-  
-* **device/qcom/common/**  
-0e39010 power: Kill "Failed to acquire lock" log  
-  
-* **device/samsung/qcom-common/**  
-538177d overlay: Remove animate screen lights  
-  
-* **frameworks/base/**  
-7c05950 Revert "SystemUI: Add SlotId for MultiSim"  
-339cfac PowerManager: Bring back the compatibility with AOSP  
-4b4cc00 Fix permission description string for DE.  
-  
-* **frameworks/native/**  
-fd68581 sensorservice: Register orientation sensor if HAL doesn't provide it  
-  
-* **hardware/qcom/display-caf/msm8960/**  
-09cce1b hwcomposer: Fix regression in hwc_sync  
-  
-* **kernel/oneplus/msm8996/**  
-233ced3 tcp: take care of truncations done by sk_filter()  
-1efc82c rose: limit sk_filter trim to payload  
-4040360 defconfig: Enable transparent hugepage support  
-8a687b9 cpu_input_boost: Fix up dangling return in validate_cpu_freq()  
-02481aa cpu_input_boost: Fix panics on init due to race  
-e8f35c4 defconfig: change cpu_boost with cpu_input_boost  
-ca3d5ee Merge a724557a85fcd09e14294c5e30b8f6644ab4045c on remote branch  
-  
-* **kernel/samsung/trlte/**  
-f9961b8 bluetooth: tx timeout 10 seconds  
-  
-* **packages/apps/CMParts/**  
-334c861 PerfProfileSettings: Update slider on powersave mode change  
-  
-* **packages/apps/EmotionOTA/**  
-8de987e oneplus3: Push 7.1.1-20170410 OTA update  
-  
-* **packages/apps/Snap/**  
-2480c51 CameraControls: Toggle the status of disabled views  
-12baf7b Never remove unsupported controls  
-a14e7a0 WideAnglePanoramaUI: Correctly position the progressbar  
-803a008 Snap: CaptureModule: set switcher index on resume  
-022d3fe Snap: CaptureUI: fix ModuleSwitcher being invisible  
-  
-* **packages/services/Telephony/**  
-0814fa2 telephony: fix crash when missing simcard  
-ea6159e VoicemailSettingsActivity: Fix NPE  
-  
-* **vendor/cmsdk/**  
-08b3b34 PerformanceManager: Don't override the user preference  
-9dfdaa5 PerformanceManager: Don't force powersave mode with powersave profile  
-  
-* **vendor/emotion/**  
-447027f prebuilt: bump KA to 0.9.6.11  
-c3bd656 Make a data only config  
-151c2cc Add email app to device idle whitelist.  
-0080a91 build: Update smali and baksmali to 2.2.0  
-9d20445 Merge branch 'nougat' of https://github.com/EmotionOS/vendor_emotion into nougat  
-4d52a2c prebuilt: bump Substratum to 632  
-  
+====================
+   12-25-2017
+====================
+
+
+   * device/zte/axon7/
+7c1976c axon7: Enable aptXHD support
+
+   * external/chromium-webview/
+ea18916 Update webviews to Chromium 63.0.3239.111
+
+====================
+   12-24-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8916/
+08f9388 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
+
+   * hardware/qcom/audio-caf/msm8994/
+4be649f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
+
+   * hardware/qcom/media-caf/msm8916/
+d92d048 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8994/
+1633dd5 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
+
+   * platform_manifest/
+9a979b3 emotion: track interfacer on emotion
+
+   * vendor/emotion/
+d0f7b46 emotion: add proper module stem
+cb34656 emotion: update Substratum and KernelAdiutor
+
+====================
+   12-23-2017
+====================
+
+
+   * device/zte/axon7/
+bb81425 Revert "axon7: add updates from B25"
+
+   * frameworks/base/
+9093071 emotion: remove more accidental duplicates
+9918c8a emotion: remove accidental duplicates
+a7a27f4 emotion: lets try again
+f7d3143 emotion: build fix attempt 2
+ccbe451 emotion: attempting to fix build errors
+231045a Fix permissions for CTS [1/2]
+5affe29 Revert "Add a protected broadcast for Masquerade events"
+bfec276 OMS: Add hide annotation to MODIFY_OVERLAYS permission
+7ada11e OMS7: Rootless Security Update Preparation for March 2017
+bbff072 Add a protected broadcast for Masquerade events
+d0f32f0 Notification tint: add optional findContrastColor algorithm for dark backgrounds
+2c907b6 doze: allow grayscale even if invert boolean is false
+d90222f OMS: StrictMode and files under /data/system/theme/
+4a34abc Themes: Expose manifest styles for themes
+41b9f36 OMS: Introduce MODIFY_OVERLAYS permission for user apps
+c816105 OMS7-N: ApplicationsState: add filter for Substratum overlays [1/2]
+e0abd88 N-Extras: Add dynamic theme BootAnimation support
+f0cd1bf OMS7 compatible 'Ambient notification inversion'
+efd199b Allow prevention of doze notification color inversion
+7d449c7 Notifications: Expose a bool to disable dynamic colors
+137c805 Themes: Allow Navbar ripple color to be themed
+415d4f6 Themes: Allow Permission Icons to be fully themed
+1e103ba Themes: Allow Immersive cling colors to be fully themed
+8892890 Themes: Expose resolver hardcoded colors
+5029c9a OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
+1b1b86d OMS7-N: Introduce the OverlayManagerService [2/11]
+ee45b48 theme: Bypass reset when theme is forcibly enabled
+1f5dcca theme: Add support to forcibly enable theme [1/2]
+1041d7f ColorEngine: fix power menu instant theming
+02b44ba ColorEngine: fwb: keep changed resources footprint low
+2a6c122 TileAdapter: allow styling tile item decoration background
+9def41b emotion: fix an accidental build error
+587bfec Introduce color engine.
+b28b3c7 We don't want to feel deprecated...
+
+   * packages/apps/Settings/
+c8881d7 emotion: move to proper location
+a5c429b theme: Add support to forcibly enable theme [2/2]
+7e3377a Add color engine support for protected apps
+35892ee emotion: fixed another mistake
+5e68df0 emotion: fix a build error
+ce7a30b Settings: Support color engine
+
+   * system/vold/
+f902c08 vold: Fix cryptfs changepw parsing
+
+   * vendor/emotion/
+8ca094e emotion: sepolicy: Add Color Engine policy
+
+   * vendor/zte/
+08326c4 Revert "axon7: Update blobs from B25"
+
+====================
+   12-22-2017
+====================
+
+
+   * device/zte/axon7/
+cfdf7dc audio_amplifier: Add logging for state
+7ed381a axon7: Disable HDR 1x frame for Snap
+2b25724 sepolicy: Address new denials
+69616af axon7: use our own volume tables
+f6e10df axon7: add updates from B25
+44ed259 axon7: add proper bootanimiation flags
+1d9ad53 axon7: show true battery stats
+59f3eb8 axon7: move /board to BoardConfig.mk
+f090c5c axon7: enable wifi calling fully
+0285279 axon7: couple more changes
+
+   * hardware/cyanogen/
+f66b300 cmhw: Remove duplicate class
+
+====================
+   12-21-2017
+====================
+
+
+   * device/zte/axon7/
+9a20a5e axon7: lets start fresh
+
+====================
+   12-20-2017
+====================
+
+
+====================
+   12-19-2017
+====================
+
+
+   * hardware/cyanogen/
+f05c023 cmhw: Update picture adjustment class with proper comments
+
+   * packages/apps/AudioFX/
+8a61c77 AudioFX: fix NPE at onPrepareOptionsMenu
+
+====================
+   12-18-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8916/
+1454b19 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.041 on remote branch
+
+   * packages/apps/SetupWizard/
+e0605c0 Disable SetupWraith, if GMS not present
+5e6b2a5 Automatic translation import
+
+====================
+   12-17-2017
+====================
+
+
+   * hardware/qcom/fm/
+d2076f6 Automatic translation import
+
+   * packages/apps/AudioFX/
+75416c7 Automatic translation import
+
+   * packages/apps/Bluetooth/
+1e3e898 Automatic translation import
+
+   * packages/apps/Calendar/
+dbe58e9 Automatic translation import
+
+   * packages/apps/Camera2/
+cadd428 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+9eef2ce Automatic translation import
+
+   * packages/apps/CertInstaller/
+d78955d Automatic translation import
+
+   * packages/apps/DeskClock/
+2e5bda9 Automatic translation import
+
+   * packages/apps/Eleven/
+725ec84 Automatic translation import
+
+   * packages/apps/Email/
+23b5e4c Automatic translation import
+
+   * packages/apps/EmergencyInfo/
+0b6c801 Automatic translation import
+
+   * packages/apps/ExactCalculator/
+bcf2739 Automatic translation import
+
+   * packages/apps/Exchange/
+58289b0 Automatic translation import
+
+   * packages/apps/FMRadio/
+94418e4 Automatic translation import
+
+   * packages/apps/FlipFlap/
+23b3a67 Automatic translation import
+
+   * packages/apps/Gallery2/
+8eb3492 Automatic translation import
+
+   * packages/apps/HTMLViewer/
+6020499 Automatic translation import
+
+   * packages/apps/Jelly/
+96f863c Automatic translation import
+
+   * packages/apps/KeyChain/
+0702920 Automatic translation import
+
+   * packages/apps/LockClock/
+6167b98 Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+4ec1d12 Automatic translation import
+
+   * packages/apps/Nfc/
+863796f Automatic translation import
+
+   * packages/apps/PackageInstaller/
+69db90b Automatic translation import
+
+   * packages/apps/Profiles/
+2daea4c Automatic translation import
+
+   * packages/apps/Recorder/
+375c57a Automatic translation import
+
+   * packages/apps/SafetyRegulatoryInfo/
+1d44b4b Automatic translation import
+
+   * packages/apps/Stk/
+10e4796 Automatic translation import
+
+   * packages/apps/Tag/
+0cd80ff Automatic translation import
+
+   * packages/apps/Terminal/
+313ca94 Automatic translation import
+
+   * packages/apps/Trebuchet/
+0dc77fe Automatic translation import
+
+   * packages/apps/TvSettings/
+97009c9 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+981b6b3 Automatic translation import
+
+   * packages/apps/WallpaperPicker/
+3f0a942 Automatic translation import
+
+   * packages/providers/BookmarkProvider/
+dc340ad Automatic translation import
+
+   * packages/providers/CalendarProvider/
+47ac2eb Automatic translation import
+
+   * packages/providers/CallLogProvider/
+4c5005c Automatic translation import
+
+   * packages/providers/ContactsProvider/
+c6d0a39 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+2b23134 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+26d84a3 Automatic translation import
+
+   * packages/providers/MediaProvider/
+18a96ab Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+6b8d93a Automatic translation import
+
+   * packages/providers/UserDictionaryProvider/
+ed2c2b6 Automatic translation import
+
+   * packages/providers/WeatherProvider/
+e176b4f Automatic translation import
+
+   * packages/resources/devicesettings/
+1f490df Automatic translation import
+
+   * packages/screensavers/Basic/
+7f53637 Automatic translation import
+
+   * packages/screensavers/PhotoTable/
+a1ab1af Automatic translation import
+
+   * packages/services/CMAudioService/
+4f17600 Automatic translation import
+
+   * packages/services/WeatherService/
+a0c8c93 Automatic translation import
+
+   * packages/wallpapers/LivePicker/
+9313bd7 Automatic translation import
+
+   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+91c51e6 Automatic translation import
+
+   * vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+5a1dea1 Automatic translation import
+
+====================
+   12-16-2017
+====================
+
+
+   * build/
+f96b212 Bump security string to 2017-12-05
+5dc6717 Bump Security String to 2017-11-06
+df5ba02 Update Security String to 2017-11-05
+
+   * device/zte/axon7/
+ce9ab45 axon7: add correct camera packages
+9853898 axon7: fix camera service crash
+b313f23 axon7: fully enable wifi calling
+8fb235c Revert "axon7: Updates from B32"
+0afdb60 axon7: Enable aptXHD support
+6db24f1 axon7: fix HDMI permissions
+
+   * frameworks/base/
+1cd74f1 Revert "Revert "Camera2: Fix Error Callback if buffer lost.""
+
+   * packages/apps/CMParts/
+b7e8f66 CMParts: gestures: Update KeyHandler for API change
+2e01fc1 CMParts: gestures: Add volume down/up actions
+cba0318 CMParts: Add strings for stylus gestures
+4100d70 Remove annoying empty view in privacy guard
+
+   * packages/apps/Settings/
+5a18ecb DO NOT MERGE. ActivityPicker shouldn't grant permissions.
+86b3f1d BugFix:Correct fullBearer in APNSettings
+a52741d Telephony: Fix Crash in SimStatus Fragment
+2874e94 Settings: fix vibrate for calls in Setting app displayed incorrect issue
+92f5a5b Settings: back icon doesn't work in format SD as portable page.
+f5b9467 Settings: Fix settings force close
+6dfd709 Settings: Fix crash when disconnect wifi
+
+   * packages/services/Telecomm/
+2b27cc8 Fix unable to swap calls through BT in CDMA
+7d29edb Fix InCall UI display issue for SIP and normal calls
+
+   * platform_manifest/
+1e4e882 emotion: android-7.1.2_r29 -> android-7.1.2_r36
+
+   * system/core/
+5fd422d zip_archive: reject files that don't start with an LFH signature.
+
+   * vendor/zte/
+a5a048d Revert "axon7: Update blobs from B32"
+
+
